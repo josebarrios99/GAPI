@@ -83,15 +83,45 @@ body{
 }
 
 /* ---- estilo para el cuerpo ---- */
+.sobreGapiText{
+    float: right;
+}
+.sobreGapiText2{
+    float: right;
+}
 .cuerpo{
    overflow: hidden;
 }
+.accionesGAPI{
+    margin-top: 53px;
+    width: 1440px;
+    height: 560px;
+    background: #d3d3d3;
+    overflow: hidden;
+}
+.tituloAcciones{
+    text-align: center;
+}
 
 .caja{
-    
+    margin-top: 63px;
     float: left;
+    padding-top: 63px;
     margin-left: 120px;
+    border-radius: 10px;
+    background-color: white;
+    width: 235px;
+    height: 300px;
+    text-align: center;
 
+}
+.tituloNuestrosClientes{
+    text-align: center;
+}
+.subtituloCliente{
+    
+    text-align: center;
+    padding: 15px;
 }
 
 .titulo{
