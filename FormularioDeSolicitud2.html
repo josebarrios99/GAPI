@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="firstHeaderQuestionarie">
+        <form action="submission.html" method="POST">
+            <section class="visuaAdjust">
+                <table>
+                    <tr>
+                        <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                        <td><input type="button" value="A+"></td>
+                        <td><input type="button" value="A-"></td>
+                        <td><label for="typeOfContrast_txt">Contraste</label>
+                            <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
+                            <datalist id="listOfVisualcontrast">
+                                <option value="Color original"></option>
+                                <option value="verdes y azules"></option>
+                                <option value="rojos y naranjas"></option>
+                            </datalist>
+                        </td>
+                        <td><a href="" id="mapa">Mapa</a></td>
+                        <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="secondHeaderQuestionarie">
+        <table>
+            <tr>
+                <td><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></td>
+                <td> <a href="" id="linkInicio">Inicio</a></td>
+                <td><a href="" id="linkCentro">Centro</a></td>
+                <td><a href="" id="linkEquipos">Equipos</a></td>
+                <td><a href="" id="linkPublicaciones">Mapa</a></td>
+                <td><a href="" id="linkVideos">Videos</a></td>
+                <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
+                <td><a href="" id="linkAsistencia">Asistencia</a></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <p>Estás aquí: Asistencia / Solicitar cita</p>
+
+    <br>
+
+    <div id="optionsBelowHeadersQuestionarie">
+        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
+        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
+        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+    </div>
+
+    <br>
+
+    <div id="questionsSection">
+
+        <ol>
+            <li>
+                <h3>Cuestionario sobre diversidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <img src="" alt="imagen del cuestionario">
+            </li>
+            <li>
+                <h3>Datos personales</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <li>
+                <h3>Informacion laboral</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <li>
+                <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+        </ol>
+        <table>
+            <tr>
+
+                <td>
+                    <form action="answerQuestionarieSection1" method="POST">
+                        <section class="name">
+                            <label for="userName">Nombre</label>
+                            <br>
+                            <input type="text" name="userName" id="userName" required>
+                        </section>
+                        <br>
+                        <section class="typeOfDocument">
+                            <label for="typeOfDocument_txt">Tipo de documento</label>
+                            <br>
+                            <input list="documents" id="typeOfDocument_txt" name="typeOfDocument_txt">
+                            <datalist id="documents">
+                                <option value="Targeta de identidad"></option>
+                                <option value="C.C"></option>
+                                <option value="etc"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <section class="expeditionDocument">
+                            <label for="expeditionOfDocument_txt">Lugar de expedicion del documento</label>
+                            <br>
+                            <input list="citiesList" id="expeditionOfDocument_txt" name="expeditionOfDocument_txt">
+                            <datalist id="citiesList">
+                                <option value="Cali"></option>
+                                <option value="Bogotá"></option>
+                                <option value="Cartagena"></option>
+                                <option value="Pasto"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <section class="placeOfBirthUser">
+                            <label for="placeOfBirthUser_txt">Lugar de nacimiento</label>
+                            <br>
+                            <input list="citiesList" id="placeOfBirthUser_txt" name="placeOfBirthUser_txt">
+                        </section>
+                        <br>
+                        <section class="DepartmenUser">
+                            <label for="departmentUser_txt">Departamento de residencia</label>
+                            <br>
+                            <input list="deparmnetList" id="departmentUser_txt" name="departmentUser_txt">
+                            <datalist id="departmentList">
+                                <option value="Valle del Cauca"></option>
+                                <option value="Cauca"></option>
+                                <option value="Tolima"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <section class="directionUse">
+                            <label for="directionUser">Direccion</label>
+                            <br>
+                            <input type="text" name="directionUser" id="directionUser" required>
+                        </section>
+                        <br>
+                        <section class="cellUser">
+                            <label for="cellUser">Numero telefonico</label>
+                            <br>
+                            <input type="text" name="cellUser" id="cellUser" required>
+                        </section>
+                        <br>
+                        <section class="typeHouseUser">
+                            <label for="typeHouseUser_txt">tipo de residencia</label>
+                            <br>
+                            <input list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
+                            <datalist id="typeHouseList">
+                                <option value="Apartamento"></option>
+                                <option value="Casa propia"></option>
+                                <option value="Hotel"></option>
+                            </datalist>
+                        </section>
+                        <section class="LiveWhitSomeone">
+                            <span>¿Usted vive con alguien?</span>
+                            <br>
+                            <input type="radio" name="have" id="yes" value="yes">
+                            <label for="yes">Si</label>
+                            <input type="radio" name="have" id="no" value="yes">
+                            <label for="no">No</label>
+                        </section>
+                </td>
+                <td>
+                    <section class="lastname">
+                        <label for="userLastName">Apellidos</label>
+                        <br>
+                        <input type="text" name="userLastName" id="userLastName" required>
+                    </section>
+                    <br>
+                    <section class="numberOfDocument">
+                        <label for="numberOfDocument">¿Número de documento de identidad?</label>
+                        <br>
+                        <input type="text" name="numberOfDocument" id="numberOfDocument" required>
+                    </section>
+                    <br>
+                    <section class="dateOfDocument">
+                        <label for="dateOfDocument">Fecha de expedición del documento</label>
+                        <br>
+                        <input type="date" name="dateOfDocument" id="dateOfDocument" required>
+                    </section>
+                    <br>
+                    <section class="birthDate">
+                        <label for="birthDate">Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" name="birthDate" id="birthDate" required>
+                    </section>
+                    <br>
+                    <section class="cityOfResidence">
+                        <label for="cityOfResidence_txt">Ciudad de residencia</label>
+                        <br>
+                        <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+                    </section>
+                    <br>
+                    <section class="Cell2">
+                        <label for="cell2">Teléfono de persona de confianza</label>
+                        <br>
+                        <input type="tel" name="cell2" id="cell2" maxlength="10">
+                    </section>
+                    <br>
+                    <section class="estrato">
+                        <label for="estratoUser">Estrato</label>
+                        <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
+                    </section>
+                    <br>
+                    </form>
+                    <a href="FormularioDeSolicitud3.html" id="linkSecondPageQuestionarie"><img src=""
+                            alt="Siguiente pagina"></a>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
+                        <th>Menu</th>
+                        <th>Legal</th>
+                        <th>Contactanos</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Oficina de Información </li>
+                            <li>Teléfono: 8821093 Ext: 112 - 119</li>
+                            <li>Dirección: Carrera 9 No. 9-49</li>
+                            <li>Segundo piso </li>
+                            <li>Horario de atención al público </li>
+                            <li>2:30 p.m - 5:30 p.m.</li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li><a href="" id="linkInicio">Inicio</a></li>
+                            <li><a href="" id="linkCentro">Centro</a></li>
+                            <li><a href="" id="linkEquipos">Equipos</a></li>
+                            <li><a href="" id="linkProyectos">Proyectos</a></li>
+                            <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
+                            <li><a href="" id="linkVideos">Videos</a></li>
+                            <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
+                            <li><a href="" id="linkAsistencia">Asistencia</a></li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
+                            <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
+                            <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
+                            <li><a href="" id="linkStatus">Status</a></li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <p>Jorge Andrés Illera Cajiao <br>
+                            Director del GAPI<br>
+                            Correo: jaillera@icesi.edu.co Paula Andrea</p>
+                        <br>
+                        <p> Cerón Arboleda<br>
+                            Coordinadora del GAPI<br>
+                            Correo: paula.ceron@correo.icesi.edu.co</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="socialMediaIcons">
+            <center>
+                <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
+                <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
+                <a href="" id="linkIN"><img src="" alt="link IN"></a>
+                <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
+                <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
+            </center>
+        </div>
+    </footer>
+</body>
+
+</html>
