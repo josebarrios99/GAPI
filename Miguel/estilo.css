@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+}
+
+.centro{
+    width: 1440px;
+   /* margin: 120px ; */
+}
+.superior{
+    width: 1440px;
+    height: 64px;
+    background: #C4C4C4;
+    overflow: hidden;
+}
+
+.logo_accesibilidad{
+    float: left;
+    width: 120px;
+    padding: 16px;
+    margin-left: 120px;
+}
+
+.menu_arriba{
+    float: left;
+}
+
+/* ----estilizando el primer cabezote---- */
+.menu_arriba li{
+    float: left;
+    list-style: none;
+    padding-inline: 10px;
+    margin-top: 22px;
+}
+/* falta acomodar bien aca los titulos y la barra, pero no se como*/
+.menu_arriba li a{
+    color: white;
+    text-decoration: none;
+}
+
+#colorList{ /* -- dropList -- */
+    margin-left: 90px;
+    margin-top: 22px;
+}
+
+/* ----Segundo cabezote---- */
+
+.inferior{
+    width: 1440px;
+    height: 83px;
+    background: #9F9999;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    width: 120px;
+    padding-left: 10px;
+    margin-top: 24px;
+    margin-left: 120px;
+}
+
+.menu_abajo li{
+    float: left;
+    list-style: none;
+    padding-inline: 10px;
+    margin-top: 28px;
+    
+}
+
+.menu_abajo li a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #9F9999; /*hay q mejorar este feedback*/
+}
+
+.menu_abajo li a:hover{
+    background: #635c5c;
+}
+
+/* ---- estilo para el cuerpo ---- */
+.sobreGapiText{
+    float: right;
+}
+.sobreGapiText2{
+    float: right;
+}
+.cuerpo{
+   overflow: hidden;
+}
+.accionesGAPI{
+    margin-top: 53px;
+    width: 1440px;
+    height: 560px;
+    background: #d3d3d3;
+    overflow: hidden;
+}
+.tituloAcciones{
+    text-align: center;
+}
+
+.caja{
+    margin-top: 63px;
+    float: left;
+    padding-top: 63px;
+    margin-left: 120px;
+    border-radius: 10px;
+    background-color: white;
+    width: 235px;
+    height: 300px;
+    text-align: center;
+
+}
+.tituloNuestrosClientes{
+    text-align: center;
+}
+.subtituloCliente{
+    
+    text-align: center;
+    padding: 15px;
+}
+
+.titulo{
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
