@@ -2,38 +2,7 @@
     margin: 0%;
     padding: 0%;
 }
-.header{
-    background-color: #9F9999;
-    display: flex;
-    width: 100%;
-    height: 72px;
-    box-shadow: 0 4px 6px 0px rgb(122, 122, 122);
-    position: absolute;
-}
-.logo_container{
-    height: auto;
-}
-#logo{
-    margin-top: 20px;
-    margin-left: 122px;
-    width: auto;
-}
-.topNav{
-    margin-left: 350px;
-    width: 100%;
-}
-.topNav a{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 25px 16px;
-    text-decoration: none;
-    font-size: 16px;
-}
-.topNav a:hover {
-    border-bottom: 5px solid white;
-}
+
 .banner{
     padding-top: 72px;
     width: 100%;
@@ -50,7 +19,7 @@
     font-size: 10px;
 }
 .nuestrosProyectos{
-    background-color: #D3D3D3;
+    background-color: #ffffff;
     width: 100%;
 }
 .titleSection{
@@ -60,7 +29,7 @@
     padding-bottom: 50px;
 }
 .projects{
-    margin-left: 150px;
+    margin-left: 220px;
     display: flex;
 }
 .project1{
@@ -69,50 +38,8 @@
 .project2{
     padding-left: 5px;
 }
-footer{
-    margin-top: 50px;
-    background-color: #5F5F5F;
-    height: auto;
-    padding-top: 50px;
-    padding-left: 120px;
-    padding-right: 120px;
-}
-.footer_info{
+.explorar{
     display: flex;
-    width: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    padding-bottom: 25px;
-}
-.data{
-    padding-right: 140px;
-}
-.data_logo{
-    padding-bottom: 30px;
-}
-.data_menu{
-    padding-right: 50px;
-}
-.data_menu a{
-    float: left;
-    color: white;
-    font-size: 16px;
-}
-.data_legal{
-    padding-right: 50px;
-}
-.data_legal a{
-    float: left;
-    color: white;
-    font-size: 16px;
-}
-.data_contact p{
-    color: white;
-    padding-top: 20px;
-}
-.social{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.icons{
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 300px;
 }
