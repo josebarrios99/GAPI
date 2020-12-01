@@ -67,7 +67,7 @@
             <li>
                 <h3>Cuestionario sobre diversidad</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <img src="" alt="imagen de datos sobre la diversidad">
+
             </li>
             <li>
                 <h3>Datos personales</h3>
@@ -76,7 +76,7 @@
             <li>
                 <h3>Informacion laboral</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-
+                <img src="" alt="imagen de datos laborales">
             </li>
             <li>
                 <h3>Proceso juridico a realizar</h3>
@@ -85,54 +85,63 @@
         </ol>
     </div>
     <div id="questionsSection">
+
         <table>
-            <form action="answerQuestionarieSection1" method="POST">
+            <form action="answerQuestionarieSection" method="POST">
                 <tr>
                     <td>
-                        <section class="haveDiversity">
-                            <span>¿Es usted una persona con discapacidad/diversidad funcional?</span>
+
+                        <section class="typeOfLegalProces">
+                            <span>¿En qué área del derecho está tu consulta? Seleccina una</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
+
+                            <label for="laboral">
+                                <h1>Laboral</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="laboral" id="laboral" value="yes">
+
+                            <label for="familar">
+                                <h1>Familiar</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="familar" id="familar" value="yes">
+                            <br>
+
+                            <label for="penal">
+                                <h1>Penal</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="penal" id="penal" value="yes">
+
+                            <label for="administrativo">
+                                <h1>Administrativo</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="administrativo" id="administrativo" value="yes">
+                            <br>
+
+                            <label for="diferente">
+                                <h1>OTRA</h1>
+                            </label>
+                            <input type="text" name="diferente" id="diferente">
+
+                            <label for="desconoce">
+                                <h1>No se</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="desconoce" id="desconoce" value="yes">
                         </section>
                         <br>
-                        <section class="canReadWrite">
-                            <span>¿Tiene dificultades para leer y escribir?</span>
+
+                        <section class="reasonConsult">
+                            <span>Indique brevemente el motivo de su consulta o necesidad</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                        </section>
-                        <br>
-                        <section class="canFollowInstructions">
-                            <span>¿Tiene dificultades para comprender instrucciones?</span>
-                            <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                            <input type="radio" name="have" id="sometimes" value="yes">
-                            <label for="sometimes">A veces</label>
-                        </section>
-                        <br>
-                        <section class="canKeptAtention">
-                            <span>¿Tiene dificultades para permanecer atento?</span>
-                            <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                            <input type="radio" name="have" id="sometimes" value="yes">
-                            <label for="sometimes">A veces</label>
+                            <textarea name="reasonConsult" id="reasonConsult" cols="80" rows="5" required></textarea>
                         </section>
                     </td>
                 </tr>
             </form>
+            <br>
         </table>
-        <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
+        <a href="FormularioDeSolicitud3.html" id="linkSecondPageQuestionarie"><img src="" alt="pagina anterior"></a>
+
+        <a href="FormularioDeSolicitud5.html" id="linkFouthPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
 
     </div>
 

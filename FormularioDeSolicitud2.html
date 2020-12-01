@@ -61,32 +61,37 @@
 
     <br>
 
-    <div id="questionsSection">
 
+
+    <div id="indice-questionarie">
         <ol>
             <li>
                 <h3>Cuestionario sobre diversidad</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <img src="" alt="imagen del cuestionario">
+
             </li>
             <li>
                 <h3>Datos personales</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <img src="" alt="imagen de datos personales">
             </li>
             <li>
                 <h3>Informacion laboral</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
             </li>
             <li>
                 <h3>Proceso juridico a realizar</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </li>
         </ol>
+    </div>
+    <div id="questionsSection">
         <table>
-            <tr>
+            <form action="answerQuestionarieSection2" method="POST">
+                <tr>
+                    <td>
 
-                <td>
-                    <form action="answerQuestionarieSection1" method="POST">
                         <section class="name">
                             <label for="userName">Nombre</label>
                             <br>
@@ -125,7 +130,7 @@
                         <section class="DepartmenUser">
                             <label for="departmentUser_txt">Departamento de residencia</label>
                             <br>
-                            <input list="deparmnetList" id="departmentUser_txt" name="departmentUser_txt">
+                            <input list="departmentList" id="departmentUser_txt" name="departmentUser_txt">
                             <datalist id="departmentList">
                                 <option value="Valle del Cauca"></option>
                                 <option value="Cauca"></option>
@@ -155,6 +160,7 @@
                                 <option value="Hotel"></option>
                             </datalist>
                         </section>
+                        <br>
                         <section class="LiveWhitSomeone">
                             <span>¿Usted vive con alguien?</span>
                             <br>
@@ -163,125 +169,138 @@
                             <input type="radio" name="have" id="no" value="yes">
                             <label for="no">No</label>
                         </section>
-                </td>
-                <td>
-                    <section class="lastname">
-                        <label for="userLastName">Apellidos</label>
-                        <br>
-                        <input type="text" name="userLastName" id="userLastName" required>
-                    </section>
-                    <br>
-                    <section class="numberOfDocument">
-                        <label for="numberOfDocument">¿Número de documento de identidad?</label>
-                        <br>
-                        <input type="text" name="numberOfDocument" id="numberOfDocument" required>
-                    </section>
-                    <br>
-                    <section class="dateOfDocument">
-                        <label for="dateOfDocument">Fecha de expedición del documento</label>
-                        <br>
-                        <input type="date" name="dateOfDocument" id="dateOfDocument" required>
-                    </section>
-                    <br>
-                    <section class="birthDate">
-                        <label for="birthDate">Fecha de nacimiento</label>
-                        <br>
-                        <input type="date" name="birthDate" id="birthDate" required>
-                    </section>
-                    <br>
-                    <section class="cityOfResidence">
-                        <label for="cityOfResidence_txt">Ciudad de residencia</label>
-                        <br>
-                        <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
-                    </section>
-                    <br>
-                    <section class="Cell2">
-                        <label for="cell2">Teléfono de persona de confianza</label>
-                        <br>
-                        <input type="tel" name="cell2" id="cell2" maxlength="10">
-                    </section>
-                    <br>
-                    <section class="estrato">
-                        <label for="estratoUser">Estrato</label>
-                        <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
-                    </section>
-                    <br>
-                    </form>
-                    <a href="FormularioDeSolicitud3.html" id="linkSecondPageQuestionarie"><img src=""
-                            alt="Siguiente pagina"></a>
-                </td>
-
-            </tr>
-        </table>
-    </div>
-
-    <footer>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
-                        <th>Menu</th>
-                        <th>Legal</th>
-                        <th>Contactanos</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Oficina de Información </li>
-                            <li>Teléfono: 8821093 Ext: 112 - 119</li>
-                            <li>Dirección: Carrera 9 No. 9-49</li>
-                            <li>Segundo piso </li>
-                            <li>Horario de atención al público </li>
-                            <li>2:30 p.m - 5:30 p.m.</li>
-                        </ul>
                     </td>
-
                     <td>
-                        <ul>
-                            <li><a href="" id="linkInicio">Inicio</a></li>
-                            <li><a href="" id="linkCentro">Centro</a></li>
-                            <li><a href="" id="linkEquipos">Equipos</a></li>
-                            <li><a href="" id="linkProyectos">Proyectos</a></li>
-                            <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
-                            <li><a href="" id="linkVideos">Videos</a></li>
-                            <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
-                            <li><a href="" id="linkAsistencia">Asistencia</a></li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
-                            <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
-                            <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
-                            <li><a href="" id="linkStatus">Status</a></li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <p>Jorge Andrés Illera Cajiao <br>
-                            Director del GAPI<br>
-                            Correo: jaillera@icesi.edu.co Paula Andrea</p>
+                        <section class="lastname">
+                            <label for="userLastName">Apellidos</label>
+                            <br>
+                            <input type="text" name="userLastName" id="userLastName" required>
+                        </section>
                         <br>
-                        <p> Cerón Arboleda<br>
-                            Coordinadora del GAPI<br>
-                            Correo: paula.ceron@correo.icesi.edu.co</p>
+                        <section class="numberOfDocument">
+                            <label for="numberOfDocument">¿Número de documento de identidad?</label>
+                            <br>
+                            <input type="text" name="numberOfDocument" id="numberOfDocument" required>
+                        </section>
+                        <br>
+                        <section class="dateOfDocument">
+                            <label for="dateOfDocument">Fecha de expedición del documento</label>
+                            <br>
+                            <input type="date" name="dateOfDocument" id="dateOfDocument" required>
+                        </section>
+                        <br>
+                        <section class="birthDate">
+                            <label for="birthDate">Fecha de nacimiento</label>
+                            <br>
+                            <input type="date" name="birthDate" id="birthDate" required>
+                        </section>
+                        <br>
+                        <section class="cityOfResidence">
+                            <label for="cityOfResidence_txt">Ciudad de residencia</label>
+                            <br>
+                            <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+                        </section>
+                        <br>
+                        <section class="Cell2">
+                            <label for="cell2">Teléfono de persona de confianza</label>
+                            <br>
+                            <input type="tel" name="cell2" id="cell2" maxlength="10">
+                        </section>
+                        <br>
+                        <section class="estrato">
+                            <label for="estratoUser">Estrato</label>
+                            <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
+                        </section>
+                        <br>
                     </td>
                 </tr>
-            </table>
-        </div>
-        <hr>
-        <div id="socialMediaIcons">
-            <center>
-                <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
-                <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
-                <a href="" id="linkIN"><img src="" alt="link IN"></a>
-                <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
-                <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
-            </center>
-        </div>
+                <tr>
+                    
+                </tr>
+            </form>
+        </table>
+        <a href="FormularioDeSolicitud1.html" id="linkFirstPageQuestionarie"><img src="" alt="Pagina anterior"></a>
+
+        <a href="FormularioDeSolicitud3.html" id="linkThirdPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
+
+    </div>
+    <footer>
+        <section class="footer_info">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
+                            <th>Menu</th>
+                            <th>Legal</th>
+                            <th>Contactanos</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <div class="data_info">
+                                <p>Oficina de Información<br>
+                                    Teléfono: 8821093<br>
+                                    Ext: 112 - 119<br>
+                                    Dirección: Carrera 9 No. 9-49<br>
+                                    Segundo piso<br>
+                                    Horario de atención al público <br>
+                                    2:30 p.m - 5:30 p.m.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="data_menu">
+                                <ul>
+                                    <li><a href="" id="linkInicio">Inicio</a></li>
+                                    <li><a href="" id="linkCentro">Centro</a></li>
+                                    <li><a href="" id="linkEquipos">Equipos</a></li>
+                                    <li><a href="" id="linkProyectos">Proyectos</a></li>
+                                    <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
+                                    <li><a href="" id="linkVideos">Videos</a></li>
+                                    <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
+                                    <li><a href="" id="linkAsistencia">Asistencia</a></li>
+                                </ul>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="data_legal">
+                                <ul>
+                                    <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
+                                    <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
+                                    <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
+                                    <li><a href="" id="linkStatus">Status</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <div class="data_contact">
+                            <td>
+                                <p>Jorge Andrés Illera Cajiao <br>
+                                    Director del GAPI<br>
+                                    Correo: jaillera@icesi.edu.co Paula Andrea</p>
+                                <br>
+                                <p> Cerón Arboleda<br>
+                                    Coordinadora del GAPI<br>
+                                    Correo: paula.ceron@correo.icesi.edu.co</p>
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="social">
+            <hr>
+            <div id="socialMediaIcons">
+                <center>
+                    <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
+                    <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
+                    <a href="" id="linkIN"><img src="" alt="link IN"></a>
+                    <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
+                    <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
+                </center>
+            </div>
+        </section>
     </footer>
 </body>
 

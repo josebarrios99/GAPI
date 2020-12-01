@@ -61,35 +61,51 @@
 
     <br>
 
-    <div id="questionsSection">
-        <table>
-            <tr>
-                <td>
-                    <ol>
-                        <li>
-                            <h3>Cuestionario sobre diversidad</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <img src="" alt="imagen del cuestionario">
-                        </li>
-                        <li>
-                            <h3>Datos personales</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        </li>
-                        <li>
-                            <h3>Informacion laboral</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        </li>
-                        <li>
-                            <h3>Proceso juridico a realizar</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        </li>
-                    </ol>
-                </td>
 
-                <td>
-                    <form action="answerQuestionarieSection1" method="POST">
-                        <section class="haveDiversity">
-                            <span>¿Es usted una persona con discapacidad/diversidad funcional?</span>
+    <div id="indice-questionarie">
+        <ol>
+            <li>
+                <h3>Cuestionario sobre diversidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+            </li>
+            <li>
+                <h3>Datos personales</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <li>
+                <h3>Informacion laboral</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <img src="" alt="imagen de datos laborales">
+            </li>
+            <li>
+                <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+        </ol>
+    </div>
+    <div id="questionsSection">
+
+        <table>
+            <form action="answerQuestionarieSection3" method="POST">
+                <tr>
+                    <td>
+
+                        <section class="educationLevel">
+                            <span>Grado de escolaridad</span>
+                            <br>
+                            <input list="educationLebelList" id="educationLebel" name="educationLebel">
+                            <datalist id="educationLebelList">
+                                <option value="Primaria"></option>
+                                <option value="Bachillerato"></option>
+                                <option value="Tecnico"></option>
+                                <option value="Pregrado"></option>
+                                <option value="posgrado"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <section class="haveWork">
+                            <span>¿Cuenta con algun trabajo actualmente?</span>
                             <br>
                             <input type="radio" name="have" id="yes" value="yes">
                             <label for="yes">Si</label>
@@ -97,110 +113,120 @@
                             <label for="no">No</label>
                         </section>
                         <br>
-                        <section class="canReadWrite">
-                            <span>¿Tiene dificultades para leer y escribir?</span>
+                        <section class="telOfWork">
+                            <span>Telefono del trabajo</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
+                            <input type="tel" name="telOfWork" id="telOfWork">
+
                         </section>
                         <br>
-                        <section class="canFollowInstructions">
-                            <span>¿Tiene dificultades para comprender instrucciones?</span>
+                        <section class="direccionOfWork">
+                            <span>Direccion del trabajo</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                            <input type="radio" name="have" id="sometimes" value="yes">
-                            <label for="sometimes">A veces</label>
+                            <input type="text" name="direccionOfWork" id="direccionOfWork">
                         </section>
                         <br>
-                        <section class="canKeptAtention">
-                            <span>¿Tiene dificultades para permanecer atento?</span>
+                        <section class="job">
+                            <span>Ocupación</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                            <input type="radio" name="have" id="sometimes" value="yes">
-                            <label for="sometimes">A veces</label>
+                            <input type="text" name="job" id="job">
                         </section>
-                    </form>
-                    <a href="FormularioDeSolicitud4.html" id="linkSecondPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
-                </td>
+
+                        <br>
+
+
+                        <section class="salary">
+                            <span>Ingresos mensuales</span>
+                            <br>
+                            <input type="text" name="salary" id="salary">
+                        </section>
+            </form>
+            </td>
             </tr>
         </table>
+        <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="" alt="pagina anterior"></a>
+
+        <a href="FormularioDeSolicitud4.html" id="linkFouthPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
+
     </div>
 
     <footer>
-        <div>
-            <table>
-                <thead>
+        <section class="footer_info">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
+                            <th>Menu</th>
+                            <th>Legal</th>
+                            <th>Contactanos</th>
+                        </tr>
+                    </thead>
                     <tr>
-                        <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
-                        <th>Menu</th>
-                        <th>Legal</th>
-                        <th>Contactanos</th>
+                        <td>
+                            <div class="data_info">
+                                <p>Oficina de Información<br>
+                                    Teléfono: 8821093<br>
+                                    Ext: 112 - 119<br>
+                                    Dirección: Carrera 9 No. 9-49<br>
+                                    Segundo piso<br>
+                                    Horario de atención al público <br>
+                                    2:30 p.m - 5:30 p.m.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="data_menu">
+                                <ul>
+                                    <li><a href="" id="linkInicio">Inicio</a></li>
+                                    <li><a href="" id="linkCentro">Centro</a></li>
+                                    <li><a href="" id="linkEquipos">Equipos</a></li>
+                                    <li><a href="" id="linkProyectos">Proyectos</a></li>
+                                    <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
+                                    <li><a href="" id="linkVideos">Videos</a></li>
+                                    <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
+                                    <li><a href="" id="linkAsistencia">Asistencia</a></li>
+                                </ul>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="data_legal">
+                                <ul>
+                                    <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
+                                    <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
+                                    <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
+                                    <li><a href="" id="linkStatus">Status</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <div class="data_contact">
+                            <td>
+                                <p>Jorge Andrés Illera Cajiao <br>
+                                    Director del GAPI<br>
+                                    Correo: jaillera@icesi.edu.co Paula Andrea</p>
+                                <br>
+                                <p> Cerón Arboleda<br>
+                                    Coordinadora del GAPI<br>
+                                    Correo: paula.ceron@correo.icesi.edu.co</p>
+                            </td>
+                        </div>
                     </tr>
-                </thead>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Oficina de Información </li>
-                            <li>Teléfono: 8821093 Ext: 112 - 119</li>
-                            <li>Dirección: Carrera 9 No. 9-49</li>
-                            <li>Segundo piso </li>
-                            <li>Horario de atención al público </li>
-                            <li>2:30 p.m - 5:30 p.m.</li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li><a href="" id="linkInicio">Inicio</a></li>
-                            <li><a href="" id="linkCentro">Centro</a></li>
-                            <li><a href="" id="linkEquipos">Equipos</a></li>
-                            <li><a href="" id="linkProyectos">Proyectos</a></li>
-                            <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
-                            <li><a href="" id="linkVideos">Videos</a></li>
-                            <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
-                            <li><a href="" id="linkAsistencia">Asistencia</a></li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
-                            <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
-                            <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
-                            <li><a href="" id="linkStatus">Status</a></li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <p>Jorge Andrés Illera Cajiao <br>
-                            Director del GAPI<br>
-                            Correo: jaillera@icesi.edu.co Paula Andrea</p>
-                        <br>
-                        <p> Cerón Arboleda<br>
-                            Coordinadora del GAPI<br>
-                            Correo: paula.ceron@correo.icesi.edu.co</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <hr>
-        <div id="socialMediaIcons">
-            <center>
-                <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
-                <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
-                <a href="" id="linkIN"><img src="" alt="link IN"></a>
-                <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
-                <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
-            </center>
-        </div>
+                </table>
+            </div>
+        </section>
+        <section class="social">
+            <hr>
+            <div id="socialMediaIcons">
+                <center>
+                    <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
+                    <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
+                    <a href="" id="linkIN"><img src="" alt="link IN"></a>
+                    <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
+                    <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
+                </center>
+            </div>
+        </section>
     </footer>
 </body>
 
