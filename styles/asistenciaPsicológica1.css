@@ -22,7 +22,7 @@
     padding-top: 0px;
 }
 .asistenciaMenu_button{
-    background-color: #B1B1B1; /* Green */
+    background-color: #B1B1B1;
     border: none;
     color: white;
     padding: 10px 50px 10px 10px;
@@ -38,7 +38,7 @@
     border-radius: 4px;
 }
 .asistenciaMenu_button:hover{
-    background-color: #3B939B; /* Green */
+    background-color: #3B939B;
 }
 .formularioCitas{
     display: flex;
@@ -46,5 +46,23 @@
 }
 .pasos_titulo{
     background-color: #DBDBDB;
-    padding: 120px;
+    padding: 56px 0px 0px 70px;
 }
+.datos{
+    padding: 56px 0px 0px 70px;
+    margin-left: 100px;
+}
+.inputs1{
+    display: flex;
+    padding: 20px 35px;
+}
+input[type=text], select {
+    width: 307px;
+    padding: 10px 20px 10px 20px;
+    margin: 8px 0;
+    margin-right: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
