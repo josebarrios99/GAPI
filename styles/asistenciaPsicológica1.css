@@ -7,3 +7,44 @@
     padding-left: 120px;
     padding-bottom: 40px;
 }
+.asistenciaMenu{
+    display: flex;
+    margin-left: 610px;
+}
+.asistenciaMenu a{
+    text-decoration: none;
+}
+.asistenciaMenu p{
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#ayudaButtonText{
+    padding-top: 0px;
+}
+.asistenciaMenu_button{
+    background-color: #B1B1B1; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4px 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.asistenciaMenu_button:hover{
+    background-color: #3B939B; /* Green */
+}
+.formularioCitas{
+    display: flex;
+    margin-top: 60px;
+}
+.pasos_titulo{
+    background-color: #DBDBDB;
+    padding: 120px;
+}
