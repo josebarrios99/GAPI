@@ -116,11 +116,12 @@ p{
 
 .cajaSobreGapi{
     padding-left: 118px;
+    padding-bottom: 40px;
 }
 
 .textoSobreGapi{
     float: right ;
-    padding-top: 70px;
+    padding-top: 80px;
     padding-right: 230px;
 }
 .sobreGapiText{

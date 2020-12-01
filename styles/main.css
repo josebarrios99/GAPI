@@ -23,6 +23,8 @@ h6{
 #ROverline{
     font-family: 'Helvetica', sans-serif;
     font-size: 10px;
+    text-transform: uppercase;
+    color: #5F5F5F;
 }
 
 p{
@@ -53,9 +55,32 @@ p{
     margin-top: 10px;
     margin-left: 122px;
     width: auto;
+    padding-right: 350px;
 }
+.inicio{
+    position: relative;
+    display: inline-block;
+}
+.inicio .inicio_gif {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -110px;
+  }
+  
+  .inicio:hover .inicio_gif {
+    visibility: visible;
+  }
 .topNav{
-    margin-left: 350px;
+    
     width: 100%;
 }
 .topNav a{
