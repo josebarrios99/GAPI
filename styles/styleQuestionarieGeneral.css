@@ -75,7 +75,7 @@ footer{
 /*seccion de encabezados*/
 
 .firstHeader{
-    background-color: rgb(103, 191, 166);
+    background-color: #5A2A97;
      width: 84%;
      height: 60px;
      padding-left: 8%;
@@ -92,11 +92,12 @@ footer{
     height: 70px;
     padding-left: 8%;
     padding-right: 8%;
-     padding-top: 10px;
+    padding-top: 10px;
+    border: 1px grey;
     
 }
 /*fin seccion de encabezados*/
-
+/* seccion debajo del encabezados*/
 table{
     width: 100%;
 
@@ -106,9 +107,10 @@ table{
     margin-top: 2%;
 }
 .optionsBelowHeader{
-    text-align: right;
+    text-align: center;
     margin-right: 7.5%;
 }
+/* fin seccion debajo del encabezados*/
 
 input {
     width: 70%;
@@ -119,8 +121,8 @@ input[type=radio]{
     width: 20%;
  }
  
- 
-.changePage{
+ /* seccion debajo del cambio entre paginas del cuestinario*/
+ .changePage{
     padding-top: 25px;
     width: 100%;
     padding: 12px 20px;
