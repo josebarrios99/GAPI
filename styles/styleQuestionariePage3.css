@@ -23,8 +23,9 @@
     padding-top: 25px;
     padding-right: 23px;
     margin-right: 8%;
-
-    
+}
+.direction{
+    width: 400px;
 }
 .questionsTable{
     padding-top: 25px;

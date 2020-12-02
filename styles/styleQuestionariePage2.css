@@ -24,7 +24,9 @@
     padding-right: 23px;
     margin-right: 8%;
 }
-
+.direction{
+    width: 120%;
+}
 .changePage{
     padding-top: 25px;
     width: 100%;
