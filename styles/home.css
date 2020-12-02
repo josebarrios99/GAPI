@@ -51,6 +51,7 @@ main{
     color: #454545;
     text-align: center;
     margin-top: 10;
+    padding-top:30;
     margin-bottom: 56;
 }
 
@@ -125,6 +126,10 @@ main{
     border-radius: 25px;
 }
 
+.h4defect{
+    padding-top: 25
+}
+
 .imgSeccionGAPI{
     position: absolute;
     z-index: 1;
@@ -144,6 +149,11 @@ main{
     top: 110; 
     padding-left: 20;
 }
+
+.h4last{
+    bottom: 50;
+}
+
 .h6Secciones {
     position: relative;
     z-index: 1;
@@ -304,9 +314,43 @@ svg {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 460%;
   margin-top: -45px;
   margin-left: -35px;
   width: 70px;
   height: 90px;
 }
+
+.left {
+  left: 5%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right {
+  left: 95%;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+
