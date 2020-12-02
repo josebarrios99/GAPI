@@ -9,7 +9,7 @@
 }
 .asistenciaMenu{
     display: flex;
-    margin-left: 610px;
+    margin-left: 350px;
 }
 .asistenciaMenu a{
     text-decoration: none;
@@ -43,14 +43,95 @@
 .formularioCitas{
     display: flex;
     margin-top: 60px;
+    margin-left: 125px;
+    
 }
 .pasos_titulo{
     background-color: #DBDBDB;
-    padding: 56px 0px 0px 70px;
+    padding: 56px 17px 0px 17px;
+    border-radius: 10px 0px 0px 10px;
+}
+#titulo_ayuda{
+    padding-left: 37px;
+    padding-bottom: 20px;
+}
+#paso1:before {
+    content:"1";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso1{
+    color: #5F5F5F;
+}
+#paso2:before {
+    content:"2";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #146971;
+    display:inline-block;
+}
+#paso2{
+    color: #146971;
+}
+#paso3:before {
+    content:"3";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso3{
+    color: #5F5F5F;
+}
+#paso4:before {
+    content:"4";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso4{
+    color: #5F5F5F;
+}
+.info_img{
+    margin-left: 37px;
+    padding-top: 20px;
+}
+.pasos_content{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: #0F1C27;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.titulo{
+    border-bottom: 1px solid #B1B1B1;
+    padding-left: 37px;
+    padding-top: 15px;
+    padding-right: 37px;
+    padding-bottom: 20px;
 }
 .datos{
-    padding: 56px 0px 0px 70px;
-    margin-left: 100px;
+    padding: 56px 0px 0px 0px;
+    margin-left: 70px;
 }
 .inputs1{
     display: flex;
@@ -65,4 +146,34 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  .fin_inputs{
+      display: flex;
+      margin-left: 35px;
+  }
+  .next_button{
+    background-color: #3B939B;
+    border: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin-left: 30px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .next_button a{
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-family: 'Helvetica', sans-serif;
+  }
+  .next{
+      padding-top: 4px;
+      padding-left: 10px;
   }
