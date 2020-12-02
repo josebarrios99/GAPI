@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apoyo 3</title>
+
+    <title>apoyo3</title>
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/apoyo2_Estilo.css">
-    <link rel="stylesheet" href="./styles/apoyo1_Estilo.css">
+
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo_container">
-            <img src="images/main/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images_proyectos/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
+                <!--
+
+                    <div class="inicio">
+                    <a href="">Inicio</a>
+                    <span class="inicio_gif">
+                        <img src="./giphy.gif" alt="">
+                    </span>
+                </div>
+                -->
                 <a href="">Inicio</a>
                 <a href="">Centro</a>
                 <a href="">Equipo</a>
-                <a href="">Proyectos</a>
+                <a href="./proyectos.html">Proyectos</a>
                 <a href="">Publicaciones</a>
                 <a href="">Videos</a>
                 <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
@@ -27,59 +40,82 @@
         </div>
     </header>
 
-    <!-- Espacio para "estas aqui" -->
+    <!-- Espacio para caja y textos -->
 
-    <section class="title">
-        <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
-    </section>
+
+    <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
+
+
+    <!--<article class="cajaIzquierda">
+        <img src="./images/Apoyo Miguel/mainApoyo2.png" alt="">
+        <div class="tituloApoyo">
+            <h4 class="apoyo">
+                ¿Qué tipo de apoyo en <br> comunicación requieres?
+            </h4>
+        </div>
+    </article>-->
 
     <!-- Section Central principal-->
     <section class="centralBox">
+
+        <div class="breadCrumb">
+            <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
+        </div>
 
         <div class="mainBox">
             <div class="boxLeft">
                 <img src="images/Apoyo Miguel/mainApoyo2.png" alt="" class="mainImage">
             </div>
-            <div class="rightLeft">
-                <h4 class="titleRightBox"></h4>
-                <!-- Card 1-->
-                <div class="containerBtn">
-                    <div class="cardBtn">
-                        <div class="imageContainer">
-                            <img class= "imageCard" src="" alt="">
-                        </div>
-                        <div class="infoContainer">
-                            <h2 class="titleCard">Pictogramas</h2>
-                            <p class="textCard">Información representada principalmente por gráficos e imágenes.</p>
-                        </div>
-                    </div>  
+            <div class="boxRight">
+                <div class="titleBoxRight">
+                    <h4 class="titleBox">¿Qué tipo de apoyo en comunicación requieres?</h4>
                 </div>
-                <!-- Card 2-->
+
+                
                 <div class="containerBtn">
-                    <div class="cardBtn">
+
+                    
+                    <!-- Card 1-->
+                    <div class="cardBtn card1">
                         <div class="imageContainer">
-                            <img class= "imageCard" src="" alt="">
+                            <img class="imageCard" src="images/Apoyo Miguel/imageCard.png" alt="">
                         </div>
                         <div class="infoContainer">
-                            <h2 class="titleCard">Lector de pantallas</h2>
-                            <p class="textCard">Asistente inteligente que interpreta y reproduce el texto presentado en la pantalla.</p>
+                            <h5 class="titleCard">Tengo mi propia herramienta </h5>
+                            <br>
+                            <p class="textCard">Ya cuento con una herramienta que me permita navegar el sitio web con facilidad.</p>
                         </div>
-                    </div>  
-                </div>
-                <!-- Card 3-->
-                <div class="containerBtn">
-                    <div class="cardBtn">
+                    </div>
+
+                    <!-- Card 2-->
+
+                    <div class="cardBtn card2">
                         <div class="imageContainer">
-                            <img class= "imageCard" src="" alt="">
+                            <img class="imageCard" src="images/Apoyo Miguel/imageCard.png" alt="">
                         </div>
                         <div class="infoContainer">
-                            <h2 class="titleCard">No necesito el apoyo</h2>
+                            <h5 class="titleCard">Presento acompañante</h5>
+                            <br>
+                            <p class="textCard">Cuento con alguien que me acompañará en el proceso.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3-->
+
+                    <div class="cardBtn card3">
+                        <div class="imageContainer">
+                            <img class="imageCard" src="images/Apoyo Miguel/imageCard.png" alt="">
+                        </div>
+                        <div class="infoContainer">
+                            <h5 class="titleCard">No necesito el apoyo</h5>
+                            <br>
                             <p class="textCard">Puedo recibir asitencia por parte del GAPI sin necesidad de algún apoyo</p>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
+
 
     </section>
 
@@ -139,5 +175,7 @@
             </div>
         </section>
     </footer>
+
 </body>
+
 </html>
