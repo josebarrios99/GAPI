@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
     <link rel="stylesheet" href="./styles/proyectos.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="styleQuestionariePage1.css">
+    <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
+    <link rel="stylesheet" href="./styles/styleQuestionariePage2.css">
 </head>
 
 <body>
-   
     <header>
 
         <div class="firstHeader" id="firstHeaderQuestionarie">
@@ -20,7 +19,8 @@
                     <section class="visuaAdjust">
                         <table class="headerTable">
                             <tr>
-                                <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                                <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad">
+                                    Accesibilidad</td>
                                 <td><input type="button" value="A+"></td>
                                 <td><input type="button" value="A-"></td>
                                 <td><label for="typeOfContrast_txt">Contraste</label>
@@ -33,7 +33,7 @@
                                     </datalist>
                                 </td>
                                 <td><a href="" id="mapa">Mapa</a></td>
-                                <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                                <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
                             </tr>
                         </table>
                     </section>
@@ -45,7 +45,7 @@
         <div class="menu">
             <table>
                 <tr>
-                    <td><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></td>
+                    <td><a href="" id="linkInicio"><img src="images\main\Logo.png" alt="logo del GAPI"></a></td>
                     <td> <a href="" id="linkInicio">Inicio</a></td>
                     <td><a href="" id="linkCentro">Centro</a></td>
                     <td><a href="" id="linkEquipos">Equipos</a></td>
@@ -56,22 +56,18 @@
                 </tr>
             </table>
         </div>
+
     </header>
     <section class="estasAqui">
         <p>Estás aquí: Asistencia / Solicitar cita</p>
     </section>
     <br>
     <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
-        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
-        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
-        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+        <a href="" id="linkSolicitar-cita"><img src="images\formularioSolicitud\solicitarCita.png" alt="Solicitar cita"></a>
+        <a href="" id="linkAyuda-psicologica"><img src="images\formularioSolicitud\ayudaPsicologica.png" alt="Ayuda psicolgica y orientacion"></a>
+        <a href="" id="linkPreguntas-frecuentes"><img src="images\formularioSolicitud\preguntasFrecuentes.png" alt="Preguntas frecuentes"></a>
     </div>
-    
-
     <br>
-
-
-
     <div class="indice" id="indice-questionarie">
         <h2>Formulario de citas</h2>
         <ol>
@@ -80,18 +76,36 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
             </li>
+            <hr>
             <li>
                 <h3>Datos personales</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <img src="" alt="imagen de datos personales">
+                <img src="images\formularioSolicitud\indice2.png" alt="imagen de datos personales">
             </li>
+            <hr>
             <li>
                 <h3>Informacion laboral</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
             </li>
+            <hr>
             <li>
                 <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Datos del acompañante</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Fecha y hora de la cita</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Confirmación</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </li>
         </ol>
@@ -99,6 +113,7 @@
     <div class="questions" id="questionsSection">
         <table>
             <form action="answerQuestionarieSection2" method="POST">
+                <h2>Datos personales</h2>
                 <tr>
                     <td>
 
@@ -147,38 +162,6 @@
                                 <option value="Tolima"></option>
                             </datalist>
                         </section>
-                        <br>
-                        <section class="directionUse">
-                            <label for="directionUser">Direccion</label>
-                            <br>
-                            <input type="text" name="directionUser" id="directionUser" required>
-                        </section>
-                        <br>
-                        <section class="cellUser">
-                            <label for="cellUser">Numero telefonico</label>
-                            <br>
-                            <input type="text" name="cellUser" id="cellUser" required>
-                        </section>
-                        <br>
-                        <section class="typeHouseUser">
-                            <label for="typeHouseUser_txt">tipo de residencia</label>
-                            <br>
-                            <input list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
-                            <datalist id="typeHouseList">
-                                <option value="Apartamento"></option>
-                                <option value="Casa propia"></option>
-                                <option value="Hotel"></option>
-                            </datalist>
-                        </section>
-                        <br>
-                        <section class="LiveWhitSomeone">
-                            <span>¿Usted vive con alguien?</span>
-                            <br>
-                            <input type="radio" name="have" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                        </section>
                     </td>
                     <td>
                         <section class="lastname">
@@ -210,106 +193,143 @@
                             <br>
                             <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
                         </section>
-                        <br>
-                        <section class="Cell2">
-                            <label for="cell2">Teléfono de persona de confianza</label>
-                            <br>
-                            <input type="tel" name="cell2" id="cell2" maxlength="10">
-                        </section>
-                        <br>
-                        <section class="estrato">
-                            <label for="estratoUser">Estrato</label>
-                            <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
-                        </section>
-                        <br>
                     </td>
                 </tr>
-                <tr>
-
-                </tr>
+        </table>
+        <div class="direction" >
+            
+            <section class="directionUse">
+                <label for="directionUser">Direccion</label>
+                <br>
+                <input type="text" name="directionUser" id="directionUser"  required>
+            </section>
+            <br>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <section class="cellUser">
+                        <label for="cellUser">Numero telefonico</label>
+                        <br>
+                        <input type="text" name="cellUser" id="cellUser" required>
+                    </section>
+                    <br>
+                    <section class="typeHouseUser">
+                        <label for="typeHouseUser_txt">tipo de residencia</label>
+                        <br>
+                        <input list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
+                        <datalist id="typeHouseList">
+                            <option value="Apartamento"></option>
+                            <option value="Casa propia"></option>
+                            <option value="Hotel"></option>
+                        </datalist>
+                    </section>
+                    <br>
+                </td>
+                <td>
+                    <section class="Cell2">
+                        <label for="cell2">Teléfono de persona de confianza</label>
+                        <br>
+                        <input type="tel" name="cell2" id="cell2" maxlength="10">
+                    </section>
+                    <br>
+                    <section class="estrato">
+                        <label for="estratoUser">Estrato</label>
+                        <br>
+                        <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
+                    </section>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section class="LiveWhitSomeone">
+                        <span>¿Usted vive con alguien?</span>
+                        <br>
+                        <input type="radio" name="compani" id="yes" value="yes">
+                        <label for="yes">Si</label>
+                        <input type="radio" name="compani" id="no" value="no">
+                        <label for="no">No</label>
+                    </section>
+                </td>
+                <td>
+                    <section class="liveWith">
+                        <span>¿Usted vive con alguien?</span>
+                        <br>
+                        <input type="text" name="companyOfUser" id="companyOfUser">
+                    </section>
+                </td>
+            </tr>
             </form>
         </table>
-        <a href="FormularioDeSolicitud1.html" id="linkFirstPageQuestionarie"><img src="" alt="Pagina anterior"></a>
-
-        <a href="FormularioDeSolicitud3.html" id="linkThirdPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
-
+        <div class="changePage">
+            <table>
+                <tr>
+                    <td>
+                        <a href="FormularioDeSolicitud.html" id="linkFirstPageQuestionarie"><img src="images\formularioSolicitud\pagAnterio.png"
+                                alt="Pagina anterior"></a>
+                    </td>
+                    <td>
+                        <a href="FormularioDeSolicitud3.html" id="linkThirdPageQuestionarie"><img src="images\formularioSolicitud\pagSiguiente.png"
+                                alt="Siguiente pagina"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <footer>
         <section class="footer_info">
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
-                            <th>Menu</th>
-                            <th>Legal</th>
-                            <th>Contactanos</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <div class="data_info">
-                                <p>Oficina de Información<br>
-                                    Teléfono: 8821093<br>
-                                    Ext: 112 - 119<br>
-                                    Dirección: Carrera 9 No. 9-49<br>
-                                    Segundo piso<br>
-                                    Horario de atención al público <br>
-                                    2:30 p.m - 5:30 p.m.</p>
-                            </div>
-                        </td>
+            <div class="data">
+                <div class="data_logo">
+                    <img src="images\main\Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
 
-                        <td>
-                            <div class="data_menu">
-                                <ul>
-                                    <li><a href="" id="linkInicio">Inicio</a></li>
-                                    <li><a href="" id="linkCentro">Centro</a></li>
-                                    <li><a href="" id="linkEquipos">Equipos</a></li>
-                                    <li><a href="" id="linkProyectos">Proyectos</a></li>
-                                    <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
-                                    <li><a href="" id="linkVideos">Videos</a></li>
-                                    <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
-                                    <li><a href="" id="linkAsistencia">Asistencia</a></li>
-                                </ul>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="data_legal">
-                                <ul>
-                                    <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
-                                    <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
-                                    <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
-                                    <li><a href="" id="linkStatus">Status</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                        <div class="data_contact">
-                            <td>
-                                <p>Jorge Andrés Illera Cajiao <br>
-                                    Director del GAPI<br>
-                                    Correo: jaillera@icesi.edu.co Paula Andrea</p>
-                                <br>
-                                <p> Cerón Arboleda<br>
-                                    Coordinadora del GAPI<br>
-                                    Correo: paula.ceron@correo.icesi.edu.co</p>
-                            </td>
-                        </div>
-                    </tr>
-                </table>
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
             </div>
         </section>
         <section class="social">
-            
-            <div id="socialMediaIcons">
-                <center>
-                    <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
-                    <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
-                    <a href="" id="linkIN"><img src="" alt="link IN"></a>
-                    <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
-                    <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
-                </center>
+            <div class="icons">
+                <img src="images\main\Redes.png" alt="iconos social media">
             </div>
         </section>
     </footer>

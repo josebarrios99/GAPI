@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.title{
+    padding-top: 100px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+}
+.asistenciaMenu{
+    display: flex;
+    margin-left: 350px;
+}
+.asistenciaMenu a{
+    text-decoration: none;
+}
+.asistenciaMenu p{
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#ayudaButtonText{
+    padding-top: 0px;
+}
+.asistenciaMenu_button{
+    background-color: #B1B1B1;
+    border: none;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4px 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.asistenciaMenu_button:hover{
+    background-color: #3B939B;
+}
+.formularioCitas{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 125px;
+    
+}
+.pasos_titulo{
+    background-color: #DBDBDB;
+    padding: 56px 17px 0px 17px;
+    border-radius: 10px 0px 0px 10px;
+}
+#titulo_ayuda{
+    padding-left: 37px;
+    padding-bottom: 20px;
+}
+#paso1:before {
+    content:"1";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso1{
+    color: #5F5F5F;
+}
+#paso2:before {
+    content:"2";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #146971;
+    display:inline-block;
+}
+#paso2{
+    color: #146971;
+}
+#paso3:before {
+    content:"3";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso3{
+    color: #5F5F5F;
+}
+#paso4:before {
+    content:"4";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso4{
+    color: #5F5F5F;
+}
+.info_img{
+    margin-left: 37px;
+    padding-top: 20px;
+}
+.pasos_content{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: #0F1C27;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.titulo{
+    border-bottom: 1px solid #B1B1B1;
+    padding-left: 37px;
+    padding-top: 15px;
+    padding-right: 37px;
+    padding-bottom: 20px;
+}
+.datos{
+    padding: 56px 0px 0px 0px;
+    margin-left: 70px;
+}
+.inputs1{
+    display: flex;
+    padding: 20px 35px;
+}
+input[type=text], select {
+    width: 307px;
+    padding: 10px 20px 10px 20px;
+    margin: 8px 0;
+    margin-right: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .fin_inputs{
+      display: flex;
+      margin-left: 35px;
+  }
+  .next_button{
+    background-color: #3B939B;
+    border: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin-left: 160px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .next_button a{
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-family: 'Helvetica', sans-serif;
+  }
+  .next{
+      padding-top: 4px;
+      padding-left: 10px;
+  }
+  .back_button{
+    background-color: #F07349;
+    border: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin-left: 0px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .back_button a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+}
+.back{
+    padding-top: 4px;
+}
+.cards{
+    display: flex;
+    margin-top: 100px;
+}
+.card{
+    padding-right: 30px;
+}

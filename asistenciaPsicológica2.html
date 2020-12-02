@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asistenciaPsicológica1</title>
-    <link rel="stylesheet" href="./styles/asistenciaPsicológica1.css">
+    <link rel="stylesheet" href="./styles/asistenciaPsicológica2.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <header class="header">
         <div class="logo_container">
-            <img src="./images_proyectos/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
@@ -35,25 +35,45 @@
         </div>
     </header>
         <section class="title">
-            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Apoyo Comunicación / Ayuda psicologica y orientación</h2>
+            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
         </section>
         <div class="asistenciaMenu">
             <a href="#"><button class="asistenciaMenu_button">
-                <img src="./images_asistenciaPsicológica/Group 34.png" class="solicitarCita_img">
+                <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
                 <p>Solicitar cita</p>
             </button></a>
             <a href="#"><button class="asistenciaMenu_button">
-                <img src="./images_asistenciaPsicológica/Group 34.png" class="solicitarCita_img">
+                <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
                 <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
             </button></a>
             <a href="#"><button class="asistenciaMenu_button">
-                <img src="./images_asistenciaPsicológica/Group 34.png" class="solicitarCita_img">
+                <img src="./images/main/preguntas.png" class="solicitarCita_img">
                 <p>Preguntas frecuentes</p>
             </button></a>
         </div>
         <div class="formularioCitas">
             <div class="pasos_titulo">
-                <h5>Formulario de citas</h5>
+                <div class="titulo" id="titulo_ayuda">
+                    <h5>Ayuda psicológica y <br>orientación</h5>
+                </div>
+                <div class="titulo">
+                    <h6 id="paso1">Asistencia u orientación</h6>
+                    <p class="pasos_content">¿Qué necesitas?</p>
+                </div>
+                <div class="titulo">
+                    <h6 id="paso2">Asistencia u orientación</h6>
+                    <p class="pasos_content">Información personal y de contacto.</p>
+                    <img src="./images/asistenciaPsico/Group 77.png" alt="" class="info_img">
+                </div>
+                <div class="titulo">
+                    <h6 id="paso3">Estado anímico</h6>
+                    <p class="pasos_content">Queremos saber como te sientes</p>
+                </div>
+                <div class="titulo">
+                    <h6 id="paso4">Confirmación de cita</h6>
+                    <p class="pasos_content">Confirma la información de tu cita de<br> 
+                        ayuda psicológica y orientación.</p>
+                </div>
             </div>
             <div class="datos">
                 <h5> Datos de la persona: </h5>
@@ -122,6 +142,10 @@
                             <input type="text" name="name" placeholder="Número telefónico" required>
                           </form>
                     </div>
+                    <div class="fin_inputs">
+                        <p id="RBody1">*Los campos obligatorios tienen un asterísco*</p>
+                        <button class="next_button"> <a href="./asistenciaPsicológica3.html">SEGUIR</a>   <img src="./images/asistenciaPsico/next.png" alt="" class="next"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,7 +153,7 @@
                 <section class="footer_info">
                     <div class="data">
                         <div class="data_logo">
-                            <img src="./images_proyectos/Logo_footer.png" alt="">
+                            <img src="./images/main/Logo_footer.png" alt="">
                         </div>
                         <div class="data_info">
                             <p>Oficina de Información<br>
@@ -176,7 +200,7 @@
                 </section>
                 <section class="social">
                     <div class="icons">
-                        <img src="./images_proyectos/Redes.png" alt="">
+                        <img src="./images/main/Redes.png" alt="">
                     </div>
                 </section>
             </footer>

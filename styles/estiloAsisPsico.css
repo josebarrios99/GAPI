@@ -94,12 +94,49 @@ p{
     padding-top: 13px;
     padding-bottom: 18px;
 }
-.titulo{
-    margin-top: 1px;
-    margin-left: 120px;
-    padding-bottom: 60px;
-    padding-top: 120px;
+
+.title{
+        padding-top: 100px;
+        padding-left: 120px;
+        padding-bottom: 40px;
 }
+
+/* --- Espacio para botones de Asistencia --- */
+.asistenciaMenu{
+    display: flex;
+    margin-left: 610px;
+}
+.asistenciaMenu a{
+    text-decoration: none;
+}
+.asistenciaMenu p{
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#ayudaButtonText{
+    padding-top: 0px;
+}
+.asistenciaMenu_button{
+    background-color: #B1B1B1;
+    border: none;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4px 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.asistenciaMenu_button:hover{
+    background-color: #3B939B;
+}
+
+/*--- fin de botones asistencia ---*/
 
 .proceso{
     width: 100%;
@@ -116,4 +153,59 @@ p{
     background-color: #3B939B;
     width: 243px;
     height: 52px;
+}
+
+/* --- Espacio para el Footer --- */
+footer{
+    background-color: #146971;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.footer_info{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 25px;
+}
+.data{
+    padding-right: 140px;
+}
+.data_logo{
+    padding-bottom: 30px;
+}
+.data_menu{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.data_menu a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    padding-bottom: 16px;
+}
+.data_legal{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.data_legal a{
+    float: left;
+    color: white;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    padding-bottom: 16px;
+}
+.data_contact p{
+    color: white;
+    padding-top: 20px;
+}
+.social{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.icons{
+    margin-top: 40px;
 }

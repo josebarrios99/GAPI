@@ -1,39 +1,37 @@
-
-header{
-  margin: 0;
-  padding: 0;
-  background-color: #3B939B;
-  z-index: 10;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width:100%;
+@font-face{
+    font-family: Helvetica;
+    src: url(/fonts/HELVETICA-LIGHT.TTF);
 }
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
 main {
-
+ display: grid;
+    width: 100%;
+  justify-content: center;
 }
 
-.containerBackground{
-background: #E0EAFC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+body {
+background: #ECECEC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);
+margin: 0;/* Chrome 10-25, Safari 5.1-6 */
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
+.h4Publicaciones{
     text-align: center;
-    font-size: 48px;
-    color: #5f5f5f;
+    font-weight: 300;
+    color: 
 }
 
 h2 {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 600;
+  font-family: 'Helvetica';
+  font-size: 20px;
+  color: #021f16;
+  line-height : 35px;
+  font-weight: 800;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #5f5f5f;
-  padding: 10px 0px 10px 10px;
+  padding: 10px 0px 0px 10px;
+margin: 0px;
 }
 
 h3{
@@ -42,21 +40,53 @@ h3{
     left: 150px;
 }
 
-h6{
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-    padding-left: 50px;
+.h6Publication {
+  font-size: 14px;
+  padding-left: 50px;
+}
+
+td {
+    font-family:  'Helvetica', sans-serif;
+    color:#ffff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.buttonAccesibilityUpper{
+    font-family:  'Helvetica';
+    color: #ffff;
+    border-color: rgba(255, 255, 255, 0);
+     background-color: rgba(255, 255, 255, 0);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buttonAccesibilityLower{
+     font-family:  'Helvetica';
+    color: #ffff;
+    border-color: rgba(255, 255, 255, 0);
+     background-color: rgba(255, 255, 255, 0);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.accesibilityTD{
+    padding-right: 100px;
+}
+
+.accesibility{
+    background-color: rgb(103, 191, 166);
+    justify-items: center; 
+    width: 100%;
+     height: 55px;
+     padding-left: 4%;
+     padding-right: 10%;
+     padding-top: 15px;
 }
 
 .contact {
-  font-family: 'Poppins', sans-serif;  
+  font-family:  'Helvetica', sans-serif;  
   font-weight: 600;
-
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 ul {
@@ -71,7 +101,7 @@ li {
   display: inline-block;
   width: 80px;
   color: #FFF;
-  font-family: 'Poppins', sans-serif;
+  font-family:  'Helvetica', sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -97,18 +127,15 @@ li:hover {
 }
 
 .banner{
-    z-index: 12;
-    grid-auto-flow: row;
-    display: grid;
-    grid-template: 450px / 900px 1fr;
     justify-items: first;
     justify-content: center;
     align-items: center;
-    background-color:#89a8a0;
 }
 
 .bannerImage{
-    height:450px;
+    padding-top: 70px;
+    height:400px;
+    width:100%;
 }
 
 .bannerText{
@@ -117,7 +144,7 @@ li:hover {
     width: 640px;
     height: 200px;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family:  'Helvetica', sans-serif;
     color:#ececec;
 }
 
@@ -129,56 +156,64 @@ li:hover {
 }
 
 .gridPublicaciones{
+ 
   grid-auto-flow: row;
   grid-auto-rows: 510px;
-  grid-auto-columns: 360px
+  grid-auto-columns: 360px;
   align-content: center;
   justify-items: center;
   justify-content: center;
-  align-items: stretch;
   display: grid;
-  grid-template-columns: repeat(4, 360px);
+  grid-template-columns: repeat(4, 275px);
   grid-template-rows: repeat(3, 510px);
   grid-gap: 40px;
   margin-top: 44px;
 }
 
 .largePublication {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 .largePublicationLeft {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
   grid-column-start: 3;
   grid-column-end: 5;
+    border-radius: 25px;
 }
 
 .imagePublication{
     height: 300px;
+    width: 100%;
 }
 
 .shortPublication {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 .seeMore {
-    position:relative;
-    top:50px;
-  font-family: 'Poppins', sans-serif;
+    position:static;
+  font-family:  'Helvetica', sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: right;
   color: #4a4a4a;
-  padding: 10px;
+  padding-left:400px;
+    padding-right: 10px;
+margin: 0;
+    
 }
 
 .seeMoreShortPublication{
-  position:relative;
-  top:24px;
+  position:static;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 300;
@@ -186,7 +221,9 @@ li:hover {
   letter-spacing: 0.1px;
   text-align: right;
   color: #4a4a4a;
-  padding: 10px;
+  padding-left:100px;
+    padding-right: 10px;
+    margin: 0;
 }
 
 .arrowToContinue{
@@ -199,78 +236,3 @@ li:hover {
     height: auto;
 }
 
-.logo {
-  align-content: center;
-  object-fit: contain;
-}
-
-.container {
-  min-width: 100%;
-  margin: 0 auto;
-}
-
-footer{
-    margin-top: 50px;
-    background-color: #5F5F5F;
-    height: auto;
-    padding-top: 50px;
-    padding-left: 120px;
-    padding-right: 120px;
-}
-.footer_info{
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: #ececec;
-    width: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    padding-bottom: 25px;
-}
-
-.data{
-    padding-right: 140px;
-}
-.data_logo{
-    padding-bottom: 30px;
-}
-.data_menu{
-    padding: 5px;
-    position: relative;
-    right: 10px;
-    padding-right: 50px;
-}
-.data_menu a{
-    position: relative;
-    left: 150px;
-    float: left;
-    color: white;
-    font-size: 16px;
-}
-.data_legal{
-    padding-right: 50px;
-}
-.data_legal a{
-    padding-bottom: 10px;
-    position: relative;
-    left: 150px;
-    float: left;
-    color: white;
-    font-size: 16px;
-}
-.data_contact p{
-    position: relative;
-    left: 150px;
-    color: white;
-    padding-top: 20px;
-}
-.social{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.icons{
-    margin-top: 40px;
-}
-.iconImage{
-    height: 50px;
-    object-fit: contain;
-}
