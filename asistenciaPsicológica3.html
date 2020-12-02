@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+    <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                                <td><input type="button" value="A+"></td>
+                                <td><input type="button" value="A-"></td>
+                                <td><label for="typeOfContrast_txt">Contraste</label>
+                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                        name="typeOfContrast_txt">
+                                    <datalist id="listOfVisualcontrast">
+                                        <option value="Color original"></option>
+                                        <option value="verdes y azules"></option>
+                                        <option value="rojos y naranjas"></option>
+                                    </datalist>
+                                </td>
+                                <td><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
     <header class="header">
         <div class="logo_container">
             <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
@@ -24,13 +46,13 @@
                 </div>
                 -->
                 <a href="">Inicio</a>
-                <a href="">Centro</a>
-                <a href="">Equipo</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
                 <a href="./proyectos.html">Proyectos</a>
-                <a href="">Publicaciones</a>
-                <a href="">Videos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
                 <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                <a href="">Asistencia</a>
+                <a href="./asisPsico.html">Asistencia</a>
             </div>
         </div>
     </header>
@@ -76,75 +98,37 @@
                 </div>
             </div>
             <div class="datos">
-                <h5> Datos de la persona: </h5>
+                <h5> Estado anímico </h5><br>
                 <div class="inputs_firstSection">
-                    <div class="inputs1">
-                        <form>
-                            <label for="username"><p id="RBody1">Nombre*</p></label><br>
-                            <input type="text" name="name"  placeholder="Nombre" required>
-                          </form>
-                          <form>
-                            <label for="username"><p id="RBody1">Apellidos*</p></label><br>
-                            <input type="text" name="lastname" placeholder="Apellidos" required>
-                          </form>
+                    <p id="RBody1">¿Cómo está su estado de ánimo?</p>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./images/asistenciaPsico/happy.png" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="./images/asistenciaPsico/neutral.png" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="./images/asistenciaPsico/sad.png" alt="">
+                        </div>
                     </div>
-                    <div class="inputs1">
-                        <form>
-                            <label for="username"><p id="RBody1">Lugar de expedición de documento*</p></label><br>
-                            <select name="name" required>
-                                <option disabled selected>Selecciona una ciudad</option>
-                            </select>
-                          </form>
-                          <form>
-                            <label for="username"><p id="RBody1">Fecha de expedición del documento*</p></label><br>
-                            <input type="text" name="name" placeholder="DD/MM/AA" required>
-                          </form>
+                    <p id="RBody1">¿Siente que su salud mental ha sido afectada por la pandemia COVID-19?</p>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./images/asistenciaPsico/si.png" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="./images/asistenciaPsico/no.png" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="./images/asistenciaPsico/talvez.png" alt="">
+                        </div>
                     </div>
-                    <div class="inputs1">
-                        <form>
-                            <label for="username"><p id="RBody1">Departamento de residencia*</p></label><br>
-                            <select name="name" required>
-                                <option disabled selected>Selecciona un departamento</option>
-                            </select>
-                          </form>
-                          <form>
-                            <label for="username"><p id="RBody1">Fecha de nacimiento*</p></label><br>
-                            <input type="text" name="name" placeholder="DD/MM/AA" required>
-                          </form>
-                    </div>
-                    <div class="inputs1">
-                        <form>
-                            <label for="username"><p id="RBody1">Ciudad de residencia*</p></label><br>
-                            <select name="name" required>
-                                <option disabled selected>Selecciona una ciudad</option>
-                            </select>
-                          </form>
-                          <form>
-                            <label for="username"><p id="RBody1">Celular*</p></label><br>
-                            <input type="text" name="name" placeholder="Número" required>
-                          </form>
-                    </div>
-                    <div class="inputs1">
-                          <form>
-                            <label for="username"><p id="RBody1">Dirección de residencia*</p></label><br>
-                            <input type="text" name="name" placeholder="Dirección de residencia" required>
-                          </form>
-                    </div>
-                    <div class="inputs1">
-                          <form>
-                            <label for="username"><p id="RBody1">Nombre persona de confianza*</p></label><br>
-                            <input type="text" name="name" placeholder="Nombre y apellido" required>
-                          </form>
-                    </div>
-                    <div class="inputs1">
-                          <form>
-                            <label for="username"><p id="RBody1">Celular persona de confianza*</p></label><br>
-                            <input type="text" name="name" placeholder="Número telefónico" required>
-                          </form>
-                    </div>
+                    <p id="RBody1">Indique brevemente el motivo de su consulta o necesidad:</p>
+                    <input type="text">
                     <div class="fin_inputs">
-                        <p id="RBody1">*Los campos obligatorios tienen un asterísco*</p>
-                        <button class="next_button"> <a href="./asistenciaPsicológica3.html">SEGUIR</a>   <img src="./images/asistenciaPsico/next.png" alt="" class="next"></button>
+                        <button class="back_button"> <img src="./images/asistenciaPsico/back.png" alt="" class="back"><a href="./asistenciaPsicológica2.html">RETROCEDER</a>   </button>
+                        <button class="next_button"> <a href="./asistenciaPsicológica4.html">SEGUIR</a>   <img src="./images/asistenciaPsico/next.png" alt="" class="next"></button>
                     </div>
                 </div>
             </div>

@@ -8,20 +8,42 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+    <form action="submission.html" method="POST">
+        <section class="visuaAdjust">
+            <table class="headerTable">
+                <tr>
+                    <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                    <td><input type="button" value="A+"></td>
+                    <td><input type="button" value="A-"></td>
+                    <td><label for="typeOfContrast_txt">Contraste</label>
+                        <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                            name="typeOfContrast_txt">
+                        <datalist id="listOfVisualcontrast">
+                            <option value="Color original"></option>
+                            <option value="verdes y azules"></option>
+                            <option value="rojos y naranjas"></option>
+                        </datalist>
+                    </td>
+                    <td><a href="" id="mapa">Mapa</a></td>
+                    <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                </tr>
+            </table>
+        </section>
+    </form>
     <header class="header">
         <div class="logo_container">
-            <img src="./images_proyectos/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
                 <a href="">Inicio</a>
-                <a href="">Centro</a>
-                <a href="">Equipo</a>
-                <a href="">Proyectos</a>
-                <a href="">Publicaciones</a>
-                <a href="">Videos</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
                 <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                <a href="">Asistencia</a>
+                <a href="./asisPsico.html">Asistencia</a>
             </div>
         </div>
     </header>
@@ -37,19 +59,19 @@
             </div>
             <div class="projects">
                 <div class="project1">
-                    <img src="./images_proyectos/2018.png" alt="">
+                    <img src="./images/proyectos/2018.png" alt="">
                     <h4>Año 2018</h4>
                     <div class="explorar">
                         <p id="RBody1">EXPLORAR</p>
-                        <img src="./images_proyectos/arrow.png" alt="">
+                        <img src="./images/proyectos/arrow.png" alt="">
                     </div>
                 </div>
                 <div class="project2">
-                    <img src="./images_proyectos/2019.png" alt="">
+                    <img src="./images/proyectos/2019.png" alt="">
                     <h4>Año 2019</h4>
                     <div class="explorar">
                         <p id="RBody1">EXPLORAR</p>
-                        <img src="./images_proyectos/arrow.png" alt="">
+                        <img src="./images/proyectos/arrow.png" alt="">
                     </div>
                 </div>
             </div>
@@ -57,7 +79,7 @@
                 <section class="footer_info">
                     <div class="data">
                         <div class="data_logo">
-                            <img src="./images_proyectos/Logo_footer.png" alt="">
+                            <img src="./images/main/Logo_footer.png" alt="">
                         </div>
                         <div class="data_info">
                             <p>Oficina de Información<br>
@@ -104,7 +126,7 @@
                 </section>
                 <section class="social">
                     <div class="icons">
-                        <img src="./images_proyectos/Redes.png" alt="">
+                        <img src="./images/main/Redes.png" alt="">
                     </div>
                 </section>
             </footer>

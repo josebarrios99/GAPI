@@ -156,7 +156,7 @@ input[type=text], select {
     border: none;
     color: white;
     padding: 10px 40px 10px 40px;
-    margin-left: 30px;
+    margin-left: 160px;
     text-align: left;
     text-decoration: none;
     display: flex;
@@ -177,3 +177,35 @@ input[type=text], select {
       padding-top: 4px;
       padding-left: 10px;
   }
+  .back_button{
+    background-color: #F07349;
+    border: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin-left: 0px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .back_button a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+}
+.back{
+    padding-top: 4px;
+}
+.cards{
+    display: flex;
+    margin-top: 100px;
+}
+.card{
+    padding-right: 30px;
+}
