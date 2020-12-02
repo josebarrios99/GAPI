@@ -100,6 +100,31 @@ p{
         padding-bottom: 40px;
 }
 
+/* --- Espacio para cards ---*/
+
+.mainBox{
+    display: flex;
+    
+}
+.containerBtns{
+    display: flex;
+}
+.btnCard{
+    width: 279px;
+    height: 234px;
+    background: white;
+    border-color: black;
+    overflow: hidden;
+    
+}
+.infoCard{
+    text-align: center;
+    width: 279px;
+    height: 117px;
+    border-radius: 10px;
+    background: #3B939B;
+}
+
 /* --- Espacio para el Footer --- */
 footer{
     background-color: #146971;
