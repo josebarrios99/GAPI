@@ -1,12 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 main{
     justify-items: first;
     justify-content: center;
     align-items: center;
+    padding: 0,0,0,0;
+    margin: 0;
 }
 .banner{
     justify-items: first;
     justify-content: center;
     align-items: center;
+     width: 100%;
 }
 
 .bannerImage{
@@ -97,7 +104,7 @@ main{
     width: 100%;
     height: 100%;
     background-color: #ffff;
-     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0);
     border-radius: 25px;
 }
 
@@ -135,5 +142,107 @@ main{
 .arrowToContinue{
     position: relative;
     top:9px;
-    padding-left: 10px;x
+    padding-left: 10px;
 }
+
+.testimonios {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundTestimonios{
+    position: absolute;
+    top: 2398;
+    z-index: -1;
+    width: 100%;
+}
+
+#h4Testimonio{
+    color:#ffff;
+    position: relative;
+    z-index: 2;
+    margin-top: 56;
+}
+
+#pTestimonio{
+    padding-top: 60;
+    text-align: center;
+    padding-left: 250;
+    padding-right: 250;
+    color:#454545;
+    z-index: 2;
+}
+
+.testimonioPerson{
+    text-align: center;
+    padding-top: 50;
+
+}
+
+.imgTestimonio{
+    position: relative;
+    top:30;
+    padding-right: 10;
+}
+
+#h6Testimonio{
+    margin-bottom: 8;
+}
+
+#h6Subtitle{
+    font-family: 'Helvetica';
+    font-weight: 200;
+    font-size: 14;
+    margin-top: 0;
+    padding-left: 50;
+}
+
+.buttons{
+    padding-top: 20;
+    text-align: center;
+}
+
+.buttons button{
+    z-index: 2;
+    width:16px;
+    height:16px;
+    margin: 5px;
+    padding:10px;
+    background-color: rgba(255,255,255,0);
+    border-color: rgba(255,255,255,0.5);
+    border-width: 4;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.buttons button:hover{
+    background-color: rgba(255,255,255,100);
+}
+
+.noticias{
+    
+}
+
+#h4Noticias{
+    padding-top: 56;
+    font-size: 46px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+}
+
+.noticiasGrid{
+     display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: 359px;
+    grid-gap: 31px;
+}
+.noticia{
+    
+}
+
