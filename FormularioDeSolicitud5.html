@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="./styles/proyectos.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
+    <link rel="stylesheet" href="./styles/styleQuestionariePage5.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="firstHeader" id="firstHeaderQuestionarie">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="" alt="icono de la accesibilidad"></td>
+                                <td><input type="button" value="A+"></td>
+                                <td><input type="button" value="A-"></td>
+                                <td><label for="typeOfContrast_txt">Contraste</label>
+                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                        name="typeOfContrast_txt">
+                                    <datalist id="listOfVisualcontrast">
+                                        <option value="Color original"></option>
+                                        <option value="verdes y azules"></option>
+                                        <option value="rojos y naranjas"></option>
+                                    </datalist>
+                                </td>
+                                <td><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>
+        </div>
+
+
+        <div class="menu">
+            <table>
+                <tr>
+                    <td><a href="" id="linkInicio"><img src="images\main\Logo.png" alt="logo del GAPI"></a></td>
+                    <td> <a href="" id="linkInicio">Inicio</a></td>
+                    <td><a href="" id="linkCentro">Centro</a></td>
+                    <td><a href="" id="linkEquipos">Equipos</a></td>
+                    <td><a href="" id="linkPublicaciones">Mapa</a></td>
+                    <td><a href="" id="linkVideos">Videos</a></td>
+                    <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
+                    <td><a href="" id="linkAsistencia">Asistencia</a></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <section class="estasAqui">
+        <p>Estás aquí: Asistencia / Solicitar cita</p>
+    </section>
+    <br>
+    <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
+        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
+        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
+        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+    </div>
+
+
+    <br>
+
+
+
+    <div class="indice" id="indice-questionarie">
+        <h2>Formulario de citas</h2>
+        <ol>
+            <li>
+                <h3>Cuestionario sobre diversidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+            </li>
+            <li>
+                <h3>Datos personales</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <img src="" alt="imagen de datos personales">
+            </li>
+            <li>
+                <h3>Informacion laboral</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+            </li>
+            <li>
+                <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+        </ol>
+    </div>
+    <div class="questions" id="questionsSection">
+
+        <table>
+            <form action="answerQuestionarieSection5" method="POST">
+                <h2>Datos del acompañante</h2>
+                <br>
+                <tr>
+                    <td>
+                        <section class="CompanionName">
+                            <label for="CompanionName">Nombre</label>
+                            <br>
+                            <input type="text" name="CompanionName" id="CompanionName" required>
+                        </section>
+                        <br>
+                        <section class="CompaniontypeOfDocument">
+                            <label for="CompaniontypeOfDocument_txt">Tipo de documento</label>
+                            <br>
+                            <input list="documents" id="CompaniontypeOfDocument_txt" name="CompaniontypeOfDocument_txt">
+                            <datalist id="documents">
+                                <option value="Targeta de identidad"></option>
+                                <option value="C.C"></option>
+                                <option value="etc"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <section class="CompanionExpeditionDocument">
+                            <label for="CompanionExpeditionOfDocument_txt">Lugar de expedicion del documento</label>
+                            <br>
+                            <input list="citiesList" id="CompanionExpeditionOfDocument_txt"
+                                name="CompanionExpeditionOfDocument_txt">
+                            <datalist id="citiesList">
+                                <option value="Cali"></option>
+                                <option value="Bogotá"></option>
+                                <option value="Cartagena"></option>
+                                <option value="Pasto"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <section class="CompanionBirthDate">
+                            <label for="CompanionBirthDate">Fecha de nacimiento</label>
+                            <br>
+                            <input type="date" name="CompanionBirthDate" id="CompanionBirthDate" required>
+                        </section>
+                        <br>
+                        <section class="CompanionDepartmen">
+                            <label for="CompanionDepartment_txt">Departamento de residencia</label>
+                            <br>
+                            <input list="departmentList" id="CompanionDepartment_txt" name="CompanionDepartment_txt">
+                            <datalist id="departmentList">
+                                <option value="Valle del Cauca"></option>
+                                <option value="Cauca"></option>
+                                <option value="Tolima"></option>
+                            </datalist>
+                        </section>
+                        <br>
+
+                    </td>
+                    <td>
+                        <section class="Companionlastname">
+                            <label for="CompanionLastName">Apellidos</label>
+                            <br>
+                            <input type="text" name="CompanionLastName" id="CompanionLastName" required>
+                        </section>
+                        <br>
+                        <section class="CompanionNumberOfDocument">
+                            <label for="CompanionNumberOfDocument">¿Número de documento de identidad?</label>
+                            <br>
+                            <input type="text" name="CompanionNumberOfDocument" id="CompanionNumberOfDocument" required>
+                        </section>
+                        <br>
+                        <section class="CompanionDateOfDocument">
+                            <label for="CompanionDateOfDocument">Fecha de expedición del documento</label>
+                            <br>
+                            <input type="date" name="CompanionDateOfDocument" id="CompanionDateOfDocument" required>
+                        </section>
+                        <br>
+                        <section class="CompanionCityOfResidence">
+                            <label for="CompanionCityOfResidence_txt">Ciudad de residencia</label>
+                            <br>
+                            <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+                        </section>
+                        <br>
+                        <section class="Cell2">
+                            <label for="cell2">Teléfono de persona de confianza</label>
+                            <br>
+                            <input type="tel" name="cell2" id="cell2" maxlength="10">
+                        </section>
+                        <br>
+                    </td>
+                </tr>
+        </table>
+        <table >
+            <div class="questions2">
+                <section class="CompanionDirection">
+                    <label for="CompanionDirection">Direccion de residencia</label>
+                    <br>
+                    <input type="text" name="CompanionDirection" id="CompanionDirection" required>
+                </section>
+                <br>
+                <section class="CompanionAndUserRelationList">
+                    <label for="CompanionAndUserRelationList">Relación con el titular del acto jurídico</label>
+                    <br>
+                    <input list="relationList" name="CompanionAndUserRelationList" id="CompanionAndUserRelationList"
+                        required>
+                    <datalist id="relationList">
+                        <option value="hermanos"></option>
+                        <option value="Padres"></option>
+                        <option value="pareja"></option>
+                    </datalist>
+                </section>
+                <br>
+                <section class="CompanionAndUserRelation">
+                    <label for="CompanionAndUserRelation">Si ninguna de las opciones anteriores le corresponde,
+                        escríba
+                        aquí su relación con el titular del caso</label>
+                    <br>
+                    <input type="text" name="CompanionAndUserRelation" id="CompanionAndUserRelation" required>
+                </section>
+            </div>
+            </form>
+        </table>
+        <div class="changePage">
+            <table>
+                <tr>
+                    <td>
+                        <a href="FormularioDeSolicitud4.html" id="linkFirstPageQuestionarie"><img src=""
+                                alt="Pagina anterior"></a>
+                    </td>
+                    <td>
+                        <a href="formularioDeSolicitud6.html" id="linkThirdPageQuestionarie"><img src=""
+                                alt="Siguiente pagina"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <section class="footer_info">
+            <div class="data">
+                <div class="data_logo">
+                    <img src="./images_proyectos/Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
+
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
+            </div>
+        </section>
+        <section class="social">
+            <div class="icons">
+                <img src="images\main\Redes.png" alt="iconos social media">
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="./styles/proyectos.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
+    <link rel="stylesheet" href="./styles/styleQuestionariePage4.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="firstHeader" id="firstHeaderQuestionarie">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                                <td><input type="button" value="A+"></td>
+                                <td><input type="button" value="A-"></td>
+                                <td><label for="typeOfContrast_txt">Contraste</label>
+                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                        name="typeOfContrast_txt">
+                                    <datalist id="listOfVisualcontrast">
+                                        <option value="Color original"></option>
+                                        <option value="verdes y azules"></option>
+                                        <option value="rojos y naranjas"></option>
+                                    </datalist>
+                                </td>
+                                <td><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>
+        </div>
+
+
+        <div class="menu">
+            <table>
+                <tr>
+                    <td><a href="" id="linkInicio"><img src="images\main\Logo.png" alt="logo del GAPI"></a></td>
+                    <td> <a href="" id="linkInicio">Inicio</a></td>
+                    <td><a href="" id="linkCentro">Centro</a></td>
+                    <td><a href="" id="linkEquipos">Equipos</a></td>
+                    <td><a href="" id="linkPublicaciones">Mapa</a></td>
+                    <td><a href="" id="linkVideos">Videos</a></td>
+                    <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
+                    <td><a href="" id="linkAsistencia">Asistencia</a></td>
+                </tr>
+            </table>
+        </div>
+
+    </header>
+    <section class="estasAqui">
+        <p>Estás aquí: Asistencia / Solicitar cita</p>
+    </section>
+    <br>
+
+    <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
+        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
+        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
+        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+    </div>
+
+    <br>
+    <div class="indice" id="indice-questionarie">
+        <h2>FProceso juridico a realizar</h2>
+        <ol>
+            <li>
+                <h3>Cuestionario sobre diversidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+            </li>
+            <li>
+                <h3>Datos personales</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <li>
+                <h3>Informacion laboral</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <img src="" alt="imagen de datos laborales">
+            </li>
+            <li>
+                <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+        </ol>
+    </div>
+    <div class="questions" id="questionsSection">
+
+        <table>
+            <form action="answerQuestionarieSection" method="POST">
+                <tr>
+                    <td>
+                        <section class="typeOfLegalProces">
+                            <span>¿En qué área del derecho está tu consulta? Seleccina una</span>
+                            <br>
+
+                            <label for="laboral">
+                                <h1>Laboral</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="tipeOfProcess" id="laboral" value="yes">
+
+                            <label for="familar">
+                                <h1>Familiar</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="tipeOfProcess" id="familar" value="yes">
+                            <br>
+
+                            <label for="penal">
+                                <h1>Penal</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="tipeOfProcess" id="penal" value="yes">
+
+                            <label for="administrativo">
+                                <h1>Administrativo</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="tipeOfProcess" id="administrativo" value="yes">
+                            <br>
+                            <label for="diferente">
+                                <h1>OTRA</h1>
+                            </label>
+                            <input type="text" name="diferente" id="diferente">
+                            <label for="desconoce">
+                                <h1>No se</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="tipeOfProcess" id="desconoce" value="yes">
+                        </section>
+                        <br>
+
+                        <section class="reasonConsult">
+                            <span>Indique brevemente el motivo de su consulta o necesidad</span>
+                            <br>
+                            <textarea name="reasonConsult" id="reasonConsult" cols="80" rows="5" required></textarea>
+                        </section>
+                    </td>
+                </tr>
+            </form>
+            <br>
+        </table>
+        <div class="changePage">
+            <table>
+                <tr>
+                    <td>
+                        <a href="FormularioDeSolicitud3.html" id="linkSecondPageQuestionarie"><img src=""
+                                alt="pagina anterior"></a>
+                    </td>
+                    <td>
+                        <a href="FormularioDeSolicitud5.html" id="linkFouthPageQuestionarie"><img src=""
+                                alt="Siguiente pagina"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <section class="footer_info">
+            <div class="data">
+                <div class="data_logo">
+                    <img src="./images_proyectos/Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
+
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
+            </div>
+        </section>
+        <section class="social">
+            <div class="icons">
+                <img src="images\main\Redes.png" alt="iconos social media">
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
