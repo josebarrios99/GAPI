@@ -1,0 +1,48 @@
+.consulta {
+    flex-direction: column;
+    text-align: left;
+}
+
+.form_main div p {
+    margin-left: 0px;
+}
+
+.containerFechaCita {
+    flex-direction: column;
+    text-align: left;
+    text-align: center;
+    background-color: #FCDF8A;
+    margin-bottom: 43px;
+}
+
+.containerDatosConfirmacion {
+    flex-direction: column;
+}
+
+.containerDatosConfirmacion p {
+    margin: 20px;
+}
+
+input{
+
+    margin-top: 56px;
+    
+}
+input:checked{
+
+    background-color: #3B939B;
+
+}
+label{
+    font-family: Helvetica-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btns{
+
+    justify-content: space-between;
+    margin-top: 152px;
+}

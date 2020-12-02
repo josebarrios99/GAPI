@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/formularioDesolicitud6.css">
+    <link rel="stylesheet" href="./styles/formularioDeSolicitud7.css">
 </head>
 
 <body>
@@ -43,14 +44,15 @@
 
     <article class="form">
         <section class="form_aside">
-            <ol>
+            <ul>
                 <h5>Formulario de citas</h5>
                 <li>
                     <div>
                         <h6>Cuestionario sobre diversidad</h6>
                     </div>
 
-                    
+
+
                 </li>
                 <li>
                     <div>
@@ -58,14 +60,13 @@
                         <h6>Datos personales</h6>
                     </div>
 
+
                 </li>
                 <li>
                     <div>
                         <h6>Informacion laboral</h6>
                     </div>
 
-                   
-                    
                 </li>
                 <li>
                     <div>
@@ -74,9 +75,7 @@
 
                     </div>
 
-                    
                 </li>
-
                 <li>
                     <div>
 
@@ -84,7 +83,7 @@
 
                     </div>
 
-                    
+
                 </li>
 
                 <li>
@@ -93,9 +92,6 @@
                         <h6>Fecha y hora de su cita</h6>
 
                     </div>
-                    
-                    <p id="RBody1">Elige la fecha y hora para generar tu consulta con GAPI.</p>
-                    <img src="images/formularioSolicitud/imagenFormulario6.png" alt="imagen del cuestionario">
 
                 </li>
 
@@ -103,62 +99,59 @@
                     <div>
 
                         <h6>Confirmacion</h6>
-
                     </div>
-
-                    
+                    <p id="RBody1">Por último, queda confirmar tu agendamiento de cita y algunos datos relevantes</p>
+                    <img src="images/formularioSolicitud/imagenFormulario7.png" alt="imagen del cuestionario">
                 </li>
-
-
-            </ol>
+            </ul>
         </section>
 
         <section class="form_main">
             <form>
-                <h5>Fecha y hora de su cita</h5>
+                <h5>Confirmación de cita</h5>
 
-                <p>Escoja una fecha</p>
-                <input type="date" name="date" id="dateApointment">
-
-                <p>Horarios disponibles</p>
-                <div class="row">
-                    <img src="./images/formularioSolicitud/mañana.svg" alt="">
-                    <p>En la mañana</p>
+                <p>Información personal</p>
+                <div class="containerDatosConfirmacion">
+                    <p id="textNombreConfirmacion">Nombre:</p>
+                    <p id="textApellidoConfirmacion">Apellido:</p>
+                    <p id="textEdadConfirmacion">Edad:</p>
+                    <p id="textCedulaConfirmacion">Cédula:</p>
+                    <p id="textTelefonoConfirmacion">Número Telefónico:</p>
                 </div>
 
-                <div class="row morningButtons">
+                <div class="containerFechaCita">
 
-                    <button class="btn-select btn-selected">9:30</button>
-                    <button class="btn-select">9:30</button>
-                    <button class="btn-select">9:30</button>
+                    <h6>Fecha y hora de la cita</h6>
 
+                    <h6 id="textFechayHoraCita">3.30 pm jueves 18 de Enero del 2020</h6>
 
                 </div>
 
-                <div class="row">
-                    <img src="./images/formularioSolicitud/tarde.svg" alt="">
-                    <p>En la tarde</p>
+                <div class="consulta">
+
+                    <h6>Consulta</h6>
+                    <p>(área de proceso jurídico)</p>
+
                 </div>
 
-                <div class="row afternonButtons">
-                    <button class="btn-select">3:45</button>
-                    <button class="btn-select">3:45</button>
-                    <button class="btn-select">3:45</button>
-                </div>
+                <input type="checkbox" name="acepto" id="checkTerminos y condiciones">
+                <label for="acepto">Acepto y autorizo el tratamiento de datos personales.</label>
+
+
 
                 <div class="btns">
 
 
                     <a href="#" id="linkSecondPageQuestionarie">
 
-                        <button class="btn btnSecondary"> <img src="./images/formularioSolicitud/flechaAtras.svg"
+                        <button class="btn btnSecondary"><img src="./images/formularioSolicitud/flechaAtras.svg"
                                 alt="">Retroceder</button>
 
                     </a>
                     <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie">
 
-                        <button class="btn btnMain"> Seguir <img src="./images/formularioSolicitud/flechaAdelante.svg"
-                                alt=""></button>
+                        <button class="btn btnMain"><img src="./images/formularioSolicitud/check.svg" alt="">Confirmar
+                            Cita</button>
                     </a>
                 </div>
 

@@ -81,15 +81,19 @@ button:focus{
     padding: 0px 10px;
 }
 
+
 .btnMain {
     background-color: #3B939B;
-    text-align: right;
+    text-align: center;
+    
 }
 
 .btnSecondary {
-    background-color: #76C8CF;
-    text-align: left;
+    background-color: #F07349;
+    text-align: center;
+    
 }
+
 .btn-select{
 
     width: 136px;
