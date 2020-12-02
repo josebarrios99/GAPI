@@ -69,7 +69,7 @@ footer{
 /*seccion de encabezados*/
 
 .firstHeader{
-    background-color: rgb(103, 191, 166);
+    background-color: #5A2A97;
      width: 84%;
      height: 60px;
      padding-left: 8%;
@@ -85,19 +85,20 @@ footer{
     height: 70px;
     padding-left: 8%;
     padding-right: 8%;
-     padding-top: 10px;
+    padding-top: 10px;
+    border: 1px grey;
     
 }
 /*fin seccion de encabezados*/
-
+/* seccion debajo del encabezados*/
 table{
     width: 100%;
 
 }
 .estasAqui{
     margin-left: 8%;
-
 }
+/* fin seccion debajo del encabezados*/
 
 input {
     width: 70%;
@@ -107,6 +108,6 @@ input {
 input[type=radio]{
     width: 20%;
  }
- 
+
 
 
