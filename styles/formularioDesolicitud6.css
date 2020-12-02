@@ -115,4 +115,114 @@ button:focus{
 
     background-color:#76C8CF;
     color: white;
-}    
+}
+#paso1:before {
+    content:"1";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso1{
+    color: #5F5F5F;
+}
+#paso2:before {
+    content:"2";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+    
+}
+#paso2{
+    color: #5F5F5F;
+}
+#paso3:before {
+    content:"3";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso3{
+    color: #5F5F5F;
+}
+#paso4:before {
+    content:"4";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+
+#paso4{
+    color: #5F5F5F;
+}
+
+#paso5:before {
+    content:"5";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso5{
+
+    color: #5F5F5F;
+}
+
+#paso6:before {
+    content:"6";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #146971;
+    display:inline-block;
+}
+#paso6{
+
+    color: #146971;
+}
+
+#paso7:before {
+    content:"7";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #5F5F5F;
+    display:inline-block;
+}
+#paso7{
+
+    color:  #5F5F5F;
+}
+.textoFechayHora{
+
+    color:#146971 ;
+}
