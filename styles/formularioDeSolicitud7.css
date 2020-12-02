@@ -1,0 +1,164 @@
+.consulta {
+    flex-direction: column;
+    text-align: left;
+}
+
+.form_main div p {
+    margin-left: 0px;
+}
+
+.check{
+
+    padding-right: 10px;
+
+}
+.containerFechaCita {
+    flex-direction: column;
+    text-align: left;
+    text-align: center;
+    background-color: #FCDF8A;
+    margin-bottom: 43px;
+}
+
+.containerDatosConfirmacion {
+    flex-direction: column;
+}
+
+.containerDatosConfirmacion p {
+    margin: 20px;
+}
+
+input{
+
+    margin-top: 56px;
+    
+}
+input:checked{
+
+    background-color: #3B939B;
+
+}
+label{
+    font-family: Helvetica-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btns{
+
+    justify-content: space-between;
+    margin-top: 152px;
+}
+
+#paso1:before {
+    content:"1";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso1{
+    color: #5F5F5F;
+}
+#paso2:before {
+    content:"2";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+    
+}
+#paso2{
+    color: #5F5F5F;
+}
+#paso3:before {
+    content:"3";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso3{
+    color: #5F5F5F;
+}
+#paso4:before {
+    content:"4";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+
+#paso4{
+    color: #5F5F5F;
+}
+
+#paso5:before {
+    content:"5";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso5{
+
+    color: #5F5F5F;
+}
+
+#paso6:before {
+    content:"6";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #B1B1B1;
+    display:inline-block;
+}
+#paso6{
+
+    color: #5F5F5F;
+}
+
+#paso7:before {
+    content:"7";
+    text-align: center;
+    color: white;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius:50%;
+    background: #146971;
+    display:inline-block;
+}
+#paso7{
+
+    color:  #146971;
+}
+.textoConfirmacion{
+
+    color:#146971 ;
+}

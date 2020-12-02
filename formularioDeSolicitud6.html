@@ -5,194 +5,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/asistenciaPsicológica2.css">
+    <link rel="stylesheet" href="./styles/formularioDesolicitud6.css">
+
 </head>
 
 <body>
-    <div id="firstHeaderQuestionarie">
-        <form action="submission.html" method="POST">
-            <section class="visuaAdjust">
-                <table>
-                    <tr>
-                        <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
-                        <td><input type="button" value="A+"></td>
-                        <td><input type="button" value="A-"></td>
-                        <td><label for="typeOfContrast_txt">Contraste</label>
-                            <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
-                            <datalist id="listOfVisualcontrast">
-                                <option value="Color original"></option>
-                                <option value="verdes y azules"></option>
-                                <option value="rojos y naranjas"></option>
-                            </datalist>
-                        </td>
-                        <td><a href="" id="mapa">Mapa</a></td>
-                        <td><img src="" alt="simbolo del traductor"> Traductor</td>
-                    </tr>
-                </table>
-            </section>
-        </form>
+    <div class="accesibility">
+        <center>
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table class="headerTable">
+                        <tr>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                       name="typeOfContrast_txt">
+                                <datalist id="listOfVisualcontrast">
+                                    <option value="Color original"></option>
+                                    <option value="verdes y azules"></option>
+                                    <option value="rojos y naranjas"></option>
+                                </datalist>
+                            </td>
+                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                            <td id="tdAccesibility">Traductor</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </center>  
     </div>
+    <header class="header">
+        <div class="logo_container">
+            <img src="./images_proyectos/Logo.png" alt="Logo del GAPI" id="logo">
+        </div>
+        <div class="menu">
+            <div class="topNav">
+                <!--
 
+                    <div class="inicio">
+                    <a href="">Inicio</a>
+                    <span class="inicio_gif">
+                        <img src="./giphy.gif" alt="">
+                    </span>
+                </div>
+                -->
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+        </div>
+    </header>
     <hr>
-
-    <div id="secondHeaderQuestionarie">
-        <table>
-            <tr>
-                <td><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></td>
-                <td> <a href="" id="linkInicio">Inicio</a></td>
-                <td><a href="" id="linkCentro">Centro</a></td>
-                <td><a href="" id="linkEquipos">Equipos</a></td>
-                <td><a href="" id="linkPublicaciones">Mapa</a></td>
-                <td><a href="" id="linkVideos">Videos</a></td>
-                <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
-                <td><a href="" id="linkAsistencia">Asistencia</a></td>
-            </tr>
-        </table>
+    <div class="asistenciaMenu">
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+            <p>Solicitar cita</p>
+        </button></a>
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+        </button></a>
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/preguntas.png" class="solicitarCita_img">
+            <p>Preguntas frecuentes</p>
+        </button></a>
     </div>
-    <hr>
     <p>Estás aquí: Asistencia / Solicitar cita</p>
 
-    <br>
+    
+    
 
-    <div id="optionsBelowHeadersQuestionarie">
-        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
-        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
-        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
-    </div>
+    <article class="form">
+        <section class="form_aside">
+            <ol>
+                <h5>Formulario de citas</h5>
+                <li>
+                    <div>
+                        <h6 id="paso1">Cuestionario sobre diversidad</h6>
+                    </div>
 
-    <br>
+                    
+                </li>
+                <li>
+                    <div>
 
-    <div id="questionsSection">
-        <table>
-            <tr>
-                <td>
-                    <ol>
-                        <li>
-                            <h3>Cuestionario sobre diversidad</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <img src="" alt="imagen del cuestionario">
-                        </li>
-                        <li>
-                            <h3>Datos personales</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        </li>
-                        <li>
-                            <h3>Informacion laboral</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        </li>
-                        <li>
-                            <h3>Proceso juridico a realizar</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        </li>
-                    </ol>
-                </td>
+                        <h6 id="paso2">Datos personales</h6>
+                    </div>
 
-                <td>
-                    <form action="answerQuestionarieSection1" method="POST">
-                        <section class="haveDiversity">
-                            <span>Escoja una fecha</span>
-                            <br>
-                            <input type="date" name="date">
-                        </section>
-                        <br>
-                        <section class="availableDates">
-                            <span>Horarios disponibles</span>
-                            <p>En la mañana</p>
-                            
-                            <input type="checkbox" id="date1" name="date1" value="9:30am">
-                            <label for="date1"> 9:30am</label><br>
-                            <input type="checkbox" id="date2" name="date2" value="9:30am">
-                            <label for="date2"> 11:00am</label><br>
-                            <input type="checkbox" id="date3" name="date3" value="9:30am">
-                            <label for="date3"> 11:30am</label><br>
+                </li>
+                <li>
+                    <div>
+                        <h6 id="paso3" >Informacion laboral</h6>
+                    </div>
 
-                            <span>Horarios disponibles</span>
-                            <p>En la mañana</p>
-                            
-                            <input type="checkbox" id="date4" name="date4" value="9:30am">
-                            <label for="date4"> 9:30am</label><br>
-                            <input type="checkbox" id="date5" name="date5" value="9:30am">
-                            <label for="date4"> 11:00am</label><br>
-                            <input type="checkbox" id="date6" name="date6" value="9:30am">
-                            <label for="date6"> 11:30am</label><br>
+                   
+                    
+                </li>
+                <li>
+                    <div>
 
-                        </section>
-                        
-                    </form>
-                    <a href="" id="linkSecondPageQuestionarie"><img src="" alt="Pagina anterior"></a>
-                    <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
-                </td>
-            </tr>
-        </table>
-    </div>
+                        <h6 id="paso4">Proceso juridico a realizar</h6>
+
+                    </div>
+
+                    
+                </li>
+
+                <li>
+                    <div>
+
+                        <h6 id="paso5">Datos del acompañante</h6>
+
+                    </div>
+
+                    
+                </li>
+
+                <li>
+                    <div>
+
+                        <h6 id="paso6">Fecha y hora de su cita</h6>
+
+                    </div>
+                    
+                    <p class="textoFechayHora"> Elige la fecha y hora para generar tu consulta con GAPI.</p>
+                    <img src="images/formularioSolicitud/imagenFormulario6.png" alt="imagen del cuestionario">
+
+                </li>
+
+                <li>
+                    <div>
+
+                        <h6 id="paso7">Confirmacion</h6>
+
+                    </div>
+
+                    
+                </li>
+
+
+            </ol>
+        </section>
+
+        <section class="form_main">
+            <form>
+                <h5>Fecha y hora de su cita</h5>
+
+                <p>Escoja una fecha</p>
+                <input type="date" name="date" id="dateApointment">
+
+                <p>Horarios disponibles</p>
+                <div class="row">
+                    <img src="./images/formularioSolicitud/mañana.svg" alt="">
+                    <p>En la mañana</p>
+                </div>
+
+                <div class="row morningButtons">
+
+                    <button class="btn-select btn-selected">9:30</button>
+                    <button class="btn-select">9:30</button>
+                    <button class="btn-select">9:30</button>
+
+
+                </div>
+
+                <div class="row">
+                    <img src="./images/formularioSolicitud/tarde.svg" alt="">
+                    <p>En la tarde</p>
+                </div>
+
+                <div class="row afternonButtons">
+                    <button class="btn-select">3:45</button>
+                    <button class="btn-select">3:45</button>
+                    <button class="btn-select">3:45</button>
+                </div>
+
+                <div class="btns">
+
+
+                    <a href="#" id="linkSecondPageQuestionarie">
+
+                        <button class="btn btnSecondary"> <img src="./images/formularioSolicitud/flechaAtras.svg"
+                                alt="">Retroceder</button>
+
+                    </a>
+                    <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie">
+
+                        <button class="btn btnMain"> Seguir <img src="./images/formularioSolicitud/flechaAdelante.svg"
+                                alt=""></button>
+                    </a>
+                </div>
+
+            </form>
+
+
+    </article>
 
     <footer>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
-                        <th>Menu</th>
-                        <th>Legal</th>
-                        <th>Contactanos</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Oficina de Información </li>
-                            <li>Teléfono: 8821093 Ext: 112 - 119</li>
-                            <li>Dirección: Carrera 9 No. 9-49</li>
-                            <li>Segundo piso </li>
-                            <li>Horario de atención al público </li>
-                            <li>2:30 p.m - 5:30 p.m.</li>
-                        </ul>
-                    </td>
+        <section class="footer_info">
+            <div class="data">
+                <div class="data_logo">
+                    <img src="./images_proyectos/Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
 
-                    <td>
-                        <ul>
-                            <li><a href="" id="linkInicio">Inicio</a></li>
-                            <li><a href="" id="linkCentro">Centro</a></li>
-                            <li><a href="" id="linkEquipos">Equipos</a></li>
-                            <li><a href="" id="linkProyectos">Proyectos</a></li>
-                            <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
-                            <li><a href="" id="linkVideos">Videos</a></li>
-                            <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
-                            <li><a href="" id="linkAsistencia">Asistencia</a></li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
-                            <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
-                            <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
-                            <li><a href="" id="linkStatus">Status</a></li>
-                        </ul>
-                    </td>
-
-                    <td>
-                        <p>Jorge Andrés Illera Cajiao <br>
-                            Director del GAPI<br>
-                            Correo: jaillera@icesi.edu.co Paula Andrea</p>
-                        <br>
-                        <p> Cerón Arboleda<br>
-                            Coordinadora del GAPI<br>
-                            Correo: paula.ceron@correo.icesi.edu.co</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <hr>
-        <div id="socialMediaIcons">
-            <center>
-                <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
-                <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
-                <a href="" id="linkIN"><img src="" alt="link IN"></a>
-                <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
-                <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
-            </center>
-        </div>
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
+            </div>
+        </section>
+        <section class="social">
+            <div class="icons">
+                <img src="./images_proyectos/Redes.png" alt="">
+            </div>
+        </section>
     </footer>
+
+
 </body>
 
 </html>
