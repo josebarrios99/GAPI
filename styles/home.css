@@ -25,7 +25,7 @@ main{
 }
 
 .h6Home {
-    padding-left:140px;
+    padding-left:145px;
     margin-top:36px;
     margin-bottom: 36px;
 
@@ -37,6 +37,22 @@ main{
     color: #454545;
     text-align: center;
 }
+.h4GAPI{
+    font-size: 46px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+    margin-top: 20;
+    margin-bottom: 56;
+}
+.h6Seccion{
+    font-size: 46px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+    margin-top: 10;
+    margin-bottom: 56;
+}
 
 .accionesGAPI{
     display: grid;
@@ -46,6 +62,7 @@ main{
     grid-template-columns: repeat(4, 175px);
     grid-template-rows: 300px;
     grid-gap: 99px;
+    margin-bottom:50;
 }
 
 #pAcciones {
@@ -154,7 +171,7 @@ main{
 
 .backgroundTestimonios{
     position: absolute;
-    top: 2398;
+    top: 2345;
     z-index: -1;
     width: 100%;
 }
@@ -226,7 +243,7 @@ main{
 }
 
 #h4Noticias{
-    padding-top: 56;
+    padding-top: 50;
     font-size: 46px;
     font-weight: 600;
     color: #454545;
@@ -243,6 +260,53 @@ main{
     grid-gap: 31px;
 }
 .noticia{
-    
+    width: 100%;
+    height: 100%;
+    background-color: #EFEFEF;
+    border-radius: 25px;
 }
 
+.noticiaImg{
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+}
+.h4Noticias{
+    position: relative;
+    z-index: 2;
+    top: 178px; 
+    padding-left: 250;
+}
+.h6Noticias {
+    position: relative;
+    z-index: 1;
+    top:190;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#454545;
+    font-weight: 600;
+    margin-top:52px;
+    margin-bottom: 0;
+}
+
+.buttonNoticias {
+  -webkit-appearance: none;
+  background: transparent;
+  color: #454545;
+  border: 0;
+  outline:0;
+}
+
+svg {
+  padding: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
