@@ -2,7 +2,6 @@ body{
     background-color: rgb(240, 240, 240);
     margin: 0px auto;
 
-    width: 100%;
 }
 /*footer*/
 footer{
@@ -22,6 +21,7 @@ footer{
     width: 100%;
     border-bottom: 2px solid rgb(255, 255, 255);
     padding-bottom: 25px;
+
 }
 .data{
     padding-right: 140px;
@@ -96,10 +96,7 @@ table{
 }
 .estasAqui{
     margin-left: 8%;
-}
-.optionsBelowHeader{
-    text-align: right;
-    margin-right: 8%;
+
 }
 
 input {
@@ -110,7 +107,6 @@ input {
 input[type=radio]{
     width: 20%;
  }
- 
  
 
 
