@@ -2,9 +2,10 @@
 .indice{
     
     background-color: rgb(219, 219, 219);
+
     width:  27%;
     float: left;
-    min-height: 500px;
+    min-height: 550px;
     text-align: left;
     padding-left: 25px;
     padding-top: 25px;
@@ -15,20 +16,27 @@
     background-color: rgb(250, 250, 250);
     float: left;
     width: 50%;
-    min-height: 500px;
+    min-height: 550px;
     text-align: left;
     padding-left: 25px;
     padding-top: 25px;
     padding-right: 23px;
     margin-right: 8%;
+    
 }
 .questionsTable{
     padding-top: 25px;
-    line-height: 2;
-} 
-.changePage{
-    padding-top: 4%;
-    text-align: right;
-    
+    line-height: 3;
+}
+.ifHvaeWork{
+    margin-left: 30%;
 }
 
+.changePage{
+    padding-top: 25px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  
+}
