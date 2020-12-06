@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos</title>
+        <link rel="stylesheet" href="./styles/proyectos.css">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+
+<body>
+    <header>
+        <div id="firstHeaderQuestionarie">
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table>
+                        <tr>
+                            <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                            <td><input type="button" value="A+"></td>
+                            <td><input type="button" value="A-"></td>
+                            <td><label for="typeOfContrast_txt">Contraste</label>
+                                <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
+                                <datalist id="listOfVisualcontrast">
+                                    <option value="Color original"></option>
+                                    <option value="verdes y azules"></option>
+                                    <option value="rojos y naranjas"></option>
+                                </datalist>
+                            </td>
+                            <td><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="menu">
+            <table>
+                <tr>
+                    <td><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></td>
+                    <td> <a href="" id="linkInicio">Inicio</a></td>
+                    <td><a href="" id="linkCentro">Centro</a></td>
+                    <td><a href="" id="linkEquipos">Equipos</a></td>
+                    <td><a href="" id="linkPublicaciones">Mapa</a></td>
+                    <td><a href="" id="linkVideos">Videos</a></td>
+                    <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
+                    <td><a href="" id="linkAsistencia">Asistencia</a></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <hr>
+    <p>Estás aquí: Asistencia / Solicitar cita</p>
+
+    <br>
+
+    <div id="optionsBelowHeadersQuestionarie">
+        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
+        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
+        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+    </div>
+
+    <br>
+
+
+    <div id="indice-questionarie">
+        <ol>
+            <li>
+                <h3>Cuestionario sobre diversidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+            </li>
+            <li>
+                <h3>Datos personales</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <li>
+                <h3>Informacion laboral</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <img src="" alt="imagen de datos laborales">
+            </li>
+            <li>
+                <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+        </ol>
+    </div>
+    <div id="questionsSection">
+
+        <table>
+            <form action="answerQuestionarieSection" method="POST">
+                <tr>
+                    <td>
+
+                        <section class="typeOfLegalProces">
+                            <span>¿En qué área del derecho está tu consulta? Seleccina una</span>
+                            <br>
+
+                            <label for="laboral">
+                                <h1>Laboral</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="laboral" id="laboral" value="yes">
+
+                            <label for="familar">
+                                <h1>Familiar</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="familar" id="familar" value="yes">
+                            <br>
+
+                            <label for="penal">
+                                <h1>Penal</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="penal" id="penal" value="yes">
+
+                            <label for="administrativo">
+                                <h1>Administrativo</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="administrativo" id="administrativo" value="yes">
+                            <br>
+
+                            <label for="diferente">
+                                <h1>OTRA</h1>
+                            </label>
+                            <input type="text" name="diferente" id="diferente">
+
+                            <label for="desconoce">
+                                <h1>No se</h1>
+                                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                            </label> <input type="radio" name="desconoce" id="desconoce" value="yes">
+                        </section>
+                        <br>
+
+                        <section class="reasonConsult">
+                            <span>Indique brevemente el motivo de su consulta o necesidad</span>
+                            <br>
+                            <textarea name="reasonConsult" id="reasonConsult" cols="80" rows="5" required></textarea>
+                        </section>
+                    </td>
+                </tr>
+            </form>
+            <br>
+        </table>
+        <a href="FormularioDeSolicitud3.html" id="linkSecondPageQuestionarie"><img src="" alt="pagina anterior"></a>
+
+        <a href="FormularioDeSolicitud5.html" id="linkFouthPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
+
+    </div>
+
+    <footer>
+        <section class="footer_info">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
+                            <th>Menu</th>
+                            <th>Legal</th>
+                            <th>Contactanos</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <div class="data_info">
+                                <p>Oficina de Información<br>
+                                    Teléfono: 8821093<br>
+                                    Ext: 112 - 119<br>
+                                    Dirección: Carrera 9 No. 9-49<br>
+                                    Segundo piso<br>
+                                    Horario de atención al público <br>
+                                    2:30 p.m - 5:30 p.m.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="data_menu">
+                                <ul>
+                                    <li><a href="" id="linkInicio">Inicio</a></li>
+                                    <li><a href="" id="linkCentro">Centro</a></li>
+                                    <li><a href="" id="linkEquipos">Equipos</a></li>
+                                    <li><a href="" id="linkProyectos">Proyectos</a></li>
+                                    <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
+                                    <li><a href="" id="linkVideos">Videos</a></li>
+                                    <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
+                                    <li><a href="" id="linkAsistencia">Asistencia</a></li>
+                                </ul>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="data_legal">
+                                <ul>
+                                    <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
+                                    <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
+                                    <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
+                                    <li><a href="" id="linkStatus">Status</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <div class="data_contact">
+                            <td>
+                                <p>Jorge Andrés Illera Cajiao <br>
+                                    Director del GAPI<br>
+                                    Correo: jaillera@icesi.edu.co Paula Andrea</p>
+                                <br>
+                                <p> Cerón Arboleda<br>
+                                    Coordinadora del GAPI<br>
+                                    Correo: paula.ceron@correo.icesi.edu.co</p>
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="social">
+            <hr>
+            <div id="socialMediaIcons">
+                <center>
+                    <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
+                    <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
+                    <a href="" id="linkIN"><img src="" alt="link IN"></a>
+                    <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
+                    <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
+                </center>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

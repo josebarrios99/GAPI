@@ -1,0 +1,276 @@
+
+header{
+  margin: 0;
+  padding: 0;
+  background-color: #3B939B;
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width:100%;
+}
+
+main {
+
+}
+
+.containerBackground{
+background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    color: #5f5f5f;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #5f5f5f;
+  padding: 10px 0px 10px 10px;
+}
+
+h3{
+    color:#ffff;
+    position: relative;
+    left: 150px;
+}
+
+h6{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+    padding-left: 50px;
+}
+
+.contact {
+  font-family: 'Poppins', sans-serif;  
+  font-weight: 600;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0 auto;
+  width: 1440px;
+  padding: 5px;
+  text-align: center;
+}
+
+li {
+  padding: 10px;
+  display: inline-block;
+  width: 80px;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+li:hover {
+  border-bottom: 5px solid white;
+}
+
+.fixPosition{
+    position: relative;
+    bottom: 10px;
+}
+.active{
+  border-bottom: 5px solid white;
+}
+
+.publicacionesNav{
+    width: 120px;
+}
+
+.protocoloNav{
+    width: 120px;
+}
+
+.banner{
+    z-index: 12;
+    grid-auto-flow: row;
+    display: grid;
+    grid-template: 450px / 900px 1fr;
+    justify-items: first;
+    justify-content: center;
+    align-items: center;
+    background-color:#89a8a0;
+}
+
+.bannerImage{
+    height:450px;
+}
+
+.bannerText{
+    align-content: center;
+    padding: 20px;
+    width: 640px;
+    height: 200px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color:#ececec;
+}
+
+.help {
+   background-color: #a6c7ca;
+   text-align: center;
+   width: 100%;
+   height: 60px;
+}
+
+.gridPublicaciones{
+  grid-auto-flow: row;
+  grid-auto-rows: 510px;
+  grid-auto-columns: 360px
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, 360px);
+  grid-template-rows: repeat(3, 510px);
+  grid-gap: 40px;
+  margin-top: 44px;
+}
+
+.largePublication {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.largePublicationLeft {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.imagePublication{
+    height: 300px;
+}
+
+.shortPublication {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.seeMore {
+    position:relative;
+    top:50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: right;
+  color: #4a4a4a;
+  padding: 10px;
+}
+
+.seeMoreShortPublication{
+  position:relative;
+  top:24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: right;
+  color: #4a4a4a;
+  padding: 10px;
+}
+
+.arrowToContinue{
+    position:relative;
+    top:9px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 26.73px;
+    height: auto;
+}
+
+.logo {
+  align-content: center;
+  object-fit: contain;
+}
+
+.container {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #5F5F5F;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.footer_info{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #ececec;
+    width: 100%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 25px;
+}
+
+.data{
+    padding-right: 140px;
+}
+.data_logo{
+    padding-bottom: 30px;
+}
+.data_menu{
+    padding: 5px;
+    position: relative;
+    right: 10px;
+    padding-right: 50px;
+}
+.data_menu a{
+    position: relative;
+    left: 150px;
+    float: left;
+    color: white;
+    font-size: 16px;
+}
+.data_legal{
+    padding-right: 50px;
+}
+.data_legal a{
+    padding-bottom: 10px;
+    position: relative;
+    left: 150px;
+    float: left;
+    color: white;
+    font-size: 16px;
+}
+.data_contact p{
+    position: relative;
+    left: 150px;
+    color: white;
+    padding-top: 20px;
+}
+.social{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.icons{
+    margin-top: 40px;
+}
+.iconImage{
+    height: 50px;
+    object-fit: contain;
+}

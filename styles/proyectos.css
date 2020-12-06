@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.banner{
+    padding-top: 72px;
+    width: 100%;
+}
+#main_banner{
+    width: 100%;
+}
+.title{
+    padding-top: 38px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+}
+#here{
+    font-size: 10px;
+}
+.nuestrosProyectos{
+    background-color: #ffffff;
+    width: 100%;
+}
+.titleSection{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.projects{
+    margin-left: 220px;
+    display: flex;
+}
+.project1{
+    padding-right: 5px;
+}
+.project2{
+    padding-left: 5px;
+}
+.explorar{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 300px;
+}
