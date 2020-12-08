@@ -209,3 +209,15 @@ input[type=text], select {
 .card{
     padding-right: 30px;
 }
+#happy{
+    cursor: pointer;
+}
+#neutral{
+    cursor: pointer;
+}
+#sad{
+    cursor: pointer;
+}
+#text_grande{
+    width: 100%;
+}
