@@ -99,7 +99,9 @@ table{
     margin-left: 8%;
 }
 /* fin seccion debajo del encabezados*/
-
+.optionsBelowHeader{
+    text-align: center;
+}
 input {
     width: 70%;
     padding: 10px 18px;
