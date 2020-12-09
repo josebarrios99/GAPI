@@ -156,6 +156,13 @@ p{
     padding-top: 13px;
     padding-bottom: 18px;
 }
+.banner{
+    padding-top: 0px;
+    width: 100%;
+}
+#main_banner{
+    width: 100%;
+}
 /*fin menu de arriba*/
 /*footer*/
 footer{
