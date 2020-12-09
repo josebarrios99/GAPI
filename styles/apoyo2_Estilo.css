@@ -2,9 +2,9 @@
 /* --- Espacio para la central box --- */
 
 .breadCrumb{
-    margin-top: 50px;
+    margin-top: 5px;
    margin-bottom: 50px;
-  margin-left: 100px;
+  margin-left: 65px;
 }
 .centralBox{
     padding: 100px 15px;
@@ -13,12 +13,16 @@
 }
 
 .mainBox{
+    overflow: hidden;
     border-radius: 1em;
     display: flex;
     background-color: #ffffff;
     width: 90%;
     margin: auto;
     max-height: 80%;
+}
+.textCard{
+    color: black;
 }
 
 .boxRight{
@@ -29,6 +33,22 @@
     margin: 8% 10%;
     
 }
+.imageContainer1{
+    background-color: #9BE2CE;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.imageContainer2{
+    background-color: #FCDF8A;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.imageContainer3{
+    background-color: #F99D7E;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 .cardBtn{
     display: inline-flex;
     margin:10px;
