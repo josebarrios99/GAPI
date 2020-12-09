@@ -5,7 +5,7 @@
 
     width:  27%;
     float: left;
-    min-height: 814px;
+    min-height: 925px;
     text-align: left;
     padding-left: 25px;
     padding-top: 25px;
@@ -35,6 +35,83 @@
 }
 .ifHvaeWork{
     margin-left: 30%;
+}
+
+
+
+.laboral input{
+    position: absolute;
+    top: auto;
+    left: auto;
+    color: unset;
+    background-color: unset;
+    height: 14%;
+    width: 47.5%;
+    border: unset;
+}
+.familiar input{
+    position: absolute;
+    top: auto;
+    left: auto;
+    color: unset;
+    background-color: unset;
+    height: 14%;
+    width: 47.5%;
+    border: unset;
+}
+.penal input{
+    position: absolute;
+    top: auto;
+    left: auto;
+    color: unset;
+    background-color: unset;
+    height: 14%;
+    width: 47.5%;
+    border: unset;
+}
+.administrativo input{
+    position: absolute;
+    top: auto;
+    left: auto;
+    color: unset;
+    background-color: unset;
+    height: 14%;
+    width: 47.5%;
+    border: unset;
+}
+
+.diferente {
+    background-color:#3B939B;
+    color: white;
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+}
+.diferente label{
+    margin-top: 6%;
+    height: 100%;
+    float: left;
+    margin-left: 3%; 
+    margin-right: 3%; 
+}
+.diferente input{
+    margin-top: 5%;
+  margin-left: 3%; 
+  margin-right: 3%; 
+  margin-top: 5%;
+}
+.desconoce{
+    transform: translate(-75px,0%);
+}
+.desconoce input{
+    position: absolute;
+    top: auto;
+    left: auto;
+    color: unset;
+    background-color: unset;
+    height: 95%;
+    width: 68%;
+    border: unset;
 }
 
 .changePage{
