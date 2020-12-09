@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
     <link rel="stylesheet" href="./styles/proyectos.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="styleQuestionariePage1.css">
+    <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
+    <link rel="stylesheet" href="./styles/styleQuestionariePage1.css">
 </head>
 
 <body>
@@ -19,7 +19,8 @@
                     <section class="visuaAdjust">
                         <table class="headerTable">
                             <tr>
-                                <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
+                                <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad">
+                                    Accesibilidad</td>
                                 <td><input type="button" value="A+"></td>
                                 <td><input type="button" value="A-"></td>
                                 <td><label for="typeOfContrast_txt">Contraste</label>
@@ -32,7 +33,7 @@
                                     </datalist>
                                 </td>
                                 <td><a href="" id="mapa">Mapa</a></td>
-                                <td><img src="" alt="simbolo del traductor"> Traductor</td>
+                                <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
                             </tr>
                         </table>
                     </section>
@@ -44,14 +45,14 @@
         <div class="menu">
             <table>
                 <tr>
-                    <td><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></td>
+                    <td><a href="" id="linkInicio"><img src="images\main\Logo.png" alt="logo del GAPI"></a></td>
                     <td> <a href="" id="linkInicio">Inicio</a></td>
-                    <td><a href="" id="linkCentro">Centro</a></td>
-                    <td><a href="" id="linkEquipos">Equipos</a></td>
-                    <td><a href="" id="linkPublicaciones">Mapa</a></td>
-                    <td><a href="" id="linkVideos">Videos</a></td>
+                    <td><a href="centro.html" id="linkCentro">Centro</a></td>
+                    <td><a href="equipo.html" id="linkEquipos">Equipos</a></td>
+                    <td><a href="Publicaciones.html" id="linkPublicaciones">Mapa</a></td>
+                    <td><a href="videos.html" id="linkVideos">Videos</a></td>
                     <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
-                    <td><a href="" id="linkAsistencia">Asistencia</a></td>
+                    <td><a href="./apoyo1.html" id="linkAsistencia">Asistencia</a></td>
                 </tr>
             </table>
         </div>
@@ -61,10 +62,19 @@
         <p>Estás aquí: Asistencia / Solicitar cita</p>
     </section>
     <br>
-    <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
-        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
-        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
-        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+    <div class="asistenciaMenu">
+        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+            <p>Solicitar cita</p>
+        </button></a>
+        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+        </button></a>
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/preguntas.png" class="solicitarCita_img">
+            <p>Preguntas frecuentes</p>
+        </button></a>
     </div>
     <br>
     <div class="indice" id="indice-questionarie">
@@ -73,56 +83,76 @@
             <li>
                 <h3>Cuestionario sobre diversidad</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <img src="" alt="imagen de datos sobre la diversidad">
+                <br>
+                <img src="images\formularioSolicitud\indice1.png" alt="imagen de datos sobre la diversidad">
             </li>
+            <br>
+            <hr>
             <li>
                 <h3>Datos personales</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </li>
+            <hr>
             <li>
                 <h3>Informacion laboral</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
             </li>
+            <hr>
             <li>
                 <h3>Proceso juridico a realizar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Datos del acompañante</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Fecha y hora de la cita</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Confirmación</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </li>
         </ol>
     </div>
 
-    <div class="questions" id="questionsSection">
-        <table>
+    <section class="questions" id="questionsSection">
+        <table class="questionsTable">
             <form action="answerQuestionarieSection1" method="POST">
-                <h2>Datos personales</h2>
+                <h2>Sobre la diversidad</h2>
                 <tr>
                     <td>
                         <section class="haveDiversity">
                             <span>¿Es usted una persona con discapacidad/diversidad funcional?</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
+                            <input type="radio" name="haveDiversity" id="yes" value="yes">
                             <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
+                            <input type="radio" name="haveDiversity" id="no" value="yes">
                             <label for="no">No</label>
                         </section>
                         <br>
                         <section class="canReadWrite">
                             <span>¿Tiene dificultades para leer y escribir?</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
+                            <input type="radio" name="canWrite" id="yes" value="yes">
                             <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
+                            <input type="radio" name="canWrite" id="no" value="yes">
                             <label for="no">No</label>
                         </section>
                         <br>
                         <section class="canFollowInstructions">
                             <span>¿Tiene dificultades para comprender instrucciones?</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
+                            <input type="radio" name="canFollowinstructions" id="yes" value="yes">
                             <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
+                            <input type="radio" name="canFollowinstructions" id="no" value="yes">
                             <label for="no">No</label>
-                            <input type="radio" name="have" id="sometimes" value="yes">
+                            <input type="radio" name="canFollowinstructions" id="sometimes" value="yes">
                             <label for="sometimes">A veces</label>
                         </section>
                         <br>
@@ -142,33 +172,34 @@
         </table>
         <br>
         <div class="changePage">
-            <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src=""
-                    alt="Siguiente pagina"></a>
+            <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina">
+            </a>
         </div>
-    </div>
+    </section>
+    <br>
     <footer>
         <section class="footer_info">
             <div class="data">
                 <div class="data_logo">
-                    <img src="./images_proyectos/Logo_footer.png" alt="">
+                    <img src="images\main\Logo_footer.png" alt="">
                 </div>
                 <div class="data_info">
                     <p>Oficina de Información<br>
-                    Teléfono: 8821093<br>
-                    Ext: 112 - 119<br>
-                    Dirección: Carrera 9 No. 9-49<br>
-                    Segundo piso<br>
-                    Horario de atención al público <br>
-                    2:30 p.m - 5:30 p.m.</p>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
                 </div>
-                
+
             </div>
             <div class="data_menu">
                 <h6>Menú</h6>
                 <a href="">Inicio</a>
                 <a href="">Centro</a>
                 <a href="">Equipo</a>
-                <a href="">Proyectos</a>
+                <a href="./proyectos.html">Proyectos</a>
                 <a href="">Publicaciones</a>
                 <a href="">Videos</a>
                 <a href="">Protocolo de Atención</a>
@@ -197,10 +228,11 @@
         </section>
         <section class="social">
             <div class="icons">
-                <img src="./images_proyectos/Redes.png" alt="">
+                <img src="images\main\Redes.png" alt="iconos social media">
             </div>
         </section>
     </footer>
 </body>
 
 </html>
+<script src="/Scripts/changeSize.js"></script>

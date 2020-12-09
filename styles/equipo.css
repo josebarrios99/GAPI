@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner_equipo{
+    margin-top: 73px;
+}
+.title{
+    padding-top: 38px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+}
+.title_section{
+    text-align: center;
+}
+.title_equipo{
+    color: #146971;
+}
+.subtitle_section{
+    padding-top: 38px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+}
+.exmember_content{
+    display: flex;
+    width: 1200px;
+    padding-bottom: 30px;
+    margin-left: 120px;
+}
+.exmember_content__info{
+    margin-left: 15px;
+    padding-top: 28px;
+}
+.exmember_content__info h6{
+    color: #454545;
+}
+.exmember_content__info p{
+    color: #454545;
+    line-height: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #3B939B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #146971;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }

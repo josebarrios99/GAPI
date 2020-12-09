@@ -1,98 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyectos</title>
-        <link rel="stylesheet" href="./styles/proyectos.css">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="./styles/proyectos.css">
+    <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
+    <link rel="stylesheet" href="./styles/styleQuestionariePage3.css">
+</head>
 
 <body>
     <header>
-        <div id="firstHeaderQuestionarie">
-            <form action="submission.html" method="POST">
-                <section class="visuaAdjust">
-                    <table>
-                        <tr>
-                            <td><img src="" alt="icono de la accesibilidad"> Accesibilidad</td>
-                            <td><input type="button" value="A+"></td>
-                            <td><input type="button" value="A-"></td>
-                            <td><label for="typeOfContrast_txt">Contraste</label>
-                                <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
-                                <datalist id="listOfVisualcontrast">
-                                    <option value="Color original"></option>
-                                    <option value="verdes y azules"></option>
-                                    <option value="rojos y naranjas"></option>
-                                </datalist>
-                            </td>
-                            <td><a href="" id="mapa">Mapa</a></td>
-                            <td><img src="" alt="simbolo del traductor"> Traductor</td>
-                        </tr>
-                    </table>
-                </section>
-            </form>
+
+        <div class="firstHeader" id="firstHeaderQuestionarie">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad">
+                                    Accesibilidad</td>
+                                <td><input type="button" value="A+"></td>
+                                <td><input type="button" value="A-"></td>
+                                <td><label for="typeOfContrast_txt">Contraste</label>
+                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                        name="typeOfContrast_txt">
+                                    <datalist id="listOfVisualcontrast">
+                                        <option value="Color original"></option>
+                                        <option value="verdes y azules"></option>
+                                        <option value="rojos y naranjas"></option>
+                                    </datalist>
+                                </td>
+                                <td><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>
         </div>
 
-        <hr>
 
         <div class="menu">
             <table>
                 <tr>
-                    <td><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></td>
-                    <td> <a href="" id="linkInicio">Inicio</a></td>
-                    <td><a href="" id="linkCentro">Centro</a></td>
-                    <td><a href="" id="linkEquipos">Equipos</a></td>
-                    <td><a href="" id="linkPublicaciones">Mapa</a></td>
-                    <td><a href="" id="linkVideos">Videos</a></td>
+                    <td><a href="" id="linkInicio"><img src="images\main\Logo.png" alt="logo del GAPI"></a></td>
+                    <td> <a href="./index.html" id="linkInicio">Inicio</a></td>
+                    <td><a href="./centro.html" id="linkCentro">Centro</a></td>
+                    <td><a href="./equipo.html" id="linkEquipos">Equipos</a></td>
+                    <td><a href="./Publicaciones.html" id="linkPublicaciones">Mapa</a></td>
+                    <td><a href="./videos.html" id="linkVideos">Videos</a></td>
                     <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
-                    <td><a href="" id="linkAsistencia">Asistencia</a></td>
+                    <td><a href="./apoyo1.html" id="linkAsistencia">Asistencia</a></td>
                 </tr>
             </table>
         </div>
+
     </header>
-    <hr>
-    <p>Estás aquí: Asistencia / Solicitar cita</p>
-
+    <section class="estasAqui">
+        <p>Estás aquí: Asistencia / Solicitar cita</p>
+    </section>
     <br>
-
-    <div id="optionsBelowHeadersQuestionarie">
-        <a href="" id="linkSolicitar-cita"><img src="" alt="Solicitar cita"></a>
-        <a href="" id="linkAyuda-psicologica"><img src="" alt="Ayuda psicolgica y orientacion"></a>
-        <a href="" id="linkPreguntas-frecuentes"><img src="" alt="Preguntas frecuentes"></a>
+    <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
+        <a href="" id="linkSolicitar-cita"><img src="images\formularioSolicitud\solicitarCita.png" alt="Solicitar cita"></a>
+        <a href="" id="linkAyuda-psicologica"><img src="images\formularioSolicitud\ayudaPsicologica.png" alt="Ayuda psicolgica y orientacion"></a>
+        <a href="" id="linkPreguntas-frecuentes"><img src="images\formularioSolicitud\preguntasFrecuentes.png" alt="Preguntas frecuentes"></a>
     </div>
-
     <br>
-
-
-    <div id="indice-questionarie">
+    <div class="indice" id="indice-questionarie">
+        <h2>Formulario de citas</h2>
         <ol>
             <li>
                 <h3>Cuestionario sobre diversidad</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
             </li>
+            <hr>
             <li>
                 <h3>Datos personales</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </li>
+            <hr>
             <li>
                 <h3>Informacion laboral</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <img src="" alt="imagen de datos laborales">
+                <img src="images\formularioSolicitud\indice3.png" alt="imagen de datos laborales">
             </li>
+            <hr>
             <li>
                 <h3>Proceso juridico a realizar</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </li>
+            <hr>
+            <li>
+                <h3>Datos del acompañante</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Fecha y hora de la cita</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <hr>
+            <li>
+                <h3>Confirmación</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </li>
         </ol>
     </div>
-    <div id="questionsSection">
+    <div class="questions" id="questionsSection">
 
         <table>
             <form action="answerQuestionarieSection3" method="POST">
-                <tr>
+                 <h2>Informacion laboral</h2>
+                 <tr>
                     <td>
 
                         <section class="educationLevel">
@@ -111,23 +133,30 @@
                         <section class="haveWork">
                             <span>¿Cuenta con algun trabajo actualmente?</span>
                             <br>
-                            <input type="radio" name="have" id="yes" value="yes">
+                            <br>
+                            <input type="radio" name="haveWork" id="yes" value="yes">
                             <label for="yes">Si</label>
-                            <input type="radio" name="have" id="no" value="yes">
-                            <label for="no">No</label>
-                        </section>
-                        <br>
-                        <section class="telOfWork">
-                            <span>Telefono del trabajo</span>
                             <br>
-                            <input type="tel" name="telOfWork" id="telOfWork">
+                            <br>
+                            <div class="ifHvaeWork">
+                                <section class="telOfWork">
+                                    <span>Telefono del trabajo</span>
+                                    <br>
+                                    <input type="tel" name="telOfWork" id="telOfWork">
 
-                        </section>
-                        <br>
-                        <section class="direccionOfWork">
-                            <span>Direccion del trabajo</span>
+                                </section>
+                                <br>
+                                <section class="direccionOfWork">
+                                    <span>Direccion del trabajo</span>
+                                    <br>
+                                    <input type="text" name="direccionOfWork" id="direccionOfWork">
+                                </section>
+                                <br>
+                            </div>
+
+                            <input type="radio" name="haveWork" id="no" value="yes">
+                            <label for="no">No</label>
                             <br>
-                            <input type="text" name="direccionOfWork" id="direccionOfWork">
                         </section>
                         <br>
                         <section class="job">
@@ -135,10 +164,7 @@
                             <br>
                             <input type="text" name="job" id="job">
                         </section>
-
                         <br>
-
-
                         <section class="salary">
                             <span>Ingresos mensuales</span>
                             <br>
@@ -148,90 +174,78 @@
             </td>
             </tr>
         </table>
-        <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="" alt="pagina anterior"></a>
-
-        <a href="FormularioDeSolicitud4.html" id="linkFouthPageQuestionarie"><img src="" alt="Siguiente pagina"></a>
-
+        <div class="changePage">
+            <table>
+                <tr>
+                    <td>
+                        <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="images\formularioSolicitud\pagAnterio.png"
+                                alt="pagina anterior"></a>
+                    </td>
+                    <td>
+                        <a href="FormularioDeSolicitud4.html" id="linkFouthPageQuestionarie"><img src="images\formularioSolicitud\pagSiguiente.png"
+                                alt="Siguiente pagina"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <footer>
         <section class="footer_info">
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th><a href="" id="linkInicio"><img src="" alt="logo del GAPI"></a></th>
-                            <th>Menu</th>
-                            <th>Legal</th>
-                            <th>Contactanos</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <div class="data_info">
-                                <p>Oficina de Información<br>
-                                    Teléfono: 8821093<br>
-                                    Ext: 112 - 119<br>
-                                    Dirección: Carrera 9 No. 9-49<br>
-                                    Segundo piso<br>
-                                    Horario de atención al público <br>
-                                    2:30 p.m - 5:30 p.m.</p>
-                            </div>
-                        </td>
+            <div class="data">
+                <div class="data_logo">
+                    <img src="images\main\Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
 
-                        <td>
-                            <div class="data_menu">
-                                <ul>
-                                    <li><a href="" id="linkInicio">Inicio</a></li>
-                                    <li><a href="" id="linkCentro">Centro</a></li>
-                                    <li><a href="" id="linkEquipos">Equipos</a></li>
-                                    <li><a href="" id="linkProyectos">Proyectos</a></li>
-                                    <li><a href="" id="linkPublicaciones">Publicaciones</a></li>
-                                    <li><a href="" id="linkVideos">Videos</a></li>
-                                    <li><a href="" id="linkProtocolo">Protocol de atencion</a></li>
-                                    <li><a href="" id="linkAsistencia">Asistencia</a></li>
-                                </ul>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="data_legal">
-                                <ul>
-                                    <li><a href="" id="linkPoliticasCookies">Politica de Cookies</a></li>
-                                    <li><a href="" id="linkPoliticasPrivacidad">Politica de Privacidad</a></li>
-                                    <li><a href="" id="linkTerminosServicio">Terminos del servicio</a></li>
-                                    <li><a href="" id="linkStatus">Status</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                        <div class="data_contact">
-                            <td>
-                                <p>Jorge Andrés Illera Cajiao <br>
-                                    Director del GAPI<br>
-                                    Correo: jaillera@icesi.edu.co Paula Andrea</p>
-                                <br>
-                                <p> Cerón Arboleda<br>
-                                    Coordinadora del GAPI<br>
-                                    Correo: paula.ceron@correo.icesi.edu.co</p>
-                            </td>
-                        </div>
-                    </tr>
-                </table>
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
             </div>
         </section>
         <section class="social">
-            <hr>
-            <div id="socialMediaIcons">
-                <center>
-                    <a href="" id="linkFacebook"><img src="" alt="link Facebook"></a>
-                    <a href="" id="linkTwitter"><img src="" alt="linkT witter"></a>
-                    <a href="" id="linkIN"><img src="" alt="link IN"></a>
-                    <a href="" id="linkInstagram"><img src="" alt="link Instagram"></a>
-                    <a href="" id="linkYoutube"><img src="" alt="link Youtube"></a>
-                </center>
+            <div class="icons">
+                <img src="images\main\Redes.png" alt="iconos social media">
             </div>
         </section>
     </footer>
 </body>
 
 </html>
+<script src="/Scripts/changeSize.js"></script>
