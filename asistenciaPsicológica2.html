@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+    <div class="accesibility">
+        <center>
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table class="headerTable">
+                        <tr>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
+                            </td>
+                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                            <td id="tdAccesibility">Traductor</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </center>  
+    </div>
     <header class="header">
         <div class="logo_container">
             <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
