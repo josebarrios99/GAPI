@@ -129,6 +129,15 @@ p{
 
     width: 100%;
 }
+.titleVideo{
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 34px;
+    color: #5F5F5F;
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
 .topNav a{
     float: left;
     display: block;
