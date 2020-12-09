@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
+
     <link rel="stylesheet" href="./styles/asistenciaPsicológica2.css">
+
     <link rel="stylesheet" href="./styles/formularioDesolicitud6.css">
+    
     <link rel="stylesheet" href="./styles/formularioDeSolicitud7.css">
+      
+  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+        <link href="./fonts/HELVETICA-LIGHT.TTF" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap">
 </head>
 
 <body>
@@ -41,23 +50,21 @@
             </form>
         </center>  
     </div>
-
     <header class="header">
         <div class="logo_container">
-            <img src="./images_proyectos/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
                 <!--
-
-                    <div class="inicio">
-                    <a href="">Inicio</a>
-                    <span class="inicio_gif">
-                        <img src="./giphy.gif" alt="">
-                    </span>
-                </div>
-                -->
-                <a href="./index.html">Inicio</a>
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
 <a href="./centro.html">Centro</a>
 <a href="./equipo.html">Equipo</a>
 <a href="./proyectos.html">Proyectos</a>
@@ -69,24 +76,30 @@
         </div>
     </header>
 
-    <hr>
-    <div class="asistenciaMenu">
-        <a href="#"><button class="asistenciaMenu_button">
-            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
-            <p>Solicitar cita</p>
-        </button></a>
-        <a href="#"><button class="asistenciaMenu_button">
-            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
-            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-        </button></a>
-        <a href="#"><button class="asistenciaMenu_button">
-            <img src="./images/main/preguntas.png" class="solicitarCita_img">
-            <p>Preguntas frecuentes</p>
-        </button></a>
-    </div>
-    <p>Estás aquí: Asistencia / Solicitar cita</p>
+    <div class="navButton">
 
- 
+        <section class="title">
+            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
+        </section>
+        <div class="asistenciaMenu">
+            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+                <p>Solicitar cita</p>
+            </button></a>
+            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+                <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+            </button></a>
+            <a href="#"><button class="asistenciaMenu_button">
+                <img src="./images/main/preguntas.png" class="solicitarCita_img">
+                <p>Preguntas frecuentes</p>
+            </button></a>
+        </div>
+    
+
+    </div>
+    
+
     <article class="form">
         <section class="form_aside">
             <ul>
@@ -166,10 +179,8 @@
 
                 <div class="containerFechaCita">
 
-                    <h6>Fecha y hora de la cita</h6>
-
-                    <h6 id="textFechayHoraCita">3.30 pm jueves 18 de Enero del 2020</h6>
-
+                    <h6 id="RBody1">Fecha y hora de la cita</h6>
+                    <h6 id="RBody1">3.30 pm jueves 18 de Enero del 2020</h6>
                 </div>
 
                 <div class="consulta">
@@ -209,7 +220,7 @@
         <section class="footer_info">
             <div class="data">
                 <div class="data_logo">
-                    <img src="./images_proyectos/Logo_footer.png" alt="">
+                    <img src="images/main/Logo_footer.png" alt="">
                 </div>
                 <div class="data_info">
                     <p>Oficina de Información<br>
@@ -227,7 +238,7 @@
                 <a href="">Inicio</a>
                 <a href="">Centro</a>
                 <a href="">Equipo</a>
-                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Proyectos</a>
                 <a href="">Publicaciones</a>
                 <a href="">Videos</a>
                 <a href="">Protocolo de Atención</a>
@@ -256,7 +267,7 @@
         </section>
         <section class="social">
             <div class="icons">
-                <img src="./images_proyectos/Redes.png" alt="">
+                <img src="images/main/Redes.png" alt="">
             </div>
         </section>
     </footer>

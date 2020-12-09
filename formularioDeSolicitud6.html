@@ -18,13 +18,14 @@
                 <section class="visuaAdjust">
                     <table class="headerTable">
                         <tr>
-                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
+                            </td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
                             <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-">
+                            </td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                       name="typeOfContrast_txt">
+                                <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
                                 <datalist id="listOfVisualcontrast">
                                     <option value="Color original"></option>
                                     <option value="verdes y azules"></option>
@@ -38,11 +39,11 @@
                     </table>
                 </section>
             </form>
-        </center>  
+        </center>
     </div>
     <header class="header">
         <div class="logo_container">
-            <img src="./images_proyectos/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
@@ -56,35 +57,41 @@
                 </div>
                 -->
                 <a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./apoyo1.html">Asistencia</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
+                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="./apoyo1.html">Asistencia</a>
             </div>
         </div>
     </header>
-    <hr>
-    <div class="asistenciaMenu">
-        <a href="#"><button class="asistenciaMenu_button">
-            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
-            <p>Solicitar cita</p>
-        </button></a>
-        <a href="#"><button class="asistenciaMenu_button">
-            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
-            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-        </button></a>
-        <a href="#"><button class="asistenciaMenu_button">
-            <img src="./images/main/preguntas.png" class="solicitarCita_img">
-            <p>Preguntas frecuentes</p>
-        </button></a>
-    </div>
-    <p>Estás aquí: Asistencia / Solicitar cita</p>
 
-    
-    
+    <div class="navButton">
+
+        <section class="title">
+            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
+        </section>
+        <div class="asistenciaMenu">
+            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                    <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+                    <p>Solicitar cita</p>
+                </button></a>
+            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                    <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+                    <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+                </button></a>
+            <a href="#"><button class="asistenciaMenu_button">
+                    <img src="./images/main/preguntas.png" class="solicitarCita_img">
+                    <p>Preguntas frecuentes</p>
+                </button></a>
+        </div>
+
+
+    </div>
+
+
 
     <article class="form">
         <section class="form_aside">
@@ -95,7 +102,7 @@
                         <h6 id="paso1">Cuestionario sobre diversidad</h6>
                     </div>
 
-                    
+
                 </li>
                 <li>
                     <div>
@@ -106,11 +113,11 @@
                 </li>
                 <li>
                     <div>
-                        <h6 id="paso3" >Informacion laboral</h6>
+                        <h6 id="paso3">Informacion laboral</h6>
                     </div>
 
-                   
-                    
+
+
                 </li>
                 <li>
                     <div>
@@ -119,7 +126,7 @@
 
                     </div>
 
-                    
+
                 </li>
 
                 <li>
@@ -129,7 +136,7 @@
 
                     </div>
 
-                    
+
                 </li>
 
                 <li>
@@ -138,7 +145,7 @@
                         <h6 id="paso6">Fecha y hora de su cita</h6>
 
                     </div>
-                    
+
                     <p class="textoFechayHora"> Elige la fecha y hora para generar tu consulta con GAPI.</p>
                     <img src="images/formularioSolicitud/imagenFormulario6.png" alt="imagen del cuestionario">
 
@@ -151,7 +158,7 @@
 
                     </div>
 
-                    
+
                 </li>
 
 
@@ -161,35 +168,47 @@
         <section class="form_main">
             <form>
                 <h5>Fecha y hora de su cita</h5>
+                <p id="RBody1">Escoja una fecha</p>
+                <div>
+                    
+                    <div class="column form_fecha">
+                        
+                        <input type="date" name="date" id="dateApointment">
+                    </div>
+                    
+                    <div class="column form_horarios">
 
-                <p>Escoja una fecha</p>
-                <input type="date" name="date" id="dateApointment">
+                        <p>Horarios disponibles</p>
+                        <div class="row">
+                            <img src="./images/formularioSolicitud/mañana.svg" alt="">
+                            <p>En la mañana</p>
+                        </div>
 
-                <p>Horarios disponibles</p>
-                <div class="row">
-                    <img src="./images/formularioSolicitud/mañana.svg" alt="">
-                    <p>En la mañana</p>
+                        <div class="row morningButtons">
+
+                            <button class="btn-select btn-selected">9:30</button>
+                            <button class="btn-select">9:30</button>
+                            <button class="btn-select">9:30</button>
+
+
+                        </div>
+
+                        <div class="row">
+                            <img src="./images/formularioSolicitud/tarde.svg" alt="">
+                            <p>En la tarde</p>
+                        </div>
+
+                        <div class="row afternonButtons">
+                            <button class="btn-select">3:45</button>
+                            <button class="btn-select">3:45</button>
+                            <button class="btn-select">3:45</button>
+                        </div>
+
+                    </div>
+
+
                 </div>
 
-                <div class="row morningButtons">
-
-                    <button class="btn-select btn-selected">9:30</button>
-                    <button class="btn-select">9:30</button>
-                    <button class="btn-select">9:30</button>
-
-
-                </div>
-
-                <div class="row">
-                    <img src="./images/formularioSolicitud/tarde.svg" alt="">
-                    <p>En la tarde</p>
-                </div>
-
-                <div class="row afternonButtons">
-                    <button class="btn-select">3:45</button>
-                    <button class="btn-select">3:45</button>
-                    <button class="btn-select">3:45</button>
-                </div>
 
                 <div class="btns">
 
@@ -216,7 +235,7 @@
         <section class="footer_info">
             <div class="data">
                 <div class="data_logo">
-                    <img src="./images_proyectos/Logo_footer.png" alt="">
+                    <img src="images/main/Logo_footer.png" alt="">
                 </div>
                 <div class="data_info">
                     <p>Oficina de Información<br>
@@ -234,7 +253,7 @@
                 <a href="">Inicio</a>
                 <a href="">Centro</a>
                 <a href="">Equipo</a>
-                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Proyectos</a>
                 <a href="">Publicaciones</a>
                 <a href="">Videos</a>
                 <a href="">Protocolo de Atención</a>
@@ -263,7 +282,7 @@
         </section>
         <section class="social">
             <div class="icons">
-                <img src="./images_proyectos/Redes.png" alt="">
+                <img src="images/main/Redes.png" alt="">
             </div>
         </section>
     </footer>
