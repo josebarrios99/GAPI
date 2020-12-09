@@ -12,7 +12,11 @@
 
 
 /* --- Espacio para cards ---*/
-
+.breadCrumb{
+    margin-left: 70px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+}
 .centralBox{
     padding: 100px 15px;
     background-color: #EFEFEF;
@@ -45,22 +49,22 @@
 }
 .btnCard1{
     width: 279px;
-    height: 234px;
+    height: 178px;
     background: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #3B939B;
-    padding: 10px;
     
 }
 .btnCard2{
+    margin-left: 30px;
     width: 279px;
-    height: 234px;
+    height: 178px;
     background: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #F07349;
-    padding: 10px;
+    
     
 }
 .infoCard1{
