@@ -1,176 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asisPsico</title>
-    <link rel="stylesheet" href="./styles/estiloAsisPsico.css">
     <link rel="stylesheet" href="./styles/main.css">
- 
+    <link rel="stylesheet" href="./styles/estiloAsisPsico.css">
+
+
 </head>
+
 <body>
     <div class="asisPsico">
-        <!-- Header de accesibilidad   REVISAR-->
-        <div class="accesibility">
-            <center>
-                <form action="submission.html" method="POST">
-                    <section class="visuaAdjust">
-                        <table class="headerTable">
-                            <tr>
-                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
-                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
-                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                           name="typeOfContrast_txt">
-                                    <datalist id="listOfVisualcontrast">
-                                        <option value="Color original"></option>
-                                        <option value="verdes y azules"></option>
-                                        <option value="rojos y naranjas"></option>
-                                    </datalist>
-                                </td>
-                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
-                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
-                                <td id="tdAccesibility">Traductor</td>
-                            </tr>
+
+        <body>
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table class="headerTable">
+                        <tr>
+                            <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad">
+                                Accesibilidad
+                            </td>
+                            <td><input type="button" value="A+"></td>
+                            <td><input type="button" value="A-"></td>
+                            <td><label for="typeOfContrast_txt">Contraste</label>
+                                <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
+                                <datalist id="listOfVisualcontrast">
+                                    <option value="Color original"></option>
+                                    <option value="verdes y azules"></option>
+                                    <option value="rojos y naranjas"></option>
+                                </datalist>
+                            </td>
+                            <td><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+            <header class="header">
+                <div class="logo_container">
+                    <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+                </div>
+                <div class="menu">
+                    <div class="topNav">
+                        <a href="">Inicio</a>
+                        <a href="./centro.html">Centro</a>
+                        <a href="./equipo.html">Equipo</a>
+                        <a href="./proyectos.html">Proyectos</a>
+                        <a href="./Publicaciones.html">Publicaciones</a>
+                        <a href="./videos.html">Videos</a>
+                        <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                        <a href="./asisPsico.html">Asistencia</a>
+                    </div>
+                </div>
+            </header>
+            <br>
+            <!-- Espacio para "estas aqui" -->
+
+            <section class="estasAqui">
+                <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN / AYUDA PSICOLÓGICA Y
+                    ORIENTACIÓN</h1>
+            </section>
+            <div class="asistenciaMenu">
+                <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                        <img src="images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
+                        <p>Solicitar cita</p>
+                    </button></a>
+                <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                        <img src="./images/Asistencia psicologica Miguel/ayuda.png" class="solicitarCita_img">
+                        <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+                    </button></a>
+                <a href=""><button class="asistenciaMenu_button">
+                        <img src="./images/Asistencia psicologica Miguel/pregunta.png" class="solicitarCita_img">
+
+                        <p>Preguntas frecuentes</p>
+                    </button></a>
+            </div>
+
+
+            <!-- Section de la caja central-->
+            <section class="centralBox">
+                <div class="mainBox">
+                    <div class="indice">
+                        <ol>
+                            <li>
+                                <h3>Primeras preguntas para cita psicológica</h3>
+                                <p class="textSectionIndice">¿que necesitas?</p>
+                                <br>
+                                <div class="imagen_formulario">
+                                    <img src="images/Asistencia psicologica Miguel/formulario_citas.png" alt="">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li>
+                                <h6>Datos personales</h6>
+                                <br>
+                                <p>información personal y de contacto</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <h6>Estado animico</h6>
+                                <br>
+                                <p>queremos aber como te sientes</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <h6>Confirmación de cita </h6>
+                                <br>
+                                <p>Confirma la información de tu cita de ayuda psicológica y orientación.</p>
+                            </li>
+                            <hr>
+                        </ol>
+                    </div>
+
+                    <section class="questions" id="questionsSection">
+                        <table class="questionsTable">
+                            <form action="answerQuestionarieSection1" method="POST">
+                                <h5>Asistencia u orientación</h2>
+                                    <br>
+                                    <tr>
+                                        <td>
+                                            <span>¿Usted requiere asistencia psicológica u orientación?</span>
+                                            <br>
+                                            <section class="haveDiversityYes">
+                                               
+                                                <input type="button" name="haveDiversity" id="yes" value="si" >
+                                            </section>
+                                                <section class="canImg">
+                                                    <img src="images\cuestionario cita pag 1\si1.png" alt="">
+                                                </section>
+
+
+                                                <section class="haveDiversityNo">
+
+                                                    <input type="button" name="haveDiversity" id="no" value="No">
+                                                </section>
+                                                <section class="canImg">
+                                                    <img src="images\cuestionario cita pag 1\no1.png" alt="">
+                                                </section>
+                                                <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>¿Cómo desea recibir esta asistencia u orientación?</span>
+                                            <br>
+                                            <section class="canReadWriteYes">
+                                                <input type="button" name="canWrite" id="yes" value="EMAIL">
+                                            </section>
+                                          
+                                            <section class="canReadWriteNo">
+                                                <input type="button" name="canWrite" id="no" value="PREENCIAL">
+
+                                            </section>
+                                          
+                                            <br>
+                                        </td>
+                                    </tr>
+                            </form>
                         </table>
+                        <br>
+                        <div class="changePage">
+                            <a href="asistenciaPsicológica2.html" id="linkSecondPageQuestionarie"><img
+                                    src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina">
+                            </a>
+                        </div>
                     </section>
-                </form>
-            </center>  
-        </div>
-        <!-- Header -->
-        <header class="header">
-            <div class="logo_container">
-                <img src="images/main/Logo.png" alt="Logo del GAPI" id="logo">
-            </div>
-            <div class="menu">
-                <div class="topNav">
-                    <a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./apoyo1.html">Asistencia</a>
-                </div>
-            </div>
-        </header>
-
-        <!-- Espacio para "estas aqui" -->
-
-        <section class="title">
-            <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN / AYUDA PSICOLÓGICA Y ORIENTACIÓN</h1>
-        </section>
-        <div class="asistenciaMenu">
-            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
-                <img src="images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
-                <p>Solicitar cita</p>
-            </button></a>
-            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
-                <img src="./images/Asistencia psicologica Miguel/ayuda.png" class="solicitarCita_img">
-                <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-            </button></a>
-            <a href=""><button class="asistenciaMenu_button">
-                <img src="./images/Asistencia psicologica Miguel/pregunta.png" class="solicitarCita_img">
-
-                <p>Preguntas frecuentes</p>
-            </button></a>
-        </div>
-
-
-           <!-- Section de la caja central-->
-    <section class="centralBox">
-        <div class="mainBox">
-            <div class="boxLeft">
-                <h6 class="primero"> <span>1</span>Primeras preguntas para cita <br>psicológica</h6>
-                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>
-                    <div class="imagen_formulario">
-                        <img src="images/Asistencia psicologica Miguel/formulario_citas.png" alt="">
-                    </div>
-                <h6 class="segundo"> <span>2</span>Cuestionario sobre <br>diversidad </h6>
-                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>
-
-                <h6 class="tercero"> <span>3</span>Cuestionario sobre<br> diversidad</h6>
-                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>
-
-                <h6 class="cuarto"> <span>4</span>Cuestionario sobre<br> diversidad</h6>
-                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>          
-            </div>
-
-            <div class="rightBox">
-                <h5 class="titleRightBox">Asistencia u orientación</h5>
-                <div class="containerBtns">
-
-                    <!-- CARD #1-->
-                    <div class="btnCard1">
-                        <div class="imageCar">
-                            <img src="" alt="">
-                        </div>
-                        <div class="infoCard1">
-                            <h5 class="textCard">Sí</h5>
-                        </div>
-            </div>
-        </div>
-    </div>
-</section>
-        <!-- Espacio para el FOOTER-->
-        <footer>
-            <section class="footer_info">
-                <div class="data">
-                    <div class="data_logo">
-                        <img src="images/main/Logo_footer.png" alt="">
-                    </div>
-                    <div class="data_info">
-                        <p>Oficina de Información<br>
-                        Teléfono: 8821093<br>
-                        Ext: 112 - 119<br>
-                        Dirección: Carrera 9 No. 9-49<br>
-                        Segundo piso<br>
-                        Horario de atención al público <br>
-                        2:30 p.m - 5:30 p.m.</p>
-                    </div>
-                    
-                </div>
-                <div class="data_menu">
-                    <h6>Menú</h6>
-                    <a href="">Inicio</a>
-                    <a href="">Centro</a>
-                    <a href="">Equipo</a>
-                    <a href="">Proyectos</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Videos</a>
-                    <a href="">Protocolo de Atención</a>
-                    <a href="">Asistencia</a>
-                </div>
-                <div class="data_legal">
-                    <h6>Legal</h6>
-                    <a href="">Política de cookies</a>
-                    <a href="">Política de privacidad</a>
-                    <a href="">Términos de servicio</a>
-                    <a href="">Status</a>
-                </div>
-                <div class="data_contact">
-                    <h6>Contáctanos</h6>
-                    <p>
-                        <strong>Jorge Andrés Illera Cajiao</strong><br>
-                        <strong>Director del GAPI</strong><br>
-                        Correo: jaillera@icesi.edu.co<br>
-                    </p>
-                    <p>
-                        <strong>Paula Andrea Cerón Arboleda</strong><br>
-                        <strong>Coordinadora del GAPI</strong><br>
-                        Correo: paula.ceron@correo.icesi.edu.co
-                    </p>
+                    <br>
                 </div>
             </section>
-            <section class="social">
-                <div class="icons">
-                    <img src="images/main/Redes.png" alt="">
-                </div>
-            </section>
-        </footer>
-</body>
+            <!-- Espacio para el FOOTER-->
+            <footer>
+                <section class="footer_info">
+                    <div class="data">
+                        <div class="data_logo">
+                            <img src="images/main/Logo_footer.png" alt="">
+                        </div>
+                        <div class="data_info">
+                            <p>Oficina de Información<br>
+                                Teléfono: 8821093<br>
+                                Ext: 112 - 119<br>
+                                Dirección: Carrera 9 No. 9-49<br>
+                                Segundo piso<br>
+                                Horario de atención al público <br>
+                                2:30 p.m - 5:30 p.m.</p>
+                        </div>
+
+                    </div>
+                    <div class="data_menu">
+                        <h6>Menú</h6>
+                        <a href="">Inicio</a>
+                        <a href="">Centro</a>
+                        <a href="">Equipo</a>
+                        <a href="">Proyectos</a>
+                        <a href="">Publicaciones</a>
+                        <a href="">Videos</a>
+                        <a href="">Protocolo de Atención</a>
+                        <a href="">Asistencia</a>
+                    </div>
+                    <div class="data_legal">
+                        <h6>Legal</h6>
+                        <a href="">Política de cookies</a>
+                        <a href="">Política de privacidad</a>
+                        <a href="">Términos de servicio</a>
+                        <a href="">Status</a>
+                    </div>
+                    <div class="data_contact">
+                        <h6>Contáctanos</h6>
+                        <p>
+                            <strong>Jorge Andrés Illera Cajiao</strong><br>
+                            <strong>Director del GAPI</strong><br>
+                            Correo: jaillera@icesi.edu.co<br>
+                        </p>
+                        <p>
+                            <strong>Paula Andrea Cerón Arboleda</strong><br>
+                            <strong>Coordinadora del GAPI</strong><br>
+                            Correo: paula.ceron@correo.icesi.edu.co
+                        </p>
+                    </div>
+                </section>
+                <section class="social">
+                    <div class="icons">
+                        <img src="images/main/Redes.png" alt="">
+                    </div>
+                </section>
+            </footer>
+        </body>
+
 </html>
 <script src="/Scripts/changeSize.js"></script>
