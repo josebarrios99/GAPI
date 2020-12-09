@@ -1,0 +1,18 @@
+body{
+    width: 100%;
+}
+.banner {
+    justify-items: first;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bannerImage{
+    padding-top: 70px;
+    height:400px;
+    width:100%;
+}
+#tituloNuestrosProto{
+    text-align: center;
+    color: #146971;
+}
