@@ -30,4 +30,9 @@
 .direction{
     width: 120%;
 }
-
+.changePage{
+    margin-top: 4%;
+    margin-bottom: 3%;
+     box-sizing: border-box;
+    
+}
