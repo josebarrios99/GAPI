@@ -28,11 +28,12 @@
     margin: 20px;
 }
 
-input{
+.form_main input{
 
     margin-top: 56px;
     
 }
+
 input:checked{
 
     background-color: #3B939B;

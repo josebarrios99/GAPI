@@ -20,13 +20,13 @@
                                 <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
                                 <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
                                 <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                           name="typeOfContrast_txt">
-                                    <datalist id="listOfVisualcontrast">
-                                        <option value="Color original"></option>
-                                        <option value="verdes y azules"></option>
-                                        <option value="rojos y naranjas"></option>
-                                    </datalist>
+                                    <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                        <option value="">Color original</option>
+                                        <option value="1">Blanco sobre negro</option>
+                                        <option value="2">Amarillo sobre negro</option>
+                                        <option value="3">Amarillo sobre azul</option>
+                                        <option value="4">Verde sobre Negro</option>
+                                    </select>
                                 </td>
                                 <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
                                 <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
@@ -44,7 +44,6 @@
             <div class="menu">
                 <div class="topNav">
                     <!--
-
 <div class="inicio">
 <a href="">Inicio</a>
 <span class="inicio_gif">
@@ -52,14 +51,14 @@
 </span>
 </div>
 -->
-                    <a href="">Inicio</a>
-                    <a href="">Centro</a>
-                    <a href="">Equipo</a>
-                    <a href="./proyectos.html">Proyectos</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Videos</a>
-                    <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                    <a href="">Asistencia</a>
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
@@ -94,7 +93,7 @@
                     <p id="pAcciones">Formación de estudiantes en la práctica del derecho de interés público.</p>
                 </div>
             </div>
-            <div class="secciones">>
+            <div class="secciones">
                 <h4 class= "h6Seccion">Secciones</h4>
                 <div class="seccionesContent">
                     <div class="seccion">
@@ -121,23 +120,23 @@
                     <div class="seccion">
                         <img class="imgSeccion" src="./images/home/seccion5.png">
                         <h6 class="h6Secciones"> Mira nuestros videos</h6>
-                        <h4 class="h4Seccion" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
+                        <h4 class="h4Seccion h4defect" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
                     </div>
                     <div class="seccion">
                         <img class="imgSeccion" src="./images/home/seccion6.png">
                         <h6 class="h6Secciones"> Protocolo de atención</h6>
-                        <h4 class="h4Seccion" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
+                        <h4 class="h4Seccion h4defect" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
                     </div>
                     <div class="seccion">
                         <img class="imgSeccion" src="./images/home/seccion7.png">
                         <h6 class="h6Secciones"> Conoce nuestro Blog</h6>
-                        <h4 class="h4Seccion" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
+                        <h4 class="h4Seccion h4defect" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
                     </div>
                     <div class="seccion">
                         <img class="imgSeccion" src="./images/home/seccion8.png">
                         <h6 class="h6Secciones"> Solicita una cita para 
                             una asistencia   </h6>
-                        <h4 class="h4Seccion" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
+                        <h4 class="h4Seccion h4last" id=ROverline>Explorar <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"></h4>    
                     </div>
                 </div>
             </div>
@@ -160,6 +159,11 @@
                     <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
                         <polyline fill="none" stroke="#454545" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
                     </svg>  
+                </button>
+                <button class="arrow right buttonNoticias">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="none" stroke="#454545" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                    </svg>
                 </button>
                 <h4 id="h4Noticias">Noticias y Eventos</h4>
                 <div class="noticiasGrid">
@@ -237,4 +241,6 @@
                 </div>
             </section>
         </footer>
+        <script src="./Scripts/color.js"></script>
     </body>
+    <script src="/Scripts/changeSize.js"></script>

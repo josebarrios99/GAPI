@@ -61,11 +61,11 @@ p {
     color: black;
 }
 
-div {
+/*div {
     box-sizing: border-box;
     margin: 0px;
     padding-left: 0px 120px;
-}
+}*/
 
 .row {
     display: flex;

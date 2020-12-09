@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asisPsico</title>
     <link rel="stylesheet" href="./styles/estiloAsisPsico.css">
+ 
 </head>
 <body>
     <div class="asisPsico">
-
+        <!-- Header de accesibilidad   REVISAR-->
+        <div class="accesibility">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                           name="typeOfContrast_txt">
+                                    <datalist id="listOfVisualcontrast">
+                                        <option value="Color original"></option>
+                                        <option value="verdes y azules"></option>
+                                        <option value="rojos y naranjas"></option>
+                                    </datalist>
+                                </td>
+                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                                <td id="tdAccesibility">Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>  
+        </div>
         <!-- Header -->
         <header class="header">
             <div class="logo_container">
@@ -16,14 +45,14 @@
             </div>
             <div class="menu">
                 <div class="topNav">
-                    <a href="">Inicio</a>
-                    <a href="">Centro</a>
-                    <a href="">Equipo</a>
-                    <a href="">Proyectos</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Videos</a>
-                    <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                    <a href="">Asistencia</a>
+                    <a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
@@ -34,16 +63,17 @@
             <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN / AYUDA PSICOLÓGICA Y ORIENTACIÓN</h1>
         </section>
         <div class="asistenciaMenu">
-            <a href="#"><button class="asistenciaMenu_button">
-                <img src="images/main/Group 34.png" class="solicitarCita_img">
+            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                <img src="images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
                 <p>Solicitar cita</p>
             </button></a>
-            <a href="#"><button class="asistenciaMenu_button">
-                <img src="images/main/Group 34.png" class="solicitarCita_img">
+            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                <img src="./images/Asistencia psicologica Miguel/ayuda.png" class="solicitarCita_img">
                 <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
             </button></a>
-            <a href="#"><button class="asistenciaMenu_button">
-                <img src="images/main/Group 34.png" class="solicitarCita_img">
+            <a href=""><button class="asistenciaMenu_button">
+                <img src="./images/Asistencia psicologica Miguel/pregunta.png" class="solicitarCita_img">
+
                 <p>Preguntas frecuentes</p>
             </button></a>
         </div>
@@ -53,19 +83,19 @@
     <section class="centralBox">
         <div class="mainBox">
             <div class="boxLeft">
-                <h3 class="primero"> <span>1</span>Primeras preguntas para cita <br>psicológica</h3>
-                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</p>
+                <h6 class="primero"> <span>1</span>Primeras preguntas para cita <br>psicológica</h6>
+                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>
                     <div class="imagen_formulario">
                         <img src="images/Asistencia psicologica Miguel/formulario_citas.png" alt="">
                     </div>
-                <h3 class="segundo"> <span>2</span>Cuestionario sobre <br>diversidad </h3>
-                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</p>
+                <h6 class="segundo"> <span>2</span>Cuestionario sobre <br>diversidad </h6>
+                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>
 
-                <h3 class="tercero"> <span>3</span>Cuestionario sobre<br> diversidad</h3>
-                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</p>
+                <h6 class="tercero"> <span>3</span>Cuestionario sobre<br> diversidad</h6>
+                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>
 
-                <h3 class="cuarto"> <span>4</span>Cuestionario sobre<br> diversidad</h3>
-                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</p>          
+                <h6 class="cuarto"> <span>4</span>Cuestionario sobre<br> diversidad</h6>
+                <h3>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Excepturi <br> necessitatibus ipsum a.</h3>          
             </div>
 
             <div class="rightBox">
@@ -75,13 +105,15 @@
                     <!-- CARD #1-->
                     <div class="btnCard1">
                         <div class="imageCar">
-                            <img src="images/Apoyo Miguel/si.png" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="infoCard1">
                             <h5 class="textCard">Sí</h5>
                         </div>
-                    </div>
-
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Espacio para el FOOTER-->
         <footer>
             <section class="footer_info">
@@ -140,3 +172,4 @@
         </footer>
 </body>
 </html>
+<script src="/Scripts/changeSize.js"></script>
