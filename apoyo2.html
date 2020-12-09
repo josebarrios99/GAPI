@@ -12,48 +12,64 @@
 </head>
 
 <body>
+    <!-- Header Accesibility-->
+    <div class="accesibility">
+        <center>
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table class="headerTable">
+                        <tr>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
+                            </td>
+                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                            <td id="tdAccesibility">Traductor</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </center>  
+    </div>
+    
     <!-- Header -->
     <header class="header">
         <div class="logo_container">
-            <img src="images/main/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
                 <!--
-
-                    <div class="inicio">
-                    <a href="">Inicio</a>
-                    <span class="inicio_gif">
-                        <img src="./giphy.gif" alt="">
-                    </span>
-                </div>
-                -->
-                <a href="./index.html">Inicio</a>
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
 <a href="./centro.html">Centro</a>
 <a href="./equipo.html">Equipo</a>
 <a href="./proyectos.html">Proyectos</a>
 <a href="./Publicaciones.html">Publicaciones</a>
 <a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
 <a href="./apoyo1.html">Asistencia</a>
             </div>
         </div>
     </header>
 
-    <!-- Espacio para caja y textos -->
-
-
-    <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
-
-
-    <!--<article class="cajaIzquierda">
-        <img src="./images/Apoyo Miguel/mainApoyo2.png" alt="">
-        <div class="tituloApoyo">
-            <h4 class="apoyo">
-                ¿Qué tipo de apoyo en <br> comunicación requieres?
-            </h4>
-        </div>
-    </article>-->
+    
 
     <!-- Section Central principal-->
     <section class="centralBox">
@@ -68,17 +84,17 @@
             </div>
             <div class="boxRight">
                 <div class="titleBoxRight">
-                    <h4 class="titleBox">¿Qué tipo de apoyo en comunicación requieres?</h4>
+                    <h5 class="titleBox">¿Qué tipo de apoyo en <br> comunicación requieres?</h5>
                 </div>
 
-                
+
                 <div class="containerBtn">
 
-                    
+
                     <!-- Card 1-->
                     <div class="cardBtn card1">
-                        <div class="imageContainer">
-                            <img class="imageCard" src="images/Apoyo Miguel/imageCard.png" alt="">
+                        <div class="imageContainer1">
+                            <img class="imageCard" src="images/Apoyo Miguel/pictogramas.png" alt="">
                         </div>
                         <div class="infoContainer">
                             <h5 class="titleCard">Pictogramas</h5>
@@ -90,8 +106,8 @@
                     <!-- Card 2-->
 
                     <div class="cardBtn card2">
-                        <div class="imageContainer">
-                            <img class="imageCard" src="images/Apoyo Miguel/imageCard.png" alt="">
+                        <div class="imageContainer2">
+                            <img class="imageCard" src="images/Apoyo Miguel/lector.png" alt="">
                         </div>
                         <div class="infoContainer">
                             <h5 class="titleCard">Lector de pantallas</h5>
@@ -104,8 +120,8 @@
                     <!-- Card 3-->
 
                     <div class="cardBtn card3">
-                        <div class="imageContainer">
-                            <img class="imageCard" src="images/Apoyo Miguel/imageCard.png" alt="">
+                        <div class="imageContainer3">
+                            <img class="imageCard" src="images/Apoyo Miguel/señas.png" alt="">
                         </div>
                         <div class="infoContainer">
                             <h5 class="titleCard">Interprete de señas</h5>

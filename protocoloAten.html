@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Protocolo</title>
-        <link rel="stylesheet" href="./styles/protocolo_Estilo.css">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-
-        <!-- Header -->
-        <div class="accesibility">
-            <center>
-                <form action="submission.html" method="POST">
-                    <section class="visuaAdjust">
-                        <table class="headerTable">
-                            <tr>
-                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
-                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
-                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                           name="typeOfContrast_txt">
-                                    <datalist id="listOfVisualcontrast">
-                                        <option value="Color original"></option>
-                                        <option value="verdes y azules"></option>
-                                        <option value="rojos y naranjas"></option>
-                                    </datalist>
-                                </td>
-                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
-                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
-                                <td id="tdAccesibility">Traductor</td>
-                            </tr>
-                        </table>
-                    </section>
-                </form>
-            </center>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/protocolo_Estilo.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="accesibility">
+        <center>
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table class="headerTable">
+                        <tr>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
+                            </td>
+                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                            <td id="tdAccesibility">Traductor</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </center>  
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo_container">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
-        <header class="header">
-            <div class="logo_container">
-                <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+        <div class="menu">
+            <div class="topNav">
+                <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
             </div>
             <div class="menu">
                 <div class="topNav">

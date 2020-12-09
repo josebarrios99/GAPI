@@ -24,13 +24,13 @@
                             <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
                             <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                       name="typeOfContrast_txt">
-                                <datalist id="listOfVisualcontrast">
-                                    <option value="Color original"></option>
-                                    <option value="verdes y azules"></option>
-                                    <option value="rojos y naranjas"></option>
-                                </datalist>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
                             </td>
                             <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
                             <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
@@ -48,42 +48,41 @@
         <div class="menu">
             <div class="topNav">
                 <!--
-
-                    <div class="inicio">
-                    <a href="">Inicio</a>
-                    <span class="inicio_gif">
-                        <img src="./giphy.gif" alt="">
-                    </span>
-                </div>
-                -->
-                <a href="./index.html">Inicio</a>
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
 <a href="./centro.html">Centro</a>
 <a href="./equipo.html">Equipo</a>
 <a href="./proyectos.html">Proyectos</a>
 <a href="./Publicaciones.html">Publicaciones</a>
 <a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./asistenciaPsicológica2.html">Asistencia</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
             </div>
         </div>
     </header>
     <div class="container">
-    
-       <img src="./images/videos/bannerVideos.png">
+        <section class="banner">
+            <img src="./images/videos/bannerVideos.png" alt="" id="main_banner">
+        </section>
 
-       <p id="RBody1">
-           Estás aqui: <a href="#">videos</a>
-       </p>
+       <section class="title">
+        <h2 id="ROverline">ESTÁS AQUÍ: INICIO/PROYECTO</h2>
+    </section>
         <article class="videos">
 
-            <h1 class="title">Conoce nuestros videos</h1>
+            <h2 class="titleVideo">Conoce nuestros videos</h2>
 
             <section class="row mainVideo">
 
                 <iframe width="893" height="448" src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <div class="col">
-
                     <h2>¿Qué es el GAPI?</h2>
                     <p id="RBody1">El Grupo de Acciones Públicas de la Universidad Icesi es la Clínica Jurídica de la Facultad de Derecho y Ciencias Sociales de la citada Universidad. A través del método clínico, el trabajo en red y el litigio estratégico, busca formar abogados con criterio y sentido social, en temas específicos relacionados con la inclusión y la igualdad. Actualmente trabaja también, temas relacionados con discapacidad y derecho migratorio.</p>
                 </div>
