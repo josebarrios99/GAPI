@@ -6,58 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
     <link rel="stylesheet" href="./styles/proyectos.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
     <link rel="stylesheet" href="./styles/styleQuestionariePage4.css">
 </head>
 
 <body>
-    <header>
-
-        <div class="firstHeader" id="firstHeaderQuestionarie">
-            <center>
-                <form action="submission.html" method="POST">
-                    <section class="visuaAdjust">
-                        <table class="headerTable">
-                            <tr>
-                                <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad">
-                                    Accesibilidad</td>
-                                <td><input type="button" value="A+"></td>
-                                <td><input type="button" value="A-"></td>
-                                <td><label for="typeOfContrast_txt">Contraste</label>
-                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                        name="typeOfContrast_txt">
-                                    <datalist id="listOfVisualcontrast">
-                                        <option value="Color original"></option>
-                                        <option value="verdes y azules"></option>
-                                        <option value="rojos y naranjas"></option>
-                                    </datalist>
-                                </td>
-                                <td><a href="" id="mapa">Mapa</a></td>
-                                <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
-                            </tr>
-                        </table>
-                    </section>
-                </form>
-            </center>
-        </div>
-
-
-        <div class="menu">
-            <table>
-                <tr>
-                    <td><a href="" id="linkInicio"><img src="images\main\Logo.png" alt="logo del GAPI"></a></td>
-                    <td> <a href="" id="linkInicio">Inicio</a></td>
-                    <td><a href="" id="linkCentro">Centro</a></td>
-                    <td><a href="" id="linkEquipos">Equipos</a></td>
-                    <td><a href="" id="linkPublicaciones">Mapa</a></td>
-                    <td><a href="" id="linkVideos">Videos</a></td>
-                    <td><a href="" id="linkProtocolo">Protocol de atencion</a></td>
-                    <td><a href="" id="linkAsistencia">Asistencia</a></td>
-                </tr>
-            </table>
-        </div>
-
-    </header>
+    <body>
+        <form action="submission.html" method="POST">
+            <section class="visuaAdjust">
+                <table class="headerTable">
+                    <tr>
+                        <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad"> Accesibilidad</td>
+                        <td><input type="button" value="A+"></td>
+                        <td><input type="button" value="A-"></td>
+                        <td><label for="typeOfContrast_txt">Contraste</label>
+                            <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                name="typeOfContrast_txt">
+                            <datalist id="listOfVisualcontrast">
+                                <option value="Color original"></option>
+                                <option value="verdes y azules"></option>
+                                <option value="rojos y naranjas"></option>
+                            </datalist>
+                        </td>
+                        <td><a href="" id="mapa">Mapa</a></td>
+                        <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <header class="header">
+            <div class="logo_container">
+                <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+            </div>
+            <div class="menu">
+                <div class="topNav">
+                    <a href="">Inicio</a>
+                    <a href="./centro.html">Centro</a>
+                    <a href="./equipo.html">Equipo</a>
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="./Publicaciones.html">Publicaciones</a>
+                    <a href="./videos.html">Videos</a>
+                    <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                    <a href="./asisPsico.html">Asistencia</a>
+                </div>
+            </div>
+        </header>
+    <br>
     <section class="estasAqui">
         <p>Estás aquí: Asistencia / Solicitar cita</p>
     </section>
@@ -69,44 +64,45 @@
     </div>
     <br>
     <div class="indice" id="indice-questionarie">
-        <h2>Formulario de citas</h2>
+        <h5>Formulario de citas</h5>
         <ol>
             <li>
-                <h3>Cuestionario sobre diversidad</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <h6>Cuestionario sobre diversidad</h6>
+              
 
             </li>
             <hr>
             <li>
-                <h3>Datos personales</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </li>
-            <hr>
-            <li>
-                <h3>Informacion laboral</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <h6>Datos personales</h6>
+               
                 
             </li>
             <hr>
             <li>
+                <h6>Informacion laboral</h6>
+               
+
+            </li>
+            <hr>
+            <li>
                 <h3>Proceso juridico a realizar</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p class="textSectionIndice" >Elige uno de los diferentes módulos del proceso jurídico en los que tu caso se desenvuelve</p>
             <img src="images\formularioSolicitud\indice4.png" alt="imagen proceso juridico">
         </li>
         <hr>
         <li>
-            <h3>Datos del acompañante</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <h6>Datos del acompañante</h6>
+           
         </li>
         <hr>
         <li>
-            <h3>Fecha y hora de la cita</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <h6>Fecha y hora de la cita</h6>
+           
         </li>
         <hr>
         <li>
-            <h3>Confirmación</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <h6>Confirmación</h6>
+       
         </li>
     </ol>
 </div>
