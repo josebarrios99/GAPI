@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
+*{
+
+    padding: 0%;
+    margin: 0%;
+}
 
 h1 {
     text-align: center;
@@ -8,6 +13,7 @@ h1 {
 
     display: flex;
     flex-direction: column;
+    padding: 0px 120px;
     
 }
 
@@ -71,18 +77,11 @@ p {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-left: 20px;
-}
-.banner{
-    padding-top: 0px;
-    width: 100%;
-}
-#main_banner{
-    width: 100%;
+    padding-left: 0px 120px;
 }
 
 .secondaryVideo div {
-    width: 100%;
+    width: 308px;
     margin: 0px;
 }
 
@@ -95,14 +94,11 @@ p {
 }
 
 .mainVideo div {
-    width: 100%;
+    width: 30%;
     padding-left: 0px 120px;
 }
 
 img {
     margin: auto;
     display: block;
-}
-.videos{
-    padding-left: 100px;
 }
