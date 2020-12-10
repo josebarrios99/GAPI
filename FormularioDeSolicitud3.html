@@ -72,10 +72,19 @@
         <p>Estás aquí: Asistencia / Solicitar cita</p>
     </section>
     <br>
-    <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
-        <a href="" id="linkSolicitar-cita"><img src="images\formularioSolicitud\solicitarCita.png" alt="Solicitar cita"></a>
-        <a href="" id="linkAyuda-psicologica"><img src="images\formularioSolicitud\ayudaPsicologica.png" alt="Ayuda psicolgica y orientacion"></a>
-        <a href="" id="linkPreguntas-frecuentes"><img src="images\formularioSolicitud\preguntasFrecuentes.png" alt="Preguntas frecuentes"></a>
+    <div class="asistenciaMenu">
+        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+            <p>Solicitar cita</p>
+        </button></a>
+        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+        </button></a>
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/preguntas.png" class="solicitarCita_img">
+            <p>Preguntas frecuentes</p>
+        </button></a>
     </div>
     <br>
     <div class="indice" id="indice-questionarie">
@@ -126,7 +135,7 @@
                         <section class="educationLevel">
                             <span>Grado de escolaridad</span>
                             <br>
-                            <input list="educationLebelList" id="educationLebel" name="educationLebel">
+                            <input list="educationLebelList" id="educationLebel" name="educationLebel" placeholder="Seleccione el grado que le corresponda" required>
                             <datalist id="educationLebelList">
                                 <option value="Primaria"></option>
                                 <option value="Bachillerato"></option>
@@ -148,14 +157,14 @@
                                 <section class="telOfWork">
                                     <span>Telefono del trabajo</span>
                                     <br>
-                                    <input type="tel" name="telOfWork" id="telOfWork">
+                                    <input type="tel" name="telOfWork" id="telOfWork" placeholder="Escriba el número telefonico" >
 
                                 </section>
                                 <br>
                                 <section class="direccionOfWork">
                                     <span>Direccion del trabajo</span>
                                     <br>
-                                    <input type="text" name="direccionOfWork" id="direccionOfWork">
+                                    <input type="text" name="direccionOfWork" id="direccionOfWork" placeholder="Escriba la direccion" >
                                 </section>
                                 <br>
                             </div>
@@ -168,13 +177,13 @@
                         <section class="job">
                             <span>Ocupación</span>
                             <br>
-                            <input type="text" name="job" id="job">
+                            <input type="text" name="job" id="job" placeholder="Escribe tu ocupación" required>
                         </section>
                         <br>
                         <section class="salary">
                             <span>Ingresos mensuales</span>
                             <br>
-                            <input type="text" name="salary" id="salary">
+                            <input type="text" name="salary" id="salary" placeholder="Escriba sus Ingresos" required>
                         </section>
             </form>
             </td>
