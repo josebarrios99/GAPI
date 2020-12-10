@@ -127,15 +127,15 @@
                             <section class="name">
                                 <label for="userName">Nombre</label>
                                 <br>
-                                <input type="text" name="userName" id="userName" required>
+                                <input class="input" type="text" name="userName" id="userName" required>
                             </section>
                             <br>
                             <section class="typeOfDocument">
                                 <label for="typeOfDocument_txt">Tipo de documento</label>
                                 <br>
-                                <input list="documents" id="typeOfDocument_txt" name="typeOfDocument_txt">
+                                <input class="input" list="documents" id="typeOfDocument_txt" name="typeOfDocument_txt">
                                 <datalist id="documents">
-                                    <option value="Targeta de identidad"></option>
+                                    <option value="Tarjeta de identidad"></option>
                                     <option value="C.C"></option>
                                     <option value="etc"></option>
                                 </datalist>
@@ -144,7 +144,7 @@
                             <section class="expeditionDocument">
                                 <label for="expeditionOfDocument_txt">Lugar de expedición del documento</label>
                                 <br>
-                                <input list="citiesList" id="expeditionOfDocument_txt" name="expeditionOfDocument_txt">
+                                <input class="input" list="citiesList" id="expeditionOfDocument_txt" name="expeditionOfDocument_txt">
                                 <datalist id="citiesList">
                                     <option value="Cali"></option>
                                     <option value="Bogotá"></option>
@@ -156,13 +156,13 @@
                             <section class="placeOfBirthUser">
                                 <label for="placeOfBirthUser_txt">Lugar de nacimiento</label>
                                 <br>
-                                <input list="citiesList" id="placeOfBirthUser_txt" name="placeOfBirthUser_txt">
+                                <input class="input" list="citiesList" id="placeOfBirthUser_txt" name="placeOfBirthUser_txt">
                             </section>
                             <br>
                             <section class="DepartmenUser">
                                 <label for="departmentUser_txt">Departamento de residencia</label>
                                 <br>
-                                <input list="departmentList" id="departmentUser_txt" name="departmentUser_txt">
+                                <input class="input" list="departmentList" id="departmentUser_txt" name="departmentUser_txt">
                                 <datalist id="departmentList">
                                     <option value="Valle del Cauca"></option>
                                     <option value="Cauca"></option>
@@ -174,31 +174,31 @@
                             <section class="lastname">
                                 <label for="userLastName">Apellidos</label>
                                 <br>
-                                <input type="text" name="userLastName" id="userLastName" required>
+                                <input class="input" type="text" name="userLastName" id="userLastName" required>
                             </section>
                             <br>
                             <section class="numberOfDocument">
                                 <label for="numberOfDocument">Número de documento de identidad</label>
                                 <br>
-                                <input type="text" name="numberOfDocument" id="numberOfDocument" required>
+                                <input class="input" type="text" name="numberOfDocument" id="numberOfDocument" required>
                             </section>
                             <br>
                             <section class="dateOfDocument">
                                 <label for="dateOfDocument">Fecha de expedición del documento</label>
                                 <br>
-                                <input type="date" name="dateOfDocument" id="dateOfDocument" required>
+                                <input class="input" type="date" name="dateOfDocument" id="dateOfDocument" required>
                             </section>
                             <br>
                             <section class="birthDate">
                                 <label for="birthDate">Fecha de nacimiento</label>
                                 <br>
-                                <input type="date" name="birthDate" id="birthDate" required>
+                                <input class="input" type="date" name="birthDate" id="birthDate" required>
                             </section>
                             <br>
                             <section class="cityOfResidence">
                                 <label for="cityOfResidence_txt">Ciudad de residencia</label>
                                 <br>
-                                <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+                                <input class="input" list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
                             </section>
                         </td>
                     </tr>
@@ -208,7 +208,7 @@
                 <section class="directionUse">
                     <label for="directionUser">Dirección</label>
                     <br>
-                    <input type="text" name="directionUser" id="directionUser" required>
+                    <input class="input" type="text" name="directionUser" id="directionUser" required>
                 </section>
                 <br>
             </div>
@@ -218,13 +218,13 @@
                         <section class="cellUser">
                             <label for="cellUser">Número telefonico</label>
                             <br>
-                            <input type="text" name="cellUser" id="cellUser" required>
+                            <input class="input" type="text" name="cellUser" id="cellUser" required>
                         </section>
                         <br>
                         <section class="typeHouseUser">
                             <label for="typeHouseUser_txt">tipo de residencia</label>
                             <br>
-                            <input list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
+                            <input class="input" list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
                             <datalist id="typeHouseList">
                                 <option value="Apartamento"></option>
                                 <option value="Casa propia"></option>
@@ -237,13 +237,13 @@
                         <section class="Cell2">
                             <label for="cell2">Teléfono de persona de confianza</label>
                             <br>
-                            <input type="tel" name="cell2" id="cell2" maxlength="10">
+                            <input class="input" type="tel" name="cell2" id="cell2" maxlength="10">
                         </section>
                         <br>
                         <section class="estrato">
                             <label for="estratoUser">Estrato</label>
                             <br>
-                            <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
+                            <input class="input" type="number" id="estratoUser" name="estratoUser" min="1" max="10">
                         </section>
                         <br>
                     </td>
@@ -253,9 +253,9 @@
                         <section class="LiveWhitSomeone">
                             <span>¿Usted vive con alguien?</span>
                             <br>
-                            <input type="radio" name="compani" id="yes" value="yes">
+                            <input class="input" type="radio" name="compani" id="yes" value="yes">
                             <label for="yes">Si</label>
-                            <input type="radio" name="compani" id="no" value="no">
+                            <input  class="input"type="radio" name="compani" id="no" value="no">
                             <label for="no">No</label>
                         </section>
                     </td>
@@ -263,7 +263,7 @@
                         <section class="liveWith">
                             <span>Por favor, escriba con quién vive</span>
                             <br>
-                            <input type="text" name="companyOfUser" id="companyOfUser">
+                            <input class="input" type="text" name="companyOfUser" id="companyOfUser">
                         </section>
                     </td>
                 </tr>
@@ -273,12 +273,11 @@
                 <table>
                     <tr>
                         <td>
-                            <a href="FormularioDeSolicitud.html" id="linkFirstPageQuestionarie"><img
+                            <a href="FormularioDeSolicitud.html" id="linkFirstPageQuestionarie"></a><img
                                     src="images\formularioSolicitud\pagAnterio.png" alt="Pagina anterior"></a>
                         </td>
                         <td>
-                            <a href="FormularioDeSolicitud3.html" id="linkThirdPageQuestionarie"><img
-                                    src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina"></a>
+                            <img class="btn" src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina"></a>
                         </td>
                     </tr>
                 </table>
@@ -343,4 +342,26 @@
     </body>
 
 </html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDYX14YuYI0xbvonWsqKnZt7XmdQ2qXv5A",
+    authDomain: "gapiweb-eca67.firebaseapp.com",
+    databaseURL: "https://gapiweb-eca67.firebaseio.com",
+    projectId: "gapiweb-eca67",
+    storageBucket: "gapiweb-eca67.appspot.com",
+    messagingSenderId: "362806524614",
+    appId: "1:362806524614:web:ac43b95cfc3afa0964b5c7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="./Scripts/FormularioDeSolicitud2.js"></script>
 <script src="/Scripts/changeSize.js"></script>
