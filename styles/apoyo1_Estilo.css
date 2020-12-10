@@ -9,106 +9,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
 
-/*textos generales*/
-h1{
-    font-family: 'Helvetica-light', sans-serif;
-    font-size: 10px;
-    color: #0F1C27; 
-    letter-spacing: 2px;
-}
-h2{
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 24px;
-    color: #0F1C27;
-}
-h3{
-    font-family: 'Helvetica-light', sans-serif;
-    font-size: 16px;
-    color: #0F1C27; 
-}
-h4{
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 34px;
-    color: #0F1C27;
-}
-h5{
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 24px;
-}
-h6{
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-}
-#ROverline{
-    font-family: 'Helvetica', sans-serif;
-    font-size: 10px;
-}
 
-p{
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-/*fin textos generales*/
-/*Menu de arriba*/
-
-.header{
-    background-color: #ffffff;
-    display: flex;
-    width: 100%;
-    height: 72px;
-    box-shadow: 0 4px 6px 0px rgb(122, 122, 122);
-    position: absolute;
-}
-.logo_container{
-    height: auto;
-}
-
-#logo{
-    margin-top: 10px;
-    margin-left: 122px;
-    width: auto;
-}
-.topNav{
-    margin-left: 350px;
-    width: 100%;
-}
-.topNav a{
-    float: left;
-    display: block;
-    color: #0F1C27;
-    text-align: center;
-    padding: 25px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
-}
-
-.topNav a:hover {
-    border-bottom: 6px solid #F07349;
-}
-#Protocolo_link{
-    padding-top: 13px;
-    padding-bottom: 18px;
-}
-
-.title{
-        padding-top: 100px;
-        padding-left: 120px;
-        padding-bottom: 40px;
-        background-color: #EFEFEF;
-}
 
 /* --- Espacio para cards ---*/
-
+.breadCrumb{
+    margin-left: 70px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+}
 .centralBox{
     padding: 100px 15px;
     background-color: #EFEFEF;
     align-items: center;
 }
-
+.mainImage{
+    height: 100%;
+}
 .mainBox{
     border-radius: 1em;
     display: flex;
@@ -127,7 +43,7 @@ p{
 .titleRightBox{
     text-align: center;
     padding-top: 80px;
-    padding-left: 160px;
+    padding-left: 40px;
 }
 .imageCar{
     text-align: center;
@@ -135,22 +51,22 @@ p{
 }
 .btnCard1{
     width: 279px;
-    height: 234px;
+    height: 178px;
     background: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #3B939B;
-    padding: 10px;
     
 }
 .btnCard2{
+    margin-left: 30px;
     width: 279px;
-    height: 234px;
+    height: 178px;
     background: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #F07349;
-    padding: 10px;
+    
     
 }
 .infoCard1{
@@ -171,57 +87,23 @@ p{
     background: #F07349;
 }
 
-/* --- Espacio para el Footer --- */
-footer{
-    background-color: #146971;
-    height: auto;
-    padding-top: 50px;
-    padding-left: 120px;
-    padding-right: 120px;
-}
-.footer_info{
-    display: flex;
-    width: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    padding-bottom: 25px;
-}
-.data{
-    padding-right: 140px;
-}
-.data_logo{
-    padding-bottom: 30px;
-}
-.data_menu{
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-}
-.data_menu a{
+.textCard{
+    padding: 50px;
     color: white;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
-    padding-bottom: 16px;
 }
-.data_legal{
-    padding-right: 50px;
+
+.quesButton{
     display: flex;
-    flex-direction: column;
+    margin-left: 700px;
+    margin-top: 150px;
+    margin-bottom: 10px;
 }
-.data_legal a{
-    float: left;
-    color: white;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
-    padding-bottom: 16px;
-}
-.data_contact p{
-    color: white;
-    padding-top: 20px;
-}
-.social{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.icons{
-    margin-top: 40px;
+.quest_button{
+    background: #F07349;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    border-color: #F07349;
+
 }

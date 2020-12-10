@@ -3,146 +3,207 @@
     <head>
         <meta charset="utf-8">
         <title>Publicaciones</title>
-        <link rel="stylesheet" type="text/css" href="./publicaciones_style.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/publicaciones_style.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/main.css" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+        <link href="./fonts/HELVETICA-LIGHT.TTF" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap">
     </head>
     <body>
-      <div class="containerBackground">
-      </div>
-      
-      <header>
-          <div class="help">
-              <a>hola</a>
-          </div>
-          <nav class="gapiNav">
-              <ul>
-                  <li><img src="/images/GAPI.png" class="logo"></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li class="fixPosition">Inicio</li>
-                  <li class="fixPosition">Centro</li>
-                  <li class="fixPosition">Equipo</li>
-                  <li class="fixPosition">Proyectos</li>
-                  <li class="publicacionesNav active fixPosition">Publicaciones</li>
-                  <li class="fixPosition">Videos</li>
-                  <li class= "protocoloNav">Protocolo de atención</li>
-                  <li class="fixPosition">Asistencia</li>
-              </ul>
-          </nav>
-      </header>
-      <div class="banner">
-         <img src="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/banner-gapi-2020.png" class="bannerImage">    
-         <div class="bannerText"><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend neque eget arcu semper, ac consectetur velit scelerisque. Phasellus porta blandit ligula nec venenatis. Nullam fermentum quis arcu vel tincidunt. Integer dictum ultricies nunc eget pharetra. Aenean tellus ex, molestie sit amet nulla in, mattis facilisis quam. Nullam mauris dolor, interdum non lacinia ac, mattis vel nunc. Phasellus pellentesque sed elit eu porta.</a></div>
-      </div>
-      <main>
-          <h6>ESTÁS AQUÍ: INICIO/PUBLICACIONES</h6>
-          <h1>Nuestras publicaciones</h1>
-          <div class="gridPublicaciones">
-            <div class="largePublication">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMore">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
+        <div class="accesibility">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td class="accesibilityTD">Accesibilidad</td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td><label for="typeOfContrast_txt">Contraste</label>
+                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
+                                           name="typeOfContrast_txt">
+                                    <datalist id="listOfVisualcontrast">
+                                        <option value="Color original"></option>
+                                        <option value="verdes y azules"></option>
+                                        <option value="rojos y naranjas"></option>
+                                    </datalist>
+                                </td>
+                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                                <td>Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>  
+        </div>
+        <header class="header">
+
+            <div class="logo_container">
+                <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
             </div>
-            <div class="shortPublication">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMoreShortPublication">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
-            </div> 
-            <div class="shortPublication">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMoreShortPublication">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
-            </div>  
-            <div class="shortPublication">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMoreShortPublication">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
-            </div>  
-            <div class="shortPublication">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMoreShortPublication">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
-            </div>  
-            <div class="largePublicationLeft">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMore">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
+            <div class="menu">
+                <div class="topNav">
+                    <!--
+
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
+                </div>
             </div>
-            <div class="largePublication">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMore">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
+        </header>
+        <div class="banner">
+            <img src="./images/publicaciones/banner.png" class="bannerImage">
+        </div>
+        <main>
+            <h6 class="h6Publication" id="ROverline">ESTÁS AQUÍ: INICIO/PUBLICACIONES</h6>
+            <h4 class="h4Publicaciones">Nuestras publicaciones</h4>
+            <div class="gridPublicaciones">
+                <div class="largePublication">
+                    <img src="./images/publicaciones/first.png" class="imagePublication"/>
+                    <h2>El acceso a una justicia diferencial. La situación de la población en vulnerabilidad
+                        socioeconómica de Cali
+                    </h2>
+                    <p class="seeMore">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
+                <div class="shortPublication">
+                    <img class="imagePublication" src="./images/publicaciones/second.png" class="imagePublication"/>
+                    <h2>Impacto del activismo judicial sobre la garantía el derecho a la educación en Santiago de Cali</h2>
+                    <p class="seeMoreShortPublication">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div> 
+                <div class="shortPublication">
+                    <img class="imagePublication" src="./images/publicaciones/third.png"/>
+                    <h2>Acceso equitativo a servicios de agua potable y alcantarillado.
+                    </h2>
+                    <p class="seeMoreShortPublication">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>  
+                <div class="shortPublication">
+                    <img src="./images/publicaciones/four.png" class="imagePublication"/>
+                    <h2>Boletín GAPI 2015</h2>
+                    <p class="seeMoreShortPublication">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>  
+                <div class="shortPublication">
+                    <img src="./images/publicaciones/five.png" class="imagePublication"/>
+                    <h2>Cartilla sobre derechos de la población adulto mayor, 2 Edición.</h2>
+                    <p class="seeMoreShortPublication">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>  
+                <div class="largePublicationLeft">
+                    <img src="./images/publicaciones/six.png" class="imagePublication"/>
+                    <h2>Cartilla de divulgación con descarga gratuita
+                        ¡Saber te protege! Cartilla sobre salud sexual y reproductiva en la Legislación Colombiana</h2>
+                    <p class="seeMore">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
+                <div class="largePublication">
+                    <img src="./images/publicaciones/seven.png" class="imagePublication"/>
+                    <h2>Sobre vivienda digna para personas con discapacidad. Comité sobre los Derechos de las
+                        Personas con Discapacidad (2016)</h2>
+                    <p class="seeMore">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
+                <div class="largePublicationLeft">
+                    <img src="./images/publicaciones/eight.png" class="imagePublication"/>
+                    <h2>Sobre salud mental de niños, niñas y adolescentes desplazados en el proceso de
+                        seguimiento a la Sentencia T-025 de 2004 (2015)</h2>
+                    <p class="seeMore">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
+                <div class="largePublication">
+                    <img src="./images/publicaciones/nine.png" class="imagePublication"/>
+                    <h2>Sobre el derecho al agua potable en Colombia para la Comisión Interamericana de
+                        Derechos Humanos (2015)</h2>
+                    <p class="seeMore">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
+                <div class="shortPublication">
+                    <img src="./images/publicaciones/ten.png" class="imagePublication"/>
+                    <h2>Cartilla sobre derechos de la población adulto mayor, 2 Edición.
+                    </h2>
+                    <p class="seeMoreShortPublication">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
+                <div class="shortPublication">
+                    <img src="./images/publicaciones/eleven.png" class="imagePublication"/>
+                    <h2>La eficacia de las acciones populares y sus indicadores 
+                    </h2>
+                    <p class="seeMoreShortPublication">
+                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                </div>
             </div>
-            <div class="largePublicationLeft">
-              <img src="https://images.squarespace-cdn.com/content/v1/59968bfbbe42d68aa399f8e3/1540252667429-IGQGU8QJ25DTVCWPD41X/ke17ZwdGBToddI8pDm48kBx2dfLI9fqedJZoUb_1JPxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIEE9r6rLOAY89GyJ7xoFiqb68tufSwTNUmybh8kpc_k0KMshLAGzx4R3EDFOm1kBS/salir-armario-out-closet.jpg?format=1500w" class="imagePublication"/>
-              <h2>Salir del closét en esta ciudad no es fácil</h2>
-              <p class="seeMore">
-                CONTINUAR LEYENDO <img src="/images/arrow-right.svg" class="arrowToContinue"> </p>
-            </div>
-          </div>
-      </main>
-      <footer>
-                <section class="footer_info">
-                    <div class="data">
-                        <div class="data_logo">
-                            <img src="/images/GAPI2.png" alt="">
-                        </div>
-                        <div class="data_info">
-                            <p>Oficina de Información<br>
+        </main>
+        <footer>
+            <section class="footer_info">
+                <div class="data">
+                    <div class="data_logo">
+                        <img src="images/main/Logo_footer.png" alt="">
+                    </div>
+                    <div class="data_info">
+                        <p>Oficina de Información<br>
                             Teléfono: 8821093<br>
                             Ext: 112 - 119<br>
                             Dirección: Carrera 9 No. 9-49<br>
                             Segundo piso<br>
                             Horario de atención al público <br>
                             2:30 p.m - 5:30 p.m.</p>
-                        </div>
-                        
                     </div>
-                    <div class="data_menu">
-                        <h3>Menú</h3>
-                        <a href="">Inicio</a><br>
-                        <a href="">Centro</a><br>
-                        <a href="">Equipo</a><br>
-                        <a href="">Proyectos</a><br>
-                        <a href="">Publicaciones</a><br>
-                        <a href="">Videos</a><br>
-                        <a href="">Protocolo de atención</a><br>
-                        <a href="">Asistencia</a><br>
-                    </div>
-                    <div class="data_legal">
-                        <h3>Legal</h3>
-                        <a href="">Política de Cookies</a><br>
-                        <a href="">Política de Privacidad</a><br>
-                        <a href="">Términos del servicio</a><br>
-                        <a href="">Status</a><br>
-                    </div>
-                    <div class="data_contact">
-                        <h3>Contáctanos</h3>
-                        <p>
-                            <a class="contact">Jorge Andrés Illera Cajiao<br>
-                            Director del GAPI</a><br>
-                            Correo: jaillera@icesi.edu.co<br>
-                        </p>
-                        <p>
-                            <a class="contact">Paula Andrea Cerón Arboleda<br>
-                            Coordinadora del GAPI</a><br>
-                            Correo: paula.ceron@correo.icesi.edu.co
-                        </p>
-                    </div>
-                </section>
-                <section class="social">
-                    <div class="icons">
-                        <img class="iconImage" src="/images/social.png" alt="">
-                    </div>
-                </section>
-            </footer>
+
+                </div>
+                <div class="data_menu">
+                    <h6>Menú</h6>
+                    <a href="">Inicio</a>
+                    <a href="">Centro</a>
+                    <a href="">Equipo</a>
+                    <a href="">Proyectos</a>
+                    <a href="">Publicaciones</a>
+                    <a href="">Videos</a>
+                    <a href="">Protocolo de Atención</a>
+                    <a href="">Asistencia</a>
+                </div>
+                <div class="data_legal">
+                    <h6>Legal</h6>
+                    <a href="">Política de cookies</a>
+                    <a href="">Política de privacidad</a>
+                    <a href="">Términos de servicio</a>
+                    <a href="">Status</a>
+                </div>
+                <div class="data_contact">
+                    <h6>Contáctanos</h6>
+                    <p>
+                        <strong>Jorge Andrés Illera Cajiao</strong><br>
+                        <strong>Director del GAPI</strong><br>
+                        Correo: jaillera@icesi.edu.co<br>
+                    </p>
+                    <p>
+                        <strong>Paula Andrea Cerón Arboleda</strong><br>
+                        <strong>Coordinadora del GAPI</strong><br>
+                        Correo: paula.ceron@correo.icesi.edu.co
+                    </p>
+                </div>
+            </section>
+            <section class="social">
+                <div class="icons">
+                    <img src="images/main/Redes.png" alt="">
+                </div>
+            </section>
+        </footer>
     </body>
 </html>
+<script src="/Scripts/changeSize.js"></script>
