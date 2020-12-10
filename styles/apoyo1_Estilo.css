@@ -22,7 +22,9 @@
     background-color: #EFEFEF;
     align-items: center;
 }
-
+.mainImage{
+    height: 100%;
+}
 .mainBox{
     border-radius: 1em;
     display: flex;
@@ -88,4 +90,20 @@
 .textCard{
     padding: 50px;
     color: white;
+}
+
+.quesButton{
+    display: flex;
+    margin-left: 700px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+.quest_button{
+    background: #F07349;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    border-color: #F07349;
+
 }
