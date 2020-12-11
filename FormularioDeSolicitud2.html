@@ -14,42 +14,56 @@
 <body>
 
     <body>
-        <form action="submission.html" method="POST">
-            <section class="visuaAdjust">
-                <table class="headerTable">
-                    <tr>
-                        <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad"> Accesibilidad
-                        </td>
-                        <td><input type="button" value="A+"></td>
-                        <td><input type="button" value="A-"></td>
-                        <td><label for="typeOfContrast_txt">Contraste</label>
-                            <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
-                            <datalist id="listOfVisualcontrast">
-                                <option value="Color original"></option>
-                                <option value="verdes y azules"></option>
-                                <option value="rojos y naranjas"></option>
-                            </datalist>
-                        </td>
-                        <td><a href="" id="mapa">Mapa</a></td>
-                        <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
-                    </tr>
-                </table>
-            </section>
-        </form>
+        <div class="accesibility">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                    <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                        <option value="">Color original</option>
+                                        <option value="1">Blanco sobre negro</option>
+                                        <option value="2">Amarillo sobre negro</option>
+                                        <option value="3">Amarillo sobre azul</option>
+                                        <option value="4">Verde sobre Negro</option>
+                                    </select>
+                                </td>
+                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                                <td id="tdAccesibility">Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>  
+        </div>
         <header class="header">
             <div class="logo_container">
                 <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
             </div>
             <div class="menu">
                 <div class="topNav">
-                    <a href="">Inicio</a>
-                    <a href="./centro.html">Centro</a>
-                    <a href="./equipo.html">Equipo</a>
-                    <a href="./proyectos.html">Proyectos</a>
-                    <a href="./Publicaciones.html">Publicaciones</a>
-                    <a href="./videos.html">Videos</a>
-                    <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                    <a href="./asisPsico.html">Asistencia</a>
+                    <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
@@ -58,15 +72,21 @@
             <p>Estás aquí: Asistencia / Solicitar cita</p>
         </section>
         <br>
-        <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
-            <a href="" id="linkSolicitar-cita"><img src="images\formularioSolicitud\solicitarCita.png"
-                    alt="Solicitar cita"></a>
-            <a href="" id="linkAyuda-psicologica"><img src="images\formularioSolicitud\ayudaPsicologica.png"
-                    alt="Ayuda psicolgica y orientacion"></a>
-            <a href="" id="linkPreguntas-frecuentes"><img src="images\formularioSolicitud\preguntasFrecuentes.png"
-                    alt="Preguntas frecuentes"></a>
-        </div>
-        <br>
+    <div class="asistenciaMenu">
+        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+            <p>Solicitar cita</p>
+        </button></a>
+        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+        </button></a>
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/preguntas.png" class="solicitarCita_img">
+            <p>Preguntas frecuentes</p>
+        </button></a>
+    </div>
+    <br>
         <div class="indice" id="indice-questionarie">
             <h5>Formulario de citas</h5>
             <ol>
@@ -113,13 +133,13 @@
                             <section class="name">
                                 <label for="userName">Nombre</label>
                                 <br>
-                                <input type="text" name="userName" id="userName" required>
+                                <input type="text" name="userName" id="userName" placeholder="Nombre" required>
                             </section>
                             <br>
                             <section class="typeOfDocument">
                                 <label for="typeOfDocument_txt">Tipo de documento</label>
                                 <br>
-                                <input list="documents" id="typeOfDocument_txt" name="typeOfDocument_txt">
+                                <input list="documents" id="typeOfDocument_txt" name="typeOfDocument_txt" placeholder="Selecciona un documento" required>
                                 <datalist id="documents">
                                     <option value="Targeta de identidad"></option>
                                     <option value="C.C"></option>
@@ -130,7 +150,7 @@
                             <section class="expeditionDocument">
                                 <label for="expeditionOfDocument_txt">Lugar de expedición del documento</label>
                                 <br>
-                                <input list="citiesList" id="expeditionOfDocument_txt" name="expeditionOfDocument_txt">
+                                <input list="citiesList" id="expeditionOfDocument_txt" name="expeditionOfDocument_txt" placeholder="Selecciona una Ciudad" required>
                                 <datalist id="citiesList">
                                     <option value="Cali"></option>
                                     <option value="Bogotá"></option>
@@ -142,13 +162,13 @@
                             <section class="placeOfBirthUser">
                                 <label for="placeOfBirthUser_txt">Lugar de nacimiento</label>
                                 <br>
-                                <input list="citiesList" id="placeOfBirthUser_txt" name="placeOfBirthUser_txt">
+                                <input list="citiesList" id="placeOfBirthUser_txt" name="placeOfBirthUser_txt" placeholder="Selecciona una Ciudad" required>
                             </section>
                             <br>
                             <section class="DepartmenUser">
                                 <label for="departmentUser_txt">Departamento de residencia</label>
                                 <br>
-                                <input list="departmentList" id="departmentUser_txt" name="departmentUser_txt">
+                                <input list="departmentList" id="departmentUser_txt" name="departmentUser_txt" placeholder="Selecciona un Departamento" required>
                                 <datalist id="departmentList">
                                     <option value="Valle del Cauca"></option>
                                     <option value="Cauca"></option>
@@ -160,13 +180,13 @@
                             <section class="lastname">
                                 <label for="userLastName">Apellidos</label>
                                 <br>
-                                <input type="text" name="userLastName" id="userLastName" required>
+                                <input type="text" name="userLastName" id="userLastName"  placeholder="Apellidos" required>
                             </section>
                             <br>
                             <section class="numberOfDocument">
                                 <label for="numberOfDocument">Número de documento de identidad</label>
                                 <br>
-                                <input type="text" name="numberOfDocument" id="numberOfDocument" required>
+                                <input type="text" name="numberOfDocument" id="numberOfDocument" placeholder="Escribe tu número de identificación" required>
                             </section>
                             <br>
                             <section class="dateOfDocument">
@@ -184,7 +204,7 @@
                             <section class="cityOfResidence">
                                 <label for="cityOfResidence_txt">Ciudad de residencia</label>
                                 <br>
-                                <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+                                <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt" placeholder="Selecciona una Ciudad" required>
                             </section>
                         </td>
                     </tr>
@@ -194,7 +214,7 @@
                 <section class="directionUse">
                     <label for="directionUser">Dirección</label>
                     <br>
-                    <input type="text" name="directionUser" id="directionUser" required>
+                    <input type="text" name="directionUser" id="directionUser" placeholder="Dirección de residencia" required>
                 </section>
                 <br>
             </div>
@@ -204,13 +224,13 @@
                         <section class="cellUser">
                             <label for="cellUser">Número telefonico</label>
                             <br>
-                            <input type="text" name="cellUser" id="cellUser" required>
+                            <input type="text" name="cellUser" id="cellUser" placeholder="Escribe tu número telefonico" required>
                         </section>
                         <br>
                         <section class="typeHouseUser">
                             <label for="typeHouseUser_txt">tipo de residencia</label>
                             <br>
-                            <input list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
+                            <input list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt"placeholder="Selecciona un tipo de vivienda" required>
                             <datalist id="typeHouseList">
                                 <option value="Apartamento"></option>
                                 <option value="Casa propia"></option>
@@ -223,13 +243,13 @@
                         <section class="Cell2">
                             <label for="cell2">Teléfono de persona de confianza</label>
                             <br>
-                            <input type="tel" name="cell2" id="cell2" maxlength="10">
+                            <input type="tel" name="cell2" id="cell2" maxlength="10" placeholder="Escriba el número telefonico" required>
                         </section>
                         <br>
                         <section class="estrato">
                             <label for="estratoUser">Estrato</label>
                             <br>
-                            <input type="number" id="estratoUser" name="estratoUser" min="1" max="10">
+                            <input type="number" id="estratoUser" name="estratoUser" min="1" max="10" placeholder="Selecciona su estrato" required>
                         </section>
                         <br>
                     </td>
@@ -249,7 +269,7 @@
                         <section class="liveWith">
                             <span>Por favor, escriba con quién vive</span>
                             <br>
-                            <input type="text" name="companyOfUser" id="companyOfUser">
+                            <input type="text" name="companyOfUser" id="companyOfUser"placeholder="Escriba con quien vive">
                         </section>
                     </td>
                 </tr>

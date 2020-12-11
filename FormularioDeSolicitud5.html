@@ -13,42 +13,56 @@
 
 <body>
     <body>
-        <form action="submission.html" method="POST">
-            <section class="visuaAdjust">
-                <table class="headerTable">
-                    <tr>
-                        <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad"> Accesibilidad</td>
-                        <td><input type="button" value="A+"></td>
-                        <td><input type="button" value="A-"></td>
-                        <td><label for="typeOfContrast_txt">Contraste</label>
-                            <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                name="typeOfContrast_txt">
-                            <datalist id="listOfVisualcontrast">
-                                <option value="Color original"></option>
-                                <option value="verdes y azules"></option>
-                                <option value="rojos y naranjas"></option>
-                            </datalist>
-                        </td>
-                        <td><a href="" id="mapa">Mapa</a></td>
-                        <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
-                    </tr>
-                </table>
-            </section>
-        </form>
+        <div class="accesibility">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                    <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                        <option value="">Color original</option>
+                                        <option value="1">Blanco sobre negro</option>
+                                        <option value="2">Amarillo sobre negro</option>
+                                        <option value="3">Amarillo sobre azul</option>
+                                        <option value="4">Verde sobre Negro</option>
+                                    </select>
+                                </td>
+                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                                <td id="tdAccesibility">Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>  
+        </div>
         <header class="header">
             <div class="logo_container">
                 <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
             </div>
             <div class="menu">
                 <div class="topNav">
-                    <a href="">Inicio</a>
-                    <a href="./centro.html">Centro</a>
-                    <a href="./equipo.html">Equipo</a>
-                    <a href="./proyectos.html">Proyectos</a>
-                    <a href="./Publicaciones.html">Publicaciones</a>
-                    <a href="./videos.html">Videos</a>
-                    <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                    <a href="./asisPsico.html">Asistencia</a>
+                    <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
@@ -58,10 +72,19 @@
         <p>Estás aquí: Asistencia / Solicitar cita</p>
     </section>
     <br>
-    <div class="optionsBelowHeader" id="optionsBelowHeadersQuestionarie">
-        <a href="" id="linkSolicitar-cita"><img src="images\formularioSolicitud\solicitarCita.png" alt="Solicitar cita"></a>
-        <a href="" id="linkAyuda-psicologica"><img src="images\formularioSolicitud\ayudaPsicologica.png" alt="Ayuda psicolgica y orientacion"></a>
-        <a href="" id="linkPreguntas-frecuentes"><img src="images\formularioSolicitud\preguntasFrecuentes.png" alt="Preguntas frecuentes"></a>
+    <div class="asistenciaMenu">
+        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+            <p>Solicitar cita</p>
+        </button></a>
+        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+        </button></a>
+        <a href="#"><button class="asistenciaMenu_button">
+            <img src="./images/main/preguntas.png" class="solicitarCita_img">
+            <p>Preguntas frecuentes</p>
+        </button></a>
     </div>
     <br>
     <div class="indice" id="indice-questionarie">
@@ -118,13 +141,13 @@
                         <section class="CompanionName">
                             <label for="CompanionName">Nombre</label>
                             <br>
-                            <input type="text" name="CompanionName" id="CompanionName" required>
+                            <input type="text" name="CompanionName" id="CompanionName"placeholder="Nombre" required>
                         </section>
                         <br>
                         <section class="CompaniontypeOfDocument">
                             <label for="CompaniontypeOfDocument_txt">Tipo de documento</label>
                             <br>
-                            <input list="documents" id="CompaniontypeOfDocument_txt" name="CompaniontypeOfDocument_txt">
+                            <input list="documents" id="CompaniontypeOfDocument_txt" name="CompaniontypeOfDocument_txt"placeholder="Tipo de documento" required>
                             <datalist id="documents">
                                 <option value="Targeta de identidad"></option>
                                 <option value="C.C"></option>
@@ -135,8 +158,8 @@
                         <section class="CompanionExpeditionDocument">
                             <label for="CompanionExpeditionOfDocument_txt">Lugar de expedición del documento</label>
                             <br>
-                            <input list="citiesList" id="CompanionExpeditionOfDocument_txt"
-                                name="CompanionExpeditionOfDocument_txt">
+                            <input list="citiesList" id="CompanionExpeditionOfDocument_txt "
+                                name="CompanionExpeditionOfDocument_txt" placeholder="Selecciona una Ciudad" required>
                             <datalist id="citiesList">
                                 <option value="Cali"></option>
                                 <option value="Bogotá"></option>
@@ -154,7 +177,7 @@
                         <section class="CompanionDepartmen">
                             <label for="CompanionDepartment_txt">Departamento de residencia</label>
                             <br>
-                            <input list="departmentList" id="CompanionDepartment_txt" name="CompanionDepartment_txt">
+                            <input list="departmentList" id="CompanionDepartment_txt" name="CompanionDepartment_txt" placeholder="Selecciona un departamento" required>
                             <datalist id="departmentList">
                                 <option value="Valle del Cauca"></option>
                                 <option value="Cauca"></option>
@@ -168,13 +191,13 @@
                         <section class="Companionlastname">
                             <label for="CompanionLastName">Apellidos</label>
                             <br>
-                            <input type="text" name="CompanionLastName" id="CompanionLastName" required>
+                            <input type="text" name="CompanionLastName" id="CompanionLastName" placeholder="Apellidos" required>
                         </section>
                         <br>
                         <section class="CompanionNumberOfDocument">
                             <label for="CompanionNumberOfDocument">Número de documento de identidad</label>
                             <br>
-                            <input type="text" name="CompanionNumberOfDocument" id="CompanionNumberOfDocument" required>
+                            <input type="text" name="CompanionNumberOfDocument" id="CompanionNumberOfDocument" placeholder="Escriba su número de cocumento" required>
                         </section>
                         <br>
                         <section class="CompanionDateOfDocument">
@@ -186,13 +209,13 @@
                         <section class="CompanionCityOfResidence">
                             <label for="CompanionCityOfResidence_txt">Ciudad de residencia</label>
                             <br>
-                            <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+                            <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt" placeholder="Selecciona una Ciudad" required>
                         </section>
                         <br>
                         <section class="Cell2">
                             <label for="cell2">Teléfono de persona de confianza</label>
                             <br>
-                            <input type="tel" name="cell2" id="cell2" maxlength="10">
+                            <input type="tel" name="cell2" id="cell2" maxlength="10" placeholder="Número telefonico" required>
                         </section>
                         <br>
                     </td>
@@ -203,14 +226,14 @@
                 <section class="CompanionDirection">
                     <label for="CompanionDirection">Dirección de residencia</label>
                     <br>
-                    <input type="text" name="CompanionDirection" id="CompanionDirection" required>
+                    <input type="text" name="CompanionDirection" id="CompanionDirection" placeholder="Direccion de residencia" required>
                 </section>
                 <br>
                 <section class="CompanionAndUserRelationList">
                     <label for="CompanionAndUserRelationList">Relación con el titular del acto jurídico</label>
                     <br>
                     <input list="relationList" name="CompanionAndUserRelationList" id="CompanionAndUserRelationList"
-                        required>
+                    placeholder="Seleccione el tipo de relación" required>
                     <datalist id="relationList">
                         <option value="hermanos"></option>
                         <option value="Padres"></option>
@@ -222,7 +245,7 @@
                     <label for="CompanionAndUserRelation">Si ninguna de las opciones anteriores le corresponde,
                         escríba aquí su relación con<br> el titular del caso</label>
                     <br>
-                    <input type="text" name="CompanionAndUserRelation" id="CompanionAndUserRelation" required>
+                    <input type="text" name="CompanionAndUserRelation" id="CompanionAndUserRelation" placeholder="Escriba aqui" required>
                 </section>
             </div>
             </form>
