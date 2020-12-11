@@ -141,15 +141,19 @@
                         <section class="CompanionName">
                             <label for="CompanionName">Nombre</label>
                             <br>
-                            <input type="text" name="CompanionName" id="CompanionName"placeholder="Nombre" required>
+
+                            <input class="input" type="text" name="CompanionName" id="CompanionName" required>
+
                         </section>
                         <br>
                         <section class="CompaniontypeOfDocument">
                             <label for="CompaniontypeOfDocument_txt">Tipo de documento</label>
                             <br>
-                            <input list="documents" id="CompaniontypeOfDocument_txt" name="CompaniontypeOfDocument_txt"placeholder="Tipo de documento" required>
+
+                            <input class="input" list="documents" id="CompaniontypeOfDocument_txt" name="CompaniontypeOfDocument_txt">
+
                             <datalist id="documents">
-                                <option value="Targeta de identidad"></option>
+                                <option value="Tarjeta de identidad"></option>
                                 <option value="C.C"></option>
                                 <option value="etc"></option>
                             </datalist>
@@ -158,8 +162,10 @@
                         <section class="CompanionExpeditionDocument">
                             <label for="CompanionExpeditionOfDocument_txt">Lugar de expedición del documento</label>
                             <br>
-                            <input list="citiesList" id="CompanionExpeditionOfDocument_txt "
-                                name="CompanionExpeditionOfDocument_txt" placeholder="Selecciona una Ciudad" required>
+
+                            <input class="input" list="citiesList" id="CompanionExpeditionOfDocument_txt"
+                                name="CompanionExpeditionOfDocument_txt">
+
                             <datalist id="citiesList">
                                 <option value="Cali"></option>
                                 <option value="Bogotá"></option>
@@ -171,13 +177,14 @@
                         <section class="CompanionBirthDate">
                             <label for="CompanionBirthDate">Fecha de nacimiento</label>
                             <br>
-                            <input type="date" name="CompanionBirthDate" id="CompanionBirthDate" required>
+                            <input class="input" type="date" name="CompanionBirthDate" id="CompanionBirthDate" required>
                         </section>
                         <br>
                         <section class="CompanionDepartmen">
                             <label for="CompanionDepartment_txt">Departamento de residencia</label>
                             <br>
-                            <input list="departmentList" id="CompanionDepartment_txt" name="CompanionDepartment_txt" placeholder="Selecciona un departamento" required>
+                            <input class="input" list="departmentList" id="CompanionDepartment_txt" name="CompanionDepartment_txt">
+
                             <datalist id="departmentList">
                                 <option value="Valle del Cauca"></option>
                                 <option value="Cauca"></option>
@@ -191,31 +198,39 @@
                         <section class="Companionlastname">
                             <label for="CompanionLastName">Apellidos</label>
                             <br>
-                            <input type="text" name="CompanionLastName" id="CompanionLastName" placeholder="Apellidos" required>
+
+                            <input class="input" type="text" name="CompanionLastName" id="CompanionLastName" required>
+
                         </section>
                         <br>
                         <section class="CompanionNumberOfDocument">
                             <label for="CompanionNumberOfDocument">Número de documento de identidad</label>
                             <br>
-                            <input type="text" name="CompanionNumberOfDocument" id="CompanionNumberOfDocument" placeholder="Escriba su número de cocumento" required>
+
+                            <input class="input" type="text" name="CompanionNumberOfDocument" id="CompanionNumberOfDocument" required>
+
                         </section>
                         <br>
                         <section class="CompanionDateOfDocument">
                             <label for="CompanionDateOfDocument">Fecha de expedición del documento</label>
                             <br>
-                            <input type="date" name="CompanionDateOfDocument" id="CompanionDateOfDocument" required>
+                            <input class="input" type="date" name="CompanionDateOfDocument" id="CompanionDateOfDocument" required>
                         </section>
                         <br>
                         <section class="CompanionCityOfResidence">
                             <label for="CompanionCityOfResidence_txt">Ciudad de residencia</label>
                             <br>
-                            <input list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt" placeholder="Selecciona una Ciudad" required>
+
+                            <input class="input"list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
+
                         </section>
                         <br>
                         <section class="Cell2">
                             <label for="cell2">Teléfono de persona de confianza</label>
                             <br>
-                            <input type="tel" name="cell2" id="cell2" maxlength="10" placeholder="Número telefonico" required>
+
+                            <input class="input" type="tel" name="cell2" id="cell2" maxlength="10">
+
                         </section>
                         <br>
                     </td>
@@ -226,14 +241,17 @@
                 <section class="CompanionDirection">
                     <label for="CompanionDirection">Dirección de residencia</label>
                     <br>
-                    <input type="text" name="CompanionDirection" id="CompanionDirection" placeholder="Direccion de residencia" required>
+                    <input class="input" type="text" name="CompanionDirection" id="CompanionDirection" required>
+
                 </section>
                 <br>
                 <section class="CompanionAndUserRelationList">
                     <label for="CompanionAndUserRelationList">Relación con el titular del acto jurídico</label>
                     <br>
-                    <input list="relationList" name="CompanionAndUserRelationList" id="CompanionAndUserRelationList"
-                    placeholder="Seleccione el tipo de relación" required>
+
+                    <input class="input" list="relationList" name="CompanionAndUserRelationList" id="CompanionAndUserRelationList"
+                        required>
+
                     <datalist id="relationList">
                         <option value="hermanos"></option>
                         <option value="Padres"></option>
@@ -245,7 +263,9 @@
                     <label for="CompanionAndUserRelation">Si ninguna de las opciones anteriores le corresponde,
                         escríba aquí su relación con<br> el titular del caso</label>
                     <br>
-                    <input type="text" name="CompanionAndUserRelation" id="CompanionAndUserRelation" placeholder="Escriba aqui" required>
+
+                    <input class="inputOtro" type="text" name="CompanionAndUserRelation" id="CompanionAndUserRelation" required>
+
                 </section>
             </div>
             </form>
@@ -258,7 +278,7 @@
                                 alt="Pagina anterior"></a>
                     </td>
                     <td>
-                        <a href="formularioDeSolicitud6.html" id="linkThirdPageQuestionarie"><img src="images\formularioSolicitud\pagSiguiente.png"
+                       <img class="btn" src="images\formularioSolicitud\pagSiguiente.png"
                                 alt="Siguiente pagina"></a>
                     </td>
                 </tr>
@@ -323,4 +343,7 @@
 </body>
 
 </html>
+
+<script src="./Scripts/FormularioDeSolicitud5.js"></script>
+
 <script src="/Scripts/changeSize.js"></script>
