@@ -17,12 +17,12 @@
 .questions{
     background-color: rgb(250, 250, 250);
     float: left;
-    width: 50%;
+    width: 49%;
     min-height: 785px;
     text-align: left;
     padding-left: 25px;
     padding-top: 25px;
-    padding-right: 23px;
+    padding-right: px;
     margin-right: 8%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

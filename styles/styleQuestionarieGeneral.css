@@ -2,7 +2,7 @@ body{
     background-color: rgb(240, 240, 240);
     margin: 0px auto;
 }
-body p{
+.estasAqui p{
     color: black;
 }
 body span{
@@ -29,134 +29,53 @@ h3 {
     color: teal;
     padding-bottom: 5%;
 }
-/*footer*/
-footer{
-    float: left;
-    margin-top: 50px;
-    background-color: #146971;
-    height: auto;
-    width: 82%;
-    padding-top: 50px;
-    padding-left: 9%;
-    padding-right: 9%;
 
-}
-
-footer p{
-    color: white;
-}
-
-.footer_info{
-    display: flex;
-    width: 100%;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    padding-bottom: 25px;
-
-}
-.data{
-    padding-right: 140px;
-}
-.data_logo{
-    padding-bottom: 30px;
-}
-.data_menu{
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-}
-.data_menu a{
-    color: white;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
-    padding-bottom: 16px;
-}
-.data_legal{
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-}
-.data_legal a{
-    float: left;
-    color: white;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
-    padding-bottom: 16px;
-}
-.data_contact p{
-    color: white;
-    padding-top: 20px;
-}
-.social{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.icons{
-    margin-top: 40px;
-}
 .optionsBelowHeader{
     text-align: center;
 }
-/*fin footer*/
-
-
-/*seccion de encabezados*/
-
-.visuaAdjust{
-    background-color: #5A2A97;
-    color: white;
-     width: 84%;
-     height: 60px;
-     padding-left: 8%;
-     padding-right: 8%;
-     padding-top: 20px;
-}
-.visuaAdjust table{
-    width: 100%;
-}
-.visuaAdjust a{
-    color: white;
-}
-.visuaAdjust input[type=button]{
-    color: white;
-    font-family:  Helvetica, sans-serif, arial;
-    font-size: 20px;
-    background-color: #5A2A97;
-    border: unset;
-}
-.logo_container{
-    width: 20%;
-     float: left;
-     padding-top: 10px;
-     background-color: rgb(250, 250, 250);
-     padding-bottom: 15px;
-}
-
-.menu{
+footer{
     float: left;
-    border-spacing: 3%;
-    background-color: rgb(250, 250, 250);
-    width: 64%;
-    height: 10%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 10px;
-    border: 1px grey;
-    
+    width: 82%;
 }
-/*fin seccion de encabezados*/
-/* seccion debajo del encabezados*/
-table{
-    width: 100%;
 
+.asistenciaMenu{
+    display: flex;
+    margin-left: 30%;
+}
+.asistenciaMenu a{
+    text-decoration: none;
+}
+.asistenciaMenu p{
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#ayudaButtonText{
+    padding-top: 0px;
+}
+.asistenciaMenu_button{
+    background-color: #B1B1B1;
+    border: none;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4px 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.asistenciaMenu_button:hover{
+    background-color: #3B939B;
 }
 .estasAqui{
     margin-left: 8%;
 }
-/* fin seccion debajo del encabezados*/
-.optionsBelowHeader{
-    text-align: center;
-}
-input {
+
+.questions input {
     width: 70%;
     padding: 10px 18px;
     border-radius: 7px;
@@ -166,6 +85,8 @@ input {
 input[type=radio]{
     width: 20%;
  }
- 
+ .questions table{
+    width: 100%;
+}
 
 
