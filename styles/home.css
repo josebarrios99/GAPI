@@ -13,11 +13,10 @@ main{
     justify-items: first;
     justify-content: center;
     align-items: center;
-     width: 100%;
+    width: 100%;
 }
 
 .bannerImage{
-    padding-top: 70px;
     height:400px;
     width:100%;
     grid-column-start: 1;
@@ -72,7 +71,6 @@ main{
 }
 
 .queEsElGapi{
-    position: relative;
     bottom: 26px;
     display: grid;
     align-content: center;
@@ -177,6 +175,7 @@ main{
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .backgroundTestimonios{
@@ -194,18 +193,20 @@ main{
 }
 
 #pTestimonio{
-    padding-top: 60;
+   
     text-align: center;
-    padding-left: 250;
-    padding-right: 250;
+    padding-left: 320;
+    padding-right: 320;
     color:#454545;
+    padding-bottom: 60px;
+    padding-top: 70px;
     z-index: 2;
 }
 
 .testimonioPerson{
     text-align: center;
-    padding-top: 50;
-
+   padding-top: 50px;
+    
 }
 
 .imgTestimonio{
@@ -253,7 +254,8 @@ main{
 }
 
 #h4Noticias{
-    padding-top: 50;
+    padding-top: 80px;
+    margin-bottom: 40px;
     font-size: 46px;
     font-weight: 600;
     color: #454545;
@@ -315,8 +317,8 @@ svg {
   cursor: pointer;
   position: absolute;
   top: 460%;
-  margin-top: -45px;
-  margin-left: -35px;
+  margin-top: -1445px;
+  margin-left: -25px;
   width: 70px;
   height: 90px;
 }

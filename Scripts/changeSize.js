@@ -1,45 +1,100 @@
-const btn_largeFont = document.getElementById('btn_largeFont');
-const bnt_smallFont = document.getElementById('btn_smallFont');
-var sizeP = 16;
-var sizeH1;
-var sizeH2;
-var sizeH3;
-var sizeH4 = 34;
-var sizeH5 = 24;
-var sizeH6 = 20;
-var modTxt = 0;
+const btn_Up = document.getElementById('btn_upFont');
+const btn_Down = document.getElementById('btn_downFont');
+const localStorage = window.localStorage;
+var textSize = 0;
+const sizeP = 16;
+const sizeH4 = 34;
+const sizeH5 = 24;
+const sizeH6 = 20;
 
-changeLarge = () =>{
-    modTxt++;    
+alert("Sirvo");
 
-chageTxt();
-}
-chageSmall = () => {
-    modTxt--;
-chageTxt();
-}
+defaultFont = () => {
+    let newSizeP = sizeP + textSize;
+    let newSizeH4 = sizeH4 + textSize;
+    let newSizeH5 = sizeH5 + textSize;
+    let newSizeH6 = sizeH6 + textSize;
 
-chageTxt = () =>{
+    console.log('Text Size: ' + textSize);
+    console.log('p1 Size: ' + newSizeP);
+    console.log('h4 Size: ' + newSizeH4);
 
-    let newPsize = sizeP + modTxt;
-    let newH1size = sizeH1 + modTxt;
-    let newH2size = sizeH2 + modTxt;
-    let newH3size = sizeH3 + modTxt;
-    let newH4size = sizeH4 + modTxt;
-    let newH5size = sizeH5 + modTxt;
-    let newH5size = sizeH6 + modTxt;
-
-    document.querySelectorAll('p').forEach(e => e.style.fontSize = newPsize+'px');
-    document.querySelectorAll('h1').forEach(e => e.style.fontSize = newH1size+'px');
-    document.querySelectorAll('h2').forEach(e => e.style.fontSize = newH2size+'px');
-    document.querySelectorAll('h3').forEach(e => e.style.fontSize = newH3size+'px');
-    document.querySelectorAll('h4').forEach(e => e.style.fontSize = newH4size+'px');
-    document.querySelectorAll('h5').forEach(e => e.style.fontSize = newH5size+'px');
-    document.querySelectorAll('h6').forEach(e => e.style.fontSize = newH6size+'px');
-
-
-
+    document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
+    document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
+    document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
+    document.querySelectorAll('h6').forEach(e => e.style.fontSize = newSizeH6 + 'px');
 }
 
-btn_largeFont.addEventListener('click',changeLarge);
-bnt_smallFont.addEventListener('click',changeSmall);
+changeFont = () => {
+    if (localStorage.getItem('textSize') !== null) {
+        textSize = Number(localStorage.getItem('textSize'));
+
+        console.log("Cargando tamaño" + textSize);
+    } else {
+        textSize = 0;
+    }
+    defaultFont();
+}
+
+changeFont();
+
+//alert("Si srivio o que rayos pasa");
+
+upFont = () => {
+    //alert('Funciono ');
+
+    if (textSize < 8) {
+        textSize++;
+
+        let newSizeP = sizeP + textSize;
+        let newSizeH4 = sizeH4 + textSize;
+        let newSizeH5 = sizeH5 + textSize;
+        let newSizeH6 = sizeH6 + textSize;
+
+        console.log('Text Size: ' + textSize);
+        console.log('p1 Size: ' + newSizeP);
+        console.log('h4 Size: ' + newSizeH4);
+
+        localStorage.setItem('textSize', textSize);
+        document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
+        document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
+        document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
+        document.querySelectorAll('h6').forEach(e => e.style.fontSize = newSizeH6 + 'px');
+    } else {
+        textSize = 8;
+    }
+
+
+
+}
+
+downFont = () => {
+
+    if (textSize > 0) {
+        textSize--;
+        let newSizeP = sizeP + textSize;
+        let newSizeH4 = sizeH4 + textSize;
+        let newSizeH5 = sizeH5 + textSize;
+        let newSizeH6 = sizeH6 + textSize;
+
+        console.log('Text Size: ' + textSize);
+        console.log('p1 Size: ' + newSizeP);
+        console.log('h4 Size: ' + newSizeH4);
+
+        localStorage.setItem('textSize', textSize);
+        //alert('Funciono ');
+        document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
+        document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
+        document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
+        document.querySelectorAll('h6').forEach(e => e.style.fontSize = newSizeH6 + 'px');
+    } else {
+        textSize = 0;
+    }
+
+}
+
+
+
+btn_Up.addEventListener('click', upFont);
+btn_Down.addEventListener('click', downFont);
+
