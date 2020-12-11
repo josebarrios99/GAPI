@@ -13,11 +13,14 @@
 
 }
 .containerFechaCita {
+    height: 10%;
     flex-direction: column;
     text-align: left;
     text-align: center;
-    background-color: #FCDF8A;
+    padding-top: 40px;
+    background-color: #F8BCA8;
     margin-bottom: 43px;
+    border-radius: 10px;
 }
 
 .containerDatosConfirmacion {

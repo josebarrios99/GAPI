@@ -150,7 +150,7 @@ p{
 /*fin menu de arriba*/
 /*footer*/
 footer{
-    margin-top: 50px;
+    margin-top: 0px;
     background-color: var(--color);
     height: auto;
     padding-top: 50px;
