@@ -10,6 +10,7 @@ let btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
 
     let nombre,
+        apellido,
         tDocumento,
         nDocumento,
         fExpedicion,
@@ -34,7 +35,7 @@ btn.addEventListener("click", () => {
             case "userName":
 
                 nombre = element.value;
-
+               
                 break;
             case "typeOfDocument_txt":
 
@@ -58,7 +59,7 @@ btn.addEventListener("click", () => {
                 break;
             case "userLastName":
 
-                nombre = element.value;
+                apellido = element.value;
 
                 break;
             case "numberOfDocument":
@@ -98,7 +99,7 @@ btn.addEventListener("click", () => {
                 break;
             case "cell2":
 
-                nombre = element.value;
+               // nombre = element.value;
 
                 break;
             case "estratoUser":
@@ -110,7 +111,6 @@ btn.addEventListener("click", () => {
 
                 if (element.checked) {
                     viveCon = element.value;
-                    console.log(element.value);
                 }
 
 
@@ -143,10 +143,11 @@ btn.addEventListener("click", () => {
         tVivienda == undefined ||
         estrato == undefined ||
         viveCon == undefined ||
-        descripCon == undefined)) {
+        descripCon == undefined||apellido== undefined)) {
 
 
         registro.nombre = nombre;
+        registro.apellido = apellido;
         registro.tDocumento = tDocumento;
         registro.nDocumento = nDocumento;
         registro.fExpedicion = fExpedicion;
@@ -161,11 +162,13 @@ btn.addEventListener("click", () => {
         registro.estrato = estrato;
         registro.viveCon = viveCon;
         registro.descripCo = descripCon;
+
         window.localStorage.setItem("registro", JSON.stringify(registro));
-        //window.location.href="FormularioDeSolicitud2.html";
+        console.log(registro.nombre);
 
-        console.log(registro);
+        window.location.href="FormularioDeSolicitud3.html";
 
+        ///console.log(registro);
 
 
     }

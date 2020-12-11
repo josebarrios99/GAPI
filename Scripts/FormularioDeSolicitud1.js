@@ -1,4 +1,3 @@
-const database = firebase.database();
 const btn = document.querySelector(".changePage");
 const lista = document.querySelector(".input-listadiv");
 const inputsRead=document.querySelectorAll(".inputRead");
@@ -155,7 +154,6 @@ btn.addEventListener("click",()=>{
         );
                 */
                window.localStorage.setItem("registro",JSON.stringify(registro));
-               //console.log(JSON.stringify(registro));
                window.location.href="FormularioDeSolicitud2.html";
     }
 })

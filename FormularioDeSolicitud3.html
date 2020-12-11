@@ -126,7 +126,7 @@
                         <section class="educationLevel">
                             <span>Grado de escolaridad</span>
                             <br>
-                            <input list="educationLebelList" id="educationLebel" name="educationLebel">
+                            <input class="input" list="educationLebelList" id="educationLebel" name="educationLebel">
                             <datalist id="educationLebelList">
                                 <option value="Primaria"></option>
                                 <option value="Bachillerato"></option>
@@ -140,27 +140,27 @@
                             <span>¿Cuenta con algun trabajo actualmente?</span>
                             <br>
                             <br>
-                            <input type="radio" name="haveWork" id="yes" value="yes">
+                            <input class="input" type="radio" name="haveWork" id="yes" value="yes">
                             <label for="yes">Si</label>
                             <br>
                             <br>
-                            <div class="ifHvaeWork">
+                            <div class="ifHvaeWork"></div>
                                 <section class="telOfWork">
                                     <span>Telefono del trabajo</span>
                                     <br>
-                                    <input type="tel" name="telOfWork" id="telOfWork">
+                                    <input class="input" type="tel" name="telOfWork" id="telOfWork">
 
                                 </section>
                                 <br>
                                 <section class="direccionOfWork">
                                     <span>Direccion del trabajo</span>
                                     <br>
-                                    <input type="text" name="direccionOfWork" id="direccionOfWork">
+                                    <input class="input" type="text" name="direccionOfWork" id="direccionOfWork">
                                 </section>
                                 <br>
                             </div>
 
-                            <input type="radio" name="haveWork" id="no" value="yes">
+                            <input class="input" type="radio" name="haveWork" id="no" value="no">
                             <label for="no">No</label>
                             <br>
                         </section>
@@ -168,13 +168,13 @@
                         <section class="job">
                             <span>Ocupación</span>
                             <br>
-                            <input type="text" name="job" id="job">
+                            <input class="input" type="text" name="job" id="job">
                         </section>
                         <br>
                         <section class="salary">
                             <span>Ingresos mensuales</span>
                             <br>
-                            <input type="text" name="salary" id="salary">
+                            <input class="input" type="text" name="salary" id="salary">
                         </section>
             </form>
             </td>
@@ -188,8 +188,8 @@
                                 alt="pagina anterior"></a>
                     </td>
                     <td>
-                        <a href="FormularioDeSolicitud4.html" id="linkFouthPageQuestionarie"><img src="images\formularioSolicitud\pagSiguiente.png"
-                                alt="Siguiente pagina"></a>
+                        <img class="changePage" src="images\formularioSolicitud\pagSiguiente.png"
+                                alt="Siguiente pagina">
                     </td>
                 </tr>
             </table>
@@ -254,4 +254,6 @@
 </body>
 
 </html>
+
+<script src="./Scripts/FormularioDesolicitud3.js"></script>
 <script src="/Scripts/changeSize.js"></script>

@@ -180,7 +180,7 @@
                 <div class="containerFechaCita">
 
                     <h6 id="RBody1">Fecha y hora de la cita</h6>
-                    <h6 id="RBody1">3.30 pm jueves 18 de Enero del 2020</h6>
+                    <h6 class="textFecha" id="RBody1">3.30 pm jueves 18 de Enero del 2020</h6>
                 </div>
 
                 <div class="consulta">
@@ -190,29 +190,28 @@
 
                 </div>
 
-                <input type="checkbox" name="acepto" id="checkTerminos y condiciones">
+                <input class="aceptoTerminos"type="checkbox" name="acepto" id="checkTerminos y condiciones">
                 <label for="acepto">Acepto y autorizo el tratamiento de datos personales.</label>
 
 
 
-                <div class="btns">
-
-
-                    <a href="#" id="linkSecondPageQuestionarie">
-
-                        <button class="btn btnSecondary"><img src="./images/formularioSolicitud/flechaAtras.svg"
-                                alt="">Retroceder</button>
-
-                    </a>
-                    <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie">
-
-                        <button class="btn btnMain"><img class="check" src="./images/formularioSolicitud/check.svg" alt="">Confirmar
-                            Cita</button>
-                    </a>
-                </div>
+                
 
             </form>
+            <div class="btns">
 
+
+                <a href="formularioDeSolicitud6.html" id="linkSecondPageQuestionarie">
+
+                    <button class="btn btnSecondary"><img src="./images/formularioSolicitud/flechaAtras.svg"
+                            alt="">Retroceder</button>
+
+                </a>
+               
+                    <button class="btn btnMain btnCambio"><img class="check" src="./images/formularioSolicitud/check.svg" alt="">Confirmar
+                        Cita</button>
+                </a>
+            </div>
 
     </article>
 
@@ -276,4 +275,25 @@
 </body>
 
 </html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDYX14YuYI0xbvonWsqKnZt7XmdQ2qXv5A",
+    authDomain: "gapiweb-eca67.firebaseapp.com",
+    databaseURL: "https://gapiweb-eca67.firebaseio.com",
+    projectId: "gapiweb-eca67",
+    storageBucket: "gapiweb-eca67.appspot.com",
+    messagingSenderId: "362806524614",
+    appId: "1:362806524614:web:ac43b95cfc3afa0964b5c7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="/Scripts/FormularioDeSolicitud7.js"></script>
 <script src="/Scripts/changeSize.js"></script>
