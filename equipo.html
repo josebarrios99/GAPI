@@ -17,10 +17,12 @@
                 <section class="visuaAdjust">
                     <table class="headerTable">
                         <tr>
-                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
+                            </td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
                             <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-">
+                            </td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -37,7 +39,7 @@
                     </table>
                 </section>
             </form>
-        </center>  
+        </center>
     </div>
     <header class="header">
         <div class="logo_container">
@@ -64,9 +66,13 @@
             </div>
         </div>
     </header>
-        <section class="banner_equipo">
-            <img src="./images/equipo/banner_equipo.png" alt="" id="main_banner">
-        </section>
+
+    <section class="banner_equipo">
+        <img src="./images/equipo/banner_equipo.png" alt="" id="main_banner">
+    </section>
+
+    <!-- Espacio par toda la información-->
+    <div class="info">
         <section class="title">
             <h2 id="ROverline">ESTÁS AQUÍ: INICIO / EQUIPO</h2>
         </section>
@@ -78,46 +84,52 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <img src="./images/equipo/member1.png">
+                <img src="./images/equipo/member1.png">
             </div>
-            
+
             <div class="mySlides fade">
-              <img src="./images/equipo/member1.png">
+                <img src="./images/equipo/member2.png">
             </div>
-            
+
             <div class="mySlides fade">
-              <img src="./images/equipo/member1.png">
-            </div>
-            <div class="mySlides fade">
-              <img src="./images/equipo/member1.png">
+                <img src="./images/equipo/member3.png">
             </div>
             <div class="mySlides fade">
-              <img src="./images/equipo/member1.png">
+                <img src="./images/equipo/member4.png">
             </div>
-            
-            
-            
+            <div class="mySlides fade">
+                <img src="./images/equipo/member5.png">
             </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-              <span class="dot" onclick="currentSlide(4)"></span> 
-              <span class="dot" onclick="currentSlide(5)"></span> 
-            </div>
+
+
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
 
 
         <section class="subtitle_section">
-            <h4>Exmiembros</h4>
+            <h4 class="subtitu_exmi">Exmiembros</h4>
         </section>
         <div class="exmember">
             <div class="exmember_content">
                 <img src="./images/equipo/exmember1.png" alt="">
                 <div class="exmember_content__info">
-                    <h6>Stephania Sánchez Correa</h6><br>
-                    <p>Graduada en el año 2015 como Profesional en Estudios Políticos y Resolución de Conflictos de la Universidad del Valle, actualmente estudiante de la Maestría en Derecho Modalidad Investigación de la Universidad Icesi, con formación complementaria en Derechos Humanos de las Mujeres; Paz y Reconciliación con la Naturaleza; y Docencia Universitaria. Experiencia en trabajo con comunidades, y caracterización socio económica de poblaciones vulnerables. Líneas de Investigación: Clínicas jurídicas y Fortalecimiento de Derechos Económicos Sociales y Culturales.
+                    <h6 class="tituNombres">Stephania Sánchez Correa</h6><br>
+                    <p>Graduada en el año 2015 como Profesional en Estudios Políticos y Resolución de Conflictos de la
+                        Universidad del Valle, actualmente estudiante de la Maestría en Derecho Modalidad Investigación
+                        de la Universidad Icesi, con formación complementaria en Derechos Humanos de las Mujeres; Paz y
+                        Reconciliación con la Naturaleza; y Docencia Universitaria. Experiencia en trabajo con
+                        comunidades, y caracterización socio económica de poblaciones vulnerables. Líneas de
+                        Investigación: Clínicas jurídicas y Fortalecimiento de Derechos Económicos Sociales y
+                        Culturales.
                     </p>
                 </div>
             </div>
@@ -126,8 +138,11 @@
             <div class="exmember_content">
                 <img src="./images/equipo/exmember2.png" alt="">
                 <div class="exmember_content__info">
-                    <h6>Juliana Guerrero Morales</h6><br>
-                    <p>Abogada egresada de la Universidad Icesi en el año 2018 y estudiante de la Maestría en Derecho, Modalidad Investigación de la misma universidad. Su interés académico y profesional se enmarca en las áreas de Derechos Humanos y Derecho Constitucional. Línea de investigación: población con discapacidad e inclusión laboral.
+                    <h6 class="tituNombres">Juliana Guerrero Morales</h6><br>
+                    <p>Abogada egresada de la Universidad Icesi en el año 2018 y estudiante de la Maestría en Derecho,
+                        Modalidad Investigación de la misma universidad. Su interés académico y profesional se enmarca
+                        en las áreas de Derechos Humanos y Derecho Constitucional. Línea de investigación: población con
+                        discapacidad e inclusión laboral.
 
                     </p>
                 </div>
@@ -137,101 +152,107 @@
             <div class="exmember_content">
                 <img src="./images/equipo/exmember3.png" alt="">
                 <div class="exmember_content__info">
-                    <h6>Juan Camilo Arias Rivera
+                    <h6 class="tituNombres">Juan Camilo Arias Rivera
                     </h6><br>
-                    <p>Abogado de la Universidad Icesi graduado en el año 2015, estudiante de psicología VI semestre de la Universidad Nacional Abierta y a Distancia (UNAD). Se especializó en Cultura de Paz y Derecho Internacional Humanitario en la Universidad Javeriana de Cali, graduado con honores. Actualmente, realiza la Maestría en Derecho Modalidad Investigación en la Universidad Icesi.
+                    <p>Abogado de la Universidad Icesi graduado en el año 2015, estudiante de psicología VI semestre de
+                        la Universidad Nacional Abierta y a Distancia (UNAD). Se especializó en Cultura de Paz y Derecho
+                        Internacional Humanitario en la Universidad Javeriana de Cali, graduado con honores.
+                        Actualmente, realiza la Maestría en Derecho Modalidad Investigación en la Universidad Icesi.
 
                     </p>
                 </div>
             </div>
         </div>
-        <footer>
-            <section class="footer_info">
-                <div class="data">
-                    <div class="data_logo">
-                        <img src="./images/main/Logo_footer.png" alt="">
-                    </div>
-                    <div class="data_info">
-                        <p>Oficina de Información<br>
+    </div>
+
+    <!-- Espacio Footer-->
+    <footer>
+        <section class="footer_info">
+            <div class="data">
+                <div class="data_logo">
+                    <img src="./images/main/Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
                         Teléfono: 8821093<br>
                         Ext: 112 - 119<br>
                         Dirección: Carrera 9 No. 9-49<br>
                         Segundo piso<br>
                         Horario de atención al público <br>
                         2:30 p.m - 5:30 p.m.</p>
-                    </div>
-                    
                 </div>
-                <div class="data_menu">
-                    <h6>Menú</h6>
-                    <a href="">Inicio</a>
-                    <a href="">Centro</a>
-                    <a href="">Equipo</a>
-                    <a href="./proyectos.html">Proyectos</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Videos</a>
-                    <a href="">Protocolo de Atención</a>
-                    <a href="">Asistencia</a>
-                </div>
-                <div class="data_legal">
-                    <h6>Legal</h6>
-                    <a href="">Política de cookies</a>
-                    <a href="">Política de privacidad</a>
-                    <a href="">Términos de servicio</a>
-                    <a href="">Status</a>
-                </div>
-                <div class="data_contact">
-                    <h6>Contáctanos</h6>
-                    <p>
-                        <strong>Jorge Andrés Illera Cajiao</strong><br>
-                        <strong>Director del GAPI</strong><br>
-                        Correo: jaillera@icesi.edu.co<br>
-                    </p>
-                    <p>
-                        <strong>Paula Andrea Cerón Arboleda</strong><br>
-                        <strong>Coordinadora del GAPI</strong><br>
-                        Correo: paula.ceron@correo.icesi.edu.co
-                    </p>
-                </div>
-            </section>
-            <section class="social">
-                <div class="icons">
-                    <img src="./images/main/Redes.png" alt="">
-                </div>
-            </section>
-        </footer>
+
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
+            </div>
+        </section>
+        <section class="social">
+            <div class="icons">
+                <img src="./images/main/Redes.png" alt="">
+            </div>
+        </section>
+    </footer>
 
 
 
 
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
