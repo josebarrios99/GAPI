@@ -3,6 +3,8 @@
     padding: 0%;
 }
 
+/*banner*/
+
 .banner{
     padding-top: 72px;
     width: 100%;
@@ -10,6 +12,7 @@
 #main_banner{
     width: 100%;
 }
+/*title*/
 .title{
     padding-top: 38px;
     padding-left: 120px;
@@ -18,8 +21,9 @@
 #here{
     font-size: 10px;
 }
+/*nuestros proyectos*/
 .nuestrosProyectos{
-    background-color: #ffffff;
+    background-color: #B1B1B1;
     width: 100%;
 }
 .titleSection{
@@ -28,18 +32,41 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+/*seccion de proyectos*/
 .projects{
-    margin-left: 220px;
+    text-align: center;
+    margin-left: 410px;
     display: flex;
 }
 .project1{
-    padding-right: 5px;
+    text-align: left;
+    border-radius: 25px;
+    background-color: #ffff;
 }
 .project2{
-    padding-left: 5px;
+    text-align: left;
+    border-radius: 25px;
+    background-color: #ffff;
+    margin-left: 34px;
 }
 .explorar{
     display: flex;
-    margin-top: 50px;
+    margin-top: 35px;
     margin-left: 300px;
+}
+.h4Projects{
+    color: #454545;
+    margin-top: 13px;
+    margin-left:25px;
+
+}
+
+.explorar{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.explorarProjects{
+    margin-right: 10px;
+    margin-bottom: 0px;
 }

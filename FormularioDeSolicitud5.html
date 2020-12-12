@@ -21,8 +21,8 @@
                             <tr>
                                 <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                                 <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id = "btn_upFont"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id="btn_downFont"></td>
                                 <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                     <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                         <option value="">Color original</option>
@@ -139,7 +139,7 @@
                 <tr>
                     <td>
                         <section class="CompanionName">
-                            <label for="CompanionName">Nombre</label>
+                            <label class = "label" for="CompanionName">Nombre</label>
                             <br>
 
                             <input class="input" type="text" name="CompanionName" id="CompanionName" required>
@@ -147,7 +147,7 @@
                         </section>
                         <br>
                         <section class="CompaniontypeOfDocument">
-                            <label for="CompaniontypeOfDocument_txt">Tipo de documento</label>
+                            <label class = "label" for="CompaniontypeOfDocument_txt">Tipo de documento</label>
                             <br>
 
                             <input class="input" list="documents" id="CompaniontypeOfDocument_txt" name="CompaniontypeOfDocument_txt">
@@ -160,7 +160,7 @@
                         </section>
                         <br>
                         <section class="CompanionExpeditionDocument">
-                            <label for="CompanionExpeditionOfDocument_txt">Lugar de expedición del documento</label>
+                            <label class = "label" for="CompanionExpeditionOfDocument_txt">Lugar de expedición del documento</label>
                             <br>
 
                             <input class="input" list="citiesList" id="CompanionExpeditionOfDocument_txt"
@@ -175,13 +175,13 @@
                         </section>
                         <br>
                         <section class="CompanionBirthDate">
-                            <label for="CompanionBirthDate">Fecha de nacimiento</label>
+                            <label class = "label" for="CompanionBirthDate">Fecha de nacimiento</label>
                             <br>
                             <input class="input" type="date" name="CompanionBirthDate" id="CompanionBirthDate" required>
                         </section>
                         <br>
                         <section class="CompanionDepartmen">
-                            <label for="CompanionDepartment_txt">Departamento de residencia</label>
+                            <label class = "label" for="CompanionDepartment_txt">Departamento de residencia</label>
                             <br>
                             <input class="input" list="departmentList" id="CompanionDepartment_txt" name="CompanionDepartment_txt">
 
@@ -196,7 +196,7 @@
                     </td>
                     <td>
                         <section class="Companionlastname">
-                            <label for="CompanionLastName">Apellidos</label>
+                            <label class = "label" for="CompanionLastName">Apellidos</label>
                             <br>
 
                             <input class="input" type="text" name="CompanionLastName" id="CompanionLastName" required>
@@ -204,7 +204,7 @@
                         </section>
                         <br>
                         <section class="CompanionNumberOfDocument">
-                            <label for="CompanionNumberOfDocument">Número de documento de identidad</label>
+                            <label class = "label" for="CompanionNumberOfDocument">Número de documento de identidad</label>
                             <br>
 
                             <input class="input" type="text" name="CompanionNumberOfDocument" id="CompanionNumberOfDocument" required>
@@ -212,13 +212,13 @@
                         </section>
                         <br>
                         <section class="CompanionDateOfDocument">
-                            <label for="CompanionDateOfDocument">Fecha de expedición del documento</label>
+                            <label class = "label" for="CompanionDateOfDocument">Fecha de expedición del documento</label>
                             <br>
                             <input class="input" type="date" name="CompanionDateOfDocument" id="CompanionDateOfDocument" required>
                         </section>
                         <br>
                         <section class="CompanionCityOfResidence">
-                            <label for="CompanionCityOfResidence_txt">Ciudad de residencia</label>
+                            <label class = "label" for="CompanionCityOfResidence_txt">Ciudad de residencia</label>
                             <br>
 
                             <input class="input"list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
@@ -226,7 +226,7 @@
                         </section>
                         <br>
                         <section class="Cell2">
-                            <label for="cell2">Teléfono de persona de confianza</label>
+                            <label class = "label" for="cell2">Teléfono de persona de confianza</label>
                             <br>
 
                             <input class="input" type="tel" name="cell2" id="cell2" maxlength="10">
@@ -239,14 +239,14 @@
         <table >
             <div class="questions2">
                 <section class="CompanionDirection">
-                    <label for="CompanionDirection">Dirección de residencia</label>
+                    <label class = "label" for="CompanionDirection">Dirección de residencia</label>
                     <br>
                     <input class="input" type="text" name="CompanionDirection" id="CompanionDirection" required>
 
                 </section>
                 <br>
                 <section class="CompanionAndUserRelationList">
-                    <label for="CompanionAndUserRelationList">Relación con el titular del acto jurídico</label>
+                    <label class = "label" for="CompanionAndUserRelationList">Relación con el titular del acto jurídico</label>
                     <br>
 
                     <input class="input" list="relationList" name="CompanionAndUserRelationList" id="CompanionAndUserRelationList"
@@ -260,9 +260,13 @@
                 </section>
                 <br>
                 <section class="CompanionAndUserRelation">
-                    <label for="CompanionAndUserRelation">Si ninguna de las opciones anteriores le corresponde,
-                        escríba aquí su relación con<br> el titular del caso</label>
-                    <br>
+                    <div class ="longLabel">
+
+                        <label class = "label" for="CompanionAndUserRelation">Si ninguna de las opciones anteriores le corresponde,
+                            escríba aquí su relación con el titular del caso</label>
+                        <br>
+                    </div>
+
 
                     <input class="inputOtro" type="text" name="CompanionAndUserRelation" id="CompanionAndUserRelation" required>
 
@@ -346,5 +350,4 @@
 </html>
 
 <script src="./Scripts/FormularioDeSolicitud5.js"></script>
-
-<script src="/Scripts/changeSize.js"></script>
+<script src="./Scripts/changeSizeFormulario5.js"></script>

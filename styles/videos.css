@@ -1,27 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
-
-*{
-
-    padding: 0%;
-    margin: 0%;
-}
-
 h1 {
     text-align: center;
 }
-.container{
-
-    display: flex;
-    flex-direction: column;
-    padding: 0px 120px;
-    
+/*SubtitutloEstasAqui*/
+.title{
+    position: relative;
+    bottom: 40px;
+}
+/*Titulo banner*/
+.titleVideo{
+    position: relative;
+    right: 0px;
+    bottom: 70px;
 }
 
+/*ajustes generales videos*/
+iframe{
+    border-radius: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/*texto gapi banner*/
+.GapiVideo{
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-bottom: 24px;
+}
+/*texto padding seccion Principal*/
+
+.mainVideo {
+    padding-bottom: ;
+    align-items: center;
+}
+
+
+/*boton ver mas*/
 button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     color: white;
-    font-weight: 300px;
     font-size: 16px;
     line-height: 16px;
     border: none;
@@ -29,44 +44,34 @@ button {
 
 .buttonSecondary {
 
-    width: 380px;
-    height: 56px;
+    width: auto;
+    height: auto;
     background: #F07349;
     border-radius: 4px;
     margin-top: 112px;
+    margin-left: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-self: center;
 }
 
+/*Division linea*/
 hr {
     margin: 56px 0px;
+    margin-right: 100PX;
 }
-
+/*ajustes de textos especificos*/
 h2 {
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    margin: 0px;
     margin-bottom: 16px;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 300px;
-    font-size: 16px;
     line-height: 24px;
     margin: 0px;
-    color: black;
 }
-
-/*div {
-    box-sizing: border-box;
-    margin: 0px;
-    padding-left: 0px 120px;
-}*/
-
+/*filas y columnas*/
 .row {
     display: flex;
     justify-content: space-between;
@@ -75,30 +80,40 @@ p {
 
 .col {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    padding-left: 0px 120px;
+    padding-left: 20px;
 }
 
+/*video Seccion inferior*/
 .secondaryVideo div {
     width: 308px;
     margin: 0px;
+    margin-left: 60px;
 }
 
 .secondaryVideo iframe {
     margin-bottom: 16px;
 }
 
-.mainVideo {
-    align-items: center;
+/*textos filas seccion inferior*/
+.rowVideoP{
+    padding-right: 190px;
+    padding-top:16px;
 }
 
+.h5Col{
+    margin-top: 14px;
+    padding-top: 0px;
+    margin-right: 190PX;
+}
+
+
+/*TextoVideoPrincipal*/
 .mainVideo div {
     width: 30%;
     padding-left: 0px 120px;
 }
-
-img {
-    margin: auto;
-    display: block;
+/*articulo videos*/
+.videos{
+    padding-left: 100px;
 }

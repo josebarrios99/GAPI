@@ -1,178 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos</title>
-    
-    <link rel="stylesheet" href="./styles/videos.css">
-    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/asistenciaPsicológica2.css">
-    
-   
-</head>
-<body>
 
-    <div class="accesibility">
-        <center>
-            <form action="submission.html" method="POST">
-                <section class="visuaAdjust">
-                    <table class="headerTable">
-                        <tr>
-                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
-                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
-                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                       name="typeOfContrast_txt">
-                                <datalist id="listOfVisualcontrast">
-                                    <option value="Color original"></option>
-                                    <option value="verdes y azules"></option>
-                                    <option value="rojos y naranjas"></option>
-                                </datalist>
-                            </td>
-                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
-                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
-                            <td id="tdAccesibility">Traductor</td>
-                        </tr>
-                    </table>
-                </section>
-            </form>
-        </center>  
-    </div>
-    <header class="header">
-        <div class="logo_container">
-            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Videos</title>
+
+        <link rel="stylesheet" href="./styles/videos.css">
+        <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+        <link rel="stylesheet" href="./styles/asistenciaPsicológica2.css">
+
+
+    </head>
+    <body>
+
+        <div class="accesibility">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                    <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                        <option value="">Color original</option>
+                                        <option value="1">Blanco sobre negro</option>
+                                        <option value="2">Amarillo sobre negro</option>
+                                        <option value="3">Amarillo sobre azul</option>
+                                        <option value="4">Verde sobre Negro</option>
+                                    </select>
+                                </td>
+                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                                <td id="tdAccesibility">Traductor</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>  
         </div>
-        <div class="menu">
-            <div class="topNav">
-                <!--
-
-                    <div class="inicio">
-                    <a href="">Inicio</a>
-                    <span class="inicio_gif">
-                        <img src="./giphy.gif" alt="">
-                    </span>
-                </div>
-                -->
-                <a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./asistenciaPsicológica2.html">Asistencia</a>
+        <header class="header">
+            <div class="logo_container">
+                <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
             </div>
+            <div class="menu">
+                <div class="topNav">
+                    <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+                    <a href="./index.html">Inicio</a>
+                    <a href="./centro.html">Centro</a>
+                    <a href="./equipo.html">Equipo</a>
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="./Publicaciones.html">Publicaciones</a>
+                    <a href="./videos.html">Videos</a>
+                    <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+                    <a href="./apoyo1.html">Asistencia</a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <section class="banner">
+                <img src="./images/videos/bannerVideos.png" alt="" id="main_banner">
+            </section>
+
+            <section class="title">
+                <h2 id="ROverline">ESTÁS AQUÍ: INICIO / VIDEOS</h2>
+            </section>
+
+
+            <article class="videos">
+                <h2 class="titleVideo">Conoce nuestros videos</h2>
+
+                <section class="row mainVideo">
+
+                    <iframe width="5040" height="615" src="https://www.youtube.com/embed/thLEtOFPuSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <div class="col" id="GapiVideo">
+                        <h5 class="GapiVideo">¿Qué es el GAPI?</h5>
+                        <p class="GapiVideo" id="RBody1">El Grupo de Acciones Públicas de la Universidad Icesi es la Clínica Jurídica de la Facultad de Derecho y Ciencias Sociales de la citada Universidad. A través del método clínico, el trabajo en red y el litigio estratégico, busca formar abogados con criterio y sentido social, en temas específicos relacionados con la inclusión y la igualdad. Actualmente trabaja también, temas relacionados con discapacidad y derecho migratorio.</p>
+                    </div>
+
+                </section>
+
+                <hr>
+                <section class="row secondaryVideo">
+                    <div class="col">
+
+                        <iframe width="308" height="194" src="https://www.youtube.com/embed/VvRZQ9WqdXY?AutoHide=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5 class="h5Col">Perros asistenciales </h5>
+                        <p class="rowVideoP" id="RBody1">Estudiantes ganan demanda de ingreso de perros de asistencia en sitios públicos</p>
+
+                    </div>
+                    <div class="col">
+
+                        <iframe width="308" height="194" src="https://www.youtube.com/embed/Ao1Jn6i9bDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5 class="h5Col">Tutelas con asesoría del GAPI</h5>
+                        <p class="rowVideoP" id="RBody1">Fallo ordena adecuación de viviendas de interés prioritario donde residen personas con discapacidad</p>
+                    </div>
+                    <div class="col">
+
+                        <iframe width="308" height="194" src="https://www.youtube.com/embed/1cdpS1kzkwI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5 class="h5Col">Código protección animal</h5>
+                        <p class="rowVideoP" id="RBody1">Audiencia publica de proyecto de ley sobre protección animal del representante a la Cámara Juan Carlos Lozada en las instalaciones de la universidad Icesi.</p>
+                    </div>
+
+                </section>
+
+            </article>
+        <button class="buttonSecondary"><p class="PButton">VER MÁS VIDEOS</p></button>
+<footer>
+    <section class="footer_info">
+        <div class="data">
+            <div class="data_logo">
+                <img src="images/main/Logo_footer.png" alt="">
+            </div>
+            <div class="data_info">
+                <p>Oficina de Información<br>
+                    Teléfono: 8821093<br>
+                    Ext: 112 - 119<br>
+                    Dirección: Carrera 9 No. 9-49<br>
+                    Segundo piso<br>
+                    Horario de atención al público <br>
+                    2:30 p.m - 5:30 p.m.</p>
+            </div>
+
         </div>
-    </header>
-    <div class="container">
-    
-       <img src="./images/videos/bannerVideos.png">
-
-       <p id="ROverline">
-           Estás aqui: <a href="#">videos</a>
-       </p>
-        <article class="videos">
-
-            <h2 class="titleVideo">Conoce nuestros videos</h2>
-
-            <section class="row mainVideo">
-
-                <iframe width="893" height="448" src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <div class="col">
-                    <h2>¿Qué es el GAPI?</h2>
-                    <p id="RBody1">El Grupo de Acciones Públicas de la Universidad Icesi es la Clínica Jurídica de la Facultad de Derecho y Ciencias Sociales de la citada Universidad. A través del método clínico, el trabajo en red y el litigio estratégico, busca formar abogados con criterio y sentido social, en temas específicos relacionados con la inclusión y la igualdad. Actualmente trabaja también, temas relacionados con discapacidad y derecho migratorio.</p>
-                </div>
-
-            </section>
-
-            <hr>
-            <section class="row secondaryVideo">
-                <div class="col">
-                
-                    <iframe width="308" height="194" src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h2>Perros asistenciales </h2>
-                    <p id="RBody1">Estudiantes ganan demanda de ingreso de perros de asistencia en sitios públicos</p>
-                    
-                </div>
-                <div class="col">
-    
-                    <iframe width="308" height="194" src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h2>Tutelas con asesoría del GAPI</h2>
-                    <p id="RBody1">Fallo ordena adecuación de viviendas de interés prioritario donde residen personas con discapacidad</p>
-                </div>
-                <div class="col">
-    
-                    <iframe width="308" height="194" src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h2>Código protección animal</h2>
-                    <p id="RBody1">Audiencia publica de proyecto de ley sobre protección animal del representante a la Cámara Juan Carlos Lozada en las instalaciones de la universidad Icesi.</p>
-                </div>
-                
-            </section>
-
-        </article>
-        
-        <button class="buttonSecondary">VER MÁS VIDEOS</button>
-
-    </div>
-    <footer>
-            <section class="footer_info">
-                <div class="data">
-                    <div class="data_logo">
-                        <img src="images/main/Logo_footer.png" alt="">
-                    </div>
-                    <div class="data_info">
-                        <p>Oficina de Información<br>
-                        Teléfono: 8821093<br>
-                        Ext: 112 - 119<br>
-                        Dirección: Carrera 9 No. 9-49<br>
-                        Segundo piso<br>
-                        Horario de atención al público <br>
-                        2:30 p.m - 5:30 p.m.</p>
-                    </div>
-                    
-                </div>
-                <div class="data_menu">
-                    <h6>Menú</h6>
-                    <a href="">Inicio</a>
-                    <a href="">Centro</a>
-                    <a href="">Equipo</a>
-                    <a href="">Proyectos</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Videos</a>
-                    <a href="">Protocolo de Atención</a>
-                    <a href="">Asistencia</a>
-                </div>
-                <div class="data_legal">
-                    <h6>Legal</h6>
-                    <a href="">Política de cookies</a>
-                    <a href="">Política de privacidad</a>
-                    <a href="">Términos de servicio</a>
-                    <a href="">Status</a>
-                </div>
-                <div class="data_contact">
-                    <h6>Contáctanos</h6>
-                    <p>
-                        <strong>Jorge Andrés Illera Cajiao</strong><br>
-                        <strong>Director del GAPI</strong><br>
-                        Correo: jaillera@icesi.edu.co<br>
-                    </p>
-                    <p>
-                        <strong>Paula Andrea Cerón Arboleda</strong><br>
-                        <strong>Coordinadora del GAPI</strong><br>
-                        Correo: paula.ceron@correo.icesi.edu.co
-                    </p>
-                </div>
-            </section>
-            <section class="social">
-                <div class="icons">
-                    <img src="images/main/Redes.png" alt="">
-                </div>
-            </section>
-        </footer>
-        <script src="./Scripts/color.js"></script>
+        <div class="data_menu">
+            <h6>Menú</h6>
+            <a href="">Inicio</a>
+            <a href="">Centro</a>
+            <a href="">Equipo</a>
+            <a href="">Proyectos</a>
+            <a href="">Publicaciones</a>
+            <a href="">Videos</a>
+            <a href="">Protocolo de Atención</a>
+            <a href="">Asistencia</a>
+        </div>
+        <div class="data_legal">
+            <h6>Legal</h6>
+            <a href="">Política de cookies</a>
+            <a href="">Política de privacidad</a>
+            <a href="">Términos de servicio</a>
+            <a href="">Status</a>
+        </div>
+        <div class="data_contact">
+            <h6>Contáctanos</h6>
+            <p>
+                <strong>Jorge Andrés Illera Cajiao</strong><br>
+                <strong>Director del GAPI</strong><br>
+                Correo: jaillera@icesi.edu.co<br>
+            </p>
+            <p>
+                <strong>Paula Andrea Cerón Arboleda</strong><br>
+                <strong>Coordinadora del GAPI</strong><br>
+                Correo: paula.ceron@correo.icesi.edu.co
+            </p>
+        </div>
+    </section>
+    <section class="social">
+        <div class="icons">
+            <img src="images/main/Redes.png" alt="">
+        </div>
+    </section>
+</footer>
 </body>
 </html>

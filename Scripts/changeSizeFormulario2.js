@@ -3,6 +3,7 @@ const btn_Down = document.getElementById('btn_downFont');
 const localStorage = window.localStorage;
 var textSize = 0;
 const sizeP = 16;
+
 const sizeH4 = 34;
 const sizeH5 = 24;
 const sizeH6 = 20;
@@ -19,6 +20,8 @@ defaultFont = () => {
     console.log('p1 Size: ' + newSizeP);
     console.log('h4 Size: ' + newSizeH4);
 
+//Inputs mismos tamaño de h6
+    document.querySelectorAll('input').forEach(e => e.style.fontSize = newSizeP + 'px');
     document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
     document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
     document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
@@ -56,6 +59,7 @@ upFont = () => {
         console.log('h4 Size: ' + newSizeH4);
 
         localStorage.setItem('textSize', textSize);
+        document.querySelectorAll('.input').forEach(e => e.style.fontSize = newSizeP + 'px');
         document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
         document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
         document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
@@ -82,7 +86,8 @@ downFont = () => {
         console.log('h4 Size: ' + newSizeH4);
 
         localStorage.setItem('textSize', textSize);
-        //alert('Funciono ');
+        
+        document.querySelectorAll('.input').forEach(e => e.style.fontSize = newSizeP+ 'px');
         document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
         document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
         document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
@@ -97,4 +102,3 @@ downFont = () => {
 
 btn_Up.addEventListener('click', upFont);
 btn_Down.addEventListener('click', downFont);
-
