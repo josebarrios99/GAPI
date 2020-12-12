@@ -38,10 +38,7 @@ iframe{
 
 /*boton ver mas*/
 button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     color: white;
-    font-weight: 300px;
     font-size: 16px;
     line-height: 16px;
     border: none;
@@ -49,14 +46,19 @@ button {
 
 .buttonSecondary {
 
-    width: 380px;
-    height: 56px;
+    width: auto;
+    height: auto;
     background: #F07349;
     border-radius: 4px;
     margin-top: 112px;
-    margin-left: 740px;
+    margin-left: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-self: center;
 }
+
 /*Division linea*/
 hr {
     margin: 56px 0px;
