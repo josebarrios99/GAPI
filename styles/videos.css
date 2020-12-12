@@ -1,3 +1,16 @@
+body {
+    width: 100%;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+article {
+      align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
 h1 {
     text-align: center;
 }
@@ -22,19 +35,38 @@ iframe{
 
 /*texto gapi banner*/
 .GapiVideo{
-    margin-left: 20px;
-    margin-right: 100px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 24px;
 }
-/*texto padding seccion Principal*/
+/*grid seccion Principal*/
 
 .mainVideo {
-    padding-bottom: ;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 308px);
+    grid-template-rows: 448px;
+    column-gap: 40px;
     align-items: center;
 }
 
+.videoGapi {
+    width:100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end:4;
+}
 
 /*boton ver mas*/
+.buttonMore{
+    width: 100%;
+    text-align: center;
+}
 button {
     color: white;
     font-size: 16px;
@@ -43,13 +75,12 @@ button {
 }
 
 .buttonSecondary {
-
-    width: auto;
+    width: 100;
     height: auto;
     background: #F07349;
     border-radius: 4px;
-    margin-top: 112px;
-    margin-left: 800px;
+    margin-top: 100px;
+    margin-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -60,7 +91,9 @@ button {
 /*Division linea*/
 hr {
     margin: 56px 0px;
-    margin-right: 100PX;
+    margin-left: 70px;
+    margin-right: 70px;
+    
 }
 /*ajustes de textos especificos*/
 h2 {
@@ -79,9 +112,8 @@ p {
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 /*video Seccion inferior*/
@@ -95,25 +127,37 @@ p {
     margin-bottom: 16px;
 }
 
+.secondaryVideo {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 308px);
+    grid-template-rows: 363px;
+    column-gap: 139px;
+}
 /*textos filas seccion inferior*/
 .rowVideoP{
-    padding-right: 190px;
     padding-top:16px;
 }
 
 .h5Col{
     margin-top: 14px;
     padding-top: 0px;
-    margin-right: 190PX;
 }
 
 
 /*TextoVideoPrincipal*/
 .mainVideo div {
-    width: 30%;
-    padding-left: 0px 120px;
 }
 /*articulo videos*/
 .videos{
-    padding-left: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
 }
