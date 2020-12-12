@@ -175,6 +175,7 @@ main{
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .backgroundTestimonios{
@@ -192,19 +193,20 @@ main{
 }
 
 #pTestimonio{
-    padding-top: 180px;
+   
     text-align: center;
     padding-left: 320;
     padding-right: 320;
     color:#454545;
-    margin-bottom: 100px;
+    padding-bottom: 60px;
+    padding-top: 70px;
     z-index: 2;
 }
 
 .testimonioPerson{
     text-align: center;
    padding-top: 50px;
-    margin-bottom: 80px;
+    
 }
 
 .imgTestimonio{

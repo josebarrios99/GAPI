@@ -11,7 +11,9 @@
     background-color: #EFEFEF;
     align-items: center;
 }
-
+.mainImage{
+    height: 100%;
+}
 .mainBox{
     overflow: hidden;
     border-radius: 1em;
@@ -75,4 +77,20 @@
 }
 .card3{
     background-color: #F8BCA8;
+}
+
+.quesButton{
+    display: flex;
+    margin-left: 720px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+.quest_button{
+    background: #F07349;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    border-color: #F07349;
+
 }

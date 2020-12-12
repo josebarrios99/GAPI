@@ -14,7 +14,6 @@ article {
 h1 {
     text-align: center;
 }
-
 /*SubtitutloEstasAqui*/
 .title{
     position: relative;
@@ -118,9 +117,8 @@ p {
 }
 
 /*video Seccion inferior*/
-
 .secondaryVideo div {
-    width: 100%;
+    width: 308px;
     margin: 0px;
     margin-left: 60px;
 }
@@ -154,7 +152,6 @@ p {
 
 /*TextoVideoPrincipal*/
 .mainVideo div {
-
 }
 /*articulo videos*/
 .videos{

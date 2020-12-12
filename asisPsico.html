@@ -10,82 +10,78 @@
 
 
 </head>
-
 <body>
-    <div class="asisPsico">
-        <body>
+    <div class="accesibility">
+        <center>
             <form action="submission.html" method="POST">
                 <section class="visuaAdjust">
                     <table class="headerTable">
                         <tr>
-                            <td><img src="images\main\icono_accesiblidad.png" alt="icono de la accesibilidad">
-                                Accesibilidad
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
                             </td>
-                            <td><input type="button" value="A+"></td>
-                            <td><input type="button" value="A-"></td>
-                            <td><label for="typeOfContrast_txt">Contraste</label>
-                                <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
-                                <datalist id="listOfVisualcontrast">
-                                    <option value="Color original"></option>
-                                    <option value="verdes y azules"></option>
-                                    <option value="rojos y naranjas"></option>
-                                </datalist>
-                            </td>
-                            <td><a href="" id="mapa">Mapa</a></td>
-                            <td><img src="images\main\traductor.png" alt="simbolo del traductor"> Traductor</td>
+                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                            <td id="tdAccesibility">Traductor</td>
                         </tr>
-                    </table>
+                    </table> 
                 </section>
             </form>
-            <header class="header">
-                <div class="logo_container">
-                    <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
-                </div>
-                <div class="menu">
-                    <div class="topNav">
-                        <!--
-    <div class="inicio">
-    <a href="">Inicio</a>
-    <span class="inicio_gif">
-    <img src="./giphy.gif" alt="">
-    </span>
+        </center>  
     </div>
-    -->
-    <a href="./index.html">Inicio</a>
-    <a href="./centro.html">Centro</a>
-    <a href="./equipo.html">Equipo</a>
-    <a href="./proyectos.html">Proyectos</a>
-    <a href="./Publicaciones.html">Publicaciones</a>
-    <a href="./videos.html">Videos</a>
-    <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
-    <a href="./apoyo1.html">Asistencia</a>
-                    </div>
-                </div>
-            </header>
-            <br>
-            <!-- Espacio para "estas aqui" -->
-
-            <section class="estasAqui">
-                <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN / AYUDA PSICOLÓGICA Y
-                    ORIENTACIÓN</h1>
-            </section>
-            <div class="asistenciaMenu">
-                <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
-                        <img src="images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
-                        <p>Solicitar cita</p>
-                    </button></a>
-                <a href="./asisPsico.html"><button class="asistenciaMenu_button">
-                        <img src="./images/Asistencia psicologica Miguel/ayuda.png" class="solicitarCita_img">
-                        <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-                    </button></a>
-                <a href=""><button class="asistenciaMenu_button">
-                        <img src="./images/Asistencia psicologica Miguel/pregunta.png" class="solicitarCita_img">
-
-                        <p>Preguntas frecuentes</p>
-                    </button></a>
+   
+    <header class="header">
+        <div class="logo_container">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+        </div>
+        <div class="menu">
+            <div class="topNav">
+                <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
             </div>
-
-
+        </div>
+    </header>
+        <section class="title">
+            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
+        </section>
+        <div class="asistenciaMenu">
+            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+                <p>Solicitar cita</p>
+            </button></a>
+            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+                <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+            </button></a>
+            <a href="#"><button class="asistenciaMenu_button">
+                <img src="./images/main/preguntas.png" class="solicitarCita_img">
+                <p>Preguntas frecuentes</p>
+            </button></a>
+        </div>
             <!-- Section de la caja central-->
             <section class="centralBox">
                 <div class="mainBox">
@@ -130,18 +126,18 @@
                                         <td>
                                             <span>¿Usted requiere asistencia psicológica u orientación?</span>
                                             <br>
-                                            <section class="haveDiversityYes">
+                                            <section class="input requiereAsistenciaYes"value="si">
                                                
-                                                <input type="button" name="haveDiversity" id="yes" value="si" >
+                                                <input type="button" name="requiereAsistencia" id="yes" value="Si" >
                                             </section>
                                                 <section class="canImg">
                                                     <img src="images\cuestionario cita pag 1\si1.png" alt="">
                                                 </section>
 
 
-                                                <section class="haveDiversityNo">
+                                                <section class="input requiereAsistenciaNo"value="no">
 
-                                                    <input type="button" name="haveDiversity" id="no" value="No">
+                                                    <input type="button" name="requiereAsistencia" id="no" value="No">
                                                 </section>
                                                 <section class="canImg">
                                                     <img src="images\cuestionario cita pag 1\no1.png" alt="">
@@ -153,12 +149,14 @@
                                         <td>
                                             <span>¿Cómo desea recibir esta asistencia u orientación?</span>
                                             <br>
-                                            <section class="canReadWriteYes">
-                                                <input type="button" name="canWrite" id="yes" value="EMAIL">
+                                            <section class="tipo email" value="email">
+                                                <img src="images\Asistencia psicologica Miguel\email.png" alt="">
+                                                <input type="button" name="tipoDeAsistencia" id="email" >
                                             </section>
                                           
-                                            <section class="canReadWriteNo">
-                                                <input type="button" name="canWrite" id="no" value="PREENCIAL">
+                                            <section class="tipo presencial" value="presencial">
+                                                <img src="images\Asistencia psicologica Miguel\precensial.png" alt="">
+                                                <input type="button" name="tipoDeAsistencia" id="precencial" >
 
                                             </section>
                                           
@@ -169,9 +167,8 @@
                         </table>
                         <br>
                         <div class="changePage">
-                            <a href="asistenciaPsicológica2.html" id="linkSecondPageQuestionarie"><img
-                                    src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina">
-                            </a>
+                            <img class="cambiar"src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina">
+                            
                         </div>
                     </section>
                     <br>
@@ -236,4 +233,6 @@
         </body>
 
 </html>
+
+<script src="/Scripts/asisPsico.js"></script>
 <script src="/Scripts/changeSize.js"></script>

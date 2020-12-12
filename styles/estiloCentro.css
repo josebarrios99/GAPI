@@ -1,46 +1,19 @@
 /* ---- barra accesible probicional de jaime ---- */
-.visuaAdjust{
-    background-color: #5A2A97;
-    color: white;
-     width: 82%;
-     height: 60px;
-     padding-left: 10%;
-     padding-right: 8%;
-     padding-top: 20px;
-}
-.visuaAdjust table{
-    width: 100%;
-}
-.visuaAdjust a{
-    color: white;
-}
-.visuaAdjust input[type=button]{
-    color: white;
-    font-family:  Helvetica, sans-serif, arial;
-    font-size: 20px;
-    background-color: #5A2A97;
-    border: unset;
-}
-  input {
-    width: 60%;
-    padding: 10px 18px;
-    border-radius: 7px;
-    border-width: thin;
-    box-sizing: border-box;
-  }
 
 
 /* ---- estilo para el cuerpo ---- */
 .slider{
-    width: 100%;
     z-index: 12;
     grid-auto-flow: row;
     display: grid;
-    grid-template: 300px / 900px 1fr;
+    grid-template: 320px / 900px 1fr;
     justify-items: first;
     justify-content: center;
     align-items: center;   
     margin-bottom: 5%;
+}
+.slider image{
+    transform: ;
 }
 .cuerpo p{
     color: black;

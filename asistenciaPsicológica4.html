@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asistenciaPsicológica1</title>
-    <link rel="stylesheet" href="./styles/asistenciaPsicológica2.css">
+    <link rel="stylesheet" href="./styles/asistenciaPsicológica4.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
+
+    <!-- Header Accesibility -->
+
     <div class="accesibility">
         <center>
             <form action="submission.html" method="POST">
                 <section class="visuaAdjust">
                     <table class="headerTable">
                         <tr>
-                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
+                            </td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
                             <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-">
+                            </td>
+
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -34,49 +42,49 @@
                     </table>
                 </section>
             </form>
-        </center>  
+        </center>
     </div>
-                <header class="header">
-                    <div class="logo_container">
-                        <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
-                    </div>
-                    <div class="menu">
-                        <div class="topNav">
-                            <!--
-        <div class="inicio">
-        <a href="">Inicio</a>
-        <span class="inicio_gif">
-        <img src="./giphy.gif" alt="">
-        </span>
+
+    <!-- Espacio header -->
+    <header class="header">
+        <div class="logo_container">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
-        -->
-        <a href="./index.html">Inicio</a>
-        <a href="./centro.html">Centro</a>
-        <a href="./equipo.html">Equipo</a>
-        <a href="./proyectos.html">Proyectos</a>
-        <a href="./Publicaciones.html">Publicaciones</a>
-        <a href="./videos.html">Videos</a>
-        <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
-        <a href="./apoyo1.html">Asistencia</a>
-                        </div>
-                    </div>
-                </header>
+        <div class="menu">
+            <div class="topNav">
+    
+                <a href="./index.html">Inicio</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
+                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="./apoyo1.html">Asistencia</a>
+            </div>
+        </div>
+    </header>
+    <!-- Fin header -->
+
+    <div class="mainContenedor">
+
         <section class="title">
             <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
         </section>
         <div class="asistenciaMenu">
             <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
-                <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
-                <p>Solicitar cita</p>
-            </button></a>
+                    <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+                    <p>Solicitar cita</p>
+                </button></a>
             <a href="./asisPsico.html"><button class="asistenciaMenu_button">
-                <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
-                <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-            </button></a>
-            <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
-                <img src="./images/main/preguntas.png" class="solicitarCita_img">
-                <p>Preguntas frecuentes</p>
-            </button></a>
+                    <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+                    <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+                </button></a>
+            <a href="#"><button class="asistenciaMenu_button">
+                    <img src="./images/main/preguntas.png" class="solicitarCita_img">
+                    <p>Preguntas frecuentes</p>
+                </button></a>
+
         </div>
         <div class="formularioCitas">
             <div class="pasos_titulo">
@@ -90,95 +98,122 @@
                 <div class="titulo">
                     <h6 id="paso2">Asistencia u orientación</h6>
                     <p class="pasos_content">Información personal y de contacto.</p>
-                    <img src="./images/asistenciaPsico/Group 77.png" alt="" class="info_img">
                 </div>
                 <div class="titulo">
                     <h6 id="paso3">Estado anímico</h6>
                     <p class="pasos_content">Queremos saber como te sientes</p>
                 </div>
-                <div class="titulo">
+                <div class="titulo2">
                     <h6 id="paso4">Confirmación de cita</h6>
-                    <p class="pasos_content">Confirma la información de tu cita de<br> 
+                    <p class="pasos_content">Confirma la información de tu cita de<br>
                         ayuda psicológica y orientación.</p>
+                        <img src="./images/asistenciaPsico/paso4.png" alt="" class="info_img">
                 </div>
             </div>
             <div class="datos">
+                <div class="tituloDerecha">
                 <h5> Confirmación de cita </h5><br>
+            </div>
                 <div class="inputs_firstSection">
                     <h5> Información personal </h5> <br>
-                    <p id="RBody1">Nombre:</p><br>
-                    <p id="RBody1">Apellido:</p><br>
-                    <p id="RBody1">Edad:</p><br>
-                    <p id="RBody1">Cédula:</p><br>
-                    <p id="RBody1">Número telefónico:</p><br>
+                    <p class="nombre" id="RBody1">Nombre:</p><br>
+                    <p class="apellido"id="RBody1">Apellido:</p><br>
+                    <p class="edad"id="RBody1">Edad:</p><br>
+                    <p class="cedula"id="RBody1">Cédula:</p><br>
+                    <p class="telefono"id="RBody1">Número telefónico:</p><br>
                     <p id="RBody1">Correo electrónico:</p><br>
-                    <h5> Fecha y hora de la cita: </h5> <br>
-                    <h4> 3.30 pm  jueves 18 de Enero del 2020 </h4> <br>
-                    <h5> Consulta </h5> <br>
-                    <p id="RBody1">Ayuda psicológica y orientación.</p><br>
+                    <h5 class="fecha"> Fecha y hora de la cita: </h5> <br>
+                    <h4 class="textoFecha fecha"> 3.30 pm jueves 18 de Enero del 2020 </h4> <br>
+                    <h5 class="fecha"> Consulta </h5> <br>
+                    <p id="RBody1" class="fecha">Ayuda psicológica y orientación.</p><br>
                     <div class="fin_inputs">
-                        <button class="back_button"> <img src="./images/asistenciaPsico/back.png" alt="" class="back"><a href="./asistenciaPsicológica2.html">RETROCEDER</a>   </button>
-                        <button class="next_button"> <a href="#">CONFIRMAR CITA</a>   <img src="./images/asistenciaPsico/next.png" alt="" class="next"></button>
+                        <button class="back_button"> <img src="./images/asistenciaPsico/back.png" alt="" class="back"><a
+                                href="./asistenciaPsicológica2.html">RETROCEDER</a> </button>
+                        <button class="next_button"> <a href="#">CONFIRMAR CITA</a> <img
+                                src="./images/asistenciaPsico/next.png" alt="" class="next"></button>
                     </div>
                 </div>
             </div>
         </div>
-            <footer>
-                <section class="footer_info">
-                    <div class="data">
-                        <div class="data_logo">
-                            <img src="./images/main/Logo_footer.png" alt="">
-                        </div>
-                        <div class="data_info">
-                            <p>Oficina de Información<br>
-                            Teléfono: 8821093<br>
-                            Ext: 112 - 119<br>
-                            Dirección: Carrera 9 No. 9-49<br>
-                            Segundo piso<br>
-                            Horario de atención al público <br>
-                            2:30 p.m - 5:30 p.m.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="data_menu">
-                        <h6>Menú</h6>
-                        <a href="">Inicio</a>
-                        <a href="">Centro</a>
-                        <a href="">Equipo</a>
-                        <a href="./proyectos.html">Proyectos</a>
-                        <a href="">Publicaciones</a>
-                        <a href="">Videos</a>
-                        <a href="">Protocolo de Atención</a>
-                        <a href="">Asistencia</a>
-                    </div>
-                    <div class="data_legal">
-                        <h6>Legal</h6>
-                        <a href="">Política de cookies</a>
-                        <a href="">Política de privacidad</a>
-                        <a href="">Términos de servicio</a>
-                        <a href="">Status</a>
-                    </div>
-                    <div class="data_contact">
-                        <h6>Contáctanos</h6>
-                        <p>
-                            <strong>Jorge Andrés Illera Cajiao</strong><br>
-                            <strong>Director del GAPI</strong><br>
-                            Correo: jaillera@icesi.edu.co<br>
-                        </p>
-                        <p>
-                            <strong>Paula Andrea Cerón Arboleda</strong><br>
-                            <strong>Coordinadora del GAPI</strong><br>
-                            Correo: paula.ceron@correo.icesi.edu.co
-                        </p>
-                    </div>
-                </section>
-                <section class="social">
-                    <div class="icons">
-                        <img src="./images/main/Redes.png" alt="">
-                    </div>
-                </section>
-            </footer>
+    </div>
+    <footer>
+        <section class="footer_info">
+            <div class="data">
+                <div class="data_logo">
+                    <img src="./images/main/Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
+
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
+            </div>
         </section>
+        <section class="social">
+            <div class="icons">
+                <img src="./images/main/Redes.png" alt="">
+            </div>
+        </section>
+    </footer>
+    </section>
 </body>
+
 </html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDYX14YuYI0xbvonWsqKnZt7XmdQ2qXv5A",
+    authDomain: "gapiweb-eca67.firebaseapp.com",
+    databaseURL: "https://gapiweb-eca67.firebaseio.com",
+    projectId: "gapiweb-eca67",
+    storageBucket: "gapiweb-eca67.appspot.com",
+    messagingSenderId: "362806524614",
+    appId: "1:362806524614:web:ac43b95cfc3afa0964b5c7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="/Scripts/asistenciaPsicologica4.js"></script>
 <script src="/Scripts/changeSize.js"></script>

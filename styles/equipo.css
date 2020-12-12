@@ -2,34 +2,54 @@
     margin: 0;
     padding: 0;
 }
-.banner_equipo{
-   padding-top: 5px;
-}
 .title{
     padding-top: 38px;
     padding-left: 120px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 }
 .title_section{
     text-align: center;
 }
 .title_equipo{
     color: #146971;
+    font-size: 34px;
+    margin-bottom: 50px;
 }
 .subtitle_section{
     padding-top: 38px;
     padding-left: 120px;
     padding-bottom: 40px;
 }
+.subtitu_exmi{
+  font-size: 34px;
+  color: #454545;
+}
+.info{
+  background-color: #EFEFEF;
+  color: #454545;
+  padding-bottom: 80px;
+}
+.tituNombres{
+  font-weight: bold;
+  font-size: 20px;
+}
 .exmember_content{
     display: flex;
     width: 1200px;
     padding-bottom: 30px;
     margin-left: 120px;
+
 }
 .exmember_content__info{
-    margin-left: 15px;
+    margin-left: 0px;
     padding-top: 28px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+
+
 }
 .exmember_content__info h6{
     color: #454545;
@@ -43,7 +63,6 @@
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: auto;
   }
   
   

@@ -84,11 +84,11 @@
     height:30px;
     margin-right: 10px;
     border-radius:50%;
-    background: #146971;
+    background: #B1B1B1;
     display:inline-block;
 }
 #paso2{
-    color: #146971;
+    color: #5F5F5F;
 }
 #paso3:before {
     content:"3";
@@ -112,11 +112,11 @@
     height:30px;
     margin-right: 10px;
     border-radius:50%;
-    background: #B1B1B1;
+    background: #146971;
     display:inline-block;
 }
 #paso4{
-    color: #5F5F5F;
+    color: #146971;
 }
 .info_img{
     margin-left: 37px;
@@ -141,6 +141,10 @@
     padding-top: 15px;
     padding-right: 37px;
     padding-bottom: 20px;
+}
+.tituloDerecha{
+    border-bottom: 1px solid #B1B1B1;
+    margin-bottom: 40px;
 }
 .datos{
     padding: 56px 0px 0px 0px;
