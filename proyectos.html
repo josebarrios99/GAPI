@@ -16,8 +16,8 @@
                         <tr>
                             <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" id="btn_downFont" type="button" value="A-"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -65,7 +65,7 @@
             <img src="./images/proyectos/banner_proyectos.png" alt="" id="main_banner">
         </section>
         <section class="title">
-            <h2 id="ROverline">ESTÁS AQUÍ: INICIO/PROYECTO</h2>
+            <p class ="ROverline" id="ROverline">ESTÁS AQUÍ: INICIO/PROYECTO</p>
         </section>
         <section class="nuestrosProyectos">
             <div class="titleSection">
@@ -147,3 +147,4 @@
         </section>
 </body>
 </html>
+<script src="/Scripts/changeSizeProyectos.js"></script>

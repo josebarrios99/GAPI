@@ -6,6 +6,10 @@ h1 {
     margin-left: 122px;
     margin-top: 36px;
 }
+.title{
+    margin-top: 40px;
+    margin-left: 80px;
+}
 
 /* --- botones asistencia --- */
 .asistenciaMenu{
@@ -49,18 +53,19 @@ h1 {
 /* --- preguntas --- */
 
 .preguntas{
-    margin-top: 85px;
-     display: grid;
+    margin-top: 25px;
+     display: flex;
+     flex-direction: column;
     align-content: center;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 1200px;
-    grid-template-rows: repeat(4,260px);
-    grid-gap: 36px;
+    padding:80px;
+
 }
 .contenedorPregunta{
     background-color: #ffff;
     border-radius: 25px;
+    margin:20px;
 }
 .prove{
        border-bottom: 1px solid #454545;

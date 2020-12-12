@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +17,12 @@
                 <section class="visuaAdjust">
                     <table class="headerTable">
                         <tr>
-                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
+                            </td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-"
+                                    id="btn_downFont"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -36,7 +39,7 @@
                     </table>
                 </section>
             </form>
-        </center>  
+        </center>
     </div>
     <header class="header">
         <div class="logo_container">
@@ -52,74 +55,64 @@
 </span>
 </div>
 -->
-<a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./apoyo1.html">Asistencia</a>
+                <a href="./index.html">Inicio</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
+                <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="./apoyo1.html">Asistencia</a>
             </div>
-            <div class="menu">
-                <div class="topNav">
-                    <a href="">Inicio</a>
-                    <a href="">Centro</a>
-                    <a href="">Equipo</a>
-                    <a href="./proyectos.html">Proyectos</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Videos</a>
-                    <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                    <a href="">Asistencia</a>
-                </div>
-            </div>
-        </header>
+
+    </header>
 
 
-        <!-- Seccion "Banner" -->
-        <section class="title">
-            <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / <b>PREGUNTAS FRECUENTES</b></h1>
-        </section>
+    <!-- Seccion "Banner" -->
+    <div class="title">
+        <p class="ROverline" id="ROverline">ESTÁS AQUÍ: ASISTENCIA / <b>PREGUNTAS FRECUENTES</b></p>
+    </div>
 
-        <div class="asistenciaMenu">
-            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+    <div class="asistenciaMenu">
+        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
                 <img src="images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
                 <p>Solicitar cita</p>
-                </button></a>
-            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+            </button></a>
+        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
                 <img src="./images/Asistencia psicologica Miguel/ayuda.png" class="solicitarCita_img">
                 <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-                </button></a>
-            <a href=""><button class="asistenciaMenu_button">
+            </button></a>
+        <a href=""><button class="asistenciaMenu_button">
                 <img src="./images/Asistencia psicologica Miguel/pregunta.png" class="solicitarCita_img">
 
                 <p>Preguntas frecuentes</p>
-                </button></a>
-        </div>
+            </button></a>
+    </div>
 
-        <!-- Contenedores preguntas -->
-        <div class="preguntas">
-            <div class="contenedorPregunta">
-                <div class="prove">
-                    <h5 id="tituContenedor">Lorem ipsum</h5>
-                </div>
-                <p id="info1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-                    mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing
-                    odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-                    mauris. Eget lectus elementum venenatis senectus aliquam
-                    condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-                    consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat
-                    magna feugiat in nunc, risus feugiat erat.
-                </p>
-                <div class="Inputs">
-                    <div class="menu">
-                        <div class="askNav">
-                            <p >¿Te fue útil esta respuesta?</p>
-                            <p ><button class="si_button"> SÍ, FUE ÚTIL </button></p>
-                            <p ><button class="no_button"> NO FUE ÚTIL</button></p>
-                            <p >¿Deseas programar una cita para obtener más información?</p>
-                            <p ><button class="cita_button"> SÍ, PEDIR CITA </button></p></p>
+    <!-- Contenedores preguntas -->
+    <div class="preguntas">
+        <div class="contenedorPregunta">
+            <div class="prove">
+                <h5 id="tituContenedor">Lorem ipsum</h5>
+            </div>
+            <p id="info1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
+                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing
+                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
+                mauris. Eget lectus elementum venenatis senectus aliquam
+                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
+                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat
+                magna feugiat in nunc, risus feugiat erat.
+            </p>
+            <div class="Inputs">
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -141,129 +134,135 @@
             <div class="Inputs">
                 <div class="menu">
                     <div class="askNav">
-                        <p >¿Te fue útil esta respuesta?</p>
-                        <p ><button class="si_button"> SÍ, FUE ÚTIL </button></p>
-                        <p ><button class="no_button"> NO FUE ÚTIL</button></p>
-                        <p >¿Deseas programar una cita para obtener más información?</p>
-                        <p ><button class="cita_button"> SÍ, PEDIR CITA </button></p></p>
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
 
-    <div class="contenedorPregunta">
-        <div class="prove">
-            <h5 id="tituContenedor">Lorem ipsum</h5>
-        </div>
-        <p id="info1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-            mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing
-            odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-            mauris. Eget lectus elementum venenatis senectus aliquam
-            condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-            consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat
-            magna feugiat in nunc, risus feugiat erat.
-        </p>
-        <div class="Inputs">
-            <div class="menu">
-                <div class="askNav">
-                    <p >¿Te fue útil esta respuesta?</p>
-                    <p ><button class="si_button"> SÍ, FUE ÚTIL </button></p>
-                    <p ><button class="no_button"> NO FUE ÚTIL</button></p>
-                    <p >¿Deseas programar una cita para obtener más información?</p>
-                    <p ><button class="cita_button"> SÍ, PEDIR CITA </button></p></p>
+        <div class="contenedorPregunta">
+            <div class="prove">
+                <h5 id="tituContenedor">Lorem ipsum</h5>
             </div>
-        </div>
-    </div>
-    </div>
-
-<div class="contenedorPregunta">
-    <div class="prove">
-        <h5 id="tituContenedor">Lorem ipsum</h5>
-    </div>
-    <p id="info1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-        mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing
-        odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-        mauris. Eget lectus elementum venenatis senectus aliquam
-        condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-        consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat
-        magna feugiat in nunc, risus feugiat erat.
-    </p>
-    <div class="Inputs">
-        <div class="menu">
-            <div class="askNav">
-                <p >¿Te fue útil esta respuesta?</p>
-                <p ><button class="si_button"> SÍ, FUE ÚTIL </button></p>
-                <p ><button class="no_button"> NO FUE ÚTIL</button></p>
-                <p >¿Deseas programar una cita para obtener más información?</p>
-                <p ><button class="cita_button"> SÍ, PEDIR CITA </button></p></p>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="lastInput">
-    <button class="goBack_button"> <img src="./images/PreguntasFrecuentes/up.png" alt=""> <p> REGRESAR A<br> ARRIBA</p>
-    </button>
-</div>
-</div>
-
-<!-- Espacio FOOTER-->
-<footer>
-    <section class="footer_info">
-        <div class="data">
-            <div class="data_logo">
-                <img src="./images/main/Logo_footer.png" alt="">
-            </div>
-            <div class="data_info">
-                <p>Oficina de Información<br>
-                    Teléfono: 8821093<br>
-                    Ext: 112 - 119<br>
-                    Dirección: Carrera 9 No. 9-49<br>
-                    Segundo piso<br>
-                    Horario de atención al público <br>
-                    2:30 p.m - 5:30 p.m.</p>
-            </div>
-
-        </div>
-        <div class="data_menu">
-            <h6>Menú</h6>
-            <a href="">Inicio</a>
-            <a href="">Centro</a>
-            <a href="">Equipo</a>
-            <a href="./proyectos.html">Proyectos</a>
-            <a href="">Publicaciones</a>
-            <a href="">Videos</a>
-            <a href="">Protocolo de Atención</a>
-            <a href="">Asistencia</a>
-        </div>
-        <div class="data_legal">
-            <h6>Legal</h6>
-            <a href="">Política de cookies</a>
-            <a href="">Política de privacidad</a>
-            <a href="">Términos de servicio</a>
-            <a href="">Status</a>
-        </div>
-        <div class="data_contact">
-            <h6>Contáctanos</h6>
-            <p>
-                <strong>Jorge Andrés Illera Cajiao</strong><br>
-                <strong>Director del GAPI</strong><br>
-                Correo: jaillera@icesi.edu.co<br>
+            <p id="info1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
+                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing
+                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
+                mauris. Eget lectus elementum venenatis senectus aliquam
+                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
+                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat
+                magna feugiat in nunc, risus feugiat erat.
             </p>
-            <p>
-                <strong>Paula Andrea Cerón Arboleda</strong><br>
-                <strong>Coordinadora del GAPI</strong><br>
-                Correo: paula.ceron@correo.icesi.edu.co
+            <div class="Inputs">
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorPregunta">
+            <div class="prove">
+                <h5 id="tituContenedor">Lorem ipsum</h5>
+            </div>
+            <p id="info1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
+                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing
+                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
+                mauris. Eget lectus elementum venenatis senectus aliquam
+                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
+                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat
+                magna feugiat in nunc, risus feugiat erat.
             </p>
+            <div class="Inputs">
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="social">
-        <div class="icons">
-            <img src="./images/main/Redes.png" alt="">
+
+        <div class="lastInput">
+            <button class="goBack_button"> <img src="./images/PreguntasFrecuentes/up.png" alt="">
+                <p> REGRESAR A<br> ARRIBA</p>
+            </button>
         </div>
-    </section>
-</footer>
+    </div>
+
+    <!-- Espacio FOOTER-->
+    <footer>
+        <section class="footer_info">
+            <div class="data">
+                <div class="data_logo">
+                    <img src="./images/main/Logo_footer.png" alt="">
+                </div>
+                <div class="data_info">
+                    <p>Oficina de Información<br>
+                        Teléfono: 8821093<br>
+                        Ext: 112 - 119<br>
+                        Dirección: Carrera 9 No. 9-49<br>
+                        Segundo piso<br>
+                        Horario de atención al público <br>
+                        2:30 p.m - 5:30 p.m.</p>
+                </div>
+
+            </div>
+            <div class="data_menu">
+                <h6>Menú</h6>
+                <a href="">Inicio</a>
+                <a href="">Centro</a>
+                <a href="">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="">Publicaciones</a>
+                <a href="">Videos</a>
+                <a href="">Protocolo de Atención</a>
+                <a href="">Asistencia</a>
+            </div>
+            <div class="data_legal">
+                <h6>Legal</h6>
+                <a href="">Política de cookies</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Términos de servicio</a>
+                <a href="">Status</a>
+            </div>
+            <div class="data_contact">
+                <h6>Contáctanos</h6>
+                <p>
+                    <strong>Jorge Andrés Illera Cajiao</strong><br>
+                    <strong>Director del GAPI</strong><br>
+                    Correo: jaillera@icesi.edu.co<br>
+                </p>
+                <p>
+                    <strong>Paula Andrea Cerón Arboleda</strong><br>
+                    <strong>Coordinadora del GAPI</strong><br>
+                    Correo: paula.ceron@correo.icesi.edu.co
+                </p>
+            </div>
+        </section>
+        <section class="social">
+            <div class="icons">
+                <img src="./images/main/Redes.png" alt="">
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>
+<script src="/Scripts/changeSizePreguntasFreq.js"></script>
