@@ -19,8 +19,8 @@
                         <tr>
                             <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" id ="btn_downFont" type="button" value="A-"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -66,7 +66,7 @@
         </div>
     </header>
         <section class="title">
-            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
+            <p class="ROverline" id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</p>
         </section>
         <div class="asistenciaMenu">
             <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
@@ -237,5 +237,5 @@
 
 
 <script src="/Scripts/asisPsico.js"></script>
-<script src="/Scripts/changeSize.js"></script>
+<script src="/Scripts/changeSizeasisPsico.js"></script>
 

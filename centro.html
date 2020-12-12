@@ -22,8 +22,8 @@
                             <tr>
                                 <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                                 <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id = "btn_upFont"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id="btn_downFont"></td>
                                 <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                     <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                         <option value="">Color original</option>
@@ -75,7 +75,7 @@
 
         <!-- espacio para columnas de imagenes y texto-->
         <section class="cuerpo">
-            <p class="titulo">
+            <p class="titulo ROverline">
                 ESTÁS AQUÍ: INICIO / CENTRO
             </p>
         </section>
@@ -87,22 +87,22 @@
                 <h5 class="sobreGapiText">Sobre el GAPI</h5>
 
                 <p>
-                    El Grupo de Acciones Públicas de ICESI (GAPI) es la clínica jurídica de <br>
-                    derechos humanos e interés público, de la Facultad de Derecho y Ciencias<br>
-                    Sociales de la Universidad ICESI. Opera desde el 2008 con más de diez <br>
-                    (10) años de experiencia sirviendo a la comunidad con asesorías jurídicas<br>
-                    de calidad sin costo alguno y educando y aplicando litigio estratégico con<br>
-                    apoyo de sus estudiantes. Fundado por la iniciativa de Diana Patricia <br>
-                    Quintero del Departamento de Estudios Jurídicos y con el apoyo de Paula<br>
-                    Andrea Cerón, egresada del Programa de Derecho de la Universidad.<br><br>
+                    El Grupo de Acciones Públicas de ICESI (GAPI) es la clínica jurídica de 
+                    derechos humanos e interés público, de la Facultad de Derecho y Ciencias
+                    Sociales de la Universidad ICESI. Opera desde el 2008 con más de diez 
+                    (10) años de experiencia sirviendo a la comunidad con asesorías jurídicas
+                    de calidad sin costo alguno y educando y aplicando litigio estratégico con
+                    apoyo de sus estudiantes. Fundado por la iniciativa de Diana Patricia 
+                    Quintero del Departamento de Estudios Jurídicos y con el apoyo de Paula
+                    Andrea Cerón, egresada del Programa de Derecho de la Universidad.<br>
 
-                    El GAPI cuenta con miembros activos y voluntarios. Los primeros son los<br>
-                    estudiantes de Derecho del Consultorio Jurídico de la misma universidad y <br>
-                    los segundos pueden ser estudiantes de ICESI de cualquier carrera. La <br>
-                    mayoría son de últimos semestres de la Facultad de Derecho y Ciencias<br>
-                    Sociales, quienes llevan a cabo trabajo con la comunidad, con enfoque en <br>
-                    el modelo pedagógico clínico de enseñanza del Derecho. Además, la <br>
-                    clínica se ha abierto un espacio para proteger los intereses de <br>
+                    El GAPI cuenta con miembros activos y voluntarios. Los primeros son los
+                    estudiantes de Derecho del Consultorio Jurídico de la misma universidad y 
+                    los segundos pueden ser estudiantes de ICESI de cualquier carrera. La 
+                    mayoría son de últimos semestres de la Facultad de Derecho y Ciencias
+                    Sociales, quienes llevan a cabo trabajo con la comunidad, con enfoque en 
+                    el modelo pedagógico clínico de enseñanza del Derecho. Además, la 
+                    clínica se ha abierto un espacio para proteger los intereses de 
                     comunidades históricamente discriminadas y vulnerables. Por el mismo <br>
                     sentido, el GAPI se ha convertido en un aliado estratégico de
                     organizaciones comunitarias y líderes ciudadanos quienes ven en la clínica
@@ -121,38 +121,38 @@
 
             <article class="caja">
                 <img src="images/centro/primera.png" alt="">
-                <h3>Litigio estratégico y<br>
-                    representación directa<br>
-                    de comunidades <br>
+                <h6 class = "cajaTitle">Litigio estratégico y
+                    representación directa
+                    de comunidades 
                     vulnerables.
 
-                </h3>
+                </h6>
             </article>
             <article class="caja">
                 <img src="images/centro/segunda.png" alt="">
-                <h3>Pedagogía en derechos<br>
-                    y creación de <br>
-                    materiales de <br>
+                <h6 class = "cajaTitle">Pedagogía en derechos
+                    y creación de
+                    materiales de 
                     divulgación.
-                </h3>
+                </h6>
             </article>
             <article class="cajaj">
                 <div class="contenido">
                     <img src="images/centro/tercera.png" alt="">
-                    <h3>Investigación socio<br>
+                    <h6 class = "cajaTitle">Investigación socio
                         jurídica.
 
-                    </h3>
+                    </h6>
                 </div>
             </article>
             <article class="caja">
                 <div class="contenido">
                     <img src="images/centro/cuarta.png" alt="">
-                    <h3>Formación de <br>
-                        estudiantes en la <br>
-                        práctica del derecho de <br>
+                    <h6 class = "cajaTitle">Formación de 
+                        estudiantes en la 
+                        práctica del derecho de
                         interés público.
-                    </h3>
+                    </h6>
                 </div>
             </article>
         </section>
@@ -272,3 +272,4 @@
     </body>
     <script src="./Scripts/color.js"></script>
 </html>
+<script src="/Scripts/changeSizeCentro.js"></script>

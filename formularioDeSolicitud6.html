@@ -20,8 +20,10 @@
                         <tr>
                             <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id ="btn_downFont"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -85,7 +87,7 @@
 
 
 
-    <article class="form">
+    <div class="form">
         <section class="form_aside">
             <div class="titulo" id="titulo_ayuda">
                 <h5>Formulario de citas</h5>
@@ -184,7 +186,7 @@
                         alt=""></button>
             
         </div>
-    </article>
+    </div>
 
     <footer>
         <section class="footer_info">
@@ -246,5 +248,5 @@
 </body>
 
 </html>
-
+<script src="./Scripts/changeSizeFormulario6.js"></script>
 <script src="./Scripts/FormularioDeSolicitud6.js"></script>

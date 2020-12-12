@@ -57,9 +57,11 @@
 .accionesGAPI{
     float: left;
     text-align: center;
+    vertical-align: middle;
+    align-items: center;
     margin-top: 53px;
     width: 100%;
-    height: 560px;
+    
     background: #d3d3d3;
     overflow: hidden;
     padding-bottom: 3%;
@@ -75,7 +77,7 @@
     border-radius: 10px;
     background-color: white;
     width: 235px;
-    height: 350px;
+    min-height: 350px;
     padding-left: 1.5%;
     text-align: left;
     display: inline-block;
@@ -89,7 +91,7 @@
     border-radius: 10px;
     background-color: white;
     width: 235px;
-    height: 350px;
+    min-height: 350px;
     padding-left: 1.5%;
     text-align: left;
     display: inline-block;
@@ -159,4 +161,7 @@
 
 .subtituloCliente{
     padding-top: 50px;
+}
+.cajaTitle{
+    color:black;
 }
