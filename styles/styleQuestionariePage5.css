@@ -43,4 +43,6 @@
     box-sizing: border-box;
   
 }
-
+.longLabel{
+    width: 85%;
+}
