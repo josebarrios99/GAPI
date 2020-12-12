@@ -46,22 +46,16 @@
         </div>
         <div class="menu">
             <div class="topNav">
-                <!--
-<div class="inicio">
-<a href="">Inicio</a>
-<span class="inicio_gif">
-<img src="./giphy.gif" alt="">
-</span>
-</div>
--->
-<a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./apoyo1.html">Asistencia</a>
+            
+                <a href="./index.html">Inicio</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
+                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="./apoyo1.html">Asistencia</a>
+
             </div>
         </div>
     </header>
@@ -93,85 +87,44 @@
 
     <article class="form">
         <section class="form_aside">
-            <ol>
+            <div class="titulo" id="titulo_ayuda">
                 <h5>Formulario de citas</h5>
-                <li>
-                    <div>
-                        <h6 id="paso1">Cuestionario sobre diversidad</h6>
-                    </div>
-
-
-                </li>
-                <li>
-                    <div>
-
-                        <h6 id="paso2">Datos personales</h6>
-                    </div>
-
-                </li>
-                <li>
-                    <div>
-                        <h6 id="paso3">Informacion laboral</h6>
-                    </div>
-
-
-
-                </li>
-                <li>
-                    <div>
-
-                        <h6 id="paso4">Proceso juridico a realizar</h6>
-
-                    </div>
-
-
-                </li>
-
-                <li>
-                    <div>
-
-                        <h6 id="paso5">Datos del acompañante</h6>
-
-                    </div>
-
-
-                </li>
-
-                <li>
-                    <div>
-
-                        <h6 id="paso6">Fecha y hora de su cita</h6>
-
-                    </div>
-
-                    <p class="textoFechayHora"> Elige la fecha y hora para generar tu consulta con GAPI.</p>
-                    <img src="images/formularioSolicitud/imagenFormulario6.png" alt="imagen del cuestionario">
-
-                </li>
-
-                <li>
-                    <div>
-
-                        <h6 id="paso7">Confirmacion</h6>
-
-                    </div>
-
-
-                </li>
-
-
-            </ol>
+            </div>
+            <div class="titulo">
+                <h6 id="paso1">Cuestionario sobre diversidad</h6>
+                
+            </div>
+            <div class="titulo">
+                <h6 id="paso2">Datos personales</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso3">Información laboral</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso4">Proceso jurídico a realizar</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso5">Datos del acompañante</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso6">Fecha y hora de su cita</h6>
+                <p class="pasos_content">Elige la fecha y hora para generar tu consulta con <br>GAPI.</p>
+                <img src="./images/asistenciaPsico/paso2.png" alt="" class="info_img">
+            </div>
+            <div class="titulo2">
+                <h6 id="paso7">Confirmación</h6>
+            </div>
         </section>
 
         <section class="form_main">
-            <form>
+            
                 <h5>Fecha y hora de su cita</h5>
                 <p id="RBody1">Escoja una fecha</p>
                 <div>
                     
                     <div class="column form_fecha">
                         
-                        <input type="date" name="date" id="dateApointment">
+                        <input class="fecha" type="date" name="date" id="dateApointment">
                     </div>
                     
                     <div class="column form_horarios">
@@ -184,9 +137,9 @@
 
                         <div class="row morningButtons">
 
-                            <button class="btn-select btn-selected">9:30</button>
-                            <button class="btn-select">9:30</button>
-                            <button class="btn-select">9:30</button>
+                            <button class="input btn-select " value="9:30 am">9:30</button>
+                            <button class="input btn-select" value="11:30 am">11:30</button>
+                            <button class="input btn-select" value="8:30 am">8:30</button>
 
 
                         </div>
@@ -197,9 +150,9 @@
                         </div>
 
                         <div class="row afternonButtons">
-                            <button class="btn-select">3:45</button>
-                            <button class="btn-select">3:45</button>
-                            <button class="btn-select">3:45</button>
+                            <button class="input btn-select" value="3:45 pm">3:45</button>
+                            <button class="input btn-select" value="5:45 pm">5:45</button>
+                            <button class="input btn-select" value="2:45 pm">2:30</button>
                         </div>
 
                     </div>
@@ -208,25 +161,29 @@
                 </div>
 
 
-                <div class="btns">
+                
+
+            
+
+            <div class="btns">
 
 
-                    <a href="#" id="linkSecondPageQuestionarie">
 
-                        <button class="btn btnSecondary"> <img src="./images/formularioSolicitud/flechaAtras.svg"
-                                alt="">Retroceder</button>
-
-                    </a>
-                    <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie">
-
-                        <button class="btn btnMain"> Seguir <img src="./images/formularioSolicitud/flechaAdelante.svg"
-                                alt=""></button>
-                    </a>
-                </div>
-
-            </form>
+                    
 
 
+                <button onclick="window.location.href='formularioDesolicitud5.html'" class=" btn btnSecondary"> <img src="./images/formularioSolicitud/flechaAtras.svg"
+                        alt="">Retroceder
+
+                       
+                    </button>
+
+            
+            
+                <button class="botonCambio btn btnMain"> Seguir <img src="./images/formularioSolicitud/flechaAdelante.svg"
+                        alt=""></button>
+            
+        </div>
     </article>
 
     <footer>
@@ -289,4 +246,6 @@
 </body>
 
 </html>
+
+<script src="./Scripts/FormularioDeSolicitud6.js"></script>
 <script src="/Scripts/changeSize.js"></script>

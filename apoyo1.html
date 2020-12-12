@@ -72,12 +72,13 @@
 
     <!-- Espacio para "estas aqui" -->
 
-    <section class="title">
-        <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
-    </section>
+   
 
     <!-- Section de la caja central-->
     <section class="centralBox">
+        <div class="breadCrumb">
+            <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
+        </div>
         <div class="mainBox">
             <div class="boxLeft">
                 <img class="mainImage" src="images/Apoyo Miguel/mainPhoto.png" alt="">
@@ -87,7 +88,7 @@
                 <div class="containerBtns">
 
                     <!-- CARD #1-->
-                    <div class="btnCard1">
+                    <div class="input btnCard1" value="si">
                         <div class="imageCar">
                             <img src="images/Apoyo Miguel/si.png" alt="">
                         </div>
@@ -97,7 +98,7 @@
                     </div>
 
                     <!-- CARD #2-->
-                    <div class="btnCard2">
+                    <div class="input btnCard2" value="no">
                         <div class="imageCar">
                             <img src="images/Apoyo Miguel/no.png" alt="">
                         </div>
@@ -105,6 +106,11 @@
                             <h5 class="textCard">No</h5>
                         </div>
                     </div>
+                </div>
+                
+                <!-- boton pregunta -->
+                <div class="quesButton">
+                    <button class="quest_button"> <a href="#"> </a>   <img src="./images/Apoyo Miguel/pregunta.png" alt=""</button>
                 </div>
             </div>
         </div>
@@ -171,4 +177,5 @@
 </body>
 
 </html>
+<script src="/Scripts/apoyo1.js"></script>
 <script src="/Scripts/changeSize.js"></script>
