@@ -126,7 +126,7 @@
                                         <td>
                                             <span>¿Usted requiere asistencia psicológica u orientación?</span>
                                             <br>
-                                            <section class="requiereAsistenciaYes">
+                                            <section class="input requiereAsistenciaYes"value="si">
                                                
                                                 <input type="button" name="requiereAsistencia" id="yes" value="Si" >
                                             </section>
@@ -135,7 +135,7 @@
                                                 </section>
 
 
-                                                <section class="requiereAsistenciaNo">
+                                                <section class="input requiereAsistenciaNo"value="no">
 
                                                     <input type="button" name="requiereAsistencia" id="no" value="No">
                                                 </section>
@@ -149,12 +149,12 @@
                                         <td>
                                             <span>¿Cómo desea recibir esta asistencia u orientación?</span>
                                             <br>
-                                            <section class="email">
+                                            <section class="tipo email" value="email">
                                                 <img src="images\Asistencia psicologica Miguel\email.png" alt="">
                                                 <input type="button" name="tipoDeAsistencia" id="email" >
                                             </section>
                                           
-                                            <section class="presencial">
+                                            <section class="tipo presencial" value="presencial">
                                                 <img src="images\Asistencia psicologica Miguel\precensial.png" alt="">
                                                 <input type="button" name="tipoDeAsistencia" id="precencial" >
 
@@ -167,9 +167,8 @@
                         </table>
                         <br>
                         <div class="changePage">
-                            <a href="asistenciaPsicológica2.html" id="linkSecondPageQuestionarie"><img
-                                    src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina">
-                            </a>
+                            <img class="cambiar"src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina">
+                            
                         </div>
                     </section>
                     <br>
@@ -234,4 +233,6 @@
         </body>
 
 </html>
+
+<script src="/Scripts/asisPsico.js"></script>
 <script src="/Scripts/changeSize.js"></script>
