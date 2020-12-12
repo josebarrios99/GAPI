@@ -1,12 +1,28 @@
-const colors = document.getElementById('colors');
+/*const colors = document.getElementById('colors');
 
 let i;
+let color=0;
 for (let i = 0; i < colors.length; i++) {
     colors[i].addEventListenr('click', changecolor);
-}
+}*/
+
+
+window.addEventListener("load",function(){
+    var value = localStorage.getItem("pageColor");
+    if (value) {
+        changecolor(parseInt(value));
+    }
+});
+
+
 function changecolor(value){
     //document.documentElement.style.setProperty('--color', fondo);
     //document.documentElement.style.setProperty('--texto', texto);
+    localStorage.setItem("pageColor", value);
+    color = value;
+    if(value==0){
+        
+    }
     if(value==1){
         document.querySelectorAll('h1').forEach(e => e.style.color = "#ffffff");
         document.querySelectorAll('h2').forEach(e => e.style.color = "#ffffff");
