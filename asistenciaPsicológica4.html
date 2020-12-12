@@ -116,14 +116,14 @@
             </div>
                 <div class="inputs_firstSection">
                     <h5> Información personal </h5> <br>
-                    <p id="RBody1">Nombre:</p><br>
-                    <p id="RBody1">Apellido:</p><br>
-                    <p id="RBody1">Edad:</p><br>
-                    <p id="RBody1">Cédula:</p><br>
-                    <p id="RBody1">Número telefónico:</p><br>
+                    <p class="nombre" id="RBody1">Nombre:</p><br>
+                    <p class="apellido"id="RBody1">Apellido:</p><br>
+                    <p class="edad"id="RBody1">Edad:</p><br>
+                    <p class="cedula"id="RBody1">Cédula:</p><br>
+                    <p class="telefono"id="RBody1">Número telefónico:</p><br>
                     <p id="RBody1">Correo electrónico:</p><br>
                     <h5 class="fecha"> Fecha y hora de la cita: </h5> <br>
-                    <h4 class="fecha"> 3.30 pm jueves 18 de Enero del 2020 </h4> <br>
+                    <h4 class="textoFecha fecha"> 3.30 pm jueves 18 de Enero del 2020 </h4> <br>
                     <h5 class="fecha"> Consulta </h5> <br>
                     <p id="RBody1" class="fecha">Ayuda psicológica y orientación.</p><br>
                     <div class="fin_inputs">
@@ -195,4 +195,25 @@
 </body>
 
 </html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDYX14YuYI0xbvonWsqKnZt7XmdQ2qXv5A",
+    authDomain: "gapiweb-eca67.firebaseapp.com",
+    databaseURL: "https://gapiweb-eca67.firebaseio.com",
+    projectId: "gapiweb-eca67",
+    storageBucket: "gapiweb-eca67.appspot.com",
+    messagingSenderId: "362806524614",
+    appId: "1:362806524614:web:ac43b95cfc3afa0964b5c7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="/Scripts/asistenciaPsicologica4.js"></script>
 <script src="/Scripts/changeSize.js"></script>
