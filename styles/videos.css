@@ -1,9 +1,6 @@
 body {
     width: 100%;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+    
 }
 article {
       align-content: center;
@@ -52,7 +49,6 @@ iframe{
     grid-template-columns: repeat(4, 308px);
     grid-template-rows: 448px;
     column-gap: 40px;
-    align-items: center;
 }
 
 .videoGapi {
@@ -80,7 +76,7 @@ button {
     background: #F07349;
     border-radius: 4px;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 56px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
