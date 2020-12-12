@@ -51,7 +51,8 @@
     border-radius: 10px 0px 0px 10px;
     margin-top: 60px;
     margin-left: 125px;
-    
+    max-width: 80%;
+    padding: 0;
 }
 .pasos_titulo{
     background-color: #DBDBDB;

@@ -1,12 +1,33 @@
-const colors = document.getElementById('colors');
+/*const colors = document.getElementById('colors');
 
 let i;
+let color=0;
 for (let i = 0; i < colors.length; i++) {
     colors[i].addEventListenr('click', changecolor);
-}
+}*/
+
+
+window.addEventListener("load",function(){
+    var value = localStorage.getItem("pageColor");
+    if (value) {
+        changecolor(parseInt(value));
+    }
+});
+var originalColor= true;
+
 function changecolor(value){
+
+    console.log(originalColor);
     //document.documentElement.style.setProperty('--color', fondo);
     //document.documentElement.style.setProperty('--texto', texto);
+    localStorage.setItem("pageColor", value);
+    color = value;
+    if(value==0){
+        if (originalColor == false) {
+            document.location.reload(true);
+            originalColor = true;
+        }
+    }
     if(value==1){
         document.querySelectorAll('h1').forEach(e => e.style.color = "#ffffff");
         document.querySelectorAll('h2').forEach(e => e.style.color = "#ffffff");
@@ -20,6 +41,7 @@ function changecolor(value){
         document.querySelectorAll('section').forEach(e => e.style.backgroundColor = "#000000");
         document.querySelectorAll('footer').forEach(e => e.style.backgroundColor = "#000000");
         document.querySelectorAll('body').forEach(e => e.style.backgroundColor = "#000000");
+        originalColor = false;
     }
     if(value==2){
         document.querySelectorAll('h1').forEach(e => e.style.color = "#F4CE5C");
@@ -34,6 +56,7 @@ function changecolor(value){
         document.querySelectorAll('section').forEach(e => e.style.backgroundColor = "#000000");
         document.querySelectorAll('footer').forEach(e => e.style.backgroundColor = "#000000");
         document.querySelectorAll('body').forEach(e => e.style.backgroundColor = "#000000");
+        originalColor = false;
     }
     if(value==4){
         document.querySelectorAll('h1').forEach(e => e.style.color = "#67BFA6");
@@ -48,6 +71,7 @@ function changecolor(value){
         document.querySelectorAll('section').forEach(e => e.style.backgroundColor = "#000000");
         document.querySelectorAll('footer').forEach(e => e.style.backgroundColor = "#000000");
         document.querySelectorAll('body').forEach(e => e.style.backgroundColor = "#000000");
+        originalColor = false;
     }
     if(value==3){
         document.querySelectorAll('h1').forEach(e => e.style.color = "#F4CE5C");
@@ -62,6 +86,7 @@ function changecolor(value){
         document.querySelectorAll('section').forEach(e => e.style.backgroundColor = "#76C8CF");
         document.querySelectorAll('footer').forEach(e => e.style.backgroundColor = "#76C8CF");
         document.querySelectorAll('body').forEach(e => e.style.backgroundColor = "#76C8CF");
+        originalColor = false;
     }
     
     switch (value) {
