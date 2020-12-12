@@ -21,7 +21,7 @@ defaultFont = () => {
     console.log('p1 Size: ' + newSizeP);
     console.log('h4 Size: ' + newSizeH4);
 
-    document.querySelectorAll('span').forEach(e => e.style.fontSize = newSizeP+ 'px');
+    document.querySelectorAll('.input').forEach(e => e.style.fontSize = newSizeP+ 'px');
 
     document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
     document.querySelectorAll('p.ROverline').forEach(e => e.style.fontSize = newSizeCrumb + 'px');
@@ -63,7 +63,7 @@ upFont = () => {
         console.log('h4 Size: ' + newSizeH4);
 
         localStorage.setItem('textSize', textSize);
-        document.querySelectorAll('span').forEach(e => e.style.fontSize = newSizeP+ 'px');
+        document.querySelectorAll('.input').forEach(e => e.style.fontSize = newSizeP+ 'px');
         document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
         document.querySelectorAll('p.ROverline').forEach(e => e.style.fontSize = newSizeCrumb + 'px');
         document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
@@ -94,7 +94,7 @@ downFont = () => {
         localStorage.setItem('textSize', textSize);
         //alert('Funciono ');
         document.querySelectorAll('p').forEach(e => e.style.fontSize = newSizeP + 'px');
-        document.querySelectorAll('span').forEach(e => e.style.fontSize = newSizeP+ 'px');
+        document.querySelectorAll('.input').forEach(e => e.style.fontSize = newSizeP+ 'px');
         document.querySelectorAll('p.ROverline').forEach(e => e.style.fontSize = newSizeCrumb + 'px');
         document.querySelectorAll('h4').forEach(e => e.style.fontSize = newSizeH4 + 'px');
         document.querySelectorAll('h5').forEach(e => e.style.fontSize = newSizeH5 + 'px');
