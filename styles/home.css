@@ -243,7 +243,7 @@ hr {
     padding-top: 56px;
     padding-bottom: 56px;
     text-align: center;
-    padding-bottom: 
+
 }
 
 .buttons button{
@@ -273,14 +273,8 @@ hr {
 }
 
 #h4Noticias{
-<<<<<<< HEAD
     margin-top: 56px;
     margin-bottom: 56px;
-=======
-    padding-top: 80px;
-   
-    margin-bottom: 40px;
->>>>>>> e04a95ce57ff9efcbe18f964b0904a8f036734f1
     font-size: 46px;
     font-weight: 600;
     color: #454545;
@@ -293,14 +287,9 @@ hr {
     align-content: center;
     justify-items: center;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
     grid-template-columns: 55px 380px 380px 380px 55px;
     grid-template-rows: 359px;
-=======
-    grid-template-columns: repeat(3, 380px);
-    grid-template-rows: 420px;
->>>>>>> e04a95ce57ff9efcbe18f964b0904a8f036734f1
     grid-gap: 31px;
 
     margin-bottom: 50px;
@@ -320,15 +309,8 @@ hr {
 }
 .h4Noticias{
     position: relative;
-<<<<<<< HEAD
     top: 190px; 
     padding-left: 190px;
-=======
-    z-index: 2;
-    top: 178px; 
-    padding-left: 250;
-    margin-top: 20px;
->>>>>>> e04a95ce57ff9efcbe18f964b0904a8f036734f1
 }
 .h6Noticias {
     position: relative;
