@@ -188,11 +188,28 @@
     display: block;
 }
  
-.LiveWhitSomeone  + .img-aparecer {
+.LiveWhitSomeone :hover  + .img-aparecer {
     position: relative;
     margin-top: 3%;
     margin-right: 20%;
     opacity: 1;
     visibility: visible;
     display: block;
+}
+.imagenPrueba{
+
+    display: none;
+    visibility: hidden;
+
+}
+.contenedor :hover + .imagenPrueba{
+
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+
+
 }
