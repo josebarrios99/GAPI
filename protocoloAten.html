@@ -16,8 +16,8 @@
                             <tr>
                                 <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                                 <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id="btn_downFont"></td>
                                 <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                     <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                         <option value="">Color original</option>
@@ -79,7 +79,7 @@
                 <img src="./images/Protocolo/bannerProto.png" alt="" class="bannerImage">
             </div>
             <!-- Fin Banner -->
-            <h1 id="ROverline">ESTÁS AQUÍ: PROTOCOLO DE ATENCIÓN</h1>
+            <p class="ROverline" id="ROverline">ESTÁS AQUÍ: PROTOCOLO DE ATENCIÓN</p>
 
             <div class="nuestrosProtocolos">
                 <div class="textosNuestrosProto">
@@ -413,4 +413,4 @@
         <script src="./Scripts/color.js"></script>
     </body>
 </html>
-
+<script src="./Scripts/changeSizeProtocolo.js"></script>

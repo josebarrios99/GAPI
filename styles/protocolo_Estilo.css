@@ -38,8 +38,10 @@ h1 {
     justify-items: center;
     justify-content: center;
     grid-template-columns: repeat(2, 580px);
-    grid-template-rows: 386px;
+    grid-template-rows: 500px;
     grid-gap: 99px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
 }
 #PQueEs{
     color: #5F5F5F;
@@ -49,6 +51,10 @@ h1 {
 #titulosNuestroProto {
     margin-bottom: 31px;
     color: #146971;
+}
+.rutaGeneral{
+    margin-bottom: 30px;
+    
 }
 /*titulos especificos*/
 #tituloNuestrosProto{
@@ -85,7 +91,7 @@ h1 {
     justify-items: center;
     justify-content: center;
     grid-template-columns: repeat(4, 235px);
-    grid-template-rows: 389px;
+    grid-template-rows: 450px;
     grid-gap: 40px;
 }
 
@@ -125,9 +131,11 @@ h1 {
     justify-items: center;
     justify-content: center;
     grid-template-columns: repeat(3, 289px);
-    grid-template-rows: repeat(2, 143px);
+    grid-template-rows: repeat(2, 200px);
     grid-column-gap: 69px;
     grid-row-gap: 33px;
+    margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 .textos{
@@ -152,7 +160,7 @@ h1 {
     justify-items: center;
     justify-content: center;
     grid-template-columns: 1200px;
-    grid-template-rows: repeat(5, 359px);
+    grid-template-rows: repeat(5, 450px);
     grid-gap: 29px;
 }
 
@@ -191,9 +199,8 @@ h1 {
     align-content: center;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 1198px;
-    grid-template-rows: 640px;
-    margin-bottom: 53px;
+    padding: 40px;
+    margin-bottom: 20px;
 }
 
 .contenedorRecomen{
@@ -205,9 +212,10 @@ h1 {
     justify-content: center;
     align-items: center;
     grid-template-columns: 383px 2px 383px;
-    grid-template-rows: 465px;
+    grid-template-rows: 600px;
     grid-column-gap: 76px;
     border-radius: 25px;
+    padding: 50px;
 }
 .recomen{
     width: 100%;
@@ -236,4 +244,11 @@ h1 {
 .line{
      width: 100%;
     height: 100%;
+}
+.rutaDiversidad{
+    padding-top: 30px;
+}
+.ROverline{
+    margin-left: 50px;
+    margin-top: 30px;
 }
