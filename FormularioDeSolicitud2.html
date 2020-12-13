@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
     <link rel="stylesheet" href="./styles/styleQuestionariePage2.css">
 </head>
-
+ 
 <body>
-
+ 
     <body>
         <div class="accesibility">
             <center>
@@ -36,8 +36,9 @@
                                         <option value="4">Verde sobre Negro</option>
                                     </select>
                                 </td>
-                                <td><a href="https://convertic.gov.co/641/w3-propertyvalue-15339.html"><img src="./images/main/lector.png" alt="Lector de pantalla recomendado"></a></td>
-                                <td id="tdAccesibility">Lector</td>
+                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
+                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
+                                <td id="tdAccesibility">Traductor</td>
                             </tr>
                         </table>
                     </section>
@@ -94,7 +95,7 @@
             <ol>
                 <li>
                     <h6>Cuestionario sobre diversidad</h6>
-
+ 
                 </li>
                 <hr>
                 <li>
@@ -106,7 +107,7 @@
                 <hr>
                 <li>
                     <h6>Informacion laboral</h6>
-
+ 
                 </li>
                 <hr>
                 <li>
@@ -132,12 +133,12 @@
                     <h5>Datos personales</h5>
                     <tr>
                         <td>
-
+ 
                             <section class="name">
                                 <label for="userName">Nombre</label>
                                 <br>
                                 <input class="input" type="text" name="userName" id="userName" required>
-
+ 
                                 <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
@@ -151,14 +152,14 @@
                                     <option value="C.C"></option>
                                     <option value="etc"></option>
                                 </datalist>
-
+ 
                             </section>
-
+ 
                             <br>
                             <section class="expeditionDocument">
                                 <label for="expeditionOfDocument_txt">Lugar de expedición del documento</label>
                                 <br>
-
+ 
                                 <input class="input" list="citiesList" id="expeditionOfDocument_txt"
                                     name="expeditionOfDocument_txt">
                                 <img class="img-aparecer" src="images\main\Logo.png">
@@ -173,7 +174,7 @@
                             <section class="placeOfBirthUser">
                                 <label for="placeOfBirthUser_txt">Lugar de nacimiento</label>
                                 <br>
-
+ 
                                 <input class="input" list="citiesList" id="placeOfBirthUser_txt"
                                     name="placeOfBirthUser_txt">
                                 <img class="img-aparecer" src="images\main\Logo.png">
@@ -182,7 +183,7 @@
                             <section class="DepartmenUser">
                                 <label for="departmentUser_txt">Departamento de residencia</label>
                                 <br>
-
+ 
                                 <input class="input" list="departmentList" id="departmentUser_txt"
                                     name="departmentUser_txt">
                                 <img class="img-aparecer" src="images\main\Logo.png">
@@ -197,7 +198,7 @@
                             <section class="lastname">
                                 <label for="userLastName">Apellidos</label>
                                 <br>
-
+ 
                                 <input class="input" type="text" name="userLastName" id="userLastName" required>
                                 <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
@@ -226,7 +227,7 @@
                             <section class="cityOfResidence">
                                 <label for="cityOfResidence_txt">Ciudad de residencia</label>
                                 <br>
-
+ 
                                 <input class="input" list="citiesList" id="cityOfResidence_txt"
                                     name="cityOfResidence_txt">
                                 <img class="img-aparecer" src="images\main\Logo.png">
@@ -235,11 +236,11 @@
                     </tr>
             </table>
             <div class="direction">
-
+ 
                 <section class="directionUse">
                     <label for="directionUser">Dirección</label>
                     <br>
-
+ 
                     <input class="input" type="text" name="directionUser" id="directionUser" required>
                     <img class="img-aparecer" src="images\main\Logo.png">
                 </section>
@@ -251,16 +252,16 @@
                         <section class="cellUser">
                             <label for="cellUser">Número telefonico</label>
                             <br>
-
+ 
                             <input class="input" type="text" name="cellUser" id="cellUser" required>
-
+ 
                             <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
                         <br>
                         <section class="typeHouseUser">
                             <label for="typeHouseUser_txt">tipo de residencia</label>
                             <br>
-
+ 
                             <input class="input" list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
                             <img class="img-aparecer" src="images\main\Logo.png">
                             <datalist id="typeHouseList">
@@ -275,7 +276,7 @@
                         <section class="Cell2">
                             <label for="cell2">Teléfono de persona de confianza</label>
                             <br>
-
+ 
                             <input class="input" type="tel" name="cell2" id="cell2" maxlength="10">
                             <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
@@ -283,7 +284,7 @@
                         <section class="estrato">
                             <label for="estratoUser">Estrato</label>
                             <br>
-
+ 
                             <input class="input" type="number" id="estratoUser" name="estratoUser" min="1" max="10">
                             <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
@@ -306,7 +307,7 @@
                         <section class="liveWith">
                             <span>Por favor, escriba con quién vive</span>
                             <br>
-
+ 
                             <input class="input" type="text" name="companyOfUser" id="companyOfUser">
                             <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
@@ -329,7 +330,7 @@
                 </table>
             </div>
         </div>
-
+ 
         <footer>
             <section class="footer_info">
                 <div class="data">
@@ -345,7 +346,7 @@
                             Horario de atención al público <br>
                             2:30 p.m - 5:30 p.m.</p>
                     </div>
-
+ 
                 </div>
                 <div class="data_menu">
                     <h6>Menú</h6>
@@ -387,14 +388,14 @@
         </footer>
         <script src="./Scripts/color.js"></script>
     </body>
-
+ 
 </html>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
-
+ 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-
+ 
 <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -409,6 +410,6 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 </script>
-
+ 
 <script src="./Scripts/FormularioDeSolicitud2.js"></script>
 <script src="./Scripts/changeSizeFormulario2.js"></script>
