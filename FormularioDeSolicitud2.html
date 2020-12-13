@@ -20,10 +20,13 @@
                     <section class="visuaAdjust">
                         <table class="headerTable">
                             <tr>
-                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
+                                </td>
                                 <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id = "btn_upFont"></td>
-                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id = "btn_downFont"></td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont">
+                                </td>
+                                <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button"
+                                        value="A-" id="btn_downFont"></td>
                                 <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                     <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                         <option value="">Color original</option>
@@ -40,7 +43,7 @@
                         </table>
                     </section>
                 </form>
-            </center>  
+            </center>
         </div>
         <header class="header">
             <div class="logo_container">
@@ -56,14 +59,14 @@
 </span>
 </div>
 -->
-<a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./apoyo1.html">Asistencia</a>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./centro.html">Centro</a>
+                    <a href="./equipo.html">Equipo</a>
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="./Publicaciones.html">Publicaciones</a>
+                    <a href="./videos.html">Videos</a>
+                    <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+                    <a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
@@ -72,21 +75,21 @@
             <p>Estás aquí: Asistencia / Solicitar cita</p>
         </section>
         <br>
-    <div class="asistenciaMenu">
-        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
-            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
-            <p>Solicitar cita</p>
-        </button></a>
-        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
-            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
-            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-        </button></a>
-        <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
-            <img src="./images/main/preguntas.png" class="solicitarCita_img">
-            <p>Preguntas frecuentes</p>
-        </button></a>
-    </div>
-    <br>
+        <div class="asistenciaMenu">
+            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                    <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+                    <p>Solicitar cita</p>
+                </button></a>
+            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                    <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+                    <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+                </button></a>
+            <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
+                    <img src="./images/main/preguntas.png" class="solicitarCita_img">
+                    <p>Preguntas frecuentes</p>
+                </button></a>
+        </div>
+        <br>
         <div class="indice" id="indice-questionarie">
             <h5>Formulario de citas</h5>
             <ol>
@@ -97,7 +100,8 @@
                 <hr>
                 <li>
                     <h3>Datos personales</h3>
-                    <p class="textSectionIndice">Completa un formulario con tus datos personales para así comprobar información</p>
+                    <p class="textSectionIndice">Completa un formulario con tus datos personales para así comprobar
+                        información</p>
                     <img src="images\formularioSolicitud\indice2.png" alt="imagen de datos personales">
                 </li>
                 <hr>
@@ -134,25 +138,31 @@
                                 <label for="userName">Nombre</label>
                                 <br>
                                 <input class="input" type="text" name="userName" id="userName" required>
+
+                                <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
                             <section class="typeOfDocument">
                                 <label for="typeOfDocument_txt">Tipo de documento</label>
                                 <br>
                                 <input class="input" list="documents" id="typeOfDocument_txt" name="typeOfDocument_txt">
+                                <img class="img-aparecer" src="images\main\Logo.png">
                                 <datalist id="documents">
                                     <option value="Tarjeta de identidad"></option>
                                     <option value="C.C"></option>
                                     <option value="etc"></option>
                                 </datalist>
+                               
                             </section>
+
                             <br>
                             <section class="expeditionDocument">
                                 <label for="expeditionOfDocument_txt">Lugar de expedición del documento</label>
                                 <br>
 
-                                <input class="input" list="citiesList" id="expeditionOfDocument_txt" name="expeditionOfDocument_txt">
-
+                                <input class="input" list="citiesList" id="expeditionOfDocument_txt"
+                                    name="expeditionOfDocument_txt">
+                                    <img class="img-aparecer" src="images\main\Logo.png">
                                 <datalist id="citiesList">
                                     <option value="Cali"></option>
                                     <option value="Bogotá"></option>
@@ -165,16 +175,18 @@
                                 <label for="placeOfBirthUser_txt">Lugar de nacimiento</label>
                                 <br>
 
-                                <input class="input" list="citiesList" id="placeOfBirthUser_txt" name="placeOfBirthUser_txt">
-
+                                <input class="input" list="citiesList" id="placeOfBirthUser_txt"
+                                    name="placeOfBirthUser_txt">
+                                    <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
                             <section class="DepartmenUser">
                                 <label for="departmentUser_txt">Departamento de residencia</label>
                                 <br>
 
-                                <input class="input" list="departmentList" id="departmentUser_txt" name="departmentUser_txt">
-
+                                <input class="input" list="departmentList" id="departmentUser_txt"
+                                    name="departmentUser_txt">
+                                    <img class="img-aparecer" src="images\main\Logo.png">
                                 <datalist id="departmentList">
                                     <option value="Valle del Cauca"></option>
                                     <option value="Cauca"></option>
@@ -188,34 +200,37 @@
                                 <br>
 
                                 <input class="input" type="text" name="userLastName" id="userLastName" required>
-
+                                <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
                             <section class="numberOfDocument">
                                 <label for="numberOfDocument">Número de documento de identidad</label>
                                 <br>
                                 <input class="input" type="text" name="numberOfDocument" id="numberOfDocument" required>
-
+                                <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
                             <section class="dateOfDocument">
                                 <label for="dateOfDocument">Fecha de expedición del documento</label>
                                 <br>
                                 <input class="input" type="date" name="dateOfDocument" id="dateOfDocument" required>
+                                <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
                             <section class="birthDate">
                                 <label for="birthDate">Fecha de nacimiento</label>
                                 <br>
                                 <input class="input" type="date" name="birthDate" id="birthDate" required>
+                                <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                             <br>
                             <section class="cityOfResidence">
                                 <label for="cityOfResidence_txt">Ciudad de residencia</label>
                                 <br>
 
-                                <input class="input" list="citiesList" id="cityOfResidence_txt" name="cityOfResidence_txt">
-
+                                <input class="input" list="citiesList" id="cityOfResidence_txt"
+                                    name="cityOfResidence_txt">
+                                    <img class="img-aparecer" src="images\main\Logo.png">
                             </section>
                         </td>
                     </tr>
@@ -227,7 +242,7 @@
                     <br>
 
                     <input class="input" type="text" name="directionUser" id="directionUser" required>
-
+                    <img class="img-aparecer" src="images\main\Logo.png">
                 </section>
                 <br>
             </div>
@@ -240,6 +255,7 @@
 
                             <input class="input" type="text" name="cellUser" id="cellUser" required>
 
+                            <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
                         <br>
                         <section class="typeHouseUser">
@@ -247,7 +263,7 @@
                             <br>
 
                             <input class="input" list="typeHouseList" id="typeHouseUser_txt" name="typeHouseUser_txt">
-
+                            <img class="img-aparecer" src="images\main\Logo.png">
                             <datalist id="typeHouseList">
                                 <option value="Apartamento"></option>
                                 <option value="Casa propia"></option>
@@ -262,7 +278,7 @@
                             <br>
 
                             <input class="input" type="tel" name="cell2" id="cell2" maxlength="10">
-
+ <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
                         <br>
                         <section class="estrato">
@@ -270,7 +286,7 @@
                             <br>
 
                             <input class="input" type="number" id="estratoUser" name="estratoUser" min="1" max="10">
-
+                            <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
                         <br>
                     </td>
@@ -282,8 +298,9 @@
                             <br>
                             <input class="input" type="radio" name="compani" id="yes" value="yes">
                             <label for="yes">Si</label>
-                            <input  class="input"type="radio" name="compani" id="no" value="no">
+                            <input class="input" type="radio" name="compani" id="no" value="no">
                             <label for="no">No</label>
+                            <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
                     </td>
                     <td>
@@ -292,7 +309,7 @@
                             <br>
 
                             <input class="input" type="text" name="companyOfUser" id="companyOfUser">
-
+                            <img class="img-aparecer" src="images\main\Logo.png">
                         </section>
                     </td>
                 </tr>
@@ -303,10 +320,11 @@
                     <tr>
                         <td>
                             <a href="FormularioDeSolicitud.html" id="linkFirstPageQuestionarie"></a><img
-                                    src="images\formularioSolicitud\pagAnterio.png" alt="Pagina anterior"></a>
+                                src="images\formularioSolicitud\pagAnterio.png" alt="Pagina anterior"></a>
                         </td>
                         <td>
-                            <img class="btn" src="images\formularioSolicitud\pagSiguiente.png" alt="Siguiente pagina"></a>
+                            <img class="btn" src="images\formularioSolicitud\pagSiguiente.png"
+                                alt="Siguiente pagina"></a>
                         </td>
                     </tr>
                 </table>
@@ -379,18 +397,18 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDYX14YuYI0xbvonWsqKnZt7XmdQ2qXv5A",
-    authDomain: "gapiweb-eca67.firebaseapp.com",
-    databaseURL: "https://gapiweb-eca67.firebaseio.com",
-    projectId: "gapiweb-eca67",
-    storageBucket: "gapiweb-eca67.appspot.com",
-    messagingSenderId: "362806524614",
-    appId: "1:362806524614:web:ac43b95cfc3afa0964b5c7"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDYX14YuYI0xbvonWsqKnZt7XmdQ2qXv5A",
+        authDomain: "gapiweb-eca67.firebaseapp.com",
+        databaseURL: "https://gapiweb-eca67.firebaseio.com",
+        projectId: "gapiweb-eca67",
+        storageBucket: "gapiweb-eca67.appspot.com",
+        messagingSenderId: "362806524614",
+        appId: "1:362806524614:web:ac43b95cfc3afa0964b5c7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 </script>
 
 <script src="./Scripts/FormularioDeSolicitud2.js"></script>

@@ -24,6 +24,7 @@
     padding-top: 25px;
     padding-right: px;
     margin-right: 8%;
+    margin-bottom: 5%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -33,6 +34,166 @@
 .changePage{
     margin-top: 4%;
     margin-bottom: 3%;
-     box-sizing: border-box;
-    
+     box-sizing: border-box; 
+}
+
+
+/*seccion de hovers*/
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.name :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.lastname :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.numberOfDocument :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.direction :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.cellUser :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.Cell2 :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+
+
+
+.liveWith :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.typeOfDocument :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.expeditionDocument :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.DepartmenUser :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.placeOfBirthUser :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.dateOfDocument :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.placeOfBbirthDateirthUser :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.cityOfResidence :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.birthDate :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+.typeHouseUser :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.estrato :hover + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.LiveWhitSomeone  + .img-aparecer {
+    position: relative;
+    margin-top: 3%;
+    margin-right: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
 }
