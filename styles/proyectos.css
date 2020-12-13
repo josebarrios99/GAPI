@@ -3,6 +3,14 @@
     padding: 0%;
 }
 
+body {
+    width: 100%;
+     align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
 /*banner*/
 
 .banner{
@@ -36,8 +44,16 @@
 /*seccion de proyectos*/
 .projects{
     text-align: center;
+<<<<<<< HEAD
+=======
     margin: 30px 100px 30px 290px;
+>>>>>>> e04a95ce57ff9efcbe18f964b0904a8f036734f1
     display: flex;
+     align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
 }
 .project1{
     text-align: left;
@@ -70,4 +86,8 @@
 .explorarProjects{
     margin-right: 10px;
     margin-bottom: 0px;
+}
+
+.titleSection h4{
+    color: #454545;
 }
