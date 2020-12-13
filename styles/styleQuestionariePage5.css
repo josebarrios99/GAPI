@@ -46,3 +46,129 @@
 .longLabel{
     width: 85%;
 }
+/*seccion de hovers*/
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.CompanionName :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompaniontypeOfDocument :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionExpeditionDocument :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionBirthDate :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionDepartmen :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+
+.Companionlastname :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionNumberOfDocument :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionDateOfDocument :hover + .img-aparecer {
+    position: relative;
+
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+
+.CompanionCityOfResidence :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.Cell2 :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionDirection :hover + .img-aparecer {
+    position: relative;
+    margin-right: 20%;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionAndUserRelationList :hover + .img-aparecer {
+    position: relative;
+    margin-right: 20%;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+.CompanionAndUserRelation :hover + .img-aparecer {
+    position: relative;
+    
+    margin-right: 20%;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+}
+
+
