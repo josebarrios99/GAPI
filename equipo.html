@@ -20,8 +20,8 @@
                             <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
                             </td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-">
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-" id ="btn_downFont">
                             </td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
@@ -74,7 +74,7 @@
     <!-- Espacio par toda la información-->
     <div class="info">
         <section class="title">
-            <h2 id="ROverline">ESTÁS AQUÍ: INICIO / EQUIPO</h2>
+            <p class="ROverline" id="ROverline">ESTÁS AQUÍ: INICIO / EQUIPO</p>
         </section>
         <section class="title_section">
             <h4 class="title_equipo">Asesores de la clínica</h4>
@@ -221,7 +221,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="./Scripts/color.js"></script>
 
 
 
@@ -256,4 +256,4 @@
 </body>
 
 </html>
-<script src="/Scripts/changeSize.js"></script>
+<script src="/Scripts/changeSizeEquipo.js"></script>

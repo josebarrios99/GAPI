@@ -22,8 +22,9 @@
                             <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
                             </td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-">
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-"
+                                    id="btn_downFont">
                             </td>
 
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
@@ -69,7 +70,8 @@
 
     <div class="mainContenedor">
         <section class="title">
-            <h2 id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y orientación</h2>
+            <p class="ROverline" id="ROverline">Estás aquí: Asistencia / Solicitar cita / Ayuda psicologica y
+                orientación</p>
         </section>
         <div class="asistenciaMenu">
             <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
@@ -115,7 +117,7 @@
                 <h5> Datos de la persona: </h5>
                 <div class="inputs_firstSection">
                     <div class="inputs1">
-                      
+
                         <form>
                             <label for="username">
                                 <p id="RBody1">Nombre*</p>
@@ -134,7 +136,7 @@
                             <label for="username">
                                 <p id="RBody1">Lugar de expedición de documento*</p>
                             </label><br>
-                            <select class="input"name="lExpedicion" required>
+                            <select class="input" name="lExpedicion" required>
                                 <option disabled selected>Selecciona una ciudad</option>
                             </select>
                         </form>
@@ -147,7 +149,7 @@
                     </div>
                     <div class="inputs1">
                         <form>
-                            <label for="username">        
+                            <label for="username">
                                 <p id="RBody1">Departamento de residencia*</p>
                             </label><br>
                             <select class="input" name="departamentoResidencia" required>
@@ -182,7 +184,8 @@
                             <label for="username">
                                 <p id="RBody1">Dirección de residencia*</p>
                             </label><br>
-                            <input class="input" type="text" name="direccionResidencia" placeholder="Dirección de residencia" required>
+                            <input class="input" type="text" name="direccionResidencia"
+                                placeholder="Dirección de residencia" required>
                         </form>
                     </div>
                     <div class="inputs1">
@@ -190,7 +193,8 @@
                             <label for="username">
                                 <p id="RBody1">Nombre persona de confianza*</p>
                             </label><br>
-                            <input class="input" type="text" name="nombrePersonaConfianza" placeholder="Nombre y apellido" required>
+                            <input class="input" type="text" name="nombrePersonaConfianza"
+                                placeholder="Nombre y apellido" required>
                         </form>
                     </div>
                     <div class="inputs1">
@@ -198,13 +202,15 @@
                             <label for="username">
                                 <p id="RBody1">Celular persona de confianza*</p>
                             </label><br>
-                            <input class="input"type="text" name="telefonoPersonaConfianza" placeholder="Número telefónico" required>
+                            <input class="input" type="text" name="telefonoPersonaConfianza"
+                                placeholder="Número telefónico" required>
                         </form>
                     </div>
                     <div class="fin_inputs">
                         <p id="RBody1">*Los campos obligatorios tienen un asterísco*</p>
-                        <button class="cambiar next_button"> SEGUIR <img
-                                src="./images/asistenciaPsico/next.png" alt="" class="next"></button>
+                        <button class="cambiar next_button"> SEGUIR <img src="./images/asistenciaPsico/next.png" alt=""
+                                class="next"></button>
+                            
                     </div>
                 </div>
             </div>
@@ -266,9 +272,11 @@
             </div>
         </section>
     </footer>
+    <script src="./Scripts/color.js"></script>
     </section>
 </body>
 
 </html>
+
 <script src="/Scripts/asistenciaPsicologica2.js"></script>
-<script src="/Scripts/changeSize.js"></script>
+<script src="/Scripts/changeSizeasisPsico2.js"></script>

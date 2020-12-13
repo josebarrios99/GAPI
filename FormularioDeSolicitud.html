@@ -23,8 +23,8 @@
                                 <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
                                 </td>
                                 <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                                <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                                <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button"
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id = "btn_upFont"></td>
+                                <td class="accesibilityTD"><input class="buttonAccesibilityLower" id = "btn_downFont" type="button"
                                         value="A-"></td>
                                 <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                     <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
@@ -154,7 +154,7 @@
 
                                 <section class="haveDiversityNo">
 
-                                    <input class="inputDiv" type="button" name="haveDiversity" id="no" value="No">
+                                    <input class="inputDiv inputText" type="button" name="haveDiversity" id="no" value="No">
                                 </section>
                                 <section class="canImg">
                                     <img src="images\cuestionario cita pag 1\no1.png" alt="">
@@ -167,14 +167,14 @@
                                 <span>¿Tiene dificultades para leer y escribir?</span>
                                 <br>
                                 <section class="canReadWriteYes">
-                                    <input class="inputRead" type="button" name="canWrite" id="yes" value="Si">
+                                    <input class="inputRead inputText" type="button" name="canWrite" id="yes" value="Si">
                                 </section>
                                 <section class="canImg">
                                     <img src="images\cuestionario cita pag 1\si2.png" alt="">
                                 </section>
 
                                 <section class="canReadWriteNo">
-                                    <input class="inputRead" type="button" name="canWrite" id="no" value="No">
+                                    <input class="inputRead inputText" type="button" name="canWrite" id="no" value="No">
 
                                 </section>
                                 <section class="canImg">
@@ -188,20 +188,20 @@
                                 <span>¿Tiene dificultades para comprender instrucciones?</span>
                                 <br>
                                 <section class="canFollowInstructionsYes">
-                                    <input  class="inputFollow" type="button" name="canFollowinstructions" id="yes" value="Si">
+                                    <input  class="inputFollow inputText" type="button" name="canFollowinstructions" id="yes" value="Si">
                                 </section>
                                 <section class="canImgPeque">
                                     <img src="images\cuestionario cita pag 1\si-peque.png" alt="">
                                 </section>
                                 <section class="canFollowInstructionsNo">
-                                    <input class="inputFollow" type="button" name="canFollowinstructions" id="no" value="No">
+                                    <input class="inputFollow inputText" type="button" name="canFollowinstructions" id="no" value="No">
                                 </section>
                                 <section class="canImgPeque">
                                     <img src="images\cuestionario cita pag 1\no-peque.png" alt="">
                                 </section>
 
                                 <section class="canFollowInstructionsSometimes">
-                                    <input class="inputFollow" type="button" name="canFollowinstructions" id="sometimes" value="A veces">
+                                    <input class="inputFollow inputText" type="button" name="canFollowinstructions" id="sometimes" value="A veces">
                                 </section>
                                 <section class="canImgPeque">
                                     <img src="images\cuestionario cita pag 1\quizas-peque.png" alt="">
@@ -215,20 +215,20 @@
                                 <br>
                                 <section class="canKeptAtentionYes">
 
-                                    <input class="inputAtention" type="button" name="have" id="yes" value="Si">
+                                    <input class="inputAtention inputText" type="button" name="have" id="yes" value="Si">
                                 </section>
                                 <section class="canImgPeque">
                                     <img src="images\cuestionario cita pag 1\si-peque.png" alt="">
                                 </section>
                                 <section class="canKeptAtentionNo">
-                                    <input class="inputAtention" type="button" name="have" id="no" value="No">
+                                    <input class="inputAtention inputText" type="button" name="have" id="no" value="No">
                                 </section>
                                 <section class="canImgPeque">
                                     <img src="images\cuestionario cita pag 1\no-peque.png" alt="">
                                 </section>
 
                                 <section class="canKeptAtentionSometimes">
-                                    <input class="inputAtention" type="button" name="have" id="sometimes" value="A veces">
+                                    <input class="inputAtention inputText" type="button" name="have" id="sometimes" value="A veces">
                                 </section>
                                 <section class="canImgPeque">
                                     <img src="images\cuestionario cita pag 1\quizas-peque.png" alt="">
@@ -298,6 +298,7 @@
                 </div>
             </section>
         </footer>
+        <script src="./Scripts/color.js"></script>
     </body>
 
 </html>
@@ -305,4 +306,4 @@
 
 
 <script src="./Scripts/FormularioDeSolicitud1.js"></script>
-<script src="/Scripts/changeSize.js"></script>
+<script src="./Scripts/changeSizeFormulario.js"></script>
