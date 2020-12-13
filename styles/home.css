@@ -134,7 +134,7 @@ hr {
 }
 
 .h4defect{
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .imgSeccionGAPI{
@@ -305,7 +305,6 @@ hr {
 
 .noticiaImg{
     position: absolute;
-    z-index: 1;
 }
 .h4Noticias{
     position: relative;
