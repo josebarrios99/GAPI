@@ -3,6 +3,14 @@
     padding: 0%;
 }
 
+body {
+    width: 100%;
+     align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
 /*banner*/
 
 .banner{
@@ -35,8 +43,12 @@
 /*seccion de proyectos*/
 .projects{
     text-align: center;
-    margin-left: 410px;
     display: flex;
+     align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
 }
 .project1{
     text-align: left;
@@ -69,4 +81,8 @@
 .explorarProjects{
     margin-right: 10px;
     margin-bottom: 0px;
+}
+
+.titleSection h4{
+    color: #454545;
 }
