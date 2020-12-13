@@ -33,6 +33,15 @@
 .changePage{
     margin-top: 4%;
     margin-bottom: 3%;
-     box-sizing: border-box;
-    
+     box-sizing: border-box; 
+}
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.name :hover + .img-aparecer {
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: inline;
 }
