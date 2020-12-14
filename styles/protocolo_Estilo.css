@@ -91,7 +91,7 @@ h1 {
     justify-items: center;
     justify-content: center;
     grid-template-columns: repeat(4, 235px);
-    grid-template-rows: 500px;
+    grid-template-rows: 690px;
     grid-gap: 40px;
 }
 

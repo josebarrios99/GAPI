@@ -8,7 +8,6 @@ const sizeH5 = 24;
 const sizeH6 = 20;
 const sizeCrumb = 12;
 
-//alert("Sirvo");
 
 defaultFont = () => {
     let newSizeP = sizeP + textSize;
