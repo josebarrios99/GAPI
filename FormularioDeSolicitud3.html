@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="./styles/proyectos.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
-    <link rel="stylesheet" href="./styles/styleQuestionariePage3.css">
-</head>
-
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="./styles/proyectos.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/styleQuestionarieGeneral.css">
+        <link rel="stylesheet" href="./styles/styleQuestionariePage3.css">
+    </head>
     <body>
         <div class="accesibility">
             <center>
@@ -54,224 +52,222 @@
 </span>
 </div>
 -->
-<a href="./index.html">Inicio</a>
-<a href="./centro.html">Centro</a>
-<a href="./equipo.html">Equipo</a>
-<a href="./proyectos.html">Proyectos</a>
-<a href="./Publicaciones.html">Publicaciones</a>
-<a href="./videos.html">Videos</a>
-<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
-<a href="./apoyo1.html">Asistencia</a>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./centro.html">Centro</a>
+                    <a href="./equipo.html">Equipo</a>
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="./Publicaciones.html">Publicaciones</a>
+                    <a href="./videos.html">Videos</a>
+                    <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+                    <a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
-    <br>
+        <br>
 
-    <section class="estasAqui">
-        <p>Estás aquí: Asistencia / Solicitar cita</p>
-    </section>
-    <br>
-    <div class="asistenciaMenu">
-        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
-            <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
-            <p>Solicitar cita</p>
-        </button></a>
-        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
-            <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
-            <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
-        </button></a>
-        <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
-            <img src="./images/main/preguntas.png" class="solicitarCita_img">
-            <p>Preguntas frecuentes</p>
-        </button></a>
-    </div>
-    <br>
-    <div class="indice" id="indice-questionarie">
-        <h5>Formulario de citas</h5>
-        <ol>
-            <li>
-                <h6>Cuestionario sobre diversidad</h6>
-              
-            </li>
-            <hr>
-            <li>
-                <h6>Datos personales</h6>
-              </li>
-            <hr>
-            <li>
-                <h3>Informacion laboral</h3>
-                <p class="textSectionIndice" >Llena un formulario con tus datos personales para así comprobar información</p>
-                <img src="images\formularioSolicitud\indice3.png" alt="">
-            </li>
-            <hr>
-            <li>
-                <h6>Proceso juridico a realizar</h6>
-               
-            </li>
-            <hr>
-            <li>
-                <h6>Datos del acompañante</h6>
-                
-            </li>
-            <hr>
-            <li>
-                <h6>Fecha y hora de la cita</h6>
-                </li>
-            <hr>
-            <li>
-                <h6>Confirmación</h6>
-                </li>
-        </ol>
-    </div>
-    <div class="questions" id="questionsSection">
-
-        <table>
-            <form action="answerQuestionarieSection3" method="POST">
-                 <h5>Informacion laboral</h5>
-                 <tr>
-                    <td>
-
-                        <section class="educationLevel">
-                            <span>Grado de escolaridad</span>
-                            <br>
-
-                            <input class="input" list="educationLebelList" id="educationLebel" name="educationLebel">
-
-                            <datalist id="educationLebelList">
-                                <option value="Primaria"></option>
-                                <option value="Bachillerato"></option>
-                                <option value="Tecnico"></option>
-                                <option value="Pregrado"></option>
-                                <option value="posgrado"></option>
-                            </datalist>
-                        </section>
-                        <br>
-                        <section class="haveWork">
-                            <span>¿Cuenta con algun trabajo actualmente?</span>
-                            <br>
-                            <br>
-                            <input class="input" type="radio" name="haveWork" id="yes" value="yes">
-                            <label for="yes">Si</label>
-                            <br>
-                            <br>
-                            <div class="ifHvaeWork"></div>
-                                <section class="telOfWork">
-                                    <span>Telefono del trabajo</span>
-                                    <br>
-
-                                    <input class="input" type="tel" name="telOfWork" id="telOfWork">
-
-
-                                </section>
-                                <br>
-                                <section class="direccionOfWork">
-                                    <span>Direccion del trabajo</span>
-                                    <br>
-
-                                    <input class="input" type="text" name="direccionOfWork" id="direccionOfWork">
-
-                                </section>
-                                <br>
-                            </div>
-
-                            <input class="input" type="radio" name="haveWork" id="no" value="no">
-                            <label for="no">No</label>
-                            <br>
-                        </section>
-                        <br>
-                        <section class="job">
-                            <span>Ocupación</span>
-                            <br>
-
-                            <input class="input" type="text" name="job" id="job">
-
-                        </section>
-                        <br>
-                        <section class="salary">
-                            <span>Ingresos mensuales</span>
-                            <br>
-
-                            <input class="input" type="text" name="salary" id="salary">
-
-                        </section>
-            </form>
-            </td>
-            </tr>
-        </table>
-        <div class="changePage">
-            <table>
-                <tr>
-                    <td>
-                        <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="images\formularioSolicitud\pagAnterio.png"
-                                alt="pagina anterior"></a>
-                    </td>
-                    <td>
-                        <img class="changePage" src="images\formularioSolicitud\pagSiguiente.png"
-                                alt="Siguiente pagina">
-                    </td>
-                </tr>
-            </table>
+        <section class="estasAqui">
+            <p>Estás aquí: Asistencia / Solicitar cita</p>
+        </section>
+        <br>
+        <div class="asistenciaMenu">
+            <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/solicitar_cita.png" class="solicitarCita_img">
+                <p>Solicitar cita</p>
+                </button></a>
+            <a href="./asisPsico.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
+                <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
+                </button></a>
+            <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
+                <img src="./images/main/preguntas.png" class="solicitarCita_img">
+                <p>Preguntas frecuentes</p>
+                </button></a>
         </div>
-    </div>
+        <br>
+        <div class="indice" id="indice-questionarie">
+            <h5>Formulario de citas</h5>
+            <ol>
+                <li>
+                    <h6>Cuestionario sobre diversidad</h6>
+                </li>
+                <hr>
+                <li>
+                    <h6>Datos personales</h6>
+                </li>
+                <hr>
+                <li>
+                    <h3>Informacion laboral</h3>
+                    <p class="textSectionIndice" >Llena un formulario con tus datos personales para así comprobar información</p>
+                    <img src="images\formularioSolicitud\indice3.png" alt="imagen de datos laborales">
+                </li>
+                <hr>
+                <li>
+                    <h6>Proceso juridico a realizar</h6>
 
-    <footer>
-        <section class="footer_info">
-            <div class="data">
-                <div class="data_logo">
-                    <img src="images\main\Logo_footer.png" alt="">
+                </li>
+                <hr>
+                <li>
+                    <h6>Datos del acompañante</h6>
+
+                </li>
+                <hr>
+                <li>
+                    <h6>Fecha y hora de la cita</h6>
+                </li>
+                <hr>
+                <li>
+                    <h6>Confirmación</h6>
+                </li>
+            </ol>
+        </div>
+        <div class="questions" id="questionsSection">
+            <table>
+                <form action="answerQuestionarieSection3" method="POST">
+                    <h5>Informacion laboral</h5>
+                    <tr>
+                        <td>
+                            <section class="educationLevel contenedor">
+                                <span>Grado de escolaridad</span>
+                                <br>
+                                <input class="input" list="educationLebelList" id="educationLebel" name="educationLebel">
+                                <img class="img-aparecer" src="./images/pictogramas-cuestionario3/escolaridad.png">
+                                <datalist id="educationLebelList">
+                                    <option class="contenedor"><span>Primaria</span><img class="img-aparecer" src="./images/pictogramas-cuestionario3/escolaridad.png"></option>
+
+                                    <option value="Bachillerato"></option>
+                                    <option value="Tecnico"></option>
+                                    <option value="Pregrado"></option>
+                                    <option value="posgrado"></option>
+                                </datalist>
+                            </section>
+                            <br>
+                            <section class="haveWork contenedor">
+                                <span>¿Cuenta con algun trabajo actualmente?</span>
+                                <img class="img-aparecer" src="./images/pictogramas-cuestionario3/tiene trabajo.png">
+                                <br>
+                                <br>
+                                <input class="input" type="radio" name="haveWork" id="yes" value="yes">
+                                <label for="yes">Si</label>
+                                <img class="img-aparecer" src="./images/pictogramas-cuestionario3/si.png">
+                                <br>
+                                <br>
+                                <div class="ifHvaeWork">
+                                    <section class="telOfWork">
+                                        <span>Telefono del trabajo</span>
+                                        <br>
+
+                                        <input class="input" type="tel" name="telOfWork" id="telOfWork">
+                                        <img class="img-aparecer" src="./images/pictogramas-cuestionario3/telefono%20trabajo.png">
+
+
+                                    </section>
+                                    <br>
+                                    <section class="direccionOfWork">
+                                        <span>Direccion del trabajo</span>
+                                        <br>
+
+                                        <input class="input" type="text" name="direccionOfWork" id="direccionOfWork">
+                                        <img class="img-aparecer" src="./images/pictogramas-cuestionario3/direccion trabajo.png">
+                                    </section>
+                                </div>
+                                <br>
+                                <input class="input" type="radio" name="haveWork" id="no" value="no">
+                                <label for="no">No</label>
+                                <img class="img-aparecer" src="./images/pictogramas-cuestionario3/no.png">
+                            </section>
+                            <br>
+                            <br>
+                            <section class="job contenedor">
+                                <span>Ocupación</span>
+                                <br>
+
+                                <input class="input" type="text" name="job" id="job">
+                                <img class="img-aparecer" src="./images/pictogramas-cuestionario3/profesion.png">
+                            </section>
+                            <br>
+                            <section class="salary contenedor">
+                                <span>Ingresos mensuales</span>
+                                <br>
+                                <input class="input" type="text" name="salary" id="salary">
+                                <img class="img-aparecer" src="./images/pictogramas-cuestionario3/ingresos mensuales.png">
+                            </section>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <div class="changePage">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie"><img src="images\formularioSolicitud\pagAnterio.png"
+                                                                                                       alt="pagina anterior"></a>
+                        </td>
+                        <td>
+                            <img class="changePage" src="images\formularioSolicitud\pagSiguiente.png"
+                                 alt="Siguiente pagina">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <section class="footer_info">
+                <div class="data">
+                    <div class="data_logo">
+                        <img src="images\main\Logo_footer.png" alt="">
+                    </div>
+                    <div class="data_info">
+                        <p>Oficina de Información<br>
+                            Teléfono: 8821093<br>
+                            Ext: 112 - 119<br>
+                            Dirección: Carrera 9 No. 9-49<br>
+                            Segundo piso<br>
+                            Horario de atención al público <br>
+                            2:30 p.m - 5:30 p.m.</p>
+                    </div>
+
                 </div>
-                <div class="data_info">
-                    <p>Oficina de Información<br>
-                        Teléfono: 8821093<br>
-                        Ext: 112 - 119<br>
-                        Dirección: Carrera 9 No. 9-49<br>
-                        Segundo piso<br>
-                        Horario de atención al público <br>
-                        2:30 p.m - 5:30 p.m.</p>
+                <div class="data_menu">
+                    <h6>Menú</h6>
+                    <a href="">Inicio</a>
+                    <a href="">Centro</a>
+                    <a href="">Equipo</a>
+                    <a href="./proyectos.html">Proyectos</a>
+                    <a href="">Publicaciones</a>
+                    <a href="">Videos</a>
+                    <a href="">Protocolo de Atención</a>
+                    <a href="">Asistencia</a>
                 </div>
-
-            </div>
-            <div class="data_menu">
-                <h6>Menú</h6>
-                <a href="">Inicio</a>
-                <a href="">Centro</a>
-                <a href="">Equipo</a>
-                <a href="./proyectos.html">Proyectos</a>
-                <a href="">Publicaciones</a>
-                <a href="">Videos</a>
-                <a href="">Protocolo de Atención</a>
-                <a href="">Asistencia</a>
-            </div>
-            <div class="data_legal">
-                <h6>Legal</h6>
-                <a href="">Política de cookies</a>
-                <a href="">Política de privacidad</a>
-                <a href="">Términos de servicio</a>
-                <a href="">Status</a>
-            </div>
-            <div class="data_contact">
-                <h6>Contáctanos</h6>
-                <p>
-                    <strong>Jorge Andrés Illera Cajiao</strong><br>
-                    <strong>Director del GAPI</strong><br>
-                    Correo: jaillera@icesi.edu.co<br>
-                </p>
-                <p>
-                    <strong>Paula Andrea Cerón Arboleda</strong><br>
-                    <strong>Coordinadora del GAPI</strong><br>
-                    Correo: paula.ceron@correo.icesi.edu.co
-                </p>
-            </div>
-        </section>
-        <section class="social">
-            <div class="icons">
-                <img src="images\main\Redes.png" alt="iconos social media">
-            </div>
-        </section>
-    </footer>
-    <script src="./Scripts/color.js"></script>
-</body>
-
+                <div class="data_legal">
+                    <h6>Legal</h6>
+                    <a href="">Política de cookies</a>
+                    <a href="">Política de privacidad</a>
+                    <a href="">Términos de servicio</a>
+                    <a href="">Status</a>
+                </div>
+                <div class="data_contact">
+                    <h6>Contáctanos</h6>
+                    <p>
+                        <strong>Jorge Andrés Illera Cajiao</strong><br>
+                        <strong>Director del GAPI</strong><br>
+                        Correo: jaillera@icesi.edu.co<br>
+                    </p>
+                    <p>
+                        <strong>Paula Andrea Cerón Arboleda</strong><br>
+                        <strong>Coordinadora del GAPI</strong><br>
+                        Correo: paula.ceron@correo.icesi.edu.co
+                    </p>
+                </div>
+            </section>
+            <section class="social">
+                <div class="icons">
+                    <img src="images\main\Redes.png" alt="iconos social media">
+                </div>
+            </section>
+        </footer>
+        <script src="./Scripts/color.js"></script>
+    </body>
 </html>
 
 <script src="./Scripts/FormularioDesolicitud3.js"></script>
