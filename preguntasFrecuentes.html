@@ -4,47 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Preguntas Frecuentes</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/preguntasFrec_Estilo.css">
 </head>
 
 <body>
     <!-- Header -->
+    <div class="accesibility">
+        <center>
+            <form action="submission.html" method="POST">
+                <section class="visuaAdjust">
+                    <table class="headerTable">
+                        <tr>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
+                            </td>
+                            <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-"
+                                    id="btn_downFont"></td>
+                            <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
+                            </td>
+                            <td><a href="https://convertic.gov.co/641/w3-propertyvalue-15339.html"><img src="./images/main/lector.png" alt="Lector de pantalla recomendado"></a></td>
+                            <td id="tdAccesibility">Lector</td>
+                        </tr>
+                    </table>
+                </section>
+            </form>
+        </center>
+    </div>
     <header class="header">
         <div class="logo_container">
-            <img src="images/main/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
-                <a href="">Inicio</a>
-                <a href="">Centro</a>
-                <a href="">Equipo</a>
-                <a href="">Proyectos</a>
-                <a href="">Publicaciones</a>
-                <a href="">Videos</a>
-                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                <a href="">Asistencia</a>
+                <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+                <a href="./index.html">Inicio</a>
+                <a href="./centro.html">Centro</a>
+                <a href="./equipo.html">Equipo</a>
+                <a href="./proyectos.html">Proyectos</a>
+                <a href="./Publicaciones.html">Publicaciones</a>
+                <a href="./videos.html">Videos</a>
+                <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="./apoyo1.html">Asistencia</a>
             </div>
-        </div>
+
     </header>
 
+
     <!-- Seccion "Banner" -->
-    <section class="title">
-        <h2 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / PREGUNTAS FRECUENTES</h2>
-    </section>
+    <div class="title">
+        <p class="ROverline" id="ROverline">ESTÁS AQUÍ: ASISTENCIA / <b>PREGUNTAS FRECUENTES</b></p>
+    </div>
 
     <div class="asistenciaMenu">
-        <a href="#"><button class="asistenciaMenu_button">
-                <img src="./images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
+        <a href="./FormularioDeSolicitud.html"><button class="asistenciaMenu_button">
+                <img src="images/Asistencia psicologica Miguel/solicitar.png" class="solicitarCita_img">
                 <p>Solicitar cita</p>
             </button></a>
-        <a href="#"><button class="asistenciaMenu_button">
+        <a href="./asisPsico.html"><button class="asistenciaMenu_button">
                 <img src="./images/Asistencia psicologica Miguel/ayuda.png" class="solicitarCita_img">
                 <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
             </button></a>
-        <a href="#"><button class="asistenciaMenu_button">
+        <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
                 <img src="./images/Asistencia psicologica Miguel/pregunta.png" class="solicitarCita_img">
+
                 <p>Preguntas frecuentes</p>
             </button></a>
     </div>
@@ -52,91 +91,100 @@
     <!-- Contenedores preguntas -->
     <div class="preguntas">
         <div class="contenedorPregunta">
-            <h5 id="tituContenedor">Lorem ipsum</h5>
+            <div class="prove">
+                <h5 id="tituContenedor">Área Clínica Jurídica</h5>
+            </div>
             <p id="info1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing <br>
-                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-                mauris. Eget lectus elementum venenatis senectus aliquam <br>
-                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat <br>
-                magna feugiat in nunc, risus feugiat erat.
+                Para casos de protección de derechos sociales, económicos, culturales y colectivos:
+Protección de población vulnerable como adultos mayores, víctimas del conflicto armado o personas en situación de discapacidad.
             </p>
             <div class="Inputs">
-                <p id="teFueUti">¿Te fue útil esta respuesta?</p>
-                <button class="si_button"> SÍ, FUE ÚTIL </button>
-                <button class="no_button"> NO FUE ÚTIL</button>
-
-                <p id="deseasProg">¿Deseas programar una cita <br> para obtener más información?</p>
-                <button class="cita_button"> SÍ, PEDIR CITA </button>
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="contenedorPregunta">
-            <h5 id="tituContenedor">Lorem ipsum</h5>
+            <div class="prove">
+                <h5 id="tituContenedor">Área de Derecho Laboral y Seguridad Social</h5>
+            </div>
             <p id="info1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing <br>
-                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-                mauris. Eget lectus elementum venenatis senectus aliquam <br>
-                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat <br>
-                magna feugiat in nunc, risus feugiat erat.
+                Ofrece asesorías o guías escritas en el área penal. Además de la defensa de procesados por delitos, y representación de víctimas dentro del marco legal:<br>
+1. En los procesos penales de competencia de la jurisdicción ordinaria como representantes de la parte civil.<br>
+2. En los procesos penales, se prestará ayuda como voceros o defensores en audiencia.<br>
+3. Se suele redactar la denuncia que corresponda a cada caso para facilitar el acceso a la justicia y a las salas de denuncia. Lo mismo sucede cuando el usuario es el investigado, se les ofrece representación legal para su defensa.
+
             </p>
             <div class="Inputs">
-                <p id="teFueUti">¿Te fue útil esta respuesta?</p>
-                <button class="si_button"> SÍ, FUE ÚTIL </button>
-                <button class="no_button"> NO FUE ÚTIL</button>
-
-                <p id="deseasProg">¿Deseas programar una cita <br> para obtener más información?</p>
-                <button class="cita_button"> SÍ, PEDIR CITA </button>
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="contenedorPregunta">
-            <h5 id="tituContenedor">Lorem ipsum</h5>
+            <div class="prove">
+                <h5 id="tituContenedor">Área de Derecho de Familiar</h5>
+            </div>
             <p id="info1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing <br>
-                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-                mauris. Eget lectus elementum venenatis senectus aliquam <br>
-                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat <br>
-                magna feugiat in nunc, risus feugiat erat.
+                Asesorías en asuntos familiares donde se necesite algún trámite o requisito legal:<br>
+1. Trámites procesales en asuntos de alimentación.<br>
+2. Trámites conciliatorios en temas susceptibles de transacción o conciliación. 
+3. Derechos de petición o tutelas. 
             </p>
             <div class="Inputs">
-                <p id="teFueUti">¿Te fue útil esta respuesta?</p>
-                <button class="si_button"> SÍ, FUE ÚTIL </button>
-                <button class="no_button"> NO FUE ÚTIL</button>
-
-                <p id="deseasProg">¿Deseas programar una cita <br> para obtener más información?</p>
-                <button class="cita_button"> SÍ, PEDIR CITA </button>
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="contenedorPregunta">
-            <h5 id="tituContenedor">Lorem ipsum</h5>
+            <div class="prove">
+                <h5 id="tituContenedor">Área de Derecho Penal</h5>
+            </div>
             <p id="info1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui nunc, egestas euismod feugiat eget quis
-                mauris, ullamcorper vitae. Nunc laoreet turpis nec lobortis ac adipiscing <br>
-                odio purus a. Non vitae platea tristique cursus blandit morbi nunc suspendisse. Sed cursus a laoreet et
-                mauris. Eget lectus elementum venenatis senectus aliquam <br>
-                condimentum sollicitudin nibh. Enim vitae vitae est pellentesque ut. Sagittis ullamcorper sit varius ut
-                consequat proin. Cras rhoncus et nec mauris varius vehicula. Feugiat <br>
-                magna feugiat in nunc, risus feugiat erat.
+                Para casos donde se pone en duda temas relacionados con el ámbito laboral y consultas en el ámbito de seguridad social integral:<br>
+1. Contrato laboral, liquidación de salarios, horas extra, recargos por trabajo dominical, prestaciones sociales, etc. <br>
+2. Temas de pensión, salud y riesgos laborales.<br>
+3. Acompañamiento para la interposición de derechos de petición, o tutelas.<br>
+4. Asesoria y representación juridica en procesos ordinarios laborales. (que no excedan los 20 SMMLV)
             </p>
             <div class="Inputs">
-                <p id="teFueUti">¿Te fue útil esta respuesta?</p>
-                <button class="si_button"> SÍ, FUE ÚTIL </button>
-                <button class="no_button"> NO FUE ÚTIL</button>
-
-                <p id="deseasProg">¿Deseas programar una cita <br> para obtener más información?</p>
-                <button class="cita_button"> SÍ, PEDIR CITA </button>
+                <div class="menu">
+                    <div class="askNav">
+                        <p>¿Te fue útil esta respuesta?</p>
+                        <p><button class="si_button"> SÍ, FUE ÚTIL </button></p>
+                        <p><button class="no_button"> NO FUE ÚTIL</button></p>
+                        <p>¿Deseas programar una cita para obtener más información?</p>
+                        <p><button class="cita_button"> SÍ, PEDIR CITA </button></p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="lastInput">
-            <button class="goBack_button"> <img src="./images/PreguntasFrecuentes/up.png" alt=""> REGRESAR A <br> ARRIBA
+            <button class="goBack_button"> <img src="./images/PreguntasFrecuentes/up.png" alt="">
+                <p> REGRESAR A<br> ARRIBA</p>
             </button>
         </div>
     </div>
@@ -170,6 +218,7 @@
                 <a href="">Protocolo de Atención</a>
                 <a href="">Asistencia</a>
             </div>
+
             <div class="data_legal">
                 <h6>Legal</h6>
                 <a href="">Política de cookies</a>
@@ -197,6 +246,8 @@
             </div>
         </section>
     </footer>
+
 </body>
 
 </html>
+<script src="./Scripts/changeSizePreguntasFreq.js"></script>

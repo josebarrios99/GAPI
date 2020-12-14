@@ -9,70 +9,23 @@ main{
     padding: 0,0,0,0;
     margin: 0;
 }
+
+/*banner*/
 .banner{
     justify-items: first;
     justify-content: center;
     align-items: center;
-     width: 100%;
+    width: 100%;
 }
 
 .bannerImage{
-    padding-top: 70px;
     height:400px;
     width:100%;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
-.h6Home {
-    padding-left:145px;
-    margin-top:36px;
-    margin-bottom: 36px;
-
-}
-
-.h4Home {
-    font-size: 46px;
-    font-weight: 600;
-    color: #454545;
-    text-align: center;
-}
-.h4GAPI{
-    font-size: 46px;
-    font-weight: 600;
-    color: #454545;
-    text-align: center;
-    margin-top: 20;
-    margin-bottom: 56;
-}
-.h6Seccion{
-    font-size: 46px;
-    font-weight: 600;
-    color: #454545;
-    text-align: center;
-    margin-top: 10;
-    padding-top:30;
-    margin-bottom: 56;
-}
-
-.accionesGAPI{
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(4, 175px);
-    grid-template-rows: 300px;
-    grid-gap: 99px;
-    margin-bottom:50;
-}
-
-#pAcciones {
-    margin-top: 36px;
-    color:#454545;
-}
-
 .queEsElGapi{
-    position: relative;
     bottom: 26px;
     display: grid;
     align-content: center;
@@ -84,9 +37,15 @@ main{
     grid-gap: 30px;
     padding-top: 0px;
     padding-bottom: 100;
-    border-bottom: 1px solid #454545;
     padding-left: -2px;
 }
+
+hr {
+    margin: 56px 0px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
 
 #h5QueeselGAPI{
     margin-bottom: 20px;
@@ -102,11 +61,59 @@ main{
     grid-column-end:6;
 }
 
+/*ajuste posicion estas aqui*/
+.h6Home {
+    padding-left:145px;
+    margin-top:36px;
+    margin-bottom: 36px;
+
+}
+
+.h4Home {
+    font-size: 46px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+}
+/*Acciones del GAPI*/
+.h4GAPI{
+    font-size: 46px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+    margin-top: 20;
+    margin-bottom: 56;
+}
+.accionesGAPI{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 175px);
+    grid-template-rows: 300px;
+    grid-gap: 99px;
+    margin-bottom:50;
+}
+#pAcciones {
+    margin-top: 36px;
+    color:#454545;
+}
+
+/*secciones*/
+.h6Seccion{
+    font-size: 46px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+    margin-top: 10;
+    padding-top:30;
+    margin-bottom: 56;
+}
+
 .secciones{
     background-color: #DBDBDB;
     padding-bottom: 50px;
 }
-
 
 .seccionesContent{
     display: grid;
@@ -127,7 +134,7 @@ main{
 }
 
 .h4defect{
-    padding-top: 25
+    margin-top: 25px;
 }
 
 .imgSeccionGAPI{
@@ -145,13 +152,8 @@ main{
 }
 .h4seccion{
     position: relative;
-    z-index: 2;
     top: 110; 
     padding-left: 20;
-}
-
-.h4last{
-    bottom: 50;
 }
 
 .h6Secciones {
@@ -165,53 +167,65 @@ main{
     margin-top:52px;
     margin-bottom: 0;
 }
-
-.arrowToContinue{
-    position: relative;
-    top:9px;
-    padding-left: 10px;
-}
+/*testimonios*/
 
 .testimonios {
     width: 100%;
+    background-color: #3B939B;
+    background-size: cover;
     align-content: center;
     justify-content: center;
     align-items: center;
 }
-
 .backgroundTestimonios{
-    position: absolute;
-    top: 2345;
-    z-index: -1;
     width: 100%;
 }
 
 #h4Testimonio{
+    padding-top:56px;
     color:#ffff;
-    position: relative;
-    z-index: 2;
-    margin-top: 56;
+}
+
+.centerTestimonio{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1170px;
+    grid-template-rows: 304px;
+}
+
+.testimonioBox{
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/home/testimonio.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 850px;
+    grid-auto-rows: 119px;
+    padding-bottom: 10px;
 }
 
 #pTestimonio{
-    padding-top: 60;
     text-align: center;
-    padding-left: 250;
-    padding-right: 250;
     color:#454545;
-    z-index: 2;
 }
 
 .testimonioPerson{
-    text-align: center;
-    padding-top: 50;
-
+    text-align: center;    
 }
 
 .imgTestimonio{
-    position: relative;
-    top:30;
-    padding-right: 10;
+    padding-right: 15px;
+}
+.personTestimonio{
+    text-align: left;
+    display: inline-block;
 }
 
 #h6Testimonio{
@@ -219,20 +233,20 @@ main{
 }
 
 #h6Subtitle{
+    
     font-family: 'Helvetica';
     font-weight: 200;
     font-size: 14;
-    margin-top: 0;
-    padding-left: 50;
 }
 
 .buttons{
-    padding-top: 20;
+    padding-top: 56px;
+    padding-bottom: 56px;
     text-align: center;
+
 }
 
 .buttons button{
-    z-index: 2;
     width:16px;
     height:16px;
     margin: 5px;
@@ -248,12 +262,19 @@ main{
     background-color: rgba(255,255,255,100);
 }
 
+/*noticias y eventos*/
+.arrowToContinue{
+    position: relative;
+    top:9px;
+    padding-left: 10px;
+}
 .noticias{
     
 }
 
 #h4Noticias{
-    padding-top: 50;
+    margin-top: 56px;
+    margin-bottom: 56px;
     font-size: 46px;
     font-weight: 600;
     color: #454545;
@@ -261,31 +282,34 @@ main{
 }
 
 .noticiasGrid{
-     display: grid;
+    margin-bottom: 56px;
+    display: grid;
     align-content: center;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: repeat(3, 380px);
+    align-items: center;
+    grid-template-columns: 55px 380px 380px 380px 55px;
     grid-template-rows: 359px;
     grid-gap: 31px;
+
+    margin-bottom: 50px;
 }
 .noticia{
     width: 100%;
     height: 100%;
     background-color: #EFEFEF;
     border-radius: 25px;
+    margin-bottom: 40px;
+
 }
 
 .noticiaImg{
     position: absolute;
-    z-index: 1;
-    padding: 0;
 }
 .h4Noticias{
     position: relative;
-    z-index: 2;
-    top: 178px; 
-    padding-left: 250;
+    top: 190px; 
+    padding-left: 190px;
 }
 .h6Noticias {
     position: relative;
@@ -313,16 +337,11 @@ svg {
 
 .arrow {
   cursor: pointer;
-  position: absolute;
-  top: 460%;
-  margin-top: -45px;
-  margin-left: -35px;
   width: 70px;
   height: 90px;
 }
 
 .left {
-  left: 5%;
 }
 
 .left:hover polyline,
@@ -336,7 +355,6 @@ svg {
 }
 
 .right {
-  left: 95%;
 }
 
 .right:hover polyline,

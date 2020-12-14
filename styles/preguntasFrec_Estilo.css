@@ -1,0 +1,148 @@
+body{
+    background-color: #ECECEC;
+}
+
+h1 {
+    margin-left: 122px;
+    margin-top: 36px;
+}
+.title{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+/* --- botones asistencia --- */
+.asistenciaMenu{
+    text-align: center;
+}
+.asistenciaMenu{
+    margin-top: 46px ;
+    display: flex;
+    margin-left: 550px;
+}
+.asistenciaMenu a{
+    text-decoration: none;
+}
+.asistenciaMenu p{
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#ayudaButtonText{
+    padding-top: 0px;
+}
+.asistenciaMenu_button{
+    background-color: #B1B1B1;
+    border: none;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4px 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.asistenciaMenu_button:hover{
+    background-color: #3B939B;
+}
+
+/* --- preguntas --- */
+
+.preguntas{
+    margin-top: 25px;
+     display: flex;
+     flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding:80px;
+
+}
+.contenedorPregunta{
+    background-color: #ffff;
+    border-radius: 25px;
+    margin:20px;
+}
+.prove{
+       border-bottom: 1px solid #454545;
+    padding-bottom: 17px;
+}
+#tituContenedor{
+    margin-top: 31px;
+    padding-left: 36px;
+    padding-bottom: 1px;
+}
+#info1{
+    margin-top: 15px;
+    margin-left: 33px;
+    margin-right : 33px;
+    margin-bottom: 18px;
+    color: #5f5f5f;
+}
+
+#askText{
+    color:#5f5f5f;
+}
+.askNav{
+    margin-left: 20px;
+}
+
+.askNav p {
+    float: left;
+    display: block;
+    color: #0F1C27;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.si_button {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 0px;
+    background-color: #3B939B;
+    border-radius: 6px;
+    color: #ffff;
+}
+.no_button {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 0px;
+    background-color: #F07349;
+    border-radius: 6px;
+    color: #ffff;
+}
+.cita_button {
+     padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 0px;
+    background-color: #3B939B;
+    border-radius: 6px;
+    color: #ffff;
+}
+
+.lastInput{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+.goBack_button {
+    padding: 17px;
+    border: 0px;
+    background-color: #3B939B;
+    border-radius: 6px;
+    color: #ffff;
+}

@@ -25,6 +25,7 @@
     padding-top: 25px;
     padding-right: 23px;
     margin-right: 8%;
+    margin-bottom: 6%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     
@@ -121,4 +122,15 @@
     margin: 8px 0;
     box-sizing: border-box;
   
+}
+
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.contenedor :hover + .img-aparecer {
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
 }

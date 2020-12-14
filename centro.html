@@ -1,177 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAPI</title>
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/estiloCentro.css">
+
 </head>
+
 <body>
 
-    
-    <div class="centro"> 
 
-        <!-- Espacio para organizar todo el primer cabezote-->
-            <header class="header">
-        <div class="logo_container">
-            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+    <body>
+        <div class="accesibility">
+            <center>
+                <form action="submission.html" method="POST">
+                    <section class="visuaAdjust">
+                        <table class="headerTable">
+                            <tr>
+                                <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
+                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
+                                <td><input class="buttonAccesibilityUpper" type="button" value="A+" id = "btn_upFont"></td>
+                                <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id="btn_downFont"></td>
+                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                    <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                        <option value="">Color original</option>
+                                        <option value="1">Blanco sobre negro</option>
+                                        <option value="2">Amarillo sobre negro</option>
+                                        <option value="3">Amarillo sobre azul</option>
+                                        <option value="4">Verde sobre Negro</option>
+                                    </select>
+                                </td>
+                                <td><a href="https://convertic.gov.co/641/w3-propertyvalue-15339.html"><img src="./images/main/lector.png" alt="Lector de pantalla recomendado"></a></td>
+                            <td id="tdAccesibility">Lector</td>
+                            </tr>
+                        </table>
+                    </section>
+                </form>
+            </center>  
         </div>
-        <div class="menu">
-            <div class="topNav">
-                <a href="./index.html">Inicio</a>
+        <header class="header">
+            <div class="logo_container">
+                <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
+            </div>
+            <div class="menu">
+                <div class="topNav">
+                    <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
 <a href="./centro.html">Centro</a>
 <a href="./equipo.html">Equipo</a>
 <a href="./proyectos.html">Proyectos</a>
 <a href="./Publicaciones.html">Publicaciones</a>
 <a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
 <a href="./apoyo1.html">Asistencia</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+        <br>
 
         <!-- Espacio para el slider-->
-            <section class="slider">
-                <img src="images/centro/slider.png" alt="">
-            </section>
+        <section class="slider">
+            <img src="images/centro/slider.png" alt="" > </section>
 
         <!-- espacio para columnas de imagenes y texto-->
         <section class="cuerpo">
-            <h1 class="titulo">
+            <p class="titulo ROverline">
                 ESTÁS AQUÍ: INICIO / CENTRO
-            </h1>
+            </p>
         </section>
         <!-- espacio para "sobre gapi"-->
-            <article class="cajaSobreGapi">
-                <img src="images/centro/sobreGapi.png" alt="">
+        <article class="cajaSobreGapi">
+            <img src="images/centro/sobreGapi.png" alt="Imagen que muestra tres integrantes del grupo de Acciones Públicas de ICESI">
             <div class="textoSobreGapi">
 
-                <h2 class="sobreGapiText">
-                    Sobre el GAPI
-                </h2>
-                <h3 class="sobreGapiText2">
-                    El Grupo de Acciones Públicas de ICESI (GAPI) es la clínica jurídica de <br>
-                    derechos humanos e interés público, de la Facultad de Derecho y Ciencias<br>
-                    Sociales de la Universidad ICESI. Opera desde el 2008 con más de diez <br>
-                    (10) años de experiencia sirviendo a la comunidad con asesorías jurídicas<br>
-                    de calidad sin costo alguno y educando y aplicando litigio estratégico con<br>
-                    apoyo de sus estudiantes. Fundado por la iniciativa de Diana Patricia <br>
-                    Quintero del Departamento de Estudios Jurídicos y con el apoyo de Paula<br>
-                    Andrea Cerón, egresada del Programa de Derecho de la Universidad.<br><br>
+                <h5 class="sobreGapiText">Sobre el GAPI</h5>
 
-                    El GAPI cuenta con miembros activos y voluntarios. Los primeros son los<br>
-                    estudiantes de Derecho del Consultorio Jurídico de la misma universidad y <br>
-                    los segundos pueden ser estudiantes de ICESI de cualquier carrera. La <br>
-                    mayoría son de últimos semestres de la Facultad de Derecho y Ciencias<br>
-                    Sociales, quienes llevan a cabo trabajo con la comunidad, con enfoque en <br>
-                    el modelo pedagógico clínico de enseñanza del Derecho. Además, la <br>
-                    clínica se ha abierto un espacio para proteger los intereses de <br>
+                <p>
+                    El Grupo de Acciones Públicas de ICESI (GAPI) es la clínica jurídica de 
+                    derechos humanos e interés público, de la Facultad de Derecho y Ciencias
+                    Sociales de la Universidad ICESI. Opera desde el 2008 con más de diez 
+                    (10) años de experiencia sirviendo a la comunidad con asesorías jurídicas
+                    de calidad sin costo alguno y educando y aplicando litigio estratégico con
+                    apoyo de sus estudiantes. Fundado por la iniciativa de Diana Patricia 
+                    Quintero del Departamento de Estudios Jurídicos y con el apoyo de Paula
+                    Andrea Cerón, egresada del Programa de Derecho de la Universidad.<br>
+
+                    El GAPI cuenta con miembros activos y voluntarios. Los primeros son los
+                    estudiantes de Derecho del Consultorio Jurídico de la misma universidad y 
+                    los segundos pueden ser estudiantes de ICESI de cualquier carrera. La 
+                    mayoría son de últimos semestres de la Facultad de Derecho y Ciencias
+                    Sociales, quienes llevan a cabo trabajo con la comunidad, con enfoque en 
+                    el modelo pedagógico clínico de enseñanza del Derecho. Además, la 
+                    clínica se ha abierto un espacio para proteger los intereses de 
                     comunidades históricamente discriminadas y vulnerables. Por el mismo <br>
-                    sentido, el GAPI se ha convertido en un aliado estratégico de <br>
-                    organizaciones comunitarias y líderes ciudadanos quienes ven en la clínica <br>
+                    sentido, el GAPI se ha convertido en un aliado estratégico de
+                    organizaciones comunitarias y líderes ciudadanos quienes ven en la clínica
                     jurídica un punto de encuentro entre la sociedad y la academia.
-                </h3>
+                </p>
             </div>
-            </article>
+        </article>
 
         <!-- espacio para "acciones del GAPI"  -->
-        <header class="accionesGAPI">
-                <section class="tituloAcciones">
-                    <h4 class="tituAcciones">
-                        Acciones del GAPI
-                    </h4>
-                </section>
-            
+        <section class="accionesGAPI">
+            <section class="tituloAcciones">
+                <h4 class="tituAcciones">
+                    Acciones del GAPI
+                </h4>
+            </section>
+
             <article class="caja">
                 <img src="images/centro/primera.png" alt="">
-                <h3>Litigio estratégico y<br> 
-                    representación directa<br> 
-                    de comunidades <br>
-                    vulnerables. 
-                   
-                </h3>
+                <h6 class = "cajaTitle">Litigio estratégico y
+                    representación directa
+                    de comunidades 
+                    vulnerables.
+
+                </h6>
             </article>
             <article class="caja">
                 <img src="images/centro/segunda.png" alt="">
-                <h3>Pedagogía en derechos<br> 
-                    y creación de <br> 
-                    materiales de <br>
+                <h6 class = "cajaTitle">Pedagogía en derechos
+                    y creación de
+                    materiales de 
                     divulgación.
-                </h3>
+                </h6>
             </article>
-            <article class="caja">
-            <div class="contenido">
-                <img src="images/centro/tercera.png" alt="">
-                <h3>Investigación socio<br> 
-                   jurídica.
-                </h3>
-            </div>
+            <article class="cajaj">
+                <div class="contenido">
+                    <img src="images/centro/tercera.png" alt="">
+                    <h6 class = "cajaTitle">Investigación socio
+                        jurídica.
+
+                    </h6>
+                </div>
             </article>
             <article class="caja">
                 <div class="contenido">
-                <img src="images/centro/cuarta.png" alt="">
-                <h3>Formación de <br>
-                    estudiantes en la <br>
-                    práctica del derecho de <br>
-                    interés público.
-                </h3>
+                    <img src="images/centro/cuarta.png" alt="">
+                    <h6 class = "cajaTitle">Formación de 
+                        estudiantes en la 
+                        práctica del derecho de
+                        interés público.
+                    </h6>
                 </div>
-                </article>
-        </header>
+            </article>
+        </section>
 
         <!-- Espacio para mision, vision y demas-->
         <article class="miYvi">
-        <section class="mision">
-            <div class="imagenMision"> 
-                 <img src="images/centro/mision.png" alt="">
-            </div>
-            <div class="MisionF">
-            <h2 class="tituloMision">
-                Misión
-            </h2>
-            <h3 class="textoMision">
-                Contribuir mediante el uso de los conocimientos jurídicos a la<br>
-                solución de problemas regionales y nacionales que afectan la <br>
-                plena realización de derechos sociales y colectivos; y apoyar<br>
-                las acciones públicas de otros grupos que luchan por la<br>
-                defensa de estos derechos, en los contextos nacional e<br>
-                internacional. El GAPI cumple su misión directamente y en <br>
-                colaboración con la comunidad, entidades gubernamentales,<br>
-                no gubernamentales, y la academia.
-            </h3>
-        </div>
-        </section>
-
-        <section class="vision">
-            <div class="imagenVision">
-                <img src="images/centro/vision.png" alt="">
-            </div>
-            <div class="VisionF">
-            <h2 class="tituloVision">
-                Visión
-            </h2>
-            <h3 class="textoVision">
-            En el 2022 el GAPI será reconocido por la comunidad jurídica <br>
-            internacional y nacional como un espacio de formación en  <br>
-            derecho de interés público, en litigio estratégico y en <br>
-            investigación aplicada de alta calidad.
-            </h3>   
-        </div>
-        </section>
-
-        <header class="nuestrosClientes">
-            <h4 class="tituloNuestrosClientes">
-                Nuestros Clientes
-            </h4>
-            <article class="cajaClientes">
-                <div class="subtituloCliente">
-                    <img src="images/centro/nuestrosClientes.png" alt=""> 
+            <section class="mision">
+                <div class="imagenMision">
+                    <img src="images/centro/mision.png" alt="En la imagen se encuentran dos funcionarios del GAPI sentados hablando acerca de algún tema ">
                 </div>
-                  
-            </article>
-            
-           
-        </header>
+                <div class="MisionF">
+                    <h5 class="tituloMision">
+                        Misión
+                    </h5>
+                    <p>
+                        Contribuir mediante el uso de los conocimientos jurídicos a la<br>
+                        solución de problemas regionales y nacionales que afectan la <br>
+                        plena realización de derechos sociales y colectivos; y apoyar<br>
+                        las acciones públicas de otros grupos que luchan por la<br>
+                        defensa de estos derechos, en los contextos nacional e<br>
+                        internacional. El GAPI cumple su misión directamente y en <br>
+                        colaboración con la comunidad, entidades gubernamentales,<br>
+                        no gubernamentales, y la academia.
+                    </p>
+                </div>
+            </section>
+
+            <section class="vision">
+                <div class="imagenVision">
+                    <img src="images/centro/vision.png" alt="Imagen que muestra varios integrantes de la comunidad jurídica del GAPI">
+                </div>
+                <div class="VisionF">
+                    <h5 class="tituloVision">
+                        Visión
+                    </h5>
+                    <p>
+                        En el 2022 el GAPI será reconocido por la comunidad jurídica <br>
+                        internacional y nacional como un espacio de formación en <br>
+                        derecho de interés público, en litigio estratégico y en <br>
+                        investigación aplicada de alta calidad.
+                    </p>
+                </div>
+            </section>
+
+            <header class="nuestrosClientes">
+                <h4 class="tituloNuestrosClientes">
+                    Nuestros Clientes
+                </h4>
+                <article class="cajaClientes">
+                    <div class="subtituloCliente">
+                        <img src="images/centro/nuestrosClientes.png" alt="">
+                    </div>
+
+                </article>
+
+
+            </header>
         </article>
 
         <!-- Espacio para el FOOTER-->
@@ -183,14 +220,14 @@
                     </div>
                     <div class="data_info">
                         <p>Oficina de Información<br>
-                        Teléfono: 8821093<br>
-                        Ext: 112 - 119<br>
-                        Dirección: Carrera 9 No. 9-49<br>
-                        Segundo piso<br>
-                        Horario de atención al público <br>
-                        2:30 p.m - 5:30 p.m.</p>
+                            Teléfono: 8821093<br>
+                            Ext: 112 - 119<br>
+                            Dirección: Carrera 9 No. 9-49<br>
+                            Segundo piso<br>
+                            Horario de atención al público <br>
+                            2:30 p.m - 5:30 p.m.</p>
                     </div>
-                    
+
                 </div>
                 <div class="data_menu">
                     <h6>Menú</h6>
@@ -230,7 +267,8 @@
                 </div>
             </section>
         </footer>
-    </div>
-</body>
+        </div>
+    </body>
+    <script src="./Scripts/color.js"></script>
 </html>
-<script src="/Scripts/changeSize.js"></script>
+<script src="./Scripts/changeSizeCentro.js"></script>

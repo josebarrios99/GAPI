@@ -21,8 +21,8 @@
                         <tr>
                             <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id="btn_downFont"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
                                 <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
                                     <option value="">Color original</option>
@@ -32,9 +32,8 @@
                                     <option value="4">Verde sobre Negro</option>
                                 </select>
                             </td>
-                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
-                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
-                            <td id="tdAccesibility">Traductor</td>
+                            <td><a href="https://convertic.gov.co/641/w3-propertyvalue-15339.html"><img src="./images/main/lector.png" alt="Lector de pantalla recomendado"></a></td>
+                            <td id="tdAccesibility">Lector</td>
                         </tr>
                     </table>
                 </section>
@@ -45,19 +44,26 @@
     <!-- Header -->
     <header class="header">
         <div class="logo_container">
-            <img src="images/main/Logo.png" alt="Logo del GAPI" id="logo">
+            <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
         </div>
         <div class="menu">
             <div class="topNav">
-
-                <a href="./index.html">Inicio</a>
-                <a href="./centro.html">Centro</a>
-                <a href="./equipo.html">Equipo</a>
-                <a href="./proyectos.html">Proyectos</a>
-                <a href="./Publicaciones.html">Publicaciones</a>
-                <a href="./videos.html">Videos</a>
-                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
-                <a href="./apoyo1.html">Asistencia</a>
+                <!--
+<div class="inicio">
+<a href="">Inicio</a>
+<span class="inicio_gif">
+<img src="./giphy.gif" alt="">
+</span>
+</div>
+-->
+<a href="./index.html">Inicio</a>
+<a href="./centro.html">Centro</a>
+<a href="./equipo.html">Equipo</a>
+<a href="./proyectos.html">Proyectos</a>
+<a href="./Publicaciones.html">Publicaciones</a>
+<a href="./videos.html">Videos</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./apoyo1.html">Asistencia</a>
             </div>
         </div>
     </header>
@@ -67,7 +73,7 @@
     <section class="centralBox">
 
         <div class="breadCrumb">
-            <h1 id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </h1>
+            <p class = "ROverline" id="ROverline">ESTÁS AQUÍ: ASISTENCIA / SOLICITAR CITA / APOYO COMUNICACIÓN </p>
         </div>
 
         <div class="mainBox">
@@ -76,7 +82,7 @@
             </div>
             <div class="boxRight">
                 <div class="titleBoxRight">
-                    <h5 class="titleBox">¿Qué tipo de apoyo <br> en comunicación requieres?</h5>
+                    <h5 class="titleBox">¿Qué tipo de apoyo en comunicación requieres?</h5>
                 </div>
 
 
@@ -84,7 +90,7 @@
 
 
                     <!-- Card 1-->
-                    <div class="cardBtn card1">
+                    <div class="input cardBtn card1"value="Tengo mi propia herramienta">
                         <div class="imageContainer1">
                             <img class="imageCard" src="images/Apoyo Miguel/propia.png" alt="">
                         </div>
@@ -98,7 +104,7 @@
 
                     <!-- Card 2-->
 
-                    <div class="cardBtn card2">
+                    <div class="input cardBtn card2" value="Presento acompañante">
                         <div class="imageContainer2">
                             <img class="imageCard" src="images/Apoyo Miguel/acompañante.png" alt="">
                         </div>
@@ -111,7 +117,7 @@
 
                     <!-- Card 3-->
 
-                    <div class="cardBtn card3">
+                    <div class="input cardBtn card3" value="No necesito el apoyo">
                         <div class="imageContainer3">
                             <img class="imageCard" src="images/Apoyo Miguel/nonecesito.png" alt="">
                         </div>
@@ -190,8 +196,11 @@
             </div>
         </section>
     </footer>
-
+    <script src="./Scripts/color.js"></script>
 </body>
 
 </html>
-<script src="/Scripts/changeSize.js"></script>
+
+<script src="./Scripts/apoyo3.js"></script>
+<script src="./Scripts/chageSizeApoyo1.js"></script>
+

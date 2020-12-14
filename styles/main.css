@@ -1,6 +1,6 @@
 @font-face{
     font-family: Helvetica;
-    src: url(/fonts/HELVETICA-LIGHT.TTF);
+    src: url(./fonts/HELVETICA-LIGHT.TTF);
 }
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
@@ -25,6 +25,7 @@ h6{
     font-size: 20px;
     color: #ffffff;
 }
+
 #ROverline{
     font-family: 'Helvetica', sans-serif;
     font-size: 12px;
@@ -83,6 +84,9 @@ p{
     height: 55px;
     padding-top: 15px;
 }
+#listOfVisualcontrast{
+    margin-right: 100px;
+}
 /*fin barra accesibilidad*/
 /*Menu de arriba*/
 .header{
@@ -129,6 +133,15 @@ p{
 
     width: 100%;
 }
+.titleVideo{
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 34px;
+    color: #5F5F5F;
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
 .topNav a{
     float: left;
     display: block;
@@ -147,10 +160,18 @@ p{
     padding-top: 13px;
     padding-bottom: 18px;
 }
+.banner{
+    padding-top: 0px;
+    width: 100%;
+}
+
+#main_banner{
+    width: 100%;
+}
 /*fin menu de arriba*/
 /*footer*/
 footer{
-    margin-top: 50px;
+    margin-top: 0px;
     background-color: var(--color);
     height: auto;
     padding-top: 50px;

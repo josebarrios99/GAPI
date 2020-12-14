@@ -2,7 +2,8 @@
     display: flex;
     width: 1200px;
     border-radius: 10px;
-    height: 1014px;
+    
+    margin-bottom: 90px;
 }
 body{
 
@@ -22,16 +23,24 @@ footer{
     width: 410px;
     padding: 15px;
     box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.titulo{
+    border-bottom: 1px solid #B1B1B1;
+    padding-left: 37px;
+    padding-top: 15px;
+    padding-right: 37px;
+    padding-bottom: 20px;
+}
+.titulo2{
+    padding-left: 37px;
+    padding-top: 15px;
+    padding-right: 37px;
+    padding-bottom: 20px;
 }
 
-li {
-    list-style: none;
-    color: #0F1C27;
-}
 
-li div {
-    display: flex;
-}
 
 .form_aside h6 {
     margin: 15px 0px;
@@ -49,6 +58,8 @@ li div {
     flex-direction: column;
     padding:40px;
     background-color: white;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
     
 }
 
@@ -130,6 +141,7 @@ button:focus{
     font-size: 14px;
     line-height: 16px;
     padding: 0px 10px;
+    border-radius: 4px;
 }
 
 .btnMain {
@@ -264,7 +276,7 @@ button:focus{
     height:30px;
     margin-right: 10px;
     border-radius:50%;
-    background: #5F5F5F;
+    background: #B1B1B1;
     display:inline-block;
 }
 #paso7{
@@ -274,4 +286,15 @@ button:focus{
 .textoFechayHora{
 
     color:#146971 ;
+}
+
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.contenedor :hover + .img-aparecer {
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
 }

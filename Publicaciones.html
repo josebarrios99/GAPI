@@ -17,21 +17,20 @@
                         <table class="headerTable">
                             <tr>
                                 <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
-                                <td class="accesibilityTD">Accesibilidad</td>
+                                <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
                                 <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
                                 <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-"></td>
-                                <td><label for="typeOfContrast_txt">Contraste</label>
-                                    <input list="listOfVisualcontrast" id="typeOfContrast_txt"
-                                           name="typeOfContrast_txt">
-                                    <datalist id="listOfVisualcontrast">
-                                        <option value="Color original"></option>
-                                        <option value="verdes y azules"></option>
-                                        <option value="rojos y naranjas"></option>
-                                    </datalist>
+                                <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
+                                    <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                        <option value="">Color original</option>
+                                        <option value="1">Blanco sobre negro</option>
+                                        <option value="2">Amarillo sobre negro</option>
+                                        <option value="3">Amarillo sobre azul</option>
+                                        <option value="4">Verde sobre Negro</option>
+                                    </select>
                                 </td>
-                                <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
-                                <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
-                                <td>Traductor</td>
+                                <td><a href="https://convertic.gov.co/641/w3-propertyvalue-15339.html"><img src="./images/main/lector.png" alt="Lector de pantalla recomendado"></a></td>
+                                <td id="tdAccesibility">Lector</td>
                             </tr>
                         </table>
                     </section>
@@ -39,14 +38,12 @@
             </center>  
         </div>
         <header class="header">
-
             <div class="logo_container">
                 <img src="./images/main/Logo.png" alt="Logo del GAPI" id="logo">
             </div>
             <div class="menu">
                 <div class="topNav">
                     <!--
-
 <div class="inicio">
 <a href="">Inicio</a>
 <span class="inicio_gif">
@@ -60,92 +57,92 @@
 <a href="./proyectos.html">Proyectos</a>
 <a href="./Publicaciones.html">Publicaciones</a>
 <a href="./videos.html">Videos</a>
-<a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+<a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
 <a href="./apoyo1.html">Asistencia</a>
                 </div>
             </div>
         </header>
         <div class="banner">
-            <img src="./images/publicaciones/banner.png" class="bannerImage">
+            <img src="./images/publicaciones/banner.png" alt="Grupo de estudiantes del GAPI en jornada de asistencia legal a la poblacion" class="bannerImage">
         </div>
         <main>
             <h6 class="h6Publication" id="ROverline">ESTÁS AQUÍ: INICIO/PUBLICACIONES</h6>
             <h4 class="h4Publicaciones">Nuestras publicaciones</h4>
             <div class="gridPublicaciones">
                 <div class="largePublication">
-                    <img src="./images/publicaciones/first.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/first.png" alt="Persona sentada en un escritorio, usando un computador" class="imagePublication"/>
                     <h2>El acceso a una justicia diferencial. La situación de la población en vulnerabilidad
                         socioeconómica de Cali
                     </h2>
                     <p class="seeMore">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://revistas.udea.edu.co/index.php/red/article/view/18410"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a> </p>
                 </div>
                 <div class="shortPublication">
-                    <img class="imagePublication" src="./images/publicaciones/second.png" class="imagePublication"/>
+                    <img class="imagePublication" src="./images/publicaciones/second.png" alt="Niño estudiando en un jardin" class="imagePublication"/>
                     <h2>Impacto del activismo judicial sobre la garantía el derecho a la educación en Santiago de Cali</h2>
                     <p class="seeMoreShortPublication">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/revistas/index.php/precedente/"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a> </p>
                 </div> 
                 <div class="shortPublication">
-                    <img class="imagePublication" src="./images/publicaciones/third.png"/>
+                    <img class="imagePublication" alt="Chorro de agua saliendo de una llave de lavamanos abierta"  src="./images/publicaciones/third.png"/>
                     <h2>Acceso equitativo a servicios de agua potable y alcantarillado.
                     </h2>
                     <p class="seeMoreShortPublication">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/Acceso_equitativo_agua_potable_alcantarillado.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a> </p>
                 </div>  
                 <div class="shortPublication">
-                    <img src="./images/publicaciones/four.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/four.png"  alt="Manos de un adulto mayor, firmando un contrato" class="imagePublication"/>
                     <h2>Boletín GAPI 2015</h2>
                     <p class="seeMoreShortPublication">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/derecho_salud_nna.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a> </p>
                 </div>  
                 <div class="shortPublication">
-                    <img src="./images/publicaciones/five.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/five.png" alt="Mano de persona joven, sosteniendo la mano de un adulto mayor, en sesion de terapia" class="imagePublication"/>
                     <h2>Cartilla sobre derechos de la población adulto mayor, 2 Edición.</h2>
                     <p class="seeMoreShortPublication">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/cartilla-adulto-mayor.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a></p>
                 </div>  
                 <div class="largePublicationLeft">
-                    <img src="./images/publicaciones/six.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/six.png" alt="Mujer sosteniendo un condon"class="imagePublication"/>
                     <h2>Cartilla de divulgación con descarga gratuita
                         ¡Saber te protege! Cartilla sobre salud sexual y reproductiva en la Legislación Colombiana</h2>
                     <p class="seeMore">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/saber-te-protege-salud-sexual-reproductiva-legislacion-colombiana.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a></p>
                 </div>
                 <div class="largePublication">
-                    <img src="./images/publicaciones/seven.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/seven.png" alt="Mujer en silla de ruedas junto con un joven, riendo alegremente"class="imagePublication"/>
                     <h2>Sobre vivienda digna para personas con discapacidad. Comité sobre los Derechos de las
                         Personas con Discapacidad (2016)</h2>
                     <p class="seeMore">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/vivienda_digna_personas_discapacidad.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a></p>
                 </div>
                 <div class="largePublicationLeft">
-                    <img src="./images/publicaciones/eight.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/eight.png" alt ="Madre frente a frente con su hijo" class="imagePublication"/>
                     <h2>Sobre salud mental de niños, niñas y adolescentes desplazados en el proceso de
                         seguimiento a la Sentencia T-025 de 2004 (2015)</h2>
                     <p class="seeMore">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/salud_mental_t025_2004.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a> </p>
                 </div>
                 <div class="largePublication">
-                    <img src="./images/publicaciones/nine.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/nine.png" alt="Planta creciendo de un poso de agua natural"class="imagePublication"/>
                     <h2>Sobre el derecho al agua potable en Colombia para la Comisión Interamericana de
                         Derechos Humanos (2015)</h2>
                     <p class="seeMore">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/derecho_agua_potable.pdf" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a> </p>
                 </div>
                 <div class="shortPublication">
-                    <img src="./images/publicaciones/ten.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/ten.png" alt="Mujer joven mostrando su celular a una persona mayor " class="imagePublication"/>
                     <h2>Cartilla sobre derechos de la población adulto mayor, 2 Edición.
                     </h2>
                     <p class="seeMoreShortPublication">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://www.icesi.edu.co/centros-academicos/images/Centros/gapi/PDF/PDF/cartilla-adulto-mayor.pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a></p>
                 </div>
                 <div class="shortPublication">
-                    <img src="./images/publicaciones/eleven.png" class="imagePublication"/>
+                    <img src="./images/publicaciones/eleven.png" alt="Plaza con personas caminando" class="imagePublication"/>
                     <h2>La eficacia de las acciones populares y sus indicadores 
                     </h2>
                     <p class="seeMoreShortPublication">
-                        CONTINUAR LEYENDO <img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue"> </p>
+                        CONTINUAR LEYENDO <a href="https://es.scribd.com/document/244388822/12-Ceron-y-figueroa-pdf"><img src="./images/publicaciones/arrow-right.svg" class="arrowToContinue" alt="presiona enter aqui para desplazarte a la noticia"></a></p>
                 </div>
             </div>
         </main>
@@ -204,6 +201,6 @@
                 </div>
             </section>
         </footer>
+        <script src="./Scripts/color.js"></script>
     </body>
 </html>
-<script src="/Scripts/changeSize.js"></script>

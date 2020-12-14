@@ -1,10 +1,9 @@
-
 .indice{
     
     background-color: rgb(219, 219, 219);
     width:  27%;
     float: left;
-    min-height: 735px;
+    min-height: 760px;
     text-align: left;
     padding-left: 25px;
     padding-top: 25px;
@@ -22,19 +21,20 @@
     text-align: left;
     padding-left: 25px;
     padding-top: 25px;
-    padding-right: 23px;
-    margin-right: 8%;
+    
+    margin-right: 3%;
+    margin-bottom: 8%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 .questions2{
     width: 120%;
 }
-
-
-
+ 
+ 
+ 
 .changePage{
-
+ 
    
     
     width: 100%;
@@ -43,4 +43,130 @@
     box-sizing: border-box;
   
 }
-
+.longLabel{
+    width: 85%;
+}
+/*seccion de hovers*/
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.CompanionName :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompaniontypeOfDocument :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionExpeditionDocument :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionBirthDate :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionDepartmen :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+ 
+.Companionlastname :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionNumberOfDocument :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionDateOfDocument :hover + .img-aparecer {
+    position: relative;
+ 
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+ 
+.CompanionCityOfResidence :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.Cell2 :hover + .img-aparecer {
+    position: relative;
+    transition: all 500ms ease-out;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionDirection :hover + .img-aparecer {
+    position: relative;
+    margin-right: 20%;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionAndUserRelationList :hover + .img-aparecer {
+    position: relative;
+    margin-right: 20%;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+ 
+.CompanionAndUserRelation :hover + .img-aparecer {
+    position: relative;
+    
+    margin-right: 20%;
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}

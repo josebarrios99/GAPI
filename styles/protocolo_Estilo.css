@@ -1,0 +1,257 @@
+body{
+    width: 100%;
+    background-color: #DBDBDB;
+}
+ /*roverline config*/
+h1 {
+    margin-left: 122px;
+    margin-top: 36px;
+
+}
+/*banner*/
+.banner {
+    justify-items: first;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bannerImage{
+    z-index: -2;
+    height:400px;
+    width:100%;
+}
+
+.protoImage {
+    width: 100%;
+    height: 100%;
+}
+
+.proto {
+    width: 100%;
+    height: 100%;
+}
+
+/*nuestros protocolos de atencion*/
+.NuestroProto {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 580px);
+    grid-template-rows: 500px;
+    grid-gap: 99px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+#PQueEs{
+    color: #5F5F5F;
+    margin-bottom: 37px;
+}
+
+#titulosNuestroProto {
+    margin-bottom: 31px;
+    color: #146971;
+}
+.rutaGeneral{
+    margin-bottom: 30px;
+    
+}
+/*titulos especificos*/
+#tituloNuestrosProto{
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 70px;
+    color: #146971;
+}
+
+#rutaTitulo{
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 56px;
+    margin-bottom: 54px;
+    color: #146971;
+}
+/*rutas de atencion GAPI*/
+.rutasAtencion {
+    margin-top: 85px;
+    background-color: #146971;
+    padding-bottom: 60px;
+}
+
+#tituRutas {
+    padding-top: 56px;
+    margin-bottom: 56px;
+    text-align: center;
+    color: #FFFF;
+}
+
+.rutasContenedores{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 235px);
+    grid-template-rows: 690px;
+    grid-gap: 40px;
+}
+
+.contenedor{
+    text-align: center;
+    border-radius: 25px;
+    background-color: #ffff;
+    width: 100%;
+    height: 100%;
+    margin-bottom:58px;
+}
+
+.imageAtencion {
+    margin-top: 52px;
+}
+.subtitleAtencion{
+    margin-top: 33px;
+    margin-bottom: 27px;
+    color: #5F5F5F;
+}
+.subtitleAtencionC{
+    margin-top: 23px;
+    margin-bottom: 15px;
+    color: #5F5F5F;
+}
+.pAtencion {
+    margin-right: 28px;
+    color: #5f5f5f; 
+    text-align: left;
+    margin-left: 28px;
+}
+
+/*ruta atencion general*/
+.infoContenedores{
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 289px);
+    grid-template-rows: repeat(2, 200px);
+    grid-column-gap: 69px;
+    grid-row-gap: 33px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.textos{
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 72px);
+    grid-template-rows: 143px;
+    grid-column-gap: 5px;
+}
+
+.textosH3{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+/*ruta atencion de acuerdo a la diversidad funcional*/
+.contenedoresDiversidad{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1200px;
+    grid-template-rows: repeat(5, 450px);
+    grid-gap: 29px;
+}
+
+.contenedorDiversidad{
+    border-radius: 25px;
+    background-color: #3B939B;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 359px;
+}
+
+    
+.textoDiversidad{
+    margin-left: 50px;
+    margin-right:60px;
+    margin-top: 37px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+#tituDiv{
+    margin-bottom: 29px;
+    color: #ffff;
+}
+
+.diversidadImage{
+    margin-top: 37px;
+    margin-left: 39px;
+}
+/*recomendaciones*/
+
+.recomenBlock{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.contenedorRecomen{
+    background-color: #5F5F5F;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 383px 2px 383px;
+    grid-template-rows: 600px;
+    grid-column-gap: 76px;
+    border-radius: 25px;
+    padding: 50px;
+}
+.recomen{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 24px 344px;
+    grid-gap: 14px;
+    margin-bottom: 65px;
+}
+.recomen2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 24px 344px;
+    grid-gap: 14px;
+    margin-bottom: 55px;
+}
+.textosH3recomen{
+    font-size: 16px;
+}
+.infoRecome{
+    width: 100%;
+    height: 100%;
+}
+.lineDiv{
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+.line{
+     width: 100%;
+    height: 100%;
+}
+.rutaDiversidad{
+    padding-top: 30px;
+}
+.ROverline{
+    margin-left: 50px;
+    margin-top: 30px;
+}

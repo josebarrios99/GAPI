@@ -18,28 +18,28 @@
                 <section class="visuaAdjust">
                     <table class="headerTable">
                         <tr>
-                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad">
-                            </td>
+                            <td><img src="./images/publicaciones/accesibilidad.png" alt="icono de la accesibilidad"></td>
                             <td id="tdAccesibility" class="accesibilityTD">Accesibilidad</td>
-                            <td><input class="buttonAccesibilityUpper" type="button" value="A+"></td>
-                            <td class="accesibilityTD"><input class="buttonAccesibilityLower" type="button" value="A-">
-                            </td>
+
+                            <td><input class="buttonAccesibilityUpper" type="button" value="A+" id="btn_upFont"></td>
+
+                            <td class="accesibilityTD"><input class= "buttonAccesibilityLower" type="button" value="A-" id ="btn_downFont"></td>
                             <td id="tdAccesibility"><label for="typeOfContrast_txt">Contraste</label>
-                                <input list="listOfVisualcontrast" id="typeOfContrast_txt" name="typeOfContrast_txt">
-                                <datalist id="listOfVisualcontrast">
-                                    <option value="Color original"></option>
-                                    <option value="verdes y azules"></option>
-                                    <option value="rojos y naranjas"></option>
-                                </datalist>
+                                <select id="listOfVisualcontrast" onchange="changecolor(this.value)">
+                                    <option value="">Color original</option>
+                                    <option value="1">Blanco sobre negro</option>
+                                    <option value="2">Amarillo sobre negro</option>
+                                    <option value="3">Amarillo sobre azul</option>
+                                    <option value="4">Verde sobre Negro</option>
+                                </select>
                             </td>
-                            <td class="accesibilityTD"><a href="" id="mapa">Mapa</a></td>
-                            <td><img src="./images/publicaciones/traductor.png" alt="simbolo del traductor"></td>
-                            <td id="tdAccesibility">Traductor</td>
+                            <td><a href="https://convertic.gov.co/641/w3-propertyvalue-15339.html"><img src="./images/main/lector.png" alt="Lector de pantalla recomendado"></a></td>
+                            <td id="tdAccesibility">Lector</td>
                         </tr>
                     </table>
                 </section>
             </form>
-        </center>
+        </center>  
     </div>
     <header class="header">
         <div class="logo_container">
@@ -47,23 +47,16 @@
         </div>
         <div class="menu">
             <div class="topNav">
-                <!--
-
-                    <div class="inicio">
-                    <a href="">Inicio</a>
-                    <span class="inicio_gif">
-                        <img src="./giphy.gif" alt="">
-                    </span>
-                </div>
-                -->
+            
                 <a href="./index.html">Inicio</a>
                 <a href="./centro.html">Centro</a>
                 <a href="./equipo.html">Equipo</a>
                 <a href="./proyectos.html">Proyectos</a>
                 <a href="./Publicaciones.html">Publicaciones</a>
                 <a href="./videos.html">Videos</a>
-                <a href="" id="Protocolo_link">Protocolo de<br>Atención</a>
+                <a href="./protocoloAten.html" id="Protocolo_link">Protocolo de<br>Atención</a>
                 <a href="./apoyo1.html">Asistencia</a>
+
             </div>
         </div>
     </header>
@@ -82,7 +75,7 @@
                     <img src="./images/main/ayuda_psico.png" class="solicitarCita_img">
                     <p id="ayudaButtonText">Ayuda psicologica<br> y orientación</p>
                 </button></a>
-            <a href="#"><button class="asistenciaMenu_button">
+            <a href="./preguntasFrecuentes.html"><button class="asistenciaMenu_button">
                     <img src="./images/main/preguntas.png" class="solicitarCita_img">
                     <p>Preguntas frecuentes</p>
                 </button></a>
@@ -93,92 +86,58 @@
 
 
 
-    <article class="form">
+    <div class="form">
         <section class="form_aside">
-            <ol>
+            <div class="titulo" id="titulo_ayuda">
                 <h5>Formulario de citas</h5>
-                <li>
-                    <div>
-                        <h6 id="paso1">Cuestionario sobre diversidad</h6>
-                    </div>
-
-
-                </li>
-                <li>
-                    <div>
-
-                        <h6 id="paso2">Datos personales</h6>
-                    </div>
-
-                </li>
-                <li>
-                    <div>
-                        <h6 id="paso3">Informacion laboral</h6>
-                    </div>
-
-
-
-                </li>
-                <li>
-                    <div>
-
-                        <h6 id="paso4">Proceso juridico a realizar</h6>
-
-                    </div>
-
-
-                </li>
-
-                <li>
-                    <div>
-
-                        <h6 id="paso5">Datos del acompañante</h6>
-
-                    </div>
-
-
-                </li>
-
-                <li>
-                    <div>
-
-                        <h6 id="paso6">Fecha y hora de su cita</h6>
-
-                    </div>
-
-                    <p class="textoFechayHora"> Elige la fecha y hora para generar tu consulta con GAPI.</p>
-                    <img src="images/formularioSolicitud/imagenFormulario6.png" alt="imagen del cuestionario">
-
-                </li>
-
-                <li>
-                    <div>
-
-                        <h6 id="paso7">Confirmacion</h6>
-
-                    </div>
-
-
-                </li>
-
-
-            </ol>
+            </div>
+            <div class="titulo">
+                <h6 id="paso1">Cuestionario sobre diversidad</h6>
+                
+            </div>
+            <div class="titulo">
+                <h6 id="paso2">Datos personales</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso3">Información laboral</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso4">Proceso jurídico a realizar</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso5">Datos del acompañante</h6>
+            </div>
+            <div class="titulo">
+                <h6 id="paso6">Fecha y hora de su cita</h6>
+                <p class="pasos_content">Elige la fecha y hora para generar tu consulta con <br>GAPI.</p>
+                <img src="./images/asistenciaPsico/paso2.png" alt="" class="info_img">
+            </div>
+            <div class="titulo2">
+                <h6 id="paso7">Confirmación</h6>
+            </div>
         </section>
 
         <section class="form_main">
-            <form>
+            
                 <h5>Fecha y hora de su cita</h5>
+                <div class="contenedor">
                 <p id="RBody1">Escoja una fecha</p>
+                <img class="img-aparecer" src="./images/pictogramas_Formulario6/escoja.png" alt="">
+            </div>
                 <div>
                     
                     <div class="column form_fecha">
                         
-                        <input type="date" name="date" id="dateApointment">
+                        <input class="fecha" type="date" name="date" id="dateApointment">
                     </div>
                     
                     <div class="column form_horarios">
-
+                        
+                        <div class="contenedor">
                         <p>Horarios disponibles</p>
+                        <img class="img-aparecer" src="./images/pictogramas_Formulario6/horarios.png" alt="">
+                    </div>
+
                         <div class="row">
                             <img src="./images/formularioSolicitud/mañana.svg" alt="">
                             <p>En la mañana</p>
@@ -186,9 +145,9 @@
 
                         <div class="row morningButtons">
 
-                            <button class="btn-select btn-selected">9:30</button>
-                            <button class="btn-select">9:30</button>
-                            <button class="btn-select">9:30</button>
+                            <button class="input btn-select " value="9:30 am">9:30</button>
+                            <button class="input btn-select" value="11:30 am">11:30</button>
+                            <button class="input btn-select" value="8:30 am">8:30</button>
 
 
                         </div>
@@ -199,9 +158,9 @@
                         </div>
 
                         <div class="row afternonButtons">
-                            <button class="btn-select">3:45</button>
-                            <button class="btn-select">3:45</button>
-                            <button class="btn-select">3:45</button>
+                            <button class="input btn-select" value="3:45 pm">3:45</button>
+                            <button class="input btn-select" value="5:45 pm">5:45</button>
+                            <button class="input btn-select" value="2:45 pm">2:30</button>
                         </div>
 
                     </div>
@@ -210,26 +169,30 @@
                 </div>
 
 
-                <div class="btns">
+                
+
+            
+
+            <div class="btns">
 
 
-                    <a href="#" id="linkSecondPageQuestionarie">
 
-                        <button class="btn btnSecondary"> <img src="./images/formularioSolicitud/flechaAtras.svg"
-                                alt="">Retroceder</button>
-
-                    </a>
-                    <a href="FormularioDeSolicitud2.html" id="linkSecondPageQuestionarie">
-
-                        <button class="btn btnMain"> Seguir <img src="./images/formularioSolicitud/flechaAdelante.svg"
-                                alt=""></button>
-                    </a>
-                </div>
-
-            </form>
+                    
 
 
-    </article>
+                <button onclick="window.location.href='formularioDesolicitud5.html'" class=" btn btnSecondary"> <img src="./images/formularioSolicitud/flechaAtras.svg"
+                        alt="">Retroceder
+
+                       
+                    </button>
+
+            
+            
+                <button class="botonCambio btn btnMain"> Seguir <img src="./images/formularioSolicitud/flechaAdelante.svg"
+                        alt=""></button>
+            
+        </div>
+    </div>
 
     <footer>
         <section class="footer_info">
@@ -286,9 +249,10 @@
             </div>
         </section>
     </footer>
-
+    <script src="./Scripts/color.js"></script>
 
 </body>
 
 </html>
-<script src="/Scripts/changeSize.js"></script>
+<script src="./Scripts/changeSizeFormulario6.js"></script>
+<script src="./Scripts/FormularioDeSolicitud6.js"></script>
