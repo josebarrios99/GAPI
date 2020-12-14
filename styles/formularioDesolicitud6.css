@@ -287,3 +287,14 @@ button:focus{
 
     color:#146971 ;
 }
+
+.img-aparecer {
+    display: none;
+    visibility: hidden;
+}
+.contenedor :hover + .img-aparecer {
+    margin-top: 3%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}

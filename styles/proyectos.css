@@ -44,7 +44,13 @@ body {
 /*seccion de proyectos*/
 .projects{
     text-align: center;
+<<<<<<< HEAD
     margin: 30px 100px 30px 29px;
+=======
+
+    margin: 30px 100px 30px 290px;
+
+>>>>>>> ee64053648633e5443626422a74e5e5d3454979d
     display: flex;
      align-content: center;
     justify-items: center;
