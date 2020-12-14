@@ -72,13 +72,21 @@
 .card1{
     background-color: #CCFAED;
 }
+.card1:hover{
+    cursor: pointer;
+}
 .card2{
     background-color: #FFEEBB;
+}
+.card2:hover{
+    cursor: pointer;
 }
 .card3{
     background-color: #F8BCA8;
 }
-
+.card3:hover{
+    cursor: pointer;
+}
 .quesButton{
     display: flex;
     margin-left: 720px;
