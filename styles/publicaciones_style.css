@@ -4,16 +4,11 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
-main {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-}
-
 body {
     background: #ECECEC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);
     margin: 0;/* Chrome 10-25, Safari 5.1-6 */
+    width: 100%;
 }
 
 .h4Publicaciones{
@@ -42,7 +37,9 @@ h3{
 
 .h6Publication {
     font-size: 14px;
-    padding-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 200px;
 }
 
 td {
@@ -137,6 +134,7 @@ li:hover {
     grid-template-rows: repeat(3, 510px);
     grid-gap: 40px;
     margin-top: 44px;
+    margin-bottom: 40px;
 }
 
 .largePublication {
